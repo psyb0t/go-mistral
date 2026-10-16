@@ -1,0 +1,9 @@
+package: mistral
+generate:
+  client: true
+  models: true
+output: client.gen.go
+output-options:
+  resolve-type-name-collisions: true
+compatibility:
+  always-prefix-enum-values: true
