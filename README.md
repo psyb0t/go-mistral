@@ -77,6 +77,34 @@ if err := message.FromUserMessage(mistral.UserMessage{Content: &content, Role: &
 
 Mistral AI authenticates with a bearer API key, created in the API keys section of [La Plateforme](https://console.mistral.ai). Pass it on every request with a `RequestEditorFn`, as in the example above. A `RequestEditorFn` can also be passed to a single call as the last argument to scope it to that request.
 
+## Agent integrations
+
+The [skill](.agents/skills/go-mistral) teaches a coding agent how to use go-mistral when it writes Go. It works in any agent that reads `.agents/skills/`, and installs natively in the clients below.
+
+### Claude Code
+
+```bash
+claude plugin marketplace add psyb0t/agents
+claude plugin install go-mistral@psyb0t
+```
+
+### Codex
+
+```bash
+codex plugin marketplace add psyb0t/agents
+codex plugin add go-mistral@psyb0t
+```
+
+Codex also picks the skill up with no install in any checkout of this repo.
+
+### OpenClaw
+
+The skill is published to ClawHub on every release:
+
+```bash
+openclaw skills install @psyb0t/go-mistral
+```
+
 ## Regenerating
 
 Mistral AI's spec is not committed. `make generate` downloads the current OpenAPI document into the gitignored `api/` directory and regenerates the client:

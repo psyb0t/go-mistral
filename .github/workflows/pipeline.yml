@@ -52,3 +52,16 @@ jobs:
     permissions:
       contents: write
     uses: psyb0t/reusable-github-workflows/.github/workflows/release-workflow.yml@master
+
+  # Validates the agent skills under .agents/skills/ on every push and publishes
+  # them to ClawHub on tag pushes, once the checks pass.
+  clawhub:
+    needs: [code]
+    permissions:
+      contents: read
+    uses: psyb0t/reusable-github-workflows/.github/workflows/clawhub-publish.yml@master
+    with:
+      skill_names: '["go-mistral"]'
+      plugin_names: "[]"
+    secrets:
+      clawhub_token: ${{ secrets.CLAWHUB_TOKEN }}

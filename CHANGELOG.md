@@ -2,6 +2,10 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.1.1, 2026-10-16
+
+- Added the `go-mistral` agent skill. It installs with `claude plugin install go-mistral@psyb0t` in Claude Code, `codex plugin add go-mistral@psyb0t` in Codex and `openclaw skills install @psyb0t/go-mistral` from ClawHub.
+
 ## v0.1.0, 2026-10-16
 
 - Added `mistral`, a REST client generated with oapi-codegen from Mistral AI's OpenAPI document (spec version 1.0.0).

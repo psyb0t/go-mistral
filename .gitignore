@@ -26,6 +26,7 @@ htmlcov/
 __pycache__
 *.out
 CLAUDE.md
+.claude
 .research_files
 .refactor/
 .anustimes/
