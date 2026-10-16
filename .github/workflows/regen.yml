@@ -13,10 +13,11 @@ on:
 jobs:
   regen:
     permissions:
-      contents: write # commit, tag and GitHub release
+      contents: write # commit, push and tag
       issues: write # failure issue on scheduled runs
     uses: psyb0t/reusable-github-workflows/.github/workflows/regen-and-update-repo.yml@master
     with:
+      tag: true
       generate_command: "make generate"
       check_commands: "make lint && make test && make sec"
       changelog_path: "CHANGELOG.md"
@@ -25,11 +26,21 @@ jobs:
       context_command: "for f in api/*; do if [ -f \"$f\" ]; then printf '%s: %s\\n' \"$f\" \"$(grep -m1 -E '^ *\\\"?version\\\"? *:' \"$f\" || echo unknown)\"; fi; done"
       go_apidiff: true
       go_module: "github.com/psyb0t/go-mistral"
-      clawhub_publish: true
-      clawhub_skill_names: '["go-mistral"]'
-      clawhub_plugin_names: "[]"
+      fix_protected_paths: |
+        .github/*
+        Makefile
+        AGENTS.md
+        .agents/rules/*
+        .gitleaks.toml
+        .gitleaksignore
+        .golangci.yml
+        .semgrepignore
+        scripts/sec.sh
+        scripts/lint.sh
+        scripts/fetch-spec.sh
+        scripts/test-coverage.sh
       failure_issue_title: "Scheduled spec regeneration failed"
     secrets:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-      CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
+      GH_PAT: ${{ secrets.GH_PAT }}
