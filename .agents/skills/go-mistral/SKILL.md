@@ -1,6 +1,7 @@
 ---
 name: go-mistral
 description: Unofficial Go client for the Mistral AI REST API, generated with oapi-codegen. `mistral.NewClientWithResponses("https://api.mistral.ai", opts...)` from `github.com/psyb0t/go-mistral` returns a `*mistral.ClientWithResponses` with one typed method per endpoint, named after the spec's operation IDs (`ChatCompletionV1ChatCompletionsPostWithResponse`, `ListModelsV1ModelsGetWithResponse`, `EmbeddingsV1EmbeddingsPostWithResponse` and more). Auth is a bearer API key set through `mistral.WithRequestEditorFn`; union fields such as message content use `From...` and `As...` methods. Use when Go code needs to call Mistral AI or already imports go-mistral.
+license: MIT
 homepage: https://github.com/psyb0t/go-mistral
 user-invocable: true
 metadata:
@@ -9,8 +10,6 @@ metadata:
     requires:
       bins:
         - go
-      env:
-        - MISTRAL_API_KEY
 permissions:
   filesystem: "Guides edits to the Go source of the current project. The library reads and writes no files."
   shell: "The Go toolchain (`go get`, `go build`, `go test`) to add and compile the dependency."
@@ -38,6 +37,20 @@ For install, client options, more operations, union types and response handling,
 
 - You want streaming token by token. The `...WithResponse` methods read the whole body; a streamed reply needs your own SSE reader on the `*http.Response` from the raw `Client`.
 - The code is not Go.
+
+## Finding endpoints and types
+
+The examples below cover a few calls. Every operation in the spec has a generated method, and the spec's descriptions are on them as Go doc comments. Look names and fields up instead of guessing. After `go get github.com/psyb0t/go-mistral`, from inside your module:
+
+```bash
+go doc github.com/psyb0t/go-mistral ClientWithResponsesInterface  # every endpoint method
+go doc github.com/psyb0t/go-mistral ChatCompletionRequest         # one method, params type or model
+go doc -all github.com/psyb0t/go-mistral                          # the whole package
+```
+
+The same documentation is at https://pkg.go.dev/github.com/psyb0t/go-mistral.
+
+Method names come from the spec's operation IDs, which repeat the path and HTTP method (`ListModelsV1ModelsGet`). `<OperationId>WithResponse` takes the context, then the path parameters in order, then `*<OperationId>Params` when the operation has query or header parameters, then the request body when it has one. The `JSON200` field (or `JSON201` and so on, per declared status) holds the decoded body; it is nil for any other status.
 
 ## Usage
 

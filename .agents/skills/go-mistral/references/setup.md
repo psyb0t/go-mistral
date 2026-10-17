@@ -39,7 +39,7 @@ Method names come from the spec's operation IDs. Each operation `X` has:
 - `client.XWithResponse(ctx, pathParams..., params, ...)` returning `*XResponse`.
 - For operations with a JSON body, `client.XWithResponse(ctx, body)` takes the typed `XJSONRequestBody`, and `client.XWithBodyWithResponse(ctx, contentType, io.Reader)` takes raw bytes.
 
-Some operations, by name in `client.gen.go`:
+Some operations:
 
 | Method | Request |
 |---|---|
@@ -47,7 +47,7 @@ Some operations, by name in `client.gen.go`:
 | `ChatCompletionV1ChatCompletionsPostWithResponse(ctx, ChatCompletionRequest)` | Chat completion. |
 | `EmbeddingsV1EmbeddingsPostWithResponse(ctx, EmbeddingsV1EmbeddingsPostJSONRequestBody)` | Embeddings. |
 
-Search `client.gen.go` for `WithResponse(` to find the rest. Do not guess a method name.
+Run `go doc github.com/psyb0t/go-mistral ClientWithResponsesInterface` to find the rest. Do not guess a method name.
 
 ## Union types
 
@@ -57,7 +57,7 @@ Fields the spec types as one of several shapes are structs with `From<Variant>`,
 - `UserMessage_Content`: `FromUserMessageContent0` takes a plain `string`.
 - `AssistantMessage_Content`: `AsAssistantMessageContent0` reads plain text as a `string`.
 
-Check `client.gen.go` for the exact variant names of any other union.
+Run `go doc github.com/psyb0t/go-mistral <UnionType>` for the exact variant names of any other union.
 
 ## Responses
 

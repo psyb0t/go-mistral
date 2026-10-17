@@ -57,6 +57,8 @@ func main() {
 
 The same code is compiled as `Example` in `example_test.go`, so it stays in step with the generated client.
 
+The full API, with the spec's descriptions as doc comments, is in the [Go reference](https://pkg.go.dev/github.com/psyb0t/go-mistral) and in `go doc github.com/psyb0t/go-mistral`.
+
 Fields the spec types as one of several shapes, such as a message's `content`, are union types with `From...` and `As...` methods. A user message with plain text content:
 
 ```go
