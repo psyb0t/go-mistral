@@ -13,7 +13,7 @@ Generation pipeline, declared in `gen.go` and run by `make generate`:
 
 ## Stack
 
-- Go 1.26.9, one package at the module root.
+- Go 1.26.10, one package at the module root.
 - oapi-codegen v2 and golangci-lint as `go tool` dependencies.
 - Runtime: `github.com/oapi-codegen/runtime`.
 
