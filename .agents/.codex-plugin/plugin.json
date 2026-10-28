@@ -1,6 +1,6 @@
 {
   "name": "go-mistral",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Unofficial Go client for the Mistral AI REST API, generated with oapi-codegen, with one typed method per endpoint.",
   "author": { "name": "psyb0t", "url": "https://github.com/psyb0t" },
   "homepage": "https://github.com/psyb0t/go-mistral",

@@ -62,20 +62,26 @@ semgrep_targets=(
 	.github
 	Dockerfile.dev
 	Makefile
-	./*.go
 	scripts
 )
-# client.gen.go is excluded: it is oapi-codegen output, so a finding there can't
-# be fixed in place, and the only rule it trips is unsafe-deserialization-
-# interface on JSON decoding into the interface{} fields the spec leaves untyped
-# (free-form objects), which is plain encoding/json, not a gadget-chain decoder.
+# client.gen.go is left out of the target list: it is oapi-codegen output, so a
+# finding there can't be fixed in place, and the only rule it trips is unsafe-
+# deserialization-interface on JSON decoding into the interface{} fields the
+# spec leaves untyped (free-form objects), which is plain encoding/json, not a
+# gadget-chain decoder. --exclude does not apply to a file named on the command
+# line, and at 60k lines the file also makes several rules hit the per-file
+# timeout, so whether those findings appeared depended on runner speed.
+for go_file in ./*.go; do
+	[[ "$go_file" == *.gen.go ]] || semgrep_targets+=("$go_file")
+done
 semgrep scan --config p/golang --config p/security-audit \
-	--exclude client.gen.go \
 	--no-git-ignore --sarif --output "$tmp/semgrep.sarif" \
 	--metrics=off --error "${semgrep_targets[@]}" || sg_rc=$?
 
 log INFO "merging SARIF"
-jq -s '{version:"2.1.0","$schema":"https://json.schemastore.org/sarif-2.1.0.json",runs:([.[].runs // []] | add)}' \
+# Code scanning rejects a file holding two runs from the same tool, so the
+# gitleaks directory and history runs are folded into one run per tool.
+jq -s '{version:"2.1.0","$schema":"https://json.schemastore.org/sarif-2.1.0.json",runs:([.[].runs // []] | add | group_by(.tool.driver.name) | map(.[0] + {results: (map(.results // []) | add)}))}' \
 	"$tmp/gitleaks-dir.sarif" \
 	"$tmp/gitleaks-git.sarif" \
 	"$tmp/govulncheck.sarif" \
