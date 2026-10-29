@@ -117,8 +117,9 @@ make generate
 
 `gen.go` declares the steps, so `make generate` is just `go generate ./...`:
 
-- `scripts/fetch-spec.sh` downloads `openapi.yaml` from Mistral AI's [platform-docs-public](https://github.com/mistralai/platform-docs-public) repository.
+- `scripts/fetch-spec.sh` downloads `openapi.yaml` from Mistral AI's documentation site at `https://docs.mistral.ai/openapi.yaml`.
 - `scripts/patch-spec.sh` writes `api/openapi.patched.yaml` with every `const: true` and `const: false` line dropped. oapi-codegen turns a property `const` into a named type, and the type it picks for the boolean `stream` flag on the transcription request is already the name of the streaming request schema, so generation fails on a duplicate type name. Those properties become plain booleans.
+- `internal/cmd/patch-spec` moves the schemas the spec nests in local `$defs` blocks into `components/schemas`, since kin-openapi cannot resolve `#/$defs/...` references. It also names a query parameter with a numeric suffix when an earlier parameter of the same operation would get the same Go field name, such as `SortDirection2` for `sort_direction` next to `sort.direction`.
 - oapi-codegen runs on the patched document with `config.yaml`.
 
 `.github/workflows/regen.yml` does the same every day in CI. When the new spec changes the client, it runs `make lint`, `make test` and `make sec`. If a check fails, Claude edits the code and the checks run again, up to three times, and a review step reads the result. A passing change is committed with a CHANGELOG entry and tagged as the next release: a patch version for fixes and additions, a minor version for breaking changes.

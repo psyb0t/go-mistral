@@ -26,11 +26,11 @@ For install, client options, more operations, union types and response handling,
 
 - Read the API key from an environment variable such as `MISTRAL_API_KEY`. Never hardcode it, commit it or log it, and never print request headers.
 - Requests go only to the base URL you pass, `https://api.mistral.ai`. Prompts and files you send are processed by Mistral AI.
-- Fine-tuning jobs and batch jobs cost money, and delete endpoints remove data. Call them only when the user asked for that action.
+- Batch jobs cost money, and delete endpoints remove data. Call them only when the user asked for that action.
 
 ## When to use
 
-- Go code needs Mistral AI chat completions, embeddings, model listing, files, fine-tuning or other Mistral AI endpoints.
+- Go code needs Mistral AI chat completions, embeddings, model listing, files, fine-tuned models or other Mistral AI endpoints.
 - The project already imports `github.com/psyb0t/go-mistral`.
 
 ## When NOT to use

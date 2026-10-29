@@ -4,4 +4,5 @@ package mistral
 
 //go:generate bash scripts/fetch-spec.sh openapi.yaml
 //go:generate bash scripts/patch-spec.sh
+//go:generate go run ./internal/cmd/patch-spec
 //go:generate go tool oapi-codegen --config=config.yaml api/openapi.patched.yaml

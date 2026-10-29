@@ -7,7 +7,7 @@ trap 'on_error "$?" "$LINENO"' ERR
 LOG_FILE="${LOG_FILE:-/tmp/$(basename "$0" .sh).log}"
 exec > >(tee -a "$LOG_FILE") 2>&1
 
-readonly SPEC_URL="https://raw.githubusercontent.com/mistralai/platform-docs-public/main/openapi.yaml"
+readonly SPEC_URL="https://docs.mistral.ai/openapi.yaml"
 readonly DOWNLOAD_TIMEOUT_SECONDS=60
 readonly SPEC_OPENAPI="openapi.yaml"
 SPEC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/api"

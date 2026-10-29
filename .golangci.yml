@@ -117,6 +117,7 @@ linters:
             - github.com/oapi-codegen/
             - github.com/swaggo/
             - golang.org/x/net/publicsuffix
+            - gopkg.in/yaml.v3
 
   exclusions:
     generated: lax

@@ -2,6 +2,12 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.2.0, 2026-10-29
+
+- The client is generated from the spec Mistral AI publishes at `https://docs.mistral.ai/openapi.yaml`. The platform-docs-public repository it was downloaded from before no longer exists, so scheduled regeneration had stopped.
+- Breaking: the current spec has 317 operations instead of 169. It adds 176, including the Responses API, workflow deployments, managed RAG indexes, service accounts, connector sharing and observability traces and spans. It removes 28: the fine-tuning job routes, the observability campaign and chat completion event routes, and the connector credential routes per organization, workspace and user, which are replaced by `ConnectorCreateCredentialsV1`, `ConnectorUpdateCredentials` and `ConnectorDeleteCredentials`. Many model types are renamed or removed with them.
+- `internal/cmd/patch-spec` moves the schemas the spec nests in local `$defs` blocks into `components/schemas`, since kin-openapi cannot resolve `#/$defs/...` references. When two query parameters of one operation would get the same Go field name, the later one gets a numeric suffix, so the `sort_direction` alias of `sort.direction` is `SortDirection2`.
+
 ## v0.1.5, 2026-10-28
 
 - The Semgrep scan leaves out `client.gen.go`, as its comment already said it should. `--exclude` did not apply because the file was named on the command line, and Semgrep timed out on it, so its findings came and went with the runner's speed and failed the scan at random.

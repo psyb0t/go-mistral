@@ -6,10 +6,11 @@ Unofficial Go client for the Mistral AI REST API, generated with oapi-codegen. I
 
 Generation pipeline, declared in `gen.go` and run by `make generate`:
 
-1. `scripts/fetch-spec.sh` downloads `openapi.yaml` from Mistral AI's platform-docs-public repository into `api/`.
+1. `scripts/fetch-spec.sh` downloads `openapi.yaml` from `https://docs.mistral.ai/openapi.yaml` into `api/`.
 2. `scripts/patch-spec.sh` writes `api/openapi.patched.yaml` with every `const: true` and `const: false` line dropped, because one of them generates a type name that collides with a component schema.
-3. oapi-codegen runs with `config.yaml` on the patched spec.
-4. The result is `client.gen.go`: models, `Client` and `ClientWithResponses` in package `mistral`.
+3. `internal/cmd/patch-spec` rewrites `api/openapi.patched.yaml`: it moves the schemas nested in local `$defs` blocks into `components/schemas`, which kin-openapi cannot resolve otherwise, and gives a query parameter its own Go name (`x-go-name`) when an earlier parameter of the same operation maps to the same field.
+4. oapi-codegen runs with `config.yaml` on the patched spec.
+5. The result is `client.gen.go`: models, `Client` and `ClientWithResponses` in package `mistral`.
 
 ## Stack
 
