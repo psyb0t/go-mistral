@@ -231,6 +231,7 @@ const (
 	AdminAssignGroupToWorkspaceInRoleNamesMistralCodeUser      AdminAssignGroupToWorkspaceInRoleNames = "mistral_code_user"
 	AdminAssignGroupToWorkspaceInRoleNamesObservabilityViewer  AdminAssignGroupToWorkspaceInRoleNames = "observability_viewer"
 	AdminAssignGroupToWorkspaceInRoleNamesUser                 AdminAssignGroupToWorkspaceInRoleNames = "user"
+	AdminAssignGroupToWorkspaceInRoleNamesVibeCodeCliUser      AdminAssignGroupToWorkspaceInRoleNames = "vibe_code_cli_user"
 	AdminAssignGroupToWorkspaceInRoleNamesWorkflowExecutor     AdminAssignGroupToWorkspaceInRoleNames = "workflow_executor"
 	AdminAssignGroupToWorkspaceInRoleNamesWorkspaceAdmin       AdminAssignGroupToWorkspaceInRoleNames = "workspace_admin"
 	AdminAssignGroupToWorkspaceInRoleNamesWorkspaceContributor AdminAssignGroupToWorkspaceInRoleNames = "workspace_contributor"
@@ -256,6 +257,8 @@ func (e AdminAssignGroupToWorkspaceInRoleNames) Valid() bool {
 	case AdminAssignGroupToWorkspaceInRoleNamesObservabilityViewer:
 		return true
 	case AdminAssignGroupToWorkspaceInRoleNamesUser:
+		return true
+	case AdminAssignGroupToWorkspaceInRoleNamesVibeCodeCliUser:
 		return true
 	case AdminAssignGroupToWorkspaceInRoleNamesWorkflowExecutor:
 		return true
@@ -359,6 +362,7 @@ const (
 	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameObservabilityViewer  AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "observability_viewer"
 	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameSecretRevealer       AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "secret_revealer"
 	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameUser                 AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "user"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameVibeCodeCliUser      AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "vibe_code_cli_user"
 	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameWorkflowExecutor     AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "workflow_executor"
 	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameWorkspaceAdmin       AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "workspace_admin"
 	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameWorkspaceContributor AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "workspace_contributor"
@@ -389,6 +393,8 @@ func (e AdminProvisionGroupToWorkspaceInWorkspaceRoleName) Valid() bool {
 		return true
 	case AdminProvisionGroupToWorkspaceInWorkspaceRoleNameUser:
 		return true
+	case AdminProvisionGroupToWorkspaceInWorkspaceRoleNameVibeCodeCliUser:
+		return true
 	case AdminProvisionGroupToWorkspaceInWorkspaceRoleNameWorkflowExecutor:
 		return true
 	case AdminProvisionGroupToWorkspaceInWorkspaceRoleNameWorkspaceAdmin:
@@ -411,6 +417,7 @@ const (
 	AdminUpdateGroupWorkspaceAssignmentInRoleNamesMistralCodeUser      AdminUpdateGroupWorkspaceAssignmentInRoleNames = "mistral_code_user"
 	AdminUpdateGroupWorkspaceAssignmentInRoleNamesObservabilityViewer  AdminUpdateGroupWorkspaceAssignmentInRoleNames = "observability_viewer"
 	AdminUpdateGroupWorkspaceAssignmentInRoleNamesUser                 AdminUpdateGroupWorkspaceAssignmentInRoleNames = "user"
+	AdminUpdateGroupWorkspaceAssignmentInRoleNamesVibeCodeCliUser      AdminUpdateGroupWorkspaceAssignmentInRoleNames = "vibe_code_cli_user"
 	AdminUpdateGroupWorkspaceAssignmentInRoleNamesWorkflowExecutor     AdminUpdateGroupWorkspaceAssignmentInRoleNames = "workflow_executor"
 	AdminUpdateGroupWorkspaceAssignmentInRoleNamesWorkspaceAdmin       AdminUpdateGroupWorkspaceAssignmentInRoleNames = "workspace_admin"
 	AdminUpdateGroupWorkspaceAssignmentInRoleNamesWorkspaceContributor AdminUpdateGroupWorkspaceAssignmentInRoleNames = "workspace_contributor"
@@ -436,6 +443,8 @@ func (e AdminUpdateGroupWorkspaceAssignmentInRoleNames) Valid() bool {
 	case AdminUpdateGroupWorkspaceAssignmentInRoleNamesObservabilityViewer:
 		return true
 	case AdminUpdateGroupWorkspaceAssignmentInRoleNamesUser:
+		return true
+	case AdminUpdateGroupWorkspaceAssignmentInRoleNamesVibeCodeCliUser:
 		return true
 	case AdminUpdateGroupWorkspaceAssignmentInRoleNamesWorkflowExecutor:
 		return true
@@ -561,6 +570,7 @@ const (
 	AdminWorkspaceMemberSingleINRoleNameMistralCodeUser      AdminWorkspaceMemberSingleINRoleName = "mistral_code_user"
 	AdminWorkspaceMemberSingleINRoleNameObservabilityViewer  AdminWorkspaceMemberSingleINRoleName = "observability_viewer"
 	AdminWorkspaceMemberSingleINRoleNameUser                 AdminWorkspaceMemberSingleINRoleName = "user"
+	AdminWorkspaceMemberSingleINRoleNameVibeCodeCliUser      AdminWorkspaceMemberSingleINRoleName = "vibe_code_cli_user"
 	AdminWorkspaceMemberSingleINRoleNameWorkflowExecutor     AdminWorkspaceMemberSingleINRoleName = "workflow_executor"
 	AdminWorkspaceMemberSingleINRoleNameWorkspaceAdmin       AdminWorkspaceMemberSingleINRoleName = "workspace_admin"
 	AdminWorkspaceMemberSingleINRoleNameWorkspaceContributor AdminWorkspaceMemberSingleINRoleName = "workspace_contributor"
@@ -587,6 +597,8 @@ func (e AdminWorkspaceMemberSingleINRoleName) Valid() bool {
 		return true
 	case AdminWorkspaceMemberSingleINRoleNameUser:
 		return true
+	case AdminWorkspaceMemberSingleINRoleNameVibeCodeCliUser:
+		return true
 	case AdminWorkspaceMemberSingleINRoleNameWorkflowExecutor:
 		return true
 	case AdminWorkspaceMemberSingleINRoleNameWorkspaceAdmin:
@@ -609,6 +621,7 @@ const (
 	AdminWorkspaceMemberSingleINRoleNamesMistralCodeUser      AdminWorkspaceMemberSingleINRoleNames = "mistral_code_user"
 	AdminWorkspaceMemberSingleINRoleNamesObservabilityViewer  AdminWorkspaceMemberSingleINRoleNames = "observability_viewer"
 	AdminWorkspaceMemberSingleINRoleNamesUser                 AdminWorkspaceMemberSingleINRoleNames = "user"
+	AdminWorkspaceMemberSingleINRoleNamesVibeCodeCliUser      AdminWorkspaceMemberSingleINRoleNames = "vibe_code_cli_user"
 	AdminWorkspaceMemberSingleINRoleNamesWorkflowExecutor     AdminWorkspaceMemberSingleINRoleNames = "workflow_executor"
 	AdminWorkspaceMemberSingleINRoleNamesWorkspaceAdmin       AdminWorkspaceMemberSingleINRoleNames = "workspace_admin"
 	AdminWorkspaceMemberSingleINRoleNamesWorkspaceContributor AdminWorkspaceMemberSingleINRoleNames = "workspace_contributor"
@@ -634,6 +647,8 @@ func (e AdminWorkspaceMemberSingleINRoleNames) Valid() bool {
 	case AdminWorkspaceMemberSingleINRoleNamesObservabilityViewer:
 		return true
 	case AdminWorkspaceMemberSingleINRoleNamesUser:
+		return true
+	case AdminWorkspaceMemberSingleINRoleNamesVibeCodeCliUser:
 		return true
 	case AdminWorkspaceMemberSingleINRoleNamesWorkflowExecutor:
 		return true
@@ -925,6 +940,21 @@ func (e AttributeHashSamplingType) Valid() bool {
 	}
 }
 
+// Defines values for AudioAssistantTranscriptTurnRole.
+const (
+	AudioAssistantTranscriptTurnRoleAssistant AudioAssistantTranscriptTurnRole = "assistant"
+)
+
+// Valid indicates whether the value is a known member of the AudioAssistantTranscriptTurnRole enum.
+func (e AudioAssistantTranscriptTurnRole) Valid() bool {
+	switch e {
+	case AudioAssistantTranscriptTurnRoleAssistant:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for AudioChunkType.
 const (
 	AudioChunkTypeInputAudio AudioChunkType = "input_audio"
@@ -949,6 +979,75 @@ const (
 func (e AudioContentType) Valid() bool {
 	switch e {
 	case AudioContentTypeAudio:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for AudioSessionResponseStatus.
+const (
+	AudioSessionResponseStatusActive AudioSessionResponseStatus = "active"
+	AudioSessionResponseStatusEnded  AudioSessionResponseStatus = "ended"
+)
+
+// Valid indicates whether the value is a known member of the AudioSessionResponseStatus enum.
+func (e AudioSessionResponseStatus) Valid() bool {
+	switch e {
+	case AudioSessionResponseStatusActive:
+		return true
+	case AudioSessionResponseStatusEnded:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for AudioToolTranscriptTurnRole.
+const (
+	AudioToolTranscriptTurnRoleTool AudioToolTranscriptTurnRole = "tool"
+)
+
+// Valid indicates whether the value is a known member of the AudioToolTranscriptTurnRole enum.
+func (e AudioToolTranscriptTurnRole) Valid() bool {
+	switch e {
+	case AudioToolTranscriptTurnRoleTool:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for AudioToolTranscriptTurnStatus.
+const (
+	AudioToolTranscriptTurnStatusError   AudioToolTranscriptTurnStatus = "error"
+	AudioToolTranscriptTurnStatusSuccess AudioToolTranscriptTurnStatus = "success"
+	AudioToolTranscriptTurnStatusUnknown AudioToolTranscriptTurnStatus = "unknown"
+)
+
+// Valid indicates whether the value is a known member of the AudioToolTranscriptTurnStatus enum.
+func (e AudioToolTranscriptTurnStatus) Valid() bool {
+	switch e {
+	case AudioToolTranscriptTurnStatusError:
+		return true
+	case AudioToolTranscriptTurnStatusSuccess:
+		return true
+	case AudioToolTranscriptTurnStatusUnknown:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for AudioUserTranscriptTurnRole.
+const (
+	AudioUserTranscriptTurnRoleUser AudioUserTranscriptTurnRole = "user"
+)
+
+// Valid indicates whether the value is a known member of the AudioUserTranscriptTurnRole enum.
+func (e AudioUserTranscriptTurnRole) Valid() bool {
+	switch e {
+	case AudioUserTranscriptTurnRoleUser:
 		return true
 	default:
 		return false
@@ -992,6 +1091,17 @@ const (
 	AuditLogEventTypeBillingSubscriptionTerminationDateUpdated               AuditLogEventType = "billing.subscription.termination_date.updated"
 	AuditLogEventTypeBillingSubscriptionUnsubscribe                          AuditLogEventType = "billing.subscription.unsubscribe"
 	AuditLogEventTypeBillingWorkspaceMonthlyLimitUpdated                     AuditLogEventType = "billing.workspace_monthly_limit.updated"
+	AuditLogEventTypeCapabilityDisable                                       AuditLogEventType = "capability.disable"
+	AuditLogEventTypeCapabilityEnable                                        AuditLogEventType = "capability.enable"
+	AuditLogEventTypeCapabilityRegistryCreate                                AuditLogEventType = "capability_registry.create"
+	AuditLogEventTypeCapabilityRegistryDefaultWorkspaceAccessDisable         AuditLogEventType = "capability_registry.default_workspace_access.disable"
+	AuditLogEventTypeCapabilityRegistryDefaultWorkspaceAccessEnable          AuditLogEventType = "capability_registry.default_workspace_access.enable"
+	AuditLogEventTypeCapabilityRegistryWorkspaceAccessDisable                AuditLogEventType = "capability_registry.workspace_access.disable"
+	AuditLogEventTypeCapabilityRegistryWorkspaceAccessEnable                 AuditLogEventType = "capability_registry.workspace_access.enable"
+	AuditLogEventTypeCapabilityRegistryWorkspaceAccessRemove                 AuditLogEventType = "capability_registry.workspace_access.remove"
+	AuditLogEventTypeCapabilityVersionCreate                                 AuditLogEventType = "capability.version.create"
+	AuditLogEventTypeCapabilityVersionDisable                                AuditLogEventType = "capability.version.disable"
+	AuditLogEventTypeCapabilityVersionEnable                                 AuditLogEventType = "capability.version.enable"
 	AuditLogEventTypeCloudRuntimeAppCreated                                  AuditLogEventType = "cloud_runtime.app.created"
 	AuditLogEventTypeCloudRuntimeAppDeleted                                  AuditLogEventType = "cloud_runtime.app.deleted"
 	AuditLogEventTypeCloudRuntimeAppPaused                                   AuditLogEventType = "cloud_runtime.app.paused"
@@ -1188,11 +1298,22 @@ const (
 	AuditLogEventTypeWorkflowDeploymentAuthorizedCredentialGranted           AuditLogEventType = "workflow.deployment.authorized_credential.granted"
 	AuditLogEventTypeWorkflowDeploymentAuthorizedCredentialRevoked           AuditLogEventType = "workflow.deployment.authorized_credential.revoked"
 	AuditLogEventTypeWorkflowExecutionCanceled                               AuditLogEventType = "workflow.execution.canceled"
+	AuditLogEventTypeWorkflowExecutionCompleted                              AuditLogEventType = "workflow.execution.completed"
+	AuditLogEventTypeWorkflowExecutionFailed                                 AuditLogEventType = "workflow.execution.failed"
 	AuditLogEventTypeWorkflowExecutionQuery                                  AuditLogEventType = "workflow.execution.query"
 	AuditLogEventTypeWorkflowExecutionSignal                                 AuditLogEventType = "workflow.execution.signal"
 	AuditLogEventTypeWorkflowExecutionStarted                                AuditLogEventType = "workflow.execution.started"
 	AuditLogEventTypeWorkflowExecutionTerminated                             AuditLogEventType = "workflow.execution.terminated"
 	AuditLogEventTypeWorkflowExecutionUpdate                                 AuditLogEventType = "workflow.execution.update"
+	AuditLogEventTypeWorkflowManagedDeploymentCreated                        AuditLogEventType = "workflow.managed_deployment.created"
+	AuditLogEventTypeWorkflowManagedDeploymentCredentialProvisioned          AuditLogEventType = "workflow.managed_deployment.credential.provisioned"
+	AuditLogEventTypeWorkflowManagedDeploymentCredentialRevoked              AuditLogEventType = "workflow.managed_deployment.credential.revoked"
+	AuditLogEventTypeWorkflowManagedDeploymentDeleted                        AuditLogEventType = "workflow.managed_deployment.deleted"
+	AuditLogEventTypeWorkflowManagedDeploymentRestarted                      AuditLogEventType = "workflow.managed_deployment.restarted"
+	AuditLogEventTypeWorkflowManagedDeploymentStarted                        AuditLogEventType = "workflow.managed_deployment.started"
+	AuditLogEventTypeWorkflowManagedDeploymentStatusChanged                  AuditLogEventType = "workflow.managed_deployment.status.changed"
+	AuditLogEventTypeWorkflowManagedDeploymentStopped                        AuditLogEventType = "workflow.managed_deployment.stopped"
+	AuditLogEventTypeWorkflowManagedDeploymentUpdated                        AuditLogEventType = "workflow.managed_deployment.updated"
 	AuditLogEventTypeWorkflowScheduleCreated                                 AuditLogEventType = "workflow.schedule.created"
 	AuditLogEventTypeWorkflowScheduleDeleted                                 AuditLogEventType = "workflow.schedule.deleted"
 	AuditLogEventTypeWorkflowSchedulePaused                                  AuditLogEventType = "workflow.schedule.paused"
@@ -1283,6 +1404,28 @@ func (e AuditLogEventType) Valid() bool {
 	case AuditLogEventTypeBillingSubscriptionUnsubscribe:
 		return true
 	case AuditLogEventTypeBillingWorkspaceMonthlyLimitUpdated:
+		return true
+	case AuditLogEventTypeCapabilityDisable:
+		return true
+	case AuditLogEventTypeCapabilityEnable:
+		return true
+	case AuditLogEventTypeCapabilityRegistryCreate:
+		return true
+	case AuditLogEventTypeCapabilityRegistryDefaultWorkspaceAccessDisable:
+		return true
+	case AuditLogEventTypeCapabilityRegistryDefaultWorkspaceAccessEnable:
+		return true
+	case AuditLogEventTypeCapabilityRegistryWorkspaceAccessDisable:
+		return true
+	case AuditLogEventTypeCapabilityRegistryWorkspaceAccessEnable:
+		return true
+	case AuditLogEventTypeCapabilityRegistryWorkspaceAccessRemove:
+		return true
+	case AuditLogEventTypeCapabilityVersionCreate:
+		return true
+	case AuditLogEventTypeCapabilityVersionDisable:
+		return true
+	case AuditLogEventTypeCapabilityVersionEnable:
 		return true
 	case AuditLogEventTypeCloudRuntimeAppCreated:
 		return true
@@ -1676,6 +1819,10 @@ func (e AuditLogEventType) Valid() bool {
 		return true
 	case AuditLogEventTypeWorkflowExecutionCanceled:
 		return true
+	case AuditLogEventTypeWorkflowExecutionCompleted:
+		return true
+	case AuditLogEventTypeWorkflowExecutionFailed:
+		return true
 	case AuditLogEventTypeWorkflowExecutionQuery:
 		return true
 	case AuditLogEventTypeWorkflowExecutionSignal:
@@ -1685,6 +1832,24 @@ func (e AuditLogEventType) Valid() bool {
 	case AuditLogEventTypeWorkflowExecutionTerminated:
 		return true
 	case AuditLogEventTypeWorkflowExecutionUpdate:
+		return true
+	case AuditLogEventTypeWorkflowManagedDeploymentCreated:
+		return true
+	case AuditLogEventTypeWorkflowManagedDeploymentCredentialProvisioned:
+		return true
+	case AuditLogEventTypeWorkflowManagedDeploymentCredentialRevoked:
+		return true
+	case AuditLogEventTypeWorkflowManagedDeploymentDeleted:
+		return true
+	case AuditLogEventTypeWorkflowManagedDeploymentRestarted:
+		return true
+	case AuditLogEventTypeWorkflowManagedDeploymentStarted:
+		return true
+	case AuditLogEventTypeWorkflowManagedDeploymentStatusChanged:
+		return true
+	case AuditLogEventTypeWorkflowManagedDeploymentStopped:
+		return true
+	case AuditLogEventTypeWorkflowManagedDeploymentUpdated:
 		return true
 	case AuditLogEventTypeWorkflowScheduleCreated:
 		return true
@@ -2176,27 +2341,6 @@ func (e CompletionResponseStreamChoiceFinishReason) Valid() bool {
 	case CompletionResponseStreamChoiceFinishReasonStop:
 		return true
 	case CompletionResponseStreamChoiceFinishReasonToolCalls:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for ConnectionConfigType.
-const (
-	ConnectionConfigTypeEolienne ConnectionConfigType = "eolienne"
-	ConnectionConfigTypeMcp      ConnectionConfigType = "mcp"
-	ConnectionConfigTypeTurbine  ConnectionConfigType = "turbine"
-)
-
-// Valid indicates whether the value is a known member of the ConnectionConfigType enum.
-func (e ConnectionConfigType) Valid() bool {
-	switch e {
-	case ConnectionConfigTypeEolienne:
-		return true
-	case ConnectionConfigTypeMcp:
-		return true
-	case ConnectionConfigTypeTurbine:
 		return true
 	default:
 		return false
@@ -3303,7 +3447,6 @@ func (e EncryptedPatchValueType) Valid() bool {
 
 // Defines values for EntityType.
 const (
-	EntityTypeOrg       EntityType = "Org"
 	EntityTypeUser      EntityType = "User"
 	EntityTypeWorkspace EntityType = "Workspace"
 )
@@ -3311,8 +3454,6 @@ const (
 // Valid indicates whether the value is a known member of the EntityType enum.
 func (e EntityType) Valid() bool {
 	switch e {
-	case EntityTypeOrg:
-		return true
 	case EntityTypeUser:
 		return true
 	case EntityTypeWorkspace:
@@ -4120,6 +4261,21 @@ func (e HTTPStatus) Valid() bool {
 	}
 }
 
+// Defines values for HangUpToolType.
+const (
+	HangUpToolTypeHangUp HangUpToolType = "hang_up"
+)
+
+// Valid indicates whether the value is a known member of the HangUpToolType enum.
+func (e HangUpToolType) Valid() bool {
+	switch e {
+	case HangUpToolTypeHangUp:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for IPAPhoneme.
 const (
 	IPAPhonemeA     IPAPhoneme = "a"
@@ -4143,21 +4299,36 @@ const (
 	IPAPhonemeO     IPAPhoneme = "o"
 	IPAPhonemeOʊ    IPAPhoneme = "oʊ"
 	IPAPhonemeP     IPAPhoneme = "p"
+	IPAPhonemePf    IPAPhoneme = "pf"
+	IPAPhonemeQ     IPAPhoneme = "q"
+	IPAPhonemeR     IPAPhoneme = "r"
 	IPAPhonemeS     IPAPhoneme = "s"
 	IPAPhonemeT     IPAPhoneme = "t"
+	IPAPhonemeTs    IPAPhoneme = "ts"
 	IPAPhonemeTʃ    IPAPhoneme = "tʃ"
 	IPAPhonemeU     IPAPhoneme = "u"
 	IPAPhonemeV     IPAPhoneme = "v"
 	IPAPhonemeW     IPAPhoneme = "w"
+	IPAPhonemeX     IPAPhoneme = "x"
+	IPAPhonemeY     IPAPhoneme = "y"
 	IPAPhonemeZ     IPAPhoneme = "z"
 	IPAPhonemeÆ     IPAPhoneme = "æ"
 	IPAPhonemeÐ     IPAPhoneme = "ð"
+	IPAPhonemeØ     IPAPhoneme = "ø"
 	IPAPhonemeŊ     IPAPhoneme = "ŋ"
+	IPAPhonemeŒ     IPAPhoneme = "œ"
+	IPAPhonemeŒ1    IPAPhoneme = "œ̃"
 	IPAPhonemeƆ     IPAPhoneme = "ɔ"
+	IPAPhonemeƆ1    IPAPhoneme = "ɔ̃"
 	IPAPhonemeƆɪ    IPAPhoneme = "ɔɪ"
+	IPAPhonemeƆʏ    IPAPhoneme = "ɔʏ"
 	IPAPhonemeƉ     IPAPhoneme = "ɖ"
 	IPAPhonemeƏ     IPAPhoneme = "ə"
 	IPAPhonemeƐ     IPAPhoneme = "ɛ"
+	IPAPhonemeƐ1    IPAPhoneme = "ɛ̃"
+	IPAPhonemeƔ     IPAPhoneme = "ɣ"
+	IPAPhonemeƝ     IPAPhoneme = "ɲ"
+	IPAPhonemeƦ     IPAPhoneme = "ʀ"
 	IPAPhonemeƩ     IPAPhoneme = "ʃ"
 	IPAPhonemeƮ     IPAPhoneme = "ʈ"
 	IPAPhonemeƱ     IPAPhoneme = "ʊ"
@@ -4165,13 +4336,25 @@ const (
 	IPAPhonemeƷ     IPAPhoneme = "ʒ"
 	IPAPhonemeɅ     IPAPhoneme = "ʌ"
 	IPAPhonemeɚ     IPAPhoneme = "ɚ"
+	IPAPhonemeɟʝ    IPAPhoneme = "ɟʝ"
+	IPAPhonemeɳ     IPAPhoneme = "ɳ"
 	IPAPhonemeɹ     IPAPhoneme = "ɹ"
 	IPAPhonemeɾ     IPAPhoneme = "ɾ"
+	IPAPhonemeʁ     IPAPhoneme = "ʁ"
+	IPAPhonemeʎ     IPAPhoneme = "ʎ"
+	IPAPhonemeʏ     IPAPhoneme = "ʏ"
+	IPAPhonemeΒ     IPAPhoneme = "β"
 	IPAPhonemeΘ     IPAPhoneme = "θ"
 	IPAPhonemeⱭ     IPAPhoneme = "ɑ"
+	IPAPhonemeⱭ1    IPAPhoneme = "ɑ̃"
 	IPAPhonemeⱮ     IPAPhoneme = "ɱ"
+	IPAPhonemeⱯ     IPAPhoneme = "ɐ"
+	IPAPhonemeꞍ     IPAPhoneme = "ɥ"
+	IPAPhonemeꞪ     IPAPhoneme = "ɦ"
 	IPAPhonemeꞫ     IPAPhoneme = "ɜ"
+	IPAPhonemeꞭ     IPAPhoneme = "ɬ"
 	IPAPhonemeꞮ     IPAPhoneme = "ɪ"
+	IPAPhonemeꞲ     IPAPhoneme = "ʝ"
 )
 
 // Valid indicates whether the value is a known member of the IPAPhoneme enum.
@@ -4219,9 +4402,17 @@ func (e IPAPhoneme) Valid() bool {
 		return true
 	case IPAPhonemeP:
 		return true
+	case IPAPhonemePf:
+		return true
+	case IPAPhonemeQ:
+		return true
+	case IPAPhonemeR:
+		return true
 	case IPAPhonemeS:
 		return true
 	case IPAPhonemeT:
+		return true
+	case IPAPhonemeTs:
 		return true
 	case IPAPhonemeTʃ:
 		return true
@@ -4231,23 +4422,45 @@ func (e IPAPhoneme) Valid() bool {
 		return true
 	case IPAPhonemeW:
 		return true
+	case IPAPhonemeX:
+		return true
+	case IPAPhonemeY:
+		return true
 	case IPAPhonemeZ:
 		return true
 	case IPAPhonemeÆ:
 		return true
 	case IPAPhonemeÐ:
 		return true
+	case IPAPhonemeØ:
+		return true
 	case IPAPhonemeŊ:
+		return true
+	case IPAPhonemeŒ:
+		return true
+	case IPAPhonemeŒ1:
 		return true
 	case IPAPhonemeƆ:
 		return true
+	case IPAPhonemeƆ1:
+		return true
 	case IPAPhonemeƆɪ:
+		return true
+	case IPAPhonemeƆʏ:
 		return true
 	case IPAPhonemeƉ:
 		return true
 	case IPAPhonemeƏ:
 		return true
 	case IPAPhonemeƐ:
+		return true
+	case IPAPhonemeƐ1:
+		return true
+	case IPAPhonemeƔ:
+		return true
+	case IPAPhonemeƝ:
+		return true
+	case IPAPhonemeƦ:
 		return true
 	case IPAPhonemeƩ:
 		return true
@@ -4263,19 +4476,43 @@ func (e IPAPhoneme) Valid() bool {
 		return true
 	case IPAPhonemeɚ:
 		return true
+	case IPAPhonemeɟʝ:
+		return true
+	case IPAPhonemeɳ:
+		return true
 	case IPAPhonemeɹ:
 		return true
 	case IPAPhonemeɾ:
+		return true
+	case IPAPhonemeʁ:
+		return true
+	case IPAPhonemeʎ:
+		return true
+	case IPAPhonemeʏ:
+		return true
+	case IPAPhonemeΒ:
 		return true
 	case IPAPhonemeΘ:
 		return true
 	case IPAPhonemeⱭ:
 		return true
+	case IPAPhonemeⱭ1:
+		return true
 	case IPAPhonemeⱮ:
+		return true
+	case IPAPhonemeⱯ:
+		return true
+	case IPAPhonemeꞍ:
+		return true
+	case IPAPhonemeꞪ:
 		return true
 	case IPAPhonemeꞫ:
 		return true
+	case IPAPhonemeꞭ:
+		return true
 	case IPAPhonemeꞮ:
+		return true
+	case IPAPhonemeꞲ:
 		return true
 	default:
 		return false
@@ -4606,6 +4843,24 @@ func (e KeywordFieldDefinitionType) Valid() bool {
 	}
 }
 
+// Defines values for KeywordRetrieverOperator.
+const (
+	KeywordRetrieverOperatorAnd KeywordRetrieverOperator = "and"
+	KeywordRetrieverOperatorOr  KeywordRetrieverOperator = "or"
+)
+
+// Valid indicates whether the value is a known member of the KeywordRetrieverOperator enum.
+func (e KeywordRetrieverOperator) Valid() bool {
+	switch e {
+	case KeywordRetrieverOperatorAnd:
+		return true
+	case KeywordRetrieverOperatorOr:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for KeywordRetrieverType.
 const (
 	KeywordRetrieverTypeKeyword KeywordRetrieverType = "keyword"
@@ -4623,22 +4878,25 @@ func (e KeywordRetrieverType) Valid() bool {
 
 // Defines values for LagoEventType.
 const (
-	LagoEventTypeApiAudioCharacters  LagoEventType = "api_audio_characters"
-	LagoEventTypeApiAudioSeconds     LagoEventType = "api_audio_seconds"
-	LagoEventTypeApiConnectors       LagoEventType = "api_connectors"
-	LagoEventTypeApiLibrariesAudio   LagoEventType = "api_libraries_audio"
-	LagoEventTypeApiLibrariesPages   LagoEventType = "api_libraries_pages"
-	LagoEventTypeApiLibrariesTokens  LagoEventType = "api_libraries_tokens"
-	LagoEventTypeApiPages            LagoEventType = "api_pages"
-	LagoEventTypeApiTokens           LagoEventType = "api_tokens"
-	LagoEventTypeDeploymentTokens    LagoEventType = "deployment_tokens"
-	LagoEventTypeGpuHour             LagoEventType = "gpu_hour"
-	LagoEventTypeReservedInstance    LagoEventType = "reserved_instance"
-	LagoEventTypeVibeAudioCharacters LagoEventType = "vibe_audio_characters"
-	LagoEventTypeVibeAudioSeconds    LagoEventType = "vibe_audio_seconds"
-	LagoEventTypeVibeConnectors      LagoEventType = "vibe_connectors"
-	LagoEventTypeVibePages           LagoEventType = "vibe_pages"
-	LagoEventTypeVibeTokens          LagoEventType = "vibe_tokens"
+	LagoEventTypeApiAudioCharacters          LagoEventType = "api_audio_characters"
+	LagoEventTypeApiAudioSeconds             LagoEventType = "api_audio_seconds"
+	LagoEventTypeApiConnectors               LagoEventType = "api_connectors"
+	LagoEventTypeApiLibrariesAudio           LagoEventType = "api_libraries_audio"
+	LagoEventTypeApiLibrariesPages           LagoEventType = "api_libraries_pages"
+	LagoEventTypeApiLibrariesTokens          LagoEventType = "api_libraries_tokens"
+	LagoEventTypeApiManagedIndexSearches     LagoEventType = "api_managed_index_searches"
+	LagoEventTypeApiManagedIndexStorageBytes LagoEventType = "api_managed_index_storage_bytes"
+	LagoEventTypeApiManagedIndexWrittenBytes LagoEventType = "api_managed_index_written_bytes"
+	LagoEventTypeApiPages                    LagoEventType = "api_pages"
+	LagoEventTypeApiTokens                   LagoEventType = "api_tokens"
+	LagoEventTypeDeploymentTokens            LagoEventType = "deployment_tokens"
+	LagoEventTypeGpuHour                     LagoEventType = "gpu_hour"
+	LagoEventTypeReservedInstance            LagoEventType = "reserved_instance"
+	LagoEventTypeVibeAudioCharacters         LagoEventType = "vibe_audio_characters"
+	LagoEventTypeVibeAudioSeconds            LagoEventType = "vibe_audio_seconds"
+	LagoEventTypeVibeConnectors              LagoEventType = "vibe_connectors"
+	LagoEventTypeVibePages                   LagoEventType = "vibe_pages"
+	LagoEventTypeVibeTokens                  LagoEventType = "vibe_tokens"
 )
 
 // Valid indicates whether the value is a known member of the LagoEventType enum.
@@ -4655,6 +4913,12 @@ func (e LagoEventType) Valid() bool {
 	case LagoEventTypeApiLibrariesPages:
 		return true
 	case LagoEventTypeApiLibrariesTokens:
+		return true
+	case LagoEventTypeApiManagedIndexSearches:
+		return true
+	case LagoEventTypeApiManagedIndexStorageBytes:
+		return true
+	case LagoEventTypeApiManagedIndexWrittenBytes:
 		return true
 	case LagoEventTypeApiPages:
 		return true
@@ -5745,58 +6009,59 @@ func (e OCRTitleBlockType) Valid() bool {
 
 // Defines values for ObservabilityErrorCode.
 const (
-	ObservabilityErrorCodeAGENTMISTRALAPIERROR                    ObservabilityErrorCode = "AGENT_MISTRAL_API_ERROR"
-	ObservabilityErrorCodeAGENTNOTFOUND                           ObservabilityErrorCode = "AGENT_NOT_FOUND"
-	ObservabilityErrorCodeAUTHFORBIDDEN                           ObservabilityErrorCode = "AUTH_FORBIDDEN"
-	ObservabilityErrorCodeAUTHFORBIDDENNOTWORKSPACEADMIN          ObservabilityErrorCode = "AUTH_FORBIDDEN_NOT_WORKSPACE_ADMIN"
-	ObservabilityErrorCodeAUTHFORBIDDENROLENOTFOUND               ObservabilityErrorCode = "AUTH_FORBIDDEN_ROLE_NOT_FOUND"
-	ObservabilityErrorCodeAUTHFORBIDDENWORKSPACENOTFOUND          ObservabilityErrorCode = "AUTH_FORBIDDEN_WORKSPACE_NOT_FOUND"
-	ObservabilityErrorCodeAUTHUNAUTHORIZED                        ObservabilityErrorCode = "AUTH_UNAUTHORIZED"
-	ObservabilityErrorCodeDATABASEERROR                           ObservabilityErrorCode = "DATABASE_ERROR"
-	ObservabilityErrorCodeDATABASEQUERYERROR                      ObservabilityErrorCode = "DATABASE_QUERY_ERROR"
-	ObservabilityErrorCodeDATABASETIMEOUT                         ObservabilityErrorCode = "DATABASE_TIMEOUT"
-	ObservabilityErrorCodeDATABASEUNAVAILABLE                     ObservabilityErrorCode = "DATABASE_UNAVAILABLE"
-	ObservabilityErrorCodeDATASETNOTFOUND                         ObservabilityErrorCode = "DATASET_NOT_FOUND"
-	ObservabilityErrorCodeDATASETRECORDFORMATERROR                ObservabilityErrorCode = "DATASET_RECORD_FORMAT_ERROR"
-	ObservabilityErrorCodeDATASETRECORDNOTFOUND                   ObservabilityErrorCode = "DATASET_RECORD_NOT_FOUND"
-	ObservabilityErrorCodeDATASETTASKNOTFOUND                     ObservabilityErrorCode = "DATASET_TASK_NOT_FOUND"
-	ObservabilityErrorCodeEVALUATIONCURRENTLYRUNNING              ObservabilityErrorCode = "EVALUATION_CURRENTLY_RUNNING"
-	ObservabilityErrorCodeEVALUATIONNAMEALREADYEXISTS             ObservabilityErrorCode = "EVALUATION_NAME_ALREADY_EXISTS"
-	ObservabilityErrorCodeEVALUATIONNOTFOUND                      ObservabilityErrorCode = "EVALUATION_NOT_FOUND"
-	ObservabilityErrorCodeEVALUATIONRECORDNOTFOUND                ObservabilityErrorCode = "EVALUATION_RECORD_NOT_FOUND"
-	ObservabilityErrorCodeEVALUATIONRUNNOTFOUND                   ObservabilityErrorCode = "EVALUATION_RUN_NOT_FOUND"
-	ObservabilityErrorCodeEVALUATIONRUNOUTPUTRECORDCONFLICT       ObservabilityErrorCode = "EVALUATION_RUN_OUTPUT_RECORD_CONFLICT"
-	ObservabilityErrorCodeEVALUATIONRUNTRANSITIONERROR            ObservabilityErrorCode = "EVALUATION_RUN_TRANSITION_ERROR"
-	ObservabilityErrorCodeEVALUATIONRUNTRANSITIONISINVALID        ObservabilityErrorCode = "EVALUATION_RUN_TRANSITION_IS_INVALID"
-	ObservabilityErrorCodeEVALUATIONRUNTRANSITIONISRUNNINGALREADY ObservabilityErrorCode = "EVALUATION_RUN_TRANSITION_IS_RUNNING_ALREADY"
-	ObservabilityErrorCodeFEATURENOTSUPPORTED                     ObservabilityErrorCode = "FEATURE_NOT_SUPPORTED"
-	ObservabilityErrorCodeFIELDSBADREQUEST                        ObservabilityErrorCode = "FIELDS_BAD_REQUEST"
-	ObservabilityErrorCodeJUDGECONVERSATIONFORMATERROR            ObservabilityErrorCode = "JUDGE_CONVERSATION_FORMAT_ERROR"
-	ObservabilityErrorCodeJUDGEDIDNOTCHANGE                       ObservabilityErrorCode = "JUDGE_DID_NOT_CHANGE"
-	ObservabilityErrorCodeJUDGEMISTRALAPIERROR                    ObservabilityErrorCode = "JUDGE_MISTRAL_API_ERROR"
-	ObservabilityErrorCodeJUDGEMISTRALAPITIMEOUT                  ObservabilityErrorCode = "JUDGE_MISTRAL_API_TIMEOUT"
-	ObservabilityErrorCodeJUDGENAMEALREADYEXISTS                  ObservabilityErrorCode = "JUDGE_NAME_ALREADY_EXISTS"
-	ObservabilityErrorCodeJUDGENOTFOUND                           ObservabilityErrorCode = "JUDGE_NOT_FOUND"
-	ObservabilityErrorCodeOPTIMIZATIONNOTFOUND                    ObservabilityErrorCode = "OPTIMIZATION_NOT_FOUND"
-	ObservabilityErrorCodeOPTIMIZATIONTRIALKEYALREADYEXISTS       ObservabilityErrorCode = "OPTIMIZATION_TRIAL_KEY_ALREADY_EXISTS"
-	ObservabilityErrorCodePIPELINEALREADYEXISTS                   ObservabilityErrorCode = "PIPELINE_ALREADY_EXISTS"
-	ObservabilityErrorCodePIPELINECONFIGALREADYEXISTS             ObservabilityErrorCode = "PIPELINE_CONFIG_ALREADY_EXISTS"
-	ObservabilityErrorCodePIPELINECONFIGNOTFOUND                  ObservabilityErrorCode = "PIPELINE_CONFIG_NOT_FOUND"
-	ObservabilityErrorCodePIPELINENOTFOUND                        ObservabilityErrorCode = "PIPELINE_NOT_FOUND"
-	ObservabilityErrorCodePROJECTNAMEALREADYEXISTS                ObservabilityErrorCode = "PROJECT_NAME_ALREADY_EXISTS"
-	ObservabilityErrorCodePROJECTNOTFOUND                         ObservabilityErrorCode = "PROJECT_NOT_FOUND"
-	ObservabilityErrorCodeSCORERALREADYEXISTS                     ObservabilityErrorCode = "SCORER_ALREADY_EXISTS"
-	ObservabilityErrorCodeSCORERCONFIGKINDMISMATCH                ObservabilityErrorCode = "SCORER_CONFIG_KIND_MISMATCH"
-	ObservabilityErrorCodeSCORERNOTFOUND                          ObservabilityErrorCode = "SCORER_NOT_FOUND"
-	ObservabilityErrorCodeSEARCHBADREQUEST                        ObservabilityErrorCode = "SEARCH_BAD_REQUEST"
-	ObservabilityErrorCodeSEARCHFILTERTOSQLCONVERSIONERROR        ObservabilityErrorCode = "SEARCH_FILTER_TO_SQL_CONVERSION_ERROR"
-	ObservabilityErrorCodeSPANNOTFOUND                            ObservabilityErrorCode = "SPAN_NOT_FOUND"
-	ObservabilityErrorCodeTEMPLATEERROR                           ObservabilityErrorCode = "TEMPLATE_ERROR"
-	ObservabilityErrorCodeTEMPLATESYNTAXERROR                     ObservabilityErrorCode = "TEMPLATE_SYNTAX_ERROR"
-	ObservabilityErrorCodeTRACENOTFOUND                           ObservabilityErrorCode = "TRACE_NOT_FOUND"
-	ObservabilityErrorCodeTRACESFILTERQUERYPARSEERROR             ObservabilityErrorCode = "TRACES_FILTER_QUERY_PARSE_ERROR"
-	ObservabilityErrorCodeUNKNOWNERROR                            ObservabilityErrorCode = "UNKNOWN_ERROR"
-	ObservabilityErrorCodeVALIDATIONERROR                         ObservabilityErrorCode = "VALIDATION_ERROR"
+	ObservabilityErrorCodeAGENTMISTRALAPIERROR                      ObservabilityErrorCode = "AGENT_MISTRAL_API_ERROR"
+	ObservabilityErrorCodeAGENTNOTFOUND                             ObservabilityErrorCode = "AGENT_NOT_FOUND"
+	ObservabilityErrorCodeAUTHFORBIDDEN                             ObservabilityErrorCode = "AUTH_FORBIDDEN"
+	ObservabilityErrorCodeAUTHFORBIDDENNOTWORKSPACEADMIN            ObservabilityErrorCode = "AUTH_FORBIDDEN_NOT_WORKSPACE_ADMIN"
+	ObservabilityErrorCodeAUTHFORBIDDENROLENOTFOUND                 ObservabilityErrorCode = "AUTH_FORBIDDEN_ROLE_NOT_FOUND"
+	ObservabilityErrorCodeAUTHFORBIDDENWORKSPACENOTFOUND            ObservabilityErrorCode = "AUTH_FORBIDDEN_WORKSPACE_NOT_FOUND"
+	ObservabilityErrorCodeAUTHUNAUTHORIZED                          ObservabilityErrorCode = "AUTH_UNAUTHORIZED"
+	ObservabilityErrorCodeDATABASEERROR                             ObservabilityErrorCode = "DATABASE_ERROR"
+	ObservabilityErrorCodeDATABASEQUERYERROR                        ObservabilityErrorCode = "DATABASE_QUERY_ERROR"
+	ObservabilityErrorCodeDATABASETIMEOUT                           ObservabilityErrorCode = "DATABASE_TIMEOUT"
+	ObservabilityErrorCodeDATABASEUNAVAILABLE                       ObservabilityErrorCode = "DATABASE_UNAVAILABLE"
+	ObservabilityErrorCodeDATASETNOTFOUND                           ObservabilityErrorCode = "DATASET_NOT_FOUND"
+	ObservabilityErrorCodeDATASETRECORDFORMATERROR                  ObservabilityErrorCode = "DATASET_RECORD_FORMAT_ERROR"
+	ObservabilityErrorCodeDATASETRECORDNOTFOUND                     ObservabilityErrorCode = "DATASET_RECORD_NOT_FOUND"
+	ObservabilityErrorCodeDATASETTASKNOTFOUND                       ObservabilityErrorCode = "DATASET_TASK_NOT_FOUND"
+	ObservabilityErrorCodeEVALUATIONCURRENTLYRUNNING                ObservabilityErrorCode = "EVALUATION_CURRENTLY_RUNNING"
+	ObservabilityErrorCodeEVALUATIONNAMEALREADYEXISTS               ObservabilityErrorCode = "EVALUATION_NAME_ALREADY_EXISTS"
+	ObservabilityErrorCodeEVALUATIONNOTFOUND                        ObservabilityErrorCode = "EVALUATION_NOT_FOUND"
+	ObservabilityErrorCodeEVALUATIONRECORDNOTFOUND                  ObservabilityErrorCode = "EVALUATION_RECORD_NOT_FOUND"
+	ObservabilityErrorCodeEVALUATIONRUNNOTFOUND                     ObservabilityErrorCode = "EVALUATION_RUN_NOT_FOUND"
+	ObservabilityErrorCodeEVALUATIONRUNOUTPUTRECORDCONFLICT         ObservabilityErrorCode = "EVALUATION_RUN_OUTPUT_RECORD_CONFLICT"
+	ObservabilityErrorCodeEVALUATIONRUNTRANSITIONERROR              ObservabilityErrorCode = "EVALUATION_RUN_TRANSITION_ERROR"
+	ObservabilityErrorCodeEVALUATIONRUNTRANSITIONISINVALID          ObservabilityErrorCode = "EVALUATION_RUN_TRANSITION_IS_INVALID"
+	ObservabilityErrorCodeEVALUATIONRUNTRANSITIONISRUNNINGALREADY   ObservabilityErrorCode = "EVALUATION_RUN_TRANSITION_IS_RUNNING_ALREADY"
+	ObservabilityErrorCodeFEATURENOTSUPPORTED                       ObservabilityErrorCode = "FEATURE_NOT_SUPPORTED"
+	ObservabilityErrorCodeFIELDSBADREQUEST                          ObservabilityErrorCode = "FIELDS_BAD_REQUEST"
+	ObservabilityErrorCodeJUDGECONVERSATIONFORMATERROR              ObservabilityErrorCode = "JUDGE_CONVERSATION_FORMAT_ERROR"
+	ObservabilityErrorCodeJUDGEDIDNOTCHANGE                         ObservabilityErrorCode = "JUDGE_DID_NOT_CHANGE"
+	ObservabilityErrorCodeJUDGEMISTRALAPIERROR                      ObservabilityErrorCode = "JUDGE_MISTRAL_API_ERROR"
+	ObservabilityErrorCodeJUDGEMISTRALAPITIMEOUT                    ObservabilityErrorCode = "JUDGE_MISTRAL_API_TIMEOUT"
+	ObservabilityErrorCodeJUDGENAMEALREADYEXISTS                    ObservabilityErrorCode = "JUDGE_NAME_ALREADY_EXISTS"
+	ObservabilityErrorCodeJUDGENOTFOUND                             ObservabilityErrorCode = "JUDGE_NOT_FOUND"
+	ObservabilityErrorCodeOPTIMIZATIONNOTFOUND                      ObservabilityErrorCode = "OPTIMIZATION_NOT_FOUND"
+	ObservabilityErrorCodeOPTIMIZATIONTRIALKEYALREADYEXISTS         ObservabilityErrorCode = "OPTIMIZATION_TRIAL_KEY_ALREADY_EXISTS"
+	ObservabilityErrorCodeOPTIMIZATIONTRIALOBSERVATIONALREADYEXISTS ObservabilityErrorCode = "OPTIMIZATION_TRIAL_OBSERVATION_ALREADY_EXISTS"
+	ObservabilityErrorCodePIPELINEALREADYEXISTS                     ObservabilityErrorCode = "PIPELINE_ALREADY_EXISTS"
+	ObservabilityErrorCodePIPELINECONFIGALREADYEXISTS               ObservabilityErrorCode = "PIPELINE_CONFIG_ALREADY_EXISTS"
+	ObservabilityErrorCodePIPELINECONFIGNOTFOUND                    ObservabilityErrorCode = "PIPELINE_CONFIG_NOT_FOUND"
+	ObservabilityErrorCodePIPELINENOTFOUND                          ObservabilityErrorCode = "PIPELINE_NOT_FOUND"
+	ObservabilityErrorCodePROJECTNAMEALREADYEXISTS                  ObservabilityErrorCode = "PROJECT_NAME_ALREADY_EXISTS"
+	ObservabilityErrorCodePROJECTNOTFOUND                           ObservabilityErrorCode = "PROJECT_NOT_FOUND"
+	ObservabilityErrorCodeSCORERALREADYEXISTS                       ObservabilityErrorCode = "SCORER_ALREADY_EXISTS"
+	ObservabilityErrorCodeSCORERCONFIGKINDMISMATCH                  ObservabilityErrorCode = "SCORER_CONFIG_KIND_MISMATCH"
+	ObservabilityErrorCodeSCORERNOTFOUND                            ObservabilityErrorCode = "SCORER_NOT_FOUND"
+	ObservabilityErrorCodeSEARCHBADREQUEST                          ObservabilityErrorCode = "SEARCH_BAD_REQUEST"
+	ObservabilityErrorCodeSEARCHFILTERTOSQLCONVERSIONERROR          ObservabilityErrorCode = "SEARCH_FILTER_TO_SQL_CONVERSION_ERROR"
+	ObservabilityErrorCodeSPANNOTFOUND                              ObservabilityErrorCode = "SPAN_NOT_FOUND"
+	ObservabilityErrorCodeTEMPLATEERROR                             ObservabilityErrorCode = "TEMPLATE_ERROR"
+	ObservabilityErrorCodeTEMPLATESYNTAXERROR                       ObservabilityErrorCode = "TEMPLATE_SYNTAX_ERROR"
+	ObservabilityErrorCodeTRACENOTFOUND                             ObservabilityErrorCode = "TRACE_NOT_FOUND"
+	ObservabilityErrorCodeTRACESFILTERQUERYPARSEERROR               ObservabilityErrorCode = "TRACES_FILTER_QUERY_PARSE_ERROR"
+	ObservabilityErrorCodeUNKNOWNERROR                              ObservabilityErrorCode = "UNKNOWN_ERROR"
+	ObservabilityErrorCodeVALIDATIONERROR                           ObservabilityErrorCode = "VALIDATION_ERROR"
 )
 
 // Valid indicates whether the value is a known member of the ObservabilityErrorCode enum.
@@ -5870,6 +6135,8 @@ func (e ObservabilityErrorCode) Valid() bool {
 		return true
 	case ObservabilityErrorCodeOPTIMIZATIONTRIALKEYALREADYEXISTS:
 		return true
+	case ObservabilityErrorCodeOPTIMIZATIONTRIALOBSERVATIONALREADYEXISTS:
+		return true
 	case ObservabilityErrorCodePIPELINEALREADYEXISTS:
 		return true
 	case ObservabilityErrorCodePIPELINECONFIGALREADYEXISTS:
@@ -5905,6 +6172,36 @@ func (e ObservabilityErrorCode) Valid() bool {
 	case ObservabilityErrorCodeUNKNOWNERROR:
 		return true
 	case ObservabilityErrorCodeVALIDATIONERROR:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for OpenApiFileSourceType.
+const (
+	OpenApiFileSourceTypeFile OpenApiFileSourceType = "file"
+)
+
+// Valid indicates whether the value is a known member of the OpenApiFileSourceType enum.
+func (e OpenApiFileSourceType) Valid() bool {
+	switch e {
+	case OpenApiFileSourceTypeFile:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for OpenApiUrlSourceType.
+const (
+	OpenApiUrlSourceTypeUrl OpenApiUrlSourceType = "url"
+)
+
+// Valid indicates whether the value is a known member of the OpenApiUrlSourceType enum.
+func (e OpenApiUrlSourceType) Valid() bool {
+	switch e {
+	case OpenApiUrlSourceTypeUrl:
 		return true
 	default:
 		return false
@@ -6070,6 +6367,105 @@ func (e OrganizationMemberCreateRoleNames) Valid() bool {
 	}
 }
 
+// Defines values for OtelEnumFieldDefinitionSupportedOperators.
+const (
+	OtelEnumFieldDefinitionSupportedOperatorsBetween     OtelEnumFieldDefinitionSupportedOperators = "between"
+	OtelEnumFieldDefinitionSupportedOperatorsContains    OtelEnumFieldDefinitionSupportedOperators = "contains"
+	OtelEnumFieldDefinitionSupportedOperatorsEq          OtelEnumFieldDefinitionSupportedOperators = "eq"
+	OtelEnumFieldDefinitionSupportedOperatorsExists      OtelEnumFieldDefinitionSupportedOperators = "exists"
+	OtelEnumFieldDefinitionSupportedOperatorsGt          OtelEnumFieldDefinitionSupportedOperators = "gt"
+	OtelEnumFieldDefinitionSupportedOperatorsGte         OtelEnumFieldDefinitionSupportedOperators = "gte"
+	OtelEnumFieldDefinitionSupportedOperatorsHas         OtelEnumFieldDefinitionSupportedOperators = "has"
+	OtelEnumFieldDefinitionSupportedOperatorsHasAll      OtelEnumFieldDefinitionSupportedOperators = "hasAll"
+	OtelEnumFieldDefinitionSupportedOperatorsHasAny      OtelEnumFieldDefinitionSupportedOperators = "hasAny"
+	OtelEnumFieldDefinitionSupportedOperatorsHasToken    OtelEnumFieldDefinitionSupportedOperators = "hasToken"
+	OtelEnumFieldDefinitionSupportedOperatorsIlike       OtelEnumFieldDefinitionSupportedOperators = "ilike"
+	OtelEnumFieldDefinitionSupportedOperatorsIn          OtelEnumFieldDefinitionSupportedOperators = "in"
+	OtelEnumFieldDefinitionSupportedOperatorsLike        OtelEnumFieldDefinitionSupportedOperators = "like"
+	OtelEnumFieldDefinitionSupportedOperatorsLt          OtelEnumFieldDefinitionSupportedOperators = "lt"
+	OtelEnumFieldDefinitionSupportedOperatorsLte         OtelEnumFieldDefinitionSupportedOperators = "lte"
+	OtelEnumFieldDefinitionSupportedOperatorsNeq         OtelEnumFieldDefinitionSupportedOperators = "neq"
+	OtelEnumFieldDefinitionSupportedOperatorsNotBetween  OtelEnumFieldDefinitionSupportedOperators = "not_between"
+	OtelEnumFieldDefinitionSupportedOperatorsNotContains OtelEnumFieldDefinitionSupportedOperators = "not_contains"
+	OtelEnumFieldDefinitionSupportedOperatorsNotExists   OtelEnumFieldDefinitionSupportedOperators = "not_exists"
+	OtelEnumFieldDefinitionSupportedOperatorsNotIlike    OtelEnumFieldDefinitionSupportedOperators = "not_ilike"
+	OtelEnumFieldDefinitionSupportedOperatorsNotIn       OtelEnumFieldDefinitionSupportedOperators = "not_in"
+	OtelEnumFieldDefinitionSupportedOperatorsNotLike     OtelEnumFieldDefinitionSupportedOperators = "not_like"
+	OtelEnumFieldDefinitionSupportedOperatorsNotRegexp   OtelEnumFieldDefinitionSupportedOperators = "not_regexp"
+	OtelEnumFieldDefinitionSupportedOperatorsRegexp      OtelEnumFieldDefinitionSupportedOperators = "regexp"
+)
+
+// Valid indicates whether the value is a known member of the OtelEnumFieldDefinitionSupportedOperators enum.
+func (e OtelEnumFieldDefinitionSupportedOperators) Valid() bool {
+	switch e {
+	case OtelEnumFieldDefinitionSupportedOperatorsBetween:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsContains:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsEq:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsExists:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsGt:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsGte:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsHas:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsHasAll:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsHasAny:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsHasToken:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsIlike:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsIn:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsLike:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsLt:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsLte:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsNeq:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsNotBetween:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsNotContains:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsNotExists:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsNotIlike:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsNotIn:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsNotLike:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsNotRegexp:
+		return true
+	case OtelEnumFieldDefinitionSupportedOperatorsRegexp:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for OtelEnumFieldDefinitionType.
+const (
+	OtelEnumFieldDefinitionTypeENUM OtelEnumFieldDefinitionType = "ENUM"
+)
+
+// Valid indicates whether the value is a known member of the OtelEnumFieldDefinitionType enum.
+func (e OtelEnumFieldDefinitionType) Valid() bool {
+	switch e {
+	case OtelEnumFieldDefinitionTypeENUM:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for OtelFieldDefinitionSupportedOperators.
 const (
 	OtelFieldDefinitionSupportedOperatorsBetween     OtelFieldDefinitionSupportedOperators = "between"
@@ -6190,6 +6586,105 @@ func (e OtelFieldDefinitionType) Valid() bool {
 	}
 }
 
+// Defines values for OtelFloatFieldDefinitionSupportedOperators.
+const (
+	OtelFloatFieldDefinitionSupportedOperatorsBetween     OtelFloatFieldDefinitionSupportedOperators = "between"
+	OtelFloatFieldDefinitionSupportedOperatorsContains    OtelFloatFieldDefinitionSupportedOperators = "contains"
+	OtelFloatFieldDefinitionSupportedOperatorsEq          OtelFloatFieldDefinitionSupportedOperators = "eq"
+	OtelFloatFieldDefinitionSupportedOperatorsExists      OtelFloatFieldDefinitionSupportedOperators = "exists"
+	OtelFloatFieldDefinitionSupportedOperatorsGt          OtelFloatFieldDefinitionSupportedOperators = "gt"
+	OtelFloatFieldDefinitionSupportedOperatorsGte         OtelFloatFieldDefinitionSupportedOperators = "gte"
+	OtelFloatFieldDefinitionSupportedOperatorsHas         OtelFloatFieldDefinitionSupportedOperators = "has"
+	OtelFloatFieldDefinitionSupportedOperatorsHasAll      OtelFloatFieldDefinitionSupportedOperators = "hasAll"
+	OtelFloatFieldDefinitionSupportedOperatorsHasAny      OtelFloatFieldDefinitionSupportedOperators = "hasAny"
+	OtelFloatFieldDefinitionSupportedOperatorsHasToken    OtelFloatFieldDefinitionSupportedOperators = "hasToken"
+	OtelFloatFieldDefinitionSupportedOperatorsIlike       OtelFloatFieldDefinitionSupportedOperators = "ilike"
+	OtelFloatFieldDefinitionSupportedOperatorsIn          OtelFloatFieldDefinitionSupportedOperators = "in"
+	OtelFloatFieldDefinitionSupportedOperatorsLike        OtelFloatFieldDefinitionSupportedOperators = "like"
+	OtelFloatFieldDefinitionSupportedOperatorsLt          OtelFloatFieldDefinitionSupportedOperators = "lt"
+	OtelFloatFieldDefinitionSupportedOperatorsLte         OtelFloatFieldDefinitionSupportedOperators = "lte"
+	OtelFloatFieldDefinitionSupportedOperatorsNeq         OtelFloatFieldDefinitionSupportedOperators = "neq"
+	OtelFloatFieldDefinitionSupportedOperatorsNotBetween  OtelFloatFieldDefinitionSupportedOperators = "not_between"
+	OtelFloatFieldDefinitionSupportedOperatorsNotContains OtelFloatFieldDefinitionSupportedOperators = "not_contains"
+	OtelFloatFieldDefinitionSupportedOperatorsNotExists   OtelFloatFieldDefinitionSupportedOperators = "not_exists"
+	OtelFloatFieldDefinitionSupportedOperatorsNotIlike    OtelFloatFieldDefinitionSupportedOperators = "not_ilike"
+	OtelFloatFieldDefinitionSupportedOperatorsNotIn       OtelFloatFieldDefinitionSupportedOperators = "not_in"
+	OtelFloatFieldDefinitionSupportedOperatorsNotLike     OtelFloatFieldDefinitionSupportedOperators = "not_like"
+	OtelFloatFieldDefinitionSupportedOperatorsNotRegexp   OtelFloatFieldDefinitionSupportedOperators = "not_regexp"
+	OtelFloatFieldDefinitionSupportedOperatorsRegexp      OtelFloatFieldDefinitionSupportedOperators = "regexp"
+)
+
+// Valid indicates whether the value is a known member of the OtelFloatFieldDefinitionSupportedOperators enum.
+func (e OtelFloatFieldDefinitionSupportedOperators) Valid() bool {
+	switch e {
+	case OtelFloatFieldDefinitionSupportedOperatorsBetween:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsContains:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsEq:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsExists:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsGt:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsGte:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsHas:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsHasAll:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsHasAny:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsHasToken:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsIlike:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsIn:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsLike:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsLt:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsLte:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsNeq:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsNotBetween:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsNotContains:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsNotExists:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsNotIlike:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsNotIn:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsNotLike:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsNotRegexp:
+		return true
+	case OtelFloatFieldDefinitionSupportedOperatorsRegexp:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for OtelFloatFieldDefinitionType.
+const (
+	OtelFloatFieldDefinitionTypeFLOAT OtelFloatFieldDefinitionType = "FLOAT"
+)
+
+// Valid indicates whether the value is a known member of the OtelFloatFieldDefinitionType enum.
+func (e OtelFloatFieldDefinitionType) Valid() bool {
+	switch e {
+	case OtelFloatFieldDefinitionTypeFLOAT:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PercentileStatisticSpecKind.
 const (
 	PercentileStatisticSpecKindPercentile PercentileStatisticSpecKind = "percentile"
@@ -6199,6 +6694,21 @@ const (
 func (e PercentileStatisticSpecKind) Valid() bool {
 	switch e {
 	case PercentileStatisticSpecKindPercentile:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PhoneDestinationType.
+const (
+	PhoneDestinationTypePhone PhoneDestinationType = "phone"
+)
+
+// Valid indicates whether the value is a known member of the PhoneDestinationType enum.
+func (e PhoneDestinationType) Valid() bool {
+	switch e {
+	case PhoneDestinationTypePhone:
 		return true
 	default:
 		return false
@@ -6416,6 +6926,7 @@ func (e RangeType) Valid() bool {
 const (
 	ReasoningEffortHigh    ReasoningEffort = "high"
 	ReasoningEffortLow     ReasoningEffort = "low"
+	ReasoningEffortMax     ReasoningEffort = "max"
 	ReasoningEffortMedium  ReasoningEffort = "medium"
 	ReasoningEffortMinimal ReasoningEffort = "minimal"
 	ReasoningEffortNone    ReasoningEffort = "none"
@@ -6428,6 +6939,8 @@ func (e ReasoningEffort) Valid() bool {
 	case ReasoningEffortHigh:
 		return true
 	case ReasoningEffortLow:
+		return true
+	case ReasoningEffortMax:
 		return true
 	case ReasoningEffortMedium:
 		return true
@@ -8017,30 +8530,6 @@ func (e RestartConversationRequestHandoffExecution) Valid() bool {
 	}
 }
 
-// Defines values for Roles.
-const (
-	RolesAssistant Roles = "assistant"
-	RolesSystem    Roles = "system"
-	RolesTool      Roles = "tool"
-	RolesUser      Roles = "user"
-)
-
-// Valid indicates whether the value is a known member of the Roles enum.
-func (e Roles) Valid() bool {
-	switch e {
-	case RolesAssistant:
-		return true
-	case RolesSystem:
-		return true
-	case RolesTool:
-		return true
-	case RolesUser:
-		return true
-	default:
-		return false
-	}
-}
-
 // Defines values for RotateUnavailableReason.
 const (
 	RotateUnavailableReasonKeyExpired       RotateUnavailableReason = "key_expired"
@@ -8437,6 +8926,21 @@ func (e SimpleNumericStatisticSpecKind) Valid() bool {
 	}
 }
 
+// Defines values for SipDestinationType.
+const (
+	SipDestinationTypeSip SipDestinationType = "sip"
+)
+
+// Valid indicates whether the value is a known member of the SipDestinationType enum.
+func (e SipDestinationType) Valid() bool {
+	switch e {
+	case SipDestinationTypeSip:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for SortDirection.
 const (
 	SortDirectionAsc  SortDirection = "asc"
@@ -8548,6 +9052,21 @@ func (e SpanDatasetSourceNamespace) Valid() bool {
 	}
 }
 
+// Defines values for SpeechAssistantTurnRole.
+const (
+	SpeechAssistantTurnRoleAssistant SpeechAssistantTurnRole = "assistant"
+)
+
+// Valid indicates whether the value is a known member of the SpeechAssistantTurnRole enum.
+func (e SpeechAssistantTurnRole) Valid() bool {
+	switch e {
+	case SpeechAssistantTurnRoleAssistant:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for SpeechOutputFormat.
 const (
 	SpeechOutputFormatFlac SpeechOutputFormat = "flac"
@@ -8623,6 +9142,21 @@ func (e SpeechStreamEventTypes) Valid() bool {
 	}
 }
 
+// Defines values for SpeechUserTurnRole.
+const (
+	SpeechUserTurnRoleUser SpeechUserTurnRole = "user"
+)
+
+// Valid indicates whether the value is a known member of the SpeechUserTurnRole enum.
+func (e SpeechUserTurnRole) Valid() bool {
+	switch e {
+	case SpeechUserTurnRoleUser:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for StaticOrganizationRoles.
 const (
 	StaticOrganizationRolesC955f4e1947743f083496fbc629fccc9  StaticOrganizationRoles = "c955f4e1-9477-43f0-8349-6fbc629fccc9"
@@ -8644,6 +9178,21 @@ func (e StaticOrganizationRoles) Valid() bool {
 	}
 }
 
+// Defines values for StaticToolFillerType.
+const (
+	StaticToolFillerTypeStatic StaticToolFillerType = "static"
+)
+
+// Valid indicates whether the value is a known member of the StaticToolFillerType enum.
+func (e StaticToolFillerType) Valid() bool {
+	switch e {
+	case StaticToolFillerTypeStatic:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for StaticWorkspaceRoles.
 const (
 	StaticWorkspaceRolesB23cd6e091cd4a8a9869B30366bf3966  StaticWorkspaceRoles = "b23cd6e0-91cd-4a8a-9869-b30366bf3966"
@@ -8656,6 +9205,7 @@ const (
 	StaticWorkspaceRolesN348fc8daF6da4464Ad3eAf7bc137e221 StaticWorkspaceRoles = "348fc8da-f6da-4464-ad3e-af7bc137e221"
 	StaticWorkspaceRolesN375cd0db3bbe4b7980f3954ccf04f3d1 StaticWorkspaceRoles = "375cd0db-3bbe-4b79-80f3-954ccf04f3d1"
 	StaticWorkspaceRolesN48436751Ee5644bd8a2d712233977821 StaticWorkspaceRoles = "48436751-ee56-44bd-8a2d-712233977821"
+	StaticWorkspaceRolesN50023ca63db141bc8c10F0ae6f460fba StaticWorkspaceRoles = "50023ca6-3db1-41bc-8c10-f0ae6f460fba"
 	StaticWorkspaceRolesN578584f143194c88994838a5184483b6 StaticWorkspaceRoles = "578584f1-4319-4c88-9948-38a5184483b6"
 	StaticWorkspaceRolesN731eb2beA74f4070B79735bf7009e553 StaticWorkspaceRoles = "731eb2be-a74f-4070-b797-35bf7009e553"
 	StaticWorkspaceRolesN7e69e493Caf64671Af6084951754d9fc StaticWorkspaceRoles = "7e69e493-caf6-4671-af60-84951754d9fc"
@@ -8684,6 +9234,8 @@ func (e StaticWorkspaceRoles) Valid() bool {
 	case StaticWorkspaceRolesN375cd0db3bbe4b7980f3954ccf04f3d1:
 		return true
 	case StaticWorkspaceRolesN48436751Ee5644bd8a2d712233977821:
+		return true
+	case StaticWorkspaceRolesN50023ca63db141bc8c10F0ae6f460fba:
 		return true
 	case StaticWorkspaceRolesN578584f143194c88994838a5184483b6:
 		return true
@@ -8731,6 +9283,27 @@ func (e SubscriptionStatus) Valid() bool {
 	case SubscriptionStatusPC:
 		return true
 	case SubscriptionStatusS:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for SummaryStatus.
+const (
+	SummaryStatusGenerated          SummaryStatus = "generated"
+	SummaryStatusGeneratedConfirmed SummaryStatus = "generated_confirmed"
+	SummaryStatusHandwritten        SummaryStatus = "handwritten"
+)
+
+// Valid indicates whether the value is a known member of the SummaryStatus enum.
+func (e SummaryStatus) Valid() bool {
+	switch e {
+	case SummaryStatusGenerated:
+		return true
+	case SummaryStatusGeneratedConfirmed:
+		return true
+	case SummaryStatusHandwritten:
 		return true
 	default:
 		return false
@@ -8792,6 +9365,8 @@ const (
 	TargetTypeAUTORECHARGE          TargetType = "AUTO_RECHARGE"
 	TargetTypeBATCHJOB              TargetType = "BATCH_JOB"
 	TargetTypeBILLINGINFO           TargetType = "BILLING_INFO"
+	TargetTypeCAPABILITY            TargetType = "CAPABILITY"
+	TargetTypeCAPABILITYREGISTRY    TargetType = "CAPABILITY_REGISTRY"
 	TargetTypeCONNECTORSDEBUGGER    TargetType = "CONNECTORS_DEBUGGER"
 	TargetTypeCONNECTORSGATEWAY     TargetType = "CONNECTORS_GATEWAY"
 	TargetTypeCRAWLERCONFIG         TargetType = "CRAWLER_CONFIG"
@@ -8857,6 +9432,10 @@ func (e TargetType) Valid() bool {
 	case TargetTypeBATCHJOB:
 		return true
 	case TargetTypeBILLINGINFO:
+		return true
+	case TargetTypeCAPABILITY:
+		return true
+	case TargetTypeCAPABILITYREGISTRY:
 		return true
 	case TargetTypeCONNECTORSDEBUGGER:
 		return true
@@ -9433,6 +10012,108 @@ func (e TranscriptionStreamTextDeltaType) Valid() bool {
 	}
 }
 
+// Defines values for TransferCallToolType.
+const (
+	TransferCallToolTypeTransferCall TransferCallToolType = "transfer_call"
+)
+
+// Valid indicates whether the value is a known member of the TransferCallToolType enum.
+func (e TransferCallToolType) Valid() bool {
+	switch e {
+	case TransferCallToolTypeTransferCall:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for TriggerActionType.
+const (
+	TriggerActionTypeBuildApp          TriggerActionType = "build_app"
+	TriggerActionTypeDeployApp         TriggerActionType = "deploy_app"
+	TriggerActionTypeStartAgentSession TriggerActionType = "start_agent_session"
+	TriggerActionTypeStartWorkflow     TriggerActionType = "start_workflow"
+)
+
+// Valid indicates whether the value is a known member of the TriggerActionType enum.
+func (e TriggerActionType) Valid() bool {
+	switch e {
+	case TriggerActionTypeBuildApp:
+		return true
+	case TriggerActionTypeDeployApp:
+		return true
+	case TriggerActionTypeStartAgentSession:
+		return true
+	case TriggerActionTypeStartWorkflow:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for TriggerHandler.
+const (
+	TriggerHandlerAgents    TriggerHandler = "agents"
+	TriggerHandlerSpaces    TriggerHandler = "spaces"
+	TriggerHandlerWorkflows TriggerHandler = "workflows"
+)
+
+// Valid indicates whether the value is a known member of the TriggerHandler enum.
+func (e TriggerHandler) Valid() bool {
+	switch e {
+	case TriggerHandlerAgents:
+		return true
+	case TriggerHandlerSpaces:
+		return true
+	case TriggerHandlerWorkflows:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for TriggerStatusValue.
+const (
+	TriggerStatusValueSUBMISSIONFAILED TriggerStatusValue = "SUBMISSION_FAILED"
+	TriggerStatusValueSUBMITTED        TriggerStatusValue = "SUBMITTED"
+	TriggerStatusValueTRIGGERED        TriggerStatusValue = "TRIGGERED"
+	TriggerStatusValueTRIGGERFAILED    TriggerStatusValue = "TRIGGER_FAILED"
+)
+
+// Valid indicates whether the value is a known member of the TriggerStatusValue enum.
+func (e TriggerStatusValue) Valid() bool {
+	switch e {
+	case TriggerStatusValueSUBMISSIONFAILED:
+		return true
+	case TriggerStatusValueSUBMITTED:
+		return true
+	case TriggerStatusValueTRIGGERED:
+		return true
+	case TriggerStatusValueTRIGGERFAILED:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for TriggersOwnerType.
+const (
+	TriggersOwnerTypeUser      TriggersOwnerType = "user"
+	TriggersOwnerTypeWorkspace TriggersOwnerType = "workspace"
+)
+
+// Valid indicates whether the value is a known member of the TriggersOwnerType enum.
+func (e TriggersOwnerType) Valid() bool {
+	switch e {
+	case TriggersOwnerTypeUser:
+		return true
+	case TriggersOwnerTypeWorkspace:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for UnarchiveModelResponseObject.
 const (
 	UnarchiveModelResponseObjectModel UnarchiveModelResponseObject = "model"
@@ -9502,6 +10183,24 @@ const (
 func (e UpdateMetricsRequestDeploymentMetricsOnlineStatus) Valid() bool {
 	switch e {
 	case UpdateMetricsRequestDeploymentMetricsOnlineStatusOnline:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for UpdateSummaryRequestSummaryStatus.
+const (
+	UpdateSummaryRequestSummaryStatusGeneratedConfirmed UpdateSummaryRequestSummaryStatus = "generated_confirmed"
+	UpdateSummaryRequestSummaryStatusHandwritten        UpdateSummaryRequestSummaryStatus = "handwritten"
+)
+
+// Valid indicates whether the value is a known member of the UpdateSummaryRequestSummaryStatus enum.
+func (e UpdateSummaryRequestSummaryStatus) Valid() bool {
+	switch e {
+	case UpdateSummaryRequestSummaryStatusGeneratedConfirmed:
+		return true
+	case UpdateSummaryRequestSummaryStatusHandwritten:
 		return true
 	default:
 		return false
@@ -9714,26 +10413,30 @@ func (e UsageQueryParamsOUTTimeBucket) Valid() bool {
 
 // Defines values for UsageType.
 const (
-	UsageTypeAudioAgents         UsageType = "audio_agents"
-	UsageTypeAudioCharacters     UsageType = "audio_characters"
-	UsageTypeAudioSeconds        UsageType = "audio_seconds"
-	UsageTypeChat                UsageType = "chat"
-	UsageTypeCodestral           UsageType = "codestral"
-	UsageTypeConnectors          UsageType = "connectors"
-	UsageTypeDocumentLibrary     UsageType = "document_library"
-	UsageTypeDocumentLibraryApi  UsageType = "document_library_api"
-	UsageTypeLibrariesAudio      UsageType = "libraries_audio"
-	UsageTypeLibrariesPages      UsageType = "libraries_pages"
-	UsageTypeLibrariesTokens     UsageType = "libraries_tokens"
-	UsageTypeOcr                 UsageType = "ocr"
-	UsageTypeRlhf                UsageType = "rlhf"
-	UsageTypeUsage               UsageType = "usage"
-	UsageTypeVibe                UsageType = "vibe"
-	UsageTypeVibeAudioCharacters UsageType = "vibe_audio_characters"
-	UsageTypeVibeAudioSeconds    UsageType = "vibe_audio_seconds"
-	UsageTypeVibeConnectors      UsageType = "vibe_connectors"
-	UsageTypeVibeOcr             UsageType = "vibe_ocr"
-	UsageTypeWorkflowExecutions  UsageType = "workflow_executions"
+	UsageTypeAudioAgents              UsageType = "audio_agents"
+	UsageTypeAudioCharacters          UsageType = "audio_characters"
+	UsageTypeAudioSeconds             UsageType = "audio_seconds"
+	UsageTypeChat                     UsageType = "chat"
+	UsageTypeCodestral                UsageType = "codestral"
+	UsageTypeConnectors               UsageType = "connectors"
+	UsageTypeDocumentLibrary          UsageType = "document_library"
+	UsageTypeDocumentLibraryApi       UsageType = "document_library_api"
+	UsageTypeLibrariesAudio           UsageType = "libraries_audio"
+	UsageTypeLibrariesPages           UsageType = "libraries_pages"
+	UsageTypeLibrariesTokens          UsageType = "libraries_tokens"
+	UsageTypeManagedIndexSearches     UsageType = "managed_index_searches"
+	UsageTypeManagedIndexStorageBytes UsageType = "managed_index_storage_bytes"
+	UsageTypeManagedIndexWrittenBytes UsageType = "managed_index_written_bytes"
+	UsageTypeOcr                      UsageType = "ocr"
+	UsageTypeRlhf                     UsageType = "rlhf"
+	UsageTypeSkillActivations         UsageType = "skill_activations"
+	UsageTypeUsage                    UsageType = "usage"
+	UsageTypeVibe                     UsageType = "vibe"
+	UsageTypeVibeAudioCharacters      UsageType = "vibe_audio_characters"
+	UsageTypeVibeAudioSeconds         UsageType = "vibe_audio_seconds"
+	UsageTypeVibeConnectors           UsageType = "vibe_connectors"
+	UsageTypeVibeOcr                  UsageType = "vibe_ocr"
+	UsageTypeWorkflowExecutions       UsageType = "workflow_executions"
 )
 
 // Valid indicates whether the value is a known member of the UsageType enum.
@@ -9761,9 +10464,17 @@ func (e UsageType) Valid() bool {
 		return true
 	case UsageTypeLibrariesTokens:
 		return true
+	case UsageTypeManagedIndexSearches:
+		return true
+	case UsageTypeManagedIndexStorageBytes:
+		return true
+	case UsageTypeManagedIndexWrittenBytes:
+		return true
 	case UsageTypeOcr:
 		return true
 	case UsageTypeRlhf:
+		return true
+	case UsageTypeSkillActivations:
 		return true
 	case UsageTypeUsage:
 		return true
@@ -9832,6 +10543,81 @@ func (e VectorDType) Valid() bool {
 	case VectorDTypeFloat16:
 		return true
 	case VectorDTypeFloat32:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for VoiceAgentCustomConnectorType.
+const (
+	VoiceAgentCustomConnectorTypeConnector VoiceAgentCustomConnectorType = "connector"
+)
+
+// Valid indicates whether the value is a known member of the VoiceAgentCustomConnectorType enum.
+func (e VoiceAgentCustomConnectorType) Valid() bool {
+	switch e {
+	case VoiceAgentCustomConnectorTypeConnector:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for VoiceAgentDocumentLibraryToolType.
+const (
+	VoiceAgentDocumentLibraryToolTypeDocumentLibrary VoiceAgentDocumentLibraryToolType = "document_library"
+)
+
+// Valid indicates whether the value is a known member of the VoiceAgentDocumentLibraryToolType enum.
+func (e VoiceAgentDocumentLibraryToolType) Valid() bool {
+	switch e {
+	case VoiceAgentDocumentLibraryToolTypeDocumentLibrary:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for VoiceAgentFunctionToolType.
+const (
+	VoiceAgentFunctionToolTypeFunction VoiceAgentFunctionToolType = "function"
+)
+
+// Valid indicates whether the value is a known member of the VoiceAgentFunctionToolType enum.
+func (e VoiceAgentFunctionToolType) Valid() bool {
+	switch e {
+	case VoiceAgentFunctionToolTypeFunction:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for VoiceAgentFunctionToolRequestType.
+const (
+	VoiceAgentFunctionToolRequestTypeFunction VoiceAgentFunctionToolRequestType = "function"
+)
+
+// Valid indicates whether the value is a known member of the VoiceAgentFunctionToolRequestType enum.
+func (e VoiceAgentFunctionToolRequestType) Valid() bool {
+	switch e {
+	case VoiceAgentFunctionToolRequestTypeFunction:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for VoiceAgentWebSearchToolType.
+const (
+	VoiceAgentWebSearchToolTypeWebSearch VoiceAgentWebSearchToolType = "web_search"
+)
+
+// Valid indicates whether the value is a known member of the VoiceAgentWebSearchToolType enum.
+func (e VoiceAgentWebSearchToolType) Valid() bool {
+	switch e {
+	case VoiceAgentWebSearchToolTypeWebSearch:
 		return true
 	default:
 		return false
@@ -9919,6 +10705,78 @@ const (
 func (e WebSearchToolType) Valid() bool {
 	switch e {
 	case WebSearchToolTypeWebSearch:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for WebhookProvider.
+const (
+	WebhookProviderAshby     WebhookProvider = "ashby"
+	WebhookProviderCustom    WebhookProvider = "custom"
+	WebhookProviderGithub    WebhookProvider = "github"
+	WebhookProviderLinear    WebhookProvider = "linear"
+	WebhookProviderLucca     WebhookProvider = "lucca"
+	WebhookProviderMicrosoft WebhookProvider = "microsoft"
+	WebhookProviderNotion    WebhookProvider = "notion"
+	WebhookProviderSlack     WebhookProvider = "slack"
+)
+
+// Valid indicates whether the value is a known member of the WebhookProvider enum.
+func (e WebhookProvider) Valid() bool {
+	switch e {
+	case WebhookProviderAshby:
+		return true
+	case WebhookProviderCustom:
+		return true
+	case WebhookProviderGithub:
+		return true
+	case WebhookProviderLinear:
+		return true
+	case WebhookProviderLucca:
+		return true
+	case WebhookProviderMicrosoft:
+		return true
+	case WebhookProviderNotion:
+		return true
+	case WebhookProviderSlack:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for WebhookSignatureEncoding.
+const (
+	WebhookSignatureEncodingBase64 WebhookSignatureEncoding = "base64"
+	WebhookSignatureEncodingHex    WebhookSignatureEncoding = "hex"
+)
+
+// Valid indicates whether the value is a known member of the WebhookSignatureEncoding enum.
+func (e WebhookSignatureEncoding) Valid() bool {
+	switch e {
+	case WebhookSignatureEncodingBase64:
+		return true
+	case WebhookSignatureEncodingHex:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for WebhookSignatureHashAlgorithm.
+const (
+	WebhookSignatureHashAlgorithmSha1   WebhookSignatureHashAlgorithm = "sha1"
+	WebhookSignatureHashAlgorithmSha256 WebhookSignatureHashAlgorithm = "sha256"
+)
+
+// Valid indicates whether the value is a known member of the WebhookSignatureHashAlgorithm enum.
+func (e WebhookSignatureHashAlgorithm) Valid() bool {
+	switch e {
+	case WebhookSignatureHashAlgorithmSha1:
+		return true
+	case WebhookSignatureHashAlgorithmSha256:
 		return true
 	default:
 		return false
@@ -10378,6 +11236,123 @@ func (e ConnectorDeactivateForConsumerV1ParamsConsumerScope) Valid() bool {
 	}
 }
 
+// Defines values for GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage.
+const (
+	GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageAr   GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage = "ar"
+	GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageDe   GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage = "de"
+	GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageEn   GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage = "en"
+	GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageEs   GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage = "es"
+	GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageFr   GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage = "fr"
+	GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageIt   GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage = "it"
+	GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageNl   GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage = "nl"
+	GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguagePl   GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage = "pl"
+	GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguagePtBr GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage = "pt_br"
+)
+
+// Valid indicates whether the value is a known member of the GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage enum.
+func (e GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage) Valid() bool {
+	switch e {
+	case GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageAr:
+		return true
+	case GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageDe:
+		return true
+	case GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageEn:
+		return true
+	case GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageEs:
+		return true
+	case GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageFr:
+		return true
+	case GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageIt:
+		return true
+	case GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguageNl:
+		return true
+	case GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguagePl:
+		return true
+	case GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguagePtBr:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage.
+const (
+	GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageAr   GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage = "ar"
+	GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageDe   GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage = "de"
+	GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageEn   GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage = "en"
+	GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageEs   GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage = "es"
+	GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageFr   GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage = "fr"
+	GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageIt   GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage = "it"
+	GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageNl   GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage = "nl"
+	GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguagePl   GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage = "pl"
+	GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguagePtBr GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage = "pt_br"
+)
+
+// Valid indicates whether the value is a known member of the GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage enum.
+func (e GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage) Valid() bool {
+	switch e {
+	case GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageAr:
+		return true
+	case GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageDe:
+		return true
+	case GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageEn:
+		return true
+	case GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageEs:
+		return true
+	case GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageFr:
+		return true
+	case GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageIt:
+		return true
+	case GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguageNl:
+		return true
+	case GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguagePl:
+		return true
+	case GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguagePtBr:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage.
+const (
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageAr   SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage = "ar"
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageDe   SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage = "de"
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageEn   SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage = "en"
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageEs   SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage = "es"
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageFr   SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage = "fr"
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageIt   SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage = "it"
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageNl   SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage = "nl"
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguagePl   SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage = "pl"
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguagePtBr SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage = "pt_br"
+)
+
+// Valid indicates whether the value is a known member of the SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage enum.
+func (e SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage) Valid() bool {
+	switch e {
+	case SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageAr:
+		return true
+	case SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageDe:
+		return true
+	case SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageEn:
+		return true
+	case SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageEs:
+		return true
+	case SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageFr:
+		return true
+	case SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageIt:
+		return true
+	case SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguageNl:
+		return true
+	case SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguagePl:
+		return true
+	case SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguagePtBr:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for FilesApiRoutesUploadFileMultipartBodyVisibility.
 const (
 	FilesApiRoutesUploadFileMultipartBodyVisibilityUser      FilesApiRoutesUploadFileMultipartBodyVisibility = "user"
@@ -10703,6 +11678,16 @@ type APIKeyExtendedOUT struct {
 
 	// Product Product the API key belongs to.
 	Product *APIKeyProduct `json:"product"`
+
+	// ServiceAccountId ID of the service account that owns the API key. Null for keys not owned by a service account.
+	//
+	// Examples: 6d3f9a1c-2b7e-4c8a-9f10-1a2b3c4d5e6f
+	ServiceAccountId *openapi_types.UUID `json:"service_account_id,omitempty"`
+
+	// UserId ID of the user who owns the API key. Null for keys not owned by a user.
+	//
+	// Examples: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+	UserId *openapi_types.UUID `json:"user_id,omitempty"`
 
 	// WorkspaceId Workspace ID for the API key.
 	WorkspaceId *openapi_types.UUID `json:"workspace_id"`
@@ -12040,6 +13025,112 @@ type AttributeHashSampling struct {
 // AttributeHashSamplingType defines model for AttributeHashSampling.Type.
 type AttributeHashSamplingType string
 
+// AudioAgentConfigurationRequest defines model for AudioAgentConfigurationRequest.
+type AudioAgentConfigurationRequest struct {
+	Instructions   *string                                      `json:"instructions,omitempty"`
+	Llm            *AudioLLMConfig                              `json:"llm,omitempty"`
+	Stt            *AudioSTTConfig                              `json:"stt,omitempty"`
+	Tools          *[]AudioAgentConfigurationRequest_Tools_Item `json:"tools,omitempty"`
+	Tts            *AudioTTSConfig                              `json:"tts,omitempty"`
+	Turn           *AudioTurnConfig                             `json:"turn,omitempty"`
+	WelcomeMessage *string                                      `json:"welcome_message,omitempty"`
+}
+
+// AudioAgentConfigurationRequest_Tools_Item defines model for AudioAgentConfigurationRequest.tools.Item.
+type AudioAgentConfigurationRequest_Tools_Item struct {
+	union json.RawMessage
+}
+
+// AudioAgentConfigurationResponseConfig defines model for AudioAgentConfigurationResponseConfig.
+type AudioAgentConfigurationResponseConfig struct {
+	Instructions   *string                                             `json:"instructions,omitempty"`
+	Llm            AudioLLMConfig                                      `json:"llm"`
+	Stt            AudioSTTConfig                                      `json:"stt"`
+	Tools          *[]AudioAgentConfigurationResponseConfig_Tools_Item `json:"tools,omitempty"`
+	Tts            AudioTTSConfig                                      `json:"tts"`
+	Turn           AudioTurnConfig                                     `json:"turn"`
+	WelcomeMessage *string                                             `json:"welcome_message,omitempty"`
+}
+
+// AudioAgentConfigurationResponseConfig_Tools_Item defines model for AudioAgentConfigurationResponseConfig.tools.Item.
+type AudioAgentConfigurationResponseConfig_Tools_Item struct {
+	union json.RawMessage
+}
+
+// AudioAgentCreateRequest defines model for AudioAgentCreateRequest.
+type AudioAgentCreateRequest struct {
+	Configuration AudioAgentConfigurationRequest `json:"configuration"`
+	Description   *string                        `json:"description,omitempty"`
+	Name          string                         `json:"name"`
+}
+
+// AudioAgentListPage defines model for AudioAgentListPage.
+type AudioAgentListPage struct {
+	Data []AudioAgentResponse `json:"data"`
+
+	// NextPageToken Cursor for the next page, null on the last page
+	NextPageToken *string `json:"next_page_token,omitempty"`
+}
+
+// AudioAgentResponse defines model for AudioAgentResponse.
+type AudioAgentResponse struct {
+	Configuration *AudioAgentConfigurationResponseConfig `json:"configuration,omitempty"`
+	CreatedAt     time.Time                              `json:"created_at"`
+	Description   *string                                `json:"description,omitempty"`
+	Id            openapi_types.UUID                     `json:"id"`
+	Name          *string                                `json:"name,omitempty"`
+	OwnerId       string                                 `json:"owner_id"`
+	UpdatedAt     time.Time                              `json:"updated_at"`
+	Version       *int                                   `json:"version,omitempty"`
+}
+
+// AudioAgentSessionListPage defines model for AudioAgentSessionListPage.
+type AudioAgentSessionListPage struct {
+	Data []AudioAgentSessionSummary `json:"data"`
+
+	// NextPageToken Cursor for the next page, null on the last page
+	NextPageToken *string `json:"next_page_token,omitempty"`
+}
+
+// AudioAgentSessionSummary A session of a saved agent, without its transcript.
+type AudioAgentSessionSummary struct {
+	AgentId openapi_types.UUID `json:"agent_id"`
+
+	// Duration Seconds from the first participant joining to the session ending, null if nobody joined or it is still running.
+	Duration *int               `json:"duration,omitempty"`
+	Id       openapi_types.UUID `json:"id"`
+
+	// PhoneNumberId Set when the session came in over telephony.
+	PhoneNumberId *openapi_types.UUID `json:"phone_number_id,omitempty"`
+
+	// StartedAt When the first participant joined, null if nobody ever did.
+	StartedAt *time.Time `json:"started_at,omitempty"`
+}
+
+// AudioAgentUpdateRequest defines model for AudioAgentUpdateRequest.
+type AudioAgentUpdateRequest struct {
+	Configuration AudioAgentConfigurationRequest `json:"configuration"`
+	Description   *string                        `json:"description,omitempty"`
+	Name          string                         `json:"name"`
+}
+
+// AudioAssistantTranscriptTurn defines model for AudioAssistantTranscriptTurn.
+type AudioAssistantTranscriptTurn struct {
+	// Content Text as delivered in the conversation: the recognized transcript for user turns, and the audio actually played to the caller for assistant turns. Null only as a fallback for incomplete data.
+	Content        *string                          `json:"content,omitempty"`
+	DurationMs     *float32                         `json:"duration_ms,omitempty"`
+	IsInterruption *bool                            `json:"is_interruption,omitempty"`
+	Latency        AudioLatencyBreakdownAssistant   `json:"latency"`
+	Role           AudioAssistantTranscriptTurnRole `json:"role"`
+	Timestamp      time.Time                        `json:"timestamp"`
+
+	// ToolCalls Tools the model requested in this step. Each result follows as a `tool` turn with the same id.
+	ToolCalls *[]AudioToolCall `json:"tool_calls,omitempty"`
+}
+
+// AudioAssistantTranscriptTurnRole defines model for AudioAssistantTranscriptTurn.Role.
+type AudioAssistantTranscriptTurnRole string
+
 // AudioChunk defines model for AudioChunk.
 type AudioChunk struct {
 	InputAudio AudioChunk_InputAudio `json:"input_audio"`
@@ -12072,6 +13163,179 @@ type AudioContent struct {
 // AudioContentType defines model for AudioContent.Type.
 type AudioContentType string
 
+// AudioInactivityConfig defines model for AudioInactivityConfig.
+type AudioInactivityConfig struct {
+	MaxReminders int       `json:"max_reminders"`
+	Messages     *[]string `json:"messages,omitempty"`
+	TimeoutMs    int       `json:"timeout_ms"`
+}
+
+// AudioLLMConfig defines model for AudioLLMConfig.
+type AudioLLMConfig struct {
+	Model *string `json:"model,omitempty"`
+}
+
+// AudioLatencyBreakdownAssistant defines model for AudioLatencyBreakdownAssistant.
+type AudioLatencyBreakdownAssistant struct {
+	E2eLatencyMs  *float32 `json:"e2e_latency_ms,omitempty"`
+	LlmDurationMs *float32 `json:"llm_duration_ms,omitempty"`
+	LlmTtftMs     *float32 `json:"llm_ttft_ms,omitempty"`
+	TtsDurationMs *float32 `json:"tts_duration_ms,omitempty"`
+	TtsTtfbMs     *float32 `json:"tts_ttfb_ms,omitempty"`
+}
+
+// AudioLatencyBreakdownUser defines model for AudioLatencyBreakdownUser.
+type AudioLatencyBreakdownUser struct {
+	EndOfTurnDelayMs     *float32 `json:"end_of_turn_delay_ms,omitempty"`
+	TranscriptionDelayMs *float32 `json:"transcription_delay_ms,omitempty"`
+}
+
+// AudioSTTConfig defines model for AudioSTTConfig.
+type AudioSTTConfig struct {
+	ContextBias            *[]string                 `json:"context_bias,omitempty"`
+	Language               *string                   `json:"language,omitempty"`
+	Model                  *string                   `json:"model,omitempty"`
+	TargetStreamingDelayMs *int                      `json:"target_streaming_delay_ms,omitempty"`
+	TurnDetection          *AudioTurnDetectionConfig `json:"turn_detection,omitempty"`
+}
+
+// AudioSessionCreateRequest defines model for AudioSessionCreateRequest.
+type AudioSessionCreateRequest struct {
+	AgentId        *openapi_types.UUID                     `json:"agent_id,omitempty"`
+	AgentVersion   *int                                    `json:"agent_version,omitempty"`
+	Instructions   *string                                 `json:"instructions,omitempty"`
+	Llm            *AudioLLMConfig                         `json:"llm,omitempty"`
+	Stt            *AudioSTTConfig                         `json:"stt,omitempty"`
+	Tools          *[]AudioSessionCreateRequest_Tools_Item `json:"tools,omitempty"`
+	Tts            *AudioTTSConfig                         `json:"tts,omitempty"`
+	Turn           *AudioTurnConfig                        `json:"turn,omitempty"`
+	WelcomeMessage *string                                 `json:"welcome_message,omitempty"`
+}
+
+// AudioSessionCreateRequest_Tools_Item defines model for AudioSessionCreateRequest.tools.Item.
+type AudioSessionCreateRequest_Tools_Item struct {
+	union json.RawMessage
+}
+
+// AudioSessionCreateResponse defines model for AudioSessionCreateResponse.
+type AudioSessionCreateResponse struct {
+	CreatedAt time.Time `json:"created_at"`
+	ExpiresAt time.Time `json:"expires_at"`
+
+	// FunctionTools Effective function declarations after saved-agent and session overrides are merged. Connected SDKs can compare them with their local handlers.
+	FunctionTools    *[]VoiceAgentFunctionTool `json:"function_tools,omitempty"`
+	Id               openapi_types.UUID        `json:"id"`
+	ParticipantToken string                    `json:"participant_token"`
+	ServerUrl        string                    `json:"server_url"`
+}
+
+// AudioSessionPhoneCall The phone line a session is attached to.
+//
+// Present only when the caller reached the agent over telephony, `null` for a
+// session started from a browser or the API.
+type AudioSessionPhoneCall struct {
+	// PhoneNumber The number as it stands now, or null once it has been released or when you cannot read it.
+	PhoneNumber   *AudioSessionPhoneNumber `json:"phone_number,omitempty"`
+	PhoneNumberId openapi_types.UUID       `json:"phone_number_id"`
+}
+
+// AudioSessionPhoneNumber The line the call came in on, as it stands now.
+type AudioSessionPhoneNumber struct {
+	Id openapi_types.UUID `json:"id"`
+
+	// Identifier What the caller dialed to reach this number.
+	Identifier string  `json:"identifier"`
+	Name       *string `json:"name,omitempty"`
+}
+
+// AudioSessionResponse defines model for AudioSessionResponse.
+type AudioSessionResponse struct {
+	CreatedAt       time.Time                  `json:"created_at"`
+	Id              openapi_types.UUID         `json:"id"`
+	NumParticipants int                        `json:"num_participants"`
+	PhoneCall       *AudioSessionPhoneCall     `json:"phone_call,omitempty"`
+	Status          AudioSessionResponseStatus `json:"status"`
+
+	// Transcripts The turns of the conversation, or null while no transcript has been recorded for this session yet.
+	Transcripts *[]AudioSessionResponse_Transcripts_Item `json:"transcripts,omitempty"`
+}
+
+// AudioSessionResponseStatus defines model for AudioSessionResponse.Status.
+type AudioSessionResponseStatus string
+
+// AudioSessionResponse_Transcripts_Item defines model for AudioSessionResponse.transcripts.Item.
+type AudioSessionResponse_Transcripts_Item struct {
+	union json.RawMessage
+}
+
+// AudioSpeechCapabilities defines model for AudioSpeechCapabilities.
+type AudioSpeechCapabilities struct {
+	Instruction *bool `json:"instruction,omitempty"`
+
+	// Modes Supported modes: `offline` and/or `realtime`.
+	Modes *[]string `json:"modes,omitempty"`
+
+	// ResponseFormats Accepted `response_format` values.
+	ResponseFormats *[]string `json:"response_formats,omitempty"`
+}
+
+// AudioTTSConfig defines model for AudioTTSConfig.
+type AudioTTSConfig struct {
+	Expressiveness *float32 `json:"expressiveness,omitempty"`
+	Model          *string  `json:"model,omitempty"`
+	VoiceId        *string  `json:"voice_id,omitempty"`
+}
+
+// AudioToolCall defines model for AudioToolCall.
+type AudioToolCall struct {
+	// Arguments JSON text, or null when unavailable or withheld.
+	Arguments *string `json:"arguments,omitempty"`
+	Id        string  `json:"id"`
+	Name      string  `json:"name"`
+}
+
+// AudioToolTranscriptTurn defines model for AudioToolTranscriptTurn.
+type AudioToolTranscriptTurn struct {
+	DurationMs *float32 `json:"duration_ms,omitempty"`
+	Name       string   `json:"name"`
+
+	// Result Decoded JSON or plain text; null when unavailable or withheld.
+	Result interface{}                   `json:"result,omitempty"`
+	Role   AudioToolTranscriptTurnRole   `json:"role"`
+	Status AudioToolTranscriptTurnStatus `json:"status"`
+
+	// Timestamp When the tool started executing.
+	Timestamp  time.Time `json:"timestamp"`
+	ToolCallId string    `json:"tool_call_id"`
+}
+
+// AudioToolTranscriptTurnRole defines model for AudioToolTranscriptTurn.Role.
+type AudioToolTranscriptTurnRole string
+
+// AudioToolTranscriptTurnStatus defines model for AudioToolTranscriptTurnStatus.
+type AudioToolTranscriptTurnStatus string
+
+// AudioTranscriptionCapabilities defines model for AudioTranscriptionCapabilities.
+type AudioTranscriptionCapabilities struct {
+	ContextBias *bool `json:"context_bias,omitempty"`
+	Diarization *bool `json:"diarization,omitempty"`
+
+	// Languages ISO 639-1 codes accepted by `language`. Empty if it cannot be set.
+	Languages *[]string `json:"languages,omitempty"`
+
+	// Modes Supported modes: `offline` and/or `realtime`.
+	Modes *[]string `json:"modes,omitempty"`
+
+	// StreamingDelaysMs Realtime only: inclusive ranges of accepted target streaming delays.
+	StreamingDelaysMs *[]StreamingDelayRange `json:"streaming_delays_ms,omitempty"`
+
+	// TimestampGranularities Offline only: `segment` and/or `word`.
+	TimestampGranularities *[]string `json:"timestamp_granularities,omitempty"`
+
+	// TurnDetection Realtime only.
+	TurnDetection *bool `json:"turn_detection,omitempty"`
+}
+
 // AudioTranscriptionRequest defines model for AudioTranscriptionRequest.
 type AudioTranscriptionRequest struct {
 	ContextBias *[]string `json:"context_bias,omitempty"`
@@ -12090,9 +13354,12 @@ type AudioTranscriptionRequest struct {
 	// Model ID of the model to be used.
 	//
 	// Examples: voxtral-mini-latest, voxtral-mini-2507
-	Model       string   `json:"model"`
-	Stream      *bool    `json:"stream,omitempty"`
-	Temperature *float32 `json:"temperature,omitempty"`
+	Model string `json:"model"`
+
+	// SpeakerReferences Dictionary of speaker names and reference audios for speakers who are known to appear in the audio. When enabled, diarize must be true. Predicted speakers will be matched against reference speakers from this dictionary.
+	SpeakerReferences *map[string]string `json:"speaker_references,omitempty"`
+	Stream            *bool              `json:"stream,omitempty"`
+	Temperature       *float32           `json:"temperature,omitempty"`
 
 	// TimestampGranularities Granularities of timestamps to include in the response.
 	TimestampGranularities *[]TimestampGranularity `json:"timestamp_granularities,omitempty"`
@@ -12111,14 +13378,45 @@ type AudioTranscriptionRequestStream struct {
 	FileUrl *string `json:"file_url,omitempty"`
 
 	// Language Language of the audio, e.g. 'en'. Providing the language can boost accuracy.
-	Language    *string  `json:"language,omitempty"`
-	Model       string   `json:"model"`
-	Stream      *bool    `json:"stream,omitempty"`
-	Temperature *float32 `json:"temperature,omitempty"`
+	Language *string `json:"language,omitempty"`
+	Model    string  `json:"model"`
+
+	// SpeakerReferences Dictionary of speaker names and reference audios for speakers who are known to appear in the audio. When enabled, diarize must be true. Predicted speakers will be matched against reference speakers from this dictionary.
+	SpeakerReferences *map[string]string `json:"speaker_references,omitempty"`
+	Stream            *bool              `json:"stream,omitempty"`
+	Temperature       *float32           `json:"temperature,omitempty"`
 
 	// TimestampGranularities Granularities of timestamps to include in the response.
 	TimestampGranularities *[]TimestampGranularity `json:"timestamp_granularities,omitempty"`
 }
+
+// AudioTurnConfig defines model for AudioTurnConfig.
+type AudioTurnConfig struct {
+	AllowInterruptions *bool                  `json:"allow_interruptions,omitempty"`
+	Inactivity         *AudioInactivityConfig `json:"inactivity,omitempty"`
+}
+
+// AudioTurnDetectionConfig defines model for AudioTurnDetectionConfig.
+type AudioTurnDetectionConfig struct {
+	EagerEndThreshold *float32 `json:"eager_end_threshold,omitempty"`
+	EndThreshold      *float32 `json:"end_threshold,omitempty"`
+	EndTimeoutMs      *int     `json:"end_timeout_ms,omitempty"`
+	MinSilenceMs      *int     `json:"min_silence_ms,omitempty"`
+	StartThreshold    *float32 `json:"start_threshold,omitempty"`
+}
+
+// AudioUserTranscriptTurn defines model for AudioUserTranscriptTurn.
+type AudioUserTranscriptTurn struct {
+	// Content Text as delivered in the conversation: the recognized transcript for user turns, and the audio actually played to the caller for assistant turns. Null only as a fallback for incomplete data.
+	Content    *string                     `json:"content,omitempty"`
+	DurationMs *float32                    `json:"duration_ms,omitempty"`
+	Latency    AudioLatencyBreakdownUser   `json:"latency"`
+	Role       AudioUserTranscriptTurnRole `json:"role"`
+	Timestamp  time.Time                   `json:"timestamp"`
+}
+
+// AudioUserTranscriptTurnRole defines model for AudioUserTranscriptTurn.Role.
+type AudioUserTranscriptTurnRole string
 
 // AuditLogEventType defines model for AuditLogEventType.
 type AuditLogEventType string
@@ -12206,8 +13504,10 @@ type AuthenticationType string
 
 // BaseModelCard defines model for BaseModelCard.
 type BaseModelCard struct {
-	Aliases          *[]string `json:"aliases,omitempty"`
-	BillingModelName *string   `json:"billing_model_name,omitempty"`
+	Aliases                        *[]string                       `json:"aliases,omitempty"`
+	AudioSpeechCapabilities        *AudioSpeechCapabilities        `json:"audio_speech_capabilities,omitempty"`
+	AudioTranscriptionCapabilities *AudioTranscriptionCapabilities `json:"audio_transcription_capabilities,omitempty"`
+	BillingModelName               *string                         `json:"billing_model_name,omitempty"`
 
 	// Capabilities This is populated by Harmattan, but some fields have a name
 	// that we don't want to expose in the API.
@@ -12347,6 +13647,34 @@ type BoolFieldDefinition struct {
 
 // BoolFieldDefinitionType defines model for BoolFieldDefinition.Type.
 type BoolFieldDefinitionType string
+
+// BudgetDetail defines model for BudgetDetail.
+type BudgetDetail struct {
+	// Currency ISO 4217 currency code of the budget (e.g. EUR, USD). The applicable budget is lazily materialized for the requested period, so this is only null when no budget could be derived.
+	//
+	// Examples: EUR
+	Currency *string `json:"currency,omitempty"`
+
+	// InitialBudget Initial budget allocated for the billing period, expressed in the budget currency.
+	//
+	// Examples: 300
+	InitialBudget float32 `json:"initial_budget"`
+
+	// PaygEnabled Whether pay-as-you-go overage is enabled for this budget type. Only meaningful for the Vibe budget.
+	//
+	// Examples: false
+	PaygEnabled *bool `json:"payg_enabled,omitempty"`
+
+	// ResetAt Timestamp at which the requested billing period resets (start of the next period).
+	//
+	// Examples: 2026-08-01T00:00:00Z
+	ResetAt time.Time `json:"reset_at"`
+
+	// UsagePercentage Percentage of the budget consumed for the requested billing period (0-100).
+	//
+	// Examples: 42.5
+	UsagePercentage float32 `json:"usage_percentage"`
+}
 
 // BuiltInConnectors defines model for BuiltInConnectors.
 type BuiltInConnectors string
@@ -12784,11 +14112,6 @@ type CompletionResponseStreamChoice struct {
 // CompletionResponseStreamChoiceFinishReason defines model for CompletionResponseStreamChoice.FinishReason.
 type CompletionResponseStreamChoiceFinishReason string
 
-// CompletionTokensDetails Token usage details for the completion.
-type CompletionTokensDetails struct {
-	ReasoningTokens *int `json:"reasoning_tokens,omitempty"`
-}
-
 // CompletionsCapability Capability for completions operations.
 type CompletionsCapability = map[string]interface{}
 
@@ -12802,9 +14125,6 @@ type ConfusionMatrix struct {
 	Matrix [][]int  `json:"matrix"`
 }
 
-// ConnectionConfigType defines model for ConnectionConfigType.
-type ConnectionConfigType string
-
 // ConnectionCredentialsInput defines model for ConnectionCredentialsInput.
 type ConnectionCredentialsInput struct {
 	BearerToken *string                       `json:"bearer_token,omitempty"`
@@ -12814,9 +14134,15 @@ type ConnectionCredentialsInput struct {
 
 // ConnectionPreference defines model for ConnectionPreference.
 type ConnectionPreference struct {
-	ConsumerType      *ConsumerType              `json:"consumer_type,omitempty"`
-	IsDefault         *bool                      `json:"is_default,omitempty"`
-	Name              string                     `json:"name"`
+	ConsumerType *ConsumerType `json:"consumer_type,omitempty"`
+
+	// IsDefault Deprecated: always `true`.
+	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
+	IsDefault *bool `json:"is_default,omitempty"`
+
+	// Name Deprecated: always `default`, a connection holds a single preference.
+	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
+	Name              *string                    `json:"name,omitempty"`
 	ToolConfiguration ToolExecutionConfiguration `json:"tool_configuration"`
 }
 
@@ -12859,7 +14185,7 @@ type ConnectorMCPPublicUpdate struct {
 	Name     *string                           `json:"name,omitempty"`
 	Protocol *ConnectorMCPPublicUpdateProtocol `json:"protocol,omitempty"`
 
-	// Server New connector server URL.
+	// Server New connector server URL. Only private connectors can change it; for shared connectors, it must equal the current server URL.
 	Server *string `json:"server,omitempty"`
 
 	// SystemPrompt Optional system prompt for the connector.
@@ -12881,6 +14207,12 @@ type ConnectorMCPPublicUpdate_AuthMethods_Item struct {
 
 // ConnectorMCPPublicUpdateProtocol defines model for ConnectorMCPPublicUpdate.Protocol.
 type ConnectorMCPPublicUpdateProtocol string
+
+// ConnectorOpenApiSpec defines model for ConnectorOpenApiSpec.
+type ConnectorOpenApiSpec struct {
+	// Source Where the spec came from. Null when unknown, e.g. a file uploaded without a name, or hidden, e.g. on Mistral connectors.
+	Source *OpenApiSpecSource `json:"source"`
+}
 
 // ConnectorTool defines model for ConnectorTool.
 type ConnectorTool struct {
@@ -13826,6 +15158,64 @@ type CreateSkillVersionResponse struct {
 	Version      *int32 `json:"version,omitempty"`
 }
 
+// CreateTrigger defines model for CreateTrigger.
+type CreateTrigger struct {
+	// Action Action to execute when the trigger fires
+	Action CreateTriggerAction `json:"action"`
+
+	// EventSourceId ID of the event source that fires this trigger
+	EventSourceId openapi_types.UUID `json:"event_source_id"`
+
+	// Filters jmespath expression to filter events, e.g. event_type == 'push' && repository.name == 'dashboard'
+	Filters *string `json:"filters,omitempty"`
+
+	// Handler workflows, agents, or spaces
+	Handler   TriggerHandler    `json:"handler"`
+	OwnerType TriggersOwnerType `json:"owner_type"`
+
+	// Title Human-readable title of the trigger
+	Title string `json:"title"`
+}
+
+// CreateTriggerAction defines model for CreateTriggerAction.
+type CreateTriggerAction struct {
+	// PrimitiveId ID of the target primitive (workflow, agent, or app)
+	PrimitiveId string `json:"primitive_id"`
+
+	// Type Action to execute
+	Type TriggerActionType `json:"type"`
+}
+
+// CreateWebhook defines model for CreateWebhook.
+type CreateWebhook struct {
+	// EncryptionKey Encryption key used to decrypt webhook payloads
+	EncryptionKey *string `json:"encryption_key,omitempty"`
+
+	// EventTypePath Path to extract event type, eg body.type or headers.X-GitHub-Event
+	EventTypePath *string    `json:"event_type_path,omitempty"`
+	ExpiresAt     *time.Time `json:"expires_at,omitempty"`
+
+	// Name Human-readable name for this webhook
+	Name      string             `json:"name"`
+	OwnerType *TriggersOwnerType `json:"owner_type,omitempty"`
+	Provider  WebhookProvider    `json:"provider"`
+
+	// Secret Signing secret provided by the third-party provider
+	Secret            *string                   `json:"secret,omitempty"`
+	SignatureEncoding *WebhookSignatureEncoding `json:"signature_encoding,omitempty"`
+
+	// SignatureExtractorRegex Regex to extract signature, eg sha256=(.*)
+	SignatureExtractorRegex *string                        `json:"signature_extractor_regex,omitempty"`
+	SignatureHashAlgorithm  *WebhookSignatureHashAlgorithm `json:"signature_hash_algorithm,omitempty"`
+	SignatureHeaderName     *string                        `json:"signature_header_name,omitempty"`
+
+	// SignaturePayloadPattern Pattern for signature payload, eg {body} or {timestamp}.{body}
+	SignaturePayloadPattern *string `json:"signature_payload_pattern,omitempty"`
+	SuccessStatusCode       *int    `json:"success_status_code,omitempty"`
+	TimestampExtractorRegex *string `json:"timestamp_extractor_regex,omitempty"`
+	ValidityPeriodSecond    *int    `json:"validity_period_second,omitempty"`
+}
+
 // CredentialsCreateOrUpdate Request to create or update credentials for a connector.
 type CredentialsCreateOrUpdate struct {
 	// Credentials The credential data (headers, bearer_token, or OAuth2 client credentials).
@@ -13861,6 +15251,8 @@ type CredentialsStatusErrorReason string
 
 // CustomConnector defines model for CustomConnector.
 type CustomConnector struct {
+	// Authorization Deprecated: per-request connector credentials will be removed. Authenticate the connector through the Connectors API instead.
+	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
 	Authorization *struct {
 		union json.RawMessage
 	} `json:"authorization,omitempty"`
@@ -14455,6 +15847,15 @@ type DenseVectorFieldDefinition struct {
 // DenseVectorFieldDefinitionType defines model for DenseVectorFieldDefinition.Type.
 type DenseVectorFieldDefinitionType string
 
+// DeploymentArchiveResponse The archive a managed deployment builds from, with a signed URL to download it.
+type DeploymentArchiveResponse struct {
+	// ArchiveId Mistral Cloud archive the worker builds from
+	ArchiveId openapi_types.UUID `json:"archive_id"`
+
+	// DownloadUrl A signed URL to download the archive, which expires within 24 hours. Null once Mistral Cloud has deleted the archive.
+	DownloadUrl *string `json:"download_url,omitempty"`
+}
+
 // DeploymentBuildState defines model for DeploymentBuildState.
 type DeploymentBuildState struct {
 	CommitSha  *string    `json:"commit_sha,omitempty"`
@@ -14696,21 +16097,35 @@ type DeploymentWorkerResponse struct {
 
 // DeploymentWorkerSpecInput defines model for DeploymentWorkerSpecInput.
 type DeploymentWorkerSpecInput struct {
+	// ArchiveId Mistral Cloud archive to build the worker from instead of a repository. The archive is the whole build context: 'dockerfile_path' is relative to its root, and 'build_directory' must be unset.
+	ArchiveId *openapi_types.UUID `json:"archive_id,omitempty"`
+
 	// BackendSpec Backend-specific configuration for the Mistral Cloud backend.
 	BackendSpec *DeploymentMistralCloudBackendSpec `json:"backend_spec,omitempty"`
-	GithubUrl   string                             `json:"github_url"`
-	Revision    *string                            `json:"revision,omitempty"`
+
+	// GithubUrl GitHub repository to build the worker from. Set this or 'archive_id', not both.
+	GithubUrl *string `json:"github_url,omitempty"`
+
+	// RequestedRoles Workspace roles, by name, that the deployment's service account holds beyond `workflow_executor`. Granted only if the deploying user holds them.
+	RequestedRoles *[]string `json:"requested_roles,omitempty"`
+	Revision       *string   `json:"revision,omitempty"`
 }
 
 // DeploymentWorkerSpecResponse defines model for DeploymentWorkerSpecResponse.
 type DeploymentWorkerSpecResponse struct {
+	// ArchiveId Archive the worker builds from, if any.
+	ArchiveId *openapi_types.UUID `json:"archive_id,omitempty"`
+
 	// BackendSpec Backend-specific configuration. 'mistral_cloud' is Mistral Cloud; 'kubernetes' is a deployment that already runs on Kubernetes.
 	BackendSpec DeploymentWorkerSpecResponse_BackendSpec `json:"backend_spec"`
 	Commit      *GitCommitMetadata                       `json:"commit,omitempty"`
-	GithubUrl   string                                   `json:"github_url"`
-	RestartedAt *string                                  `json:"restarted_at,omitempty"`
-	Revision    *string                                  `json:"revision,omitempty"`
-	Type        *string                                  `json:"type,omitempty"`
+
+	// GithubUrl GitHub repository the worker builds from. Empty for a worker built from an archive.
+	GithubUrl      string    `json:"github_url"`
+	RequestedRoles *[]string `json:"requested_roles,omitempty"`
+	RestartedAt    *string   `json:"restarted_at,omitempty"`
+	Revision       *string   `json:"revision,omitempty"`
+	Type           *string   `json:"type,omitempty"`
 }
 
 // DeploymentWorkerSpecResponse_BackendSpec Backend-specific configuration. 'mistral_cloud' is Mistral Cloud; 'kubernetes' is a deployment that already runs on Kubernetes.
@@ -14921,6 +16336,11 @@ type EncryptedPatchValueType string
 
 // EntityType The type of entity, used to share a library.
 type EntityType string
+
+// EnumConstraints defines model for EnumConstraints.
+type EnumConstraints struct {
+	Options *[]string `json:"options,omitempty"`
+}
 
 // Equal Field equals a scalar value.
 type Equal struct {
@@ -15197,13 +16617,6 @@ type ExecutionLogRecord struct {
 type ExecutionLogSearchResponse struct {
 	NextCursor *string              `json:"next_cursor,omitempty"`
 	Results    []ExecutionLogRecord `json:"results"`
-}
-
-// ExecutionTool defines model for ExecutionTool.
-type ExecutionTool struct {
-	ExecutionConfig *ExecutionConfig   `json:"execution_config"`
-	IntegrationId   openapi_types.UUID `json:"integration_id"`
-	Name            string             `json:"name"`
 }
 
 // ExecutionTraceInfoResponse defines model for ExecutionTraceInfoResponse.
@@ -15503,6 +16916,12 @@ type FloatArrayFieldDefinition struct {
 // FloatArrayFieldDefinitionType defines model for FloatArrayFieldDefinition.Type.
 type FloatArrayFieldDefinitionType string
 
+// FloatConstraints defines model for FloatConstraints.
+type FloatConstraints struct {
+	Max *float32 `json:"max,omitempty"`
+	Min *float32 `json:"min,omitempty"`
+}
+
 // FloatFieldDefinition defines model for FloatFieldDefinition.
 type FloatFieldDefinition struct {
 	Default  interface{}               `json:"default,omitempty"`
@@ -15603,6 +17022,14 @@ type FunctionName struct {
 	Name string `json:"name"`
 }
 
+// FunctionRequest defines model for FunctionRequest.
+type FunctionRequest struct {
+	Description *string                `json:"description,omitempty"`
+	Name        string                 `json:"name"`
+	Parameters  map[string]interface{} `json:"parameters"`
+	Strict      *bool                  `json:"strict,omitempty"`
+}
+
 // FunctionResultEntry defines model for FunctionResultEntry.
 type FunctionResultEntry struct {
 	CompletedAt *time.Time                 `json:"completed_at,omitempty"`
@@ -15628,6 +17055,15 @@ type FunctionTool struct {
 
 // FunctionToolType defines model for FunctionTool.Type.
 type FunctionToolType string
+
+// GetBudgetResponse defines model for GetBudgetResponse.
+type GetBudgetResponse struct {
+	// ApiBudget API budget usage details.
+	ApiBudget BudgetDetail `json:"api_budget"`
+
+	// VibeBudget Vibe-specific budget usage details.
+	VibeBudget BudgetDetail `json:"vibe_budget"`
+}
 
 // GetDeploymentSummariesResponse defines model for GetDeploymentSummariesResponse.
 type GetDeploymentSummariesResponse struct {
@@ -15724,6 +17160,7 @@ type GetLog struct {
 	ScopeName          string            `json:"scope_name"`
 	ScopeSchemaUrl     string            `json:"scope_schema_url"`
 	ScopeVersion       string            `json:"scope_version"`
+	ServiceAccountId   *string           `json:"service_account_id,omitempty"`
 	ServiceName        string            `json:"service_name"`
 	SeverityNumber     int               `json:"severity_number"`
 	SeverityText       string            `json:"severity_text"`
@@ -15748,6 +17185,16 @@ type GetLogFields struct {
 // GetLogs defines model for GetLogs.
 type GetLogs struct {
 	Logs FeedResultGetLog `json:"logs"`
+}
+
+// GetPipelineResultFields defines model for GetPipelineResultFields.
+type GetPipelineResultFields struct {
+	FieldDefinitions []GetPipelineResultFields_FieldDefinitions_Item `json:"field_definitions"`
+}
+
+// GetPipelineResultFields_FieldDefinitions_Item defines model for GetPipelineResultFields.field_definitions.Item.
+type GetPipelineResultFields_FieldDefinitions_Item struct {
+	union json.RawMessage
 }
 
 // GetPipelineResults defines model for GetPipelineResults.
@@ -15797,6 +17244,7 @@ type GetSpan struct {
 	ResponseModel                 string            `json:"response_model"`
 	ScopeName                     string            `json:"scope_name"`
 	ScopeVersion                  string            `json:"scope_version"`
+	ServiceAccountId              *string           `json:"service_account_id,omitempty"`
 	ServiceName                   string            `json:"service_name"`
 	SpanAttributes                map[string]string `json:"span_attributes"`
 	SpanId                        string            `json:"span_id"`
@@ -15828,20 +17276,21 @@ type GetSpanStatusCode string
 
 // GetSpanEvaluation defines model for GetSpanEvaluation.
 type GetSpanEvaluation struct {
-	ConversationId string            `json:"conversation_id"`
-	CustomerId     string            `json:"customer_id"`
-	EvaluationName string            `json:"evaluation_name"`
-	Explanation    string            `json:"explanation"`
-	Metadata       map[string]string `json:"metadata"`
-	OrganizationId string            `json:"organization_id"`
-	ResponseId     string            `json:"response_id"`
-	ScoreLabel     string            `json:"score_label"`
-	ScoreValue     float32           `json:"score_value"`
-	SpanId         string            `json:"span_id"`
-	Timestamp      time.Time         `json:"timestamp"`
-	TraceId        string            `json:"trace_id"`
-	UserId         string            `json:"user_id"`
-	WorkspaceId    string            `json:"workspace_id"`
+	ConversationId   string            `json:"conversation_id"`
+	CustomerId       string            `json:"customer_id"`
+	EvaluationName   string            `json:"evaluation_name"`
+	Explanation      string            `json:"explanation"`
+	Metadata         map[string]string `json:"metadata"`
+	OrganizationId   string            `json:"organization_id"`
+	ResponseId       string            `json:"response_id"`
+	ScoreLabel       string            `json:"score_label"`
+	ScoreValue       float32           `json:"score_value"`
+	ServiceAccountId *string           `json:"service_account_id,omitempty"`
+	SpanId           string            `json:"span_id"`
+	Timestamp        time.Time         `json:"timestamp"`
+	TraceId          string            `json:"trace_id"`
+	UserId           string            `json:"user_id"`
+	WorkspaceId      string            `json:"workspace_id"`
 }
 
 // GetSpanEvaluationFieldOptions defines model for GetSpanEvaluationFieldOptions.
@@ -15874,6 +17323,36 @@ type GetSpans struct {
 	Spans FeedResultGetSpan `json:"spans"`
 }
 
+// GetSubscriptionResponse defines model for GetSubscriptionResponse.
+type GetSubscriptionResponse struct {
+	// Enterprise Whether the organization is on the Enterprise tier (org_tier == ENTERPRISE).
+	//
+	// Examples: false
+	Enterprise bool `json:"enterprise"`
+
+	// PaygEnabled Whether pay-as-you-go is active (an API subscription is active).
+	//
+	// Examples: false
+	PaygEnabled bool `json:"payg_enabled"`
+
+	// PlanName Unified plan name. One of: FREE, INDIVIDUAL, EDU, TEAM. Reflects the active Mistral licence (chat subscription) or FREE when no subscription exists.
+	//
+	// Examples: INDIVIDUAL, FREE
+	PlanName string `json:"plan_name"`
+
+	// VibePaygEnabled Whether pay-as-you-go is enabled for Vibe Code specifically.
+	//
+	// Examples: false
+	VibePaygEnabled bool `json:"vibe_payg_enabled"`
+}
+
+// GetSummaryResponseSummary defines model for GetSummaryResponseSummary.
+type GetSummaryResponseSummary struct {
+	Content    string        `json:"content"`
+	Status     SummaryStatus `json:"status"`
+	Translated bool          `json:"translated"`
+}
+
 // GetTrace defines model for GetTrace.
 type GetTrace struct {
 	AgentId                    string             `json:"agent_id"`
@@ -15900,6 +17379,7 @@ type GetTrace struct {
 	RetrievalCount             int                `json:"retrieval_count"`
 	RootSpanId                 string             `json:"root_span_id"`
 	RootSpanName               string             `json:"root_span_name"`
+	ServiceAccountId           *string            `json:"service_account_id,omitempty"`
 	ServiceName                string             `json:"service_name"`
 	SpanCount                  int                `json:"span_count"`
 	StartTime                  time.Time          `json:"start_time"`
@@ -16060,13 +17540,11 @@ type GuardrailConfig struct {
 // HTTPConnector defines model for HTTPConnector.
 type HTTPConnector struct {
 	BlockedBy             *[]ConsumerType                `json:"blocked_by,omitempty"`
-	ConnectionConfig      *PublicConnectionConfig        `json:"connection_config,omitempty"`
 	ConnectionCredentials *[]AuthenticationConfiguration `json:"connection_credentials,omitempty"`
 	ConnectionPreferences *[]ConnectionPreference        `json:"connection_preferences,omitempty"`
 	CreatedAt             time.Time                      `json:"created_at"`
 	CreatorId             *string                        `json:"creator_id,omitempty"`
 	Description           string                         `json:"description"`
-	ExecutionEnv          *PublicExecutionEnv            `json:"execution_env,omitempty"`
 	IconUrl               *string                        `json:"icon_url,omitempty"`
 	Id                    openapi_types.UUID             `json:"id"`
 	IsAuthenticated       *bool                          `json:"is_authenticated,omitempty"`
@@ -16074,13 +17552,16 @@ type HTTPConnector struct {
 	Mistral               *bool                          `json:"mistral,omitempty"`
 	ModifiedAt            time.Time                      `json:"modified_at"`
 	Name                  string                         `json:"name"`
-	OwnerId               *string                        `json:"owner_id,omitempty"`
-	OwnerType             ConsumerType                   `json:"owner_type"`
-	PrivateToolExecution  bool                           `json:"private_tool_execution"`
-	Protocol              HTTPConnectorProtocol          `json:"protocol"`
-	Server                *string                        `json:"server,omitempty"`
-	ServerCard            *MCPServerCard                 `json:"server_card,omitempty"`
-	SupportedAuthMethods  *[]PublicAuthenticationMethod  `json:"supported_auth_methods,omitempty"`
+
+	// OpenapiSpec The OpenAPI spec the connector tools are converted from. Null when it has none.
+	OpenapiSpec          *ConnectorOpenApiSpec         `json:"openapi_spec,omitempty"`
+	OwnerId              *string                       `json:"owner_id,omitempty"`
+	OwnerType            ConsumerType                  `json:"owner_type"`
+	PrivateToolExecution bool                          `json:"private_tool_execution"`
+	Protocol             HTTPConnectorProtocol         `json:"protocol"`
+	Server               *string                       `json:"server,omitempty"`
+	ServerCard           *MCPServerCard                `json:"server_card,omitempty"`
+	SupportedAuthMethods *[]PublicAuthenticationMethod `json:"supported_auth_methods,omitempty"`
 
 	// SupportsMcp Whether this connector exposes an MCP-compatible tool interface.
 	SupportsMcp  bool               `json:"supports_mcp"`
@@ -16116,6 +17597,15 @@ type HTTPStatus int
 type HTTPValidationError struct {
 	Detail *[]ValidationError `json:"detail,omitempty"`
 }
+
+// HangUpTool defines model for HangUpTool.
+type HangUpTool struct {
+	Filler *StaticToolFiller `json:"filler,omitempty"`
+	Type   *HangUpToolType   `json:"type,omitempty"`
+}
+
+// HangUpToolType defines model for HangUpTool.Type.
+type HangUpToolType string
 
 // IPAPhoneme The IPA phone inventory usable in pronunciation hints.
 //
@@ -16580,15 +18070,21 @@ type KeywordFieldDefinition struct {
 type KeywordFieldDefinitionType string
 
 // KeywordRetriever Retrieve document chunks with similar keywords to the given query.
+//
+// Uses the default settings for the index on the field.
 type KeywordRetriever struct {
 	Field  *string `json:"field,omitempty"`
 	Filter *struct {
 		union json.RawMessage
 	} `json:"filter,omitempty"`
-	Query string                `json:"query"`
-	TopK  *int                  `json:"top_k,omitempty"`
-	Type  *KeywordRetrieverType `json:"type,omitempty"`
+	Operator *KeywordRetrieverOperator `json:"operator,omitempty"`
+	Query    string                    `json:"query"`
+	TopK     *int                      `json:"top_k,omitempty"`
+	Type     *KeywordRetrieverType     `json:"type,omitempty"`
 }
+
+// KeywordRetrieverOperator defines model for KeywordRetriever.Operator.
+type KeywordRetrieverOperator string
 
 // KeywordRetrieverType defines model for KeywordRetriever.Type.
 type KeywordRetrieverType string
@@ -16881,13 +18377,11 @@ type LongFieldDefinitionType string
 // MCPConnector defines model for MCPConnector.
 type MCPConnector struct {
 	BlockedBy             *[]ConsumerType                `json:"blocked_by,omitempty"`
-	ConnectionConfig      *PublicConnectionConfig        `json:"connection_config,omitempty"`
 	ConnectionCredentials *[]AuthenticationConfiguration `json:"connection_credentials,omitempty"`
 	ConnectionPreferences *[]ConnectionPreference        `json:"connection_preferences,omitempty"`
 	CreatedAt             time.Time                      `json:"created_at"`
 	CreatorId             *string                        `json:"creator_id,omitempty"`
 	Description           string                         `json:"description"`
-	ExecutionEnv          *PublicExecutionEnv            `json:"execution_env,omitempty"`
 	IconUrl               *string                        `json:"icon_url,omitempty"`
 	Id                    openapi_types.UUID             `json:"id"`
 	IsAuthenticated       *bool                          `json:"is_authenticated,omitempty"`
@@ -17366,15 +18860,6 @@ type MessageOutputEventType string
 // MessageResponse defines model for MessageResponse.
 type MessageResponse struct {
 	Message string `json:"message"`
-}
-
-// MessageTokens Information on a single message included in a tokenized prompt as part of an InstructRequest.
-type MessageTokens struct {
-	Role           Roles `json:"role"`
-	SettingsTokens *int  `json:"settings_tokens,omitempty"`
-	TotalTokens    *int  `json:"total_tokens,omitempty"`
-	Truncated      *bool `json:"truncated,omitempty"`
-	UsageCount     *int  `json:"usage_count,omitempty"`
 }
 
 // MetadataDict Custom type for metadata with embedded validation.
@@ -18306,6 +19791,32 @@ type ObservabilityErrorDetail struct {
 	Message   string                  `json:"message"`
 }
 
+// OpenApiFileSource defines model for OpenApiFileSource.
+type OpenApiFileSource struct {
+	// Filename The name of the uploaded file.
+	Filename string                 `json:"filename"`
+	Type     *OpenApiFileSourceType `json:"type,omitempty"`
+}
+
+// OpenApiFileSourceType defines model for OpenApiFileSource.Type.
+type OpenApiFileSourceType string
+
+// OpenApiSpecSource defines model for OpenApiSpecSource.
+type OpenApiSpecSource struct {
+	union json.RawMessage
+}
+
+// OpenApiUrlSource defines model for OpenApiUrlSource.
+type OpenApiUrlSource struct {
+	Type *OpenApiUrlSourceType `json:"type,omitempty"`
+
+	// Url The URL the spec was downloaded from, without its userinfo, query string and fragment.
+	Url string `json:"url"`
+}
+
+// OpenApiUrlSourceType defines model for OpenApiUrlSource.Type.
+type OpenApiUrlSourceType string
+
 // Optimization defines model for Optimization.
 type Optimization struct {
 	Algorithm           string                `json:"algorithm"`
@@ -18649,6 +20160,26 @@ type OrganizationUsersCreateOUT struct {
 	InvalidEmails []string `json:"invalid_emails"`
 }
 
+// OtelEnumFieldDefinition defines model for OtelEnumFieldDefinition.
+type OtelEnumFieldDefinition struct {
+	Constraints *EnumConstraints `json:"constraints,omitempty"`
+	Group       *string          `json:"group,omitempty"`
+	Label       string           `json:"label"`
+	Name        string           `json:"name"`
+
+	// SourceAttributeKey Raw OpenTelemetry attribute key this field is projected from, whether a span attribute (e.g. `gen_ai.request.model` for `request_model`) or a resource attribute (e.g. `service.name` for `service_name`). None when the field is a native OTLP field (like `span_name` or `trace_id`) or a nested attribute map (like `span_attributes`).
+	SourceAttributeKey    *string                                      `json:"source_attribute_key,omitempty"`
+	SupportedAggregations *[]MetricAggregation                         `json:"supported_aggregations,omitempty"`
+	SupportedOperators    *[]OtelEnumFieldDefinitionSupportedOperators `json:"supported_operators,omitempty"`
+	Type                  *OtelEnumFieldDefinitionType                 `json:"type,omitempty"`
+}
+
+// OtelEnumFieldDefinitionSupportedOperators defines model for OtelEnumFieldDefinition.SupportedOperators.
+type OtelEnumFieldDefinitionSupportedOperators string
+
+// OtelEnumFieldDefinitionType defines model for OtelEnumFieldDefinition.Type.
+type OtelEnumFieldDefinitionType string
+
 // OtelFieldDefinition defines model for OtelFieldDefinition.
 type OtelFieldDefinition struct {
 	Group *string `json:"group,omitempty"`
@@ -18667,6 +20198,26 @@ type OtelFieldDefinitionSupportedOperators string
 
 // OtelFieldDefinitionType defines model for OtelFieldDefinition.Type.
 type OtelFieldDefinitionType string
+
+// OtelFloatFieldDefinition defines model for OtelFloatFieldDefinition.
+type OtelFloatFieldDefinition struct {
+	Constraints *FloatConstraints `json:"constraints,omitempty"`
+	Group       *string           `json:"group,omitempty"`
+	Label       string            `json:"label"`
+	Name        string            `json:"name"`
+
+	// SourceAttributeKey Raw OpenTelemetry attribute key this field is projected from, whether a span attribute (e.g. `gen_ai.request.model` for `request_model`) or a resource attribute (e.g. `service.name` for `service_name`). None when the field is a native OTLP field (like `span_name` or `trace_id`) or a nested attribute map (like `span_attributes`).
+	SourceAttributeKey    *string                                       `json:"source_attribute_key,omitempty"`
+	SupportedAggregations *[]MetricAggregation                          `json:"supported_aggregations,omitempty"`
+	SupportedOperators    *[]OtelFloatFieldDefinitionSupportedOperators `json:"supported_operators,omitempty"`
+	Type                  *OtelFloatFieldDefinitionType                 `json:"type,omitempty"`
+}
+
+// OtelFloatFieldDefinitionSupportedOperators defines model for OtelFloatFieldDefinition.SupportedOperators.
+type OtelFloatFieldDefinitionSupportedOperators string
+
+// OtelFloatFieldDefinitionType defines model for OtelFloatFieldDefinition.Type.
+type OtelFloatFieldDefinitionType string
 
 // OutputContentChunks defines model for OutputContentChunks.
 type OutputContentChunks struct {
@@ -18852,6 +20403,15 @@ type PercentileStatisticSpecPercentile1 = int
 type PercentileStatisticSpec_Percentile struct {
 	union json.RawMessage
 }
+
+// PhoneDestination defines model for PhoneDestination.
+type PhoneDestination struct {
+	Number string                `json:"number"`
+	Type   *PhoneDestinationType `json:"type,omitempty"`
+}
+
+// PhoneDestinationType defines model for PhoneDestination.Type.
+type PhoneDestinationType string
 
 // Pipeline Pipeline response schema. Pipelines are hard-deleted — no deleted_at field.
 type Pipeline struct {
@@ -19096,13 +20656,6 @@ type PromptDefinition struct {
 	Variables *[]PromptVariable `json:"variables,omitempty"`
 }
 
-// PromptTokensDetails Token usage details for the prompt.
-type PromptTokensDetails struct {
-	AudioTokens  *int             `json:"audio_tokens,omitempty"`
-	CachedTokens *int             `json:"cached_tokens,omitempty"`
-	Messages     *[]MessageTokens `json:"messages,omitempty"`
-}
-
 // PromptVariable defines model for PromptVariable.
 type PromptVariable struct {
 	// Name Stable object name.
@@ -19134,54 +20687,16 @@ type PromptsCapability struct {
 
 // PublicAuthenticationMethod Public view of an authentication method, without secrets.
 type PublicAuthenticationMethod struct {
-	GlobalHeaders           *map[string]GlobalHeaderValue    `json:"global_headers,omitempty"`
-	GrantType               *OAuth2GrantType                 `json:"grant_type,omitempty"`
-	HasDefaultCredentials   bool                             `json:"has_default_credentials"`
+	GlobalHeaders *map[string]GlobalHeaderValue `json:"global_headers,omitempty"`
+	GrantType     *OAuth2GrantType              `json:"grant_type,omitempty"`
+
+	// HasDefaultCredentials Deprecated: we removed the concept of connector level default credentials. Always false.
+	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
+	HasDefaultCredentials   *bool                            `json:"has_default_credentials,omitempty"`
 	Headers                 *[]ConnectorAuthenticationHeader `json:"headers,omitempty"`
 	MethodType              AuthenticationType               `json:"method_type"`
 	Oauth2ServerMetadata    *ExtendedOAuthServerMetadata     `json:"oauth2_server_metadata,omitempty"`
 	TokenEndpointAuthMethod *OAuth2TokenEndpointAuthMethod   `json:"token_endpoint_auth_method,omitempty"`
-}
-
-// PublicConnectionConfig defines model for PublicConnectionConfig.
-type PublicConnectionConfig struct {
-	BaseUrl *string               `json:"base_url,omitempty"`
-	Headers *map[string]string    `json:"headers,omitempty"`
-	Signed  *bool                 `json:"signed,omitempty"`
-	Type    *ConnectionConfigType `json:"type,omitempty"`
-}
-
-// PublicConnectorExecutionData defines model for PublicConnectorExecutionData.
-type PublicConnectorExecutionData struct {
-	Integrations []PublicExecutionConnector `json:"integrations"`
-	Tools        []ExecutionTool            `json:"tools"`
-}
-
-// PublicExecutionConnectionConfig Connection config exposed in the public, unauthenticated /connectors/mistral response.
-//
-// Unlike ConnectionConfig, this has no `headers` field and forbids extra fields, so
-// connector credentials can never be serialized into this cacheable response.
-type PublicExecutionConnectionConfig struct {
-	HostedInternally  *bool                       `json:"hosted_internally,omitempty"`
-	Id                *string                     `json:"id,omitempty"`
-	Name              *string                     `json:"name,omitempty"`
-	Server            *string                     `json:"server,omitempty"`
-	ToolConfiguration *ToolExecutionConfiguration `json:"tool_configuration,omitempty"`
-	Type              ConnectionConfigType        `json:"type"`
-}
-
-// PublicExecutionConnector defines model for PublicExecutionConnector.
-type PublicExecutionConnector struct {
-	ConnectionConfig *PublicExecutionConnectionConfig `json:"connection_config"`
-	Id               openapi_types.UUID               `json:"id"`
-	Name             string                           `json:"name"`
-}
-
-// PublicExecutionEnv Credentials-free projection of ExecutionEnv for the public /connectors/mistral response.
-type PublicExecutionEnv struct {
-	Errors            []string                     `json:"errors"`
-	ToolExecutionData PublicConnectorExecutionData `json:"tool_execution_data"`
-	Tools             []Tool                       `json:"tools"`
 }
 
 // PublicResourceVisibility Connector visibility options.
@@ -19325,6 +20840,22 @@ type RateLimitsOUT struct {
 
 	// TokensLimitsByModel Token limits for each model.
 	TokensLimitsByModel map[string]TokenLimitsByModel `json:"tokens_limits_by_model"`
+}
+
+// RawAudio defines model for RawAudio.
+type RawAudio struct {
+	Data RawAudio_Data `json:"data"`
+}
+
+// RawAudioData0 defines model for RawAudio.Data.0.
+type RawAudioData0 = string
+
+// RawAudioData1 defines model for RawAudio.Data.1.
+type RawAudioData1 = openapi_types.File
+
+// RawAudio_Data defines model for RawAudio.Data.
+type RawAudio_Data struct {
+	union json.RawMessage
 }
 
 // ReadRequest defines model for ReadRequest.
@@ -20532,9 +22063,6 @@ type RoleOut struct {
 	Uuid openapi_types.UUID `json:"uuid"`
 }
 
-// Roles defines model for Roles.
-type Roles string
-
 // RolesOut defines model for RolesOut.
 type RolesOut struct {
 	// OrganizationRoles Organization roles available to the Organization.
@@ -21088,7 +22616,7 @@ type SharingDelete struct {
 	// ShareWithType The type of entity, used to share a library.
 	ShareWithType EntityType `json:"share_with_type"`
 
-	// ShareWithUuid The id of the entity (user, workspace or organization) to share with
+	// ShareWithUuid The id of the entity to stop sharing with, as returned by the list endpoint
 	ShareWithUuid openapi_types.UUID `json:"share_with_uuid"`
 }
 
@@ -21101,7 +22629,7 @@ type SharingRequest struct {
 	// ShareWithType The type of entity, used to share a library.
 	ShareWithType EntityType `json:"share_with_type"`
 
-	// ShareWithUuid The id of the entity (user, workspace or organization) to share with
+	// ShareWithUuid The id of the user or workspace to share with
 	ShareWithUuid openapi_types.UUID `json:"share_with_uuid"`
 }
 
@@ -21148,6 +22676,15 @@ type SimpleNumericStatisticSpec struct {
 
 // SimpleNumericStatisticSpecKind defines model for SimpleNumericStatisticSpec.Kind.
 type SimpleNumericStatisticSpecKind string
+
+// SipDestination defines model for SipDestination.
+type SipDestination struct {
+	Type *SipDestinationType `json:"type,omitempty"`
+	Uri  string              `json:"uri"`
+}
+
+// SipDestinationType defines model for SipDestination.Type.
+type SipDestinationType string
 
 // Skill defines model for Skill.
 type Skill struct {
@@ -21283,11 +22820,30 @@ type SpansRequest struct {
 	SearchExpression *string `json:"search_expression,omitempty"`
 }
 
+// SpeechAssistantTurn defines model for SpeechAssistantTurn.
+type SpeechAssistantTurn struct {
+	// Audio Audio the assistant produced for this turn, as a base64-encoded string or raw bytes.
+	Audio RawAudio                `json:"audio"`
+	Role  SpeechAssistantTurnRole `json:"role"`
+
+	// Text Text the assistant spoke on this turn.
+	Text string `json:"text"`
+}
+
+// SpeechAssistantTurnRole defines model for SpeechAssistantTurn.Role.
+type SpeechAssistantTurnRole string
+
 // SpeechOutputFormat defines model for SpeechOutputFormat.
 type SpeechOutputFormat string
 
 // SpeechRequest defines model for SpeechRequest.
 type SpeechRequest struct {
+	// ConversationHistory Prior turns, oldest first, alternating and ending on a user turn: `input` is the assistant reply to it. Conditions delivery, not speaker: set `voice_id` to choose the speaker. Requires `voice_id` to be a preset voice whose `kind` is `pvc`. Cannot be combined with `ref_audio`.
+	ConversationHistory *[]SpeechRequest_ConversationHistory_Item `json:"conversation_history,omitempty"`
+
+	// Expressiveness Speaker flow-matching classifier-free guidance scale. Must be finite and at least 1.0.
+	Expressiveness *float32 `json:"expressiveness,omitempty"`
+
 	// Input Text to generate a speech from
 	Input    string        `json:"input"`
 	Metadata *MetadataDict `json:"metadata,omitempty"`
@@ -21307,6 +22863,11 @@ type SpeechRequest struct {
 	// VoiceId The preset or custom voice to use for generating the speech.
 	VoiceId              *string                `json:"voice_id,omitempty"`
 	AdditionalProperties map[string]interface{} `json:"-"`
+}
+
+// SpeechRequest_ConversationHistory_Item defines model for SpeechRequest.conversation_history.Item.
+type SpeechRequest_ConversationHistory_Item struct {
+	union json.RawMessage
 }
 
 // SpeechRequestRefAudio0 defines model for SpeechRequest.RefAudio.0.
@@ -21331,8 +22892,8 @@ type SpeechStreamAudioDeltaType string
 
 // SpeechStreamDone defines model for SpeechStreamDone.
 type SpeechStreamDone struct {
-	Type  *SpeechStreamDoneType       `json:"type,omitempty"`
-	Usage SpeechStreamEventsUsageInfo `json:"usage"`
+	Type  *SpeechStreamDoneType `json:"type,omitempty"`
+	Usage UsageInfo             `json:"usage"`
 }
 
 // SpeechStreamDoneType defines model for SpeechStreamDone.Type.
@@ -21352,24 +22913,27 @@ type SpeechStreamEvents_Data struct {
 	union json.RawMessage
 }
 
-// SpeechStreamEventsUsageInfo defines model for SpeechStreamEventsUsageInfo.
-type SpeechStreamEventsUsageInfo struct {
-	CompletionTokens        *int                     `json:"completion_tokens,omitempty"`
-	CompletionTokensDetails *CompletionTokensDetails `json:"completion_tokens_details,omitempty"`
-	NumCachedTokens         *int                     `json:"num_cached_tokens,omitempty"`
-	PromptAudioSeconds      *int                     `json:"prompt_audio_seconds,omitempty"`
-	PromptTokenDetails      *PromptTokensDetails     `json:"prompt_token_details,omitempty"`
-	PromptTokens            *int                     `json:"prompt_tokens,omitempty"`
-	PromptTokensDetails     *PromptTokensDetails     `json:"prompt_tokens_details,omitempty"`
-	RequestCount            *int                     `json:"request_count,omitempty"`
-
-	// ServiceTier The service tier at which the request was processed: standard or priority.
-	ServiceTier *string `json:"service_tier,omitempty"`
-	TotalTokens *int    `json:"total_tokens,omitempty"`
+// SpeechUserTurn defines model for SpeechUserTurn.
+type SpeechUserTurn struct {
+	// Audio User audio for this turn, as a base64-encoded string or raw bytes.
+	Audio RawAudio           `json:"audio"`
+	Role  SpeechUserTurnRole `json:"role"`
 }
+
+// SpeechUserTurnRole defines model for SpeechUserTurn.Role.
+type SpeechUserTurnRole string
 
 // StaticOrganizationRoles defines model for StaticOrganizationRoles.
 type StaticOrganizationRoles string
+
+// StaticToolFiller defines model for StaticToolFiller.
+type StaticToolFiller struct {
+	Text string                `json:"text"`
+	Type *StaticToolFillerType `json:"type,omitempty"`
+}
+
+// StaticToolFillerType defines model for StaticToolFiller.Type.
+type StaticToolFillerType string
 
 // StaticWorkspaceRoles defines model for StaticWorkspaceRoles.
 type StaticWorkspaceRoles string
@@ -21410,8 +22974,38 @@ type StreamEventWorkflowContext struct {
 	WorkflowName         string  `json:"workflow_name"`
 }
 
+// StreamingDelayRange defines model for StreamingDelayRange.
+type StreamingDelayRange struct {
+	Max int `json:"max"`
+	Min int `json:"min"`
+}
+
 // SubscriptionStatus defines model for SubscriptionStatus.
 type SubscriptionStatus string
+
+// SummaryChunk Regular content.
+type SummaryChunk struct {
+	Content string `json:"content"`
+}
+
+// SummaryError If an error is encountered while streaming responses this is returned.
+type SummaryError struct {
+	Error string `json:"error"`
+}
+
+// SummaryMetadata Summary content. Expected to be the first value returned.
+type SummaryMetadata struct {
+	Status     SummaryStatus `json:"status"`
+	Translated bool          `json:"translated"`
+}
+
+// SummaryStatus defines model for SummaryStatus.
+type SummaryStatus string
+
+// SummaryStreamTypes defines model for SummaryStreamTypes.
+type SummaryStreamTypes struct {
+	union json.RawMessage
+}
 
 // SystemFilter defines model for SystemFilter.
 type SystemFilter struct {
@@ -21491,8 +23085,10 @@ type SystemV2 struct {
 	CreatedAt time.Time                                       `json:"created_at"`
 	DeletedAt *time.Time                                      `json:"deleted_at"`
 	Id        openapi_types.UUID                              `json:"id"`
+	Kind      *string                                         `json:"kind,omitempty"`
 	Name      string                                          `json:"name"`
 	Params    map[string]SystemV2_Params_AdditionalProperties `json:"params"`
+	Spec      *map[string]JsonValue                           `json:"spec,omitempty"`
 	UpdatedAt time.Time                                       `json:"updated_at"`
 }
 
@@ -22105,6 +23701,7 @@ type TopKTooLargeResponseType string
 
 // TracesRequest defines model for TracesRequest.
 type TracesRequest struct {
+	// SearchExpression Filter expression. Trace fields (e.g. `service_name`, `error_count`, `models_used`) are evaluated on the aggregated trace. Span attribute fields (e.g. `temporalWorkflowID`, `wf.type`, `gen_ai.provider.name`) are evaluated on the spans of the trace: a trace matches when one of its spans matches. Span attribute conditions combined with AND must hold on the same span, e.g. `temporalWorkflowID = 'wf-1' AND wf.type = 'activity'` only matches traces with a span carrying both attributes. Results are always one row per trace.
 	SearchExpression *string `json:"search_expression,omitempty"`
 }
 
@@ -22186,6 +23783,82 @@ type TranscriptionStreamTextDelta struct {
 
 // TranscriptionStreamTextDeltaType defines model for TranscriptionStreamTextDelta.Type.
 type TranscriptionStreamTextDeltaType string
+
+// TransferCallTool defines model for TransferCallTool.
+type TransferCallTool struct {
+	Destinations []TransferTarget      `json:"destinations"`
+	Filler       *StaticToolFiller     `json:"filler,omitempty"`
+	Type         *TransferCallToolType `json:"type,omitempty"`
+}
+
+// TransferCallToolType defines model for TransferCallTool.Type.
+type TransferCallToolType string
+
+// TransferTarget One allowed hand-off, chosen by the model through `id` alone.
+//
+// The address never reaches the model: it only sees `id` and `condition`, so it
+// cannot dial a near-miss of a real number.
+type TransferTarget struct {
+	Condition   string                     `json:"condition"`
+	Destination TransferTarget_Destination `json:"destination"`
+	Id          string                     `json:"id"`
+}
+
+// TransferTarget_Destination defines model for TransferTarget.Destination.
+type TransferTarget_Destination struct {
+	union json.RawMessage
+}
+
+// Trigger defines model for Trigger.
+type Trigger struct {
+	Action         TriggerAction      `json:"action"`
+	CreatorId      openapi_types.UUID `json:"creator_id"`
+	CustomerId     openapi_types.UUID `json:"customer_id"`
+	EventSource    Webhook            `json:"event_source"`
+	Filters        *string            `json:"filters"`
+	Handler        TriggerHandler     `json:"handler"`
+	Id             openapi_types.UUID `json:"id"`
+	OrganizationId openapi_types.UUID `json:"organization_id"`
+	OwnerType      TriggersOwnerType  `json:"owner_type"`
+	Title          string             `json:"title"`
+	WorkspaceId    openapi_types.UUID `json:"workspace_id"`
+}
+
+// TriggerAction defines model for TriggerAction.
+type TriggerAction struct {
+	PrimitiveId string            `json:"primitive_id"`
+	Type        TriggerActionType `json:"type"`
+}
+
+// TriggerActionType defines model for TriggerActionType.
+type TriggerActionType string
+
+// TriggerEvent defines model for TriggerEvent.
+type TriggerEvent struct {
+	Detail      *string            `json:"detail"`
+	EventId     openapi_types.UUID `json:"event_id"`
+	ReceivedAt  time.Time          `json:"received_at"`
+	SourceId    openapi_types.UUID `json:"source_id"`
+	Status      TriggerStatusValue `json:"status"`
+	SubmittedAt *time.Time         `json:"submitted_at"`
+	TriggerId   openapi_types.UUID `json:"trigger_id"`
+	TriggeredAt *time.Time         `json:"triggered_at"`
+	Url         *string            `json:"url"`
+}
+
+// TriggerEventList defines model for TriggerEventList.
+type TriggerEventList struct {
+	Data []TriggerEvent `json:"data"`
+}
+
+// TriggerHandler defines model for TriggerHandler.
+type TriggerHandler string
+
+// TriggerStatusValue defines model for TriggerStatusValue.
+type TriggerStatusValue string
+
+// TriggersOwnerType defines model for TriggersOwnerType.
+type TriggersOwnerType string
 
 // TurbineMeta defines model for TurbineMeta.
 type TurbineMeta struct {
@@ -22348,7 +24021,7 @@ type UpdateHTTPConnectorRequest struct {
 	Name     *string                            `json:"name,omitempty"`
 	Protocol UpdateHTTPConnectorRequestProtocol `json:"protocol"`
 
-	// Server New connector server URL.
+	// Server New connector server URL. Only private connectors can change it; for shared connectors, it must equal the current server URL.
 	Server *string `json:"server,omitempty"`
 
 	// Title Optional human-readable title for the connector.
@@ -22464,6 +24137,16 @@ type UpdateRunInfo struct {
 type UpdateServiceAccountRequest struct {
 	Description *string `json:"description,omitempty"`
 }
+
+// UpdateSummaryRequestSummary defines model for UpdateSummaryRequestSummary.
+type UpdateSummaryRequestSummary struct {
+	Content    string                            `json:"content"`
+	Status     UpdateSummaryRequestSummaryStatus `json:"status"`
+	Translated bool                              `json:"translated"`
+}
+
+// UpdateSummaryRequestSummaryStatus defines model for UpdateSummaryRequestSummary.Status.
+type UpdateSummaryRequestSummaryStatus string
 
 // UpdateWorkflowResponse defines model for UpdateWorkflowResponse.
 type UpdateWorkflowResponse struct {
@@ -23463,22 +25146,82 @@ type VibeWorkspaceStatsOUT struct {
 	UserPrompts     []VibeUserPromptsStat     `json:"user_prompts"`
 }
 
+// VoiceAgentCustomConnector defines model for VoiceAgentCustomConnector.
+type VoiceAgentCustomConnector struct {
+	// Authorization Deprecated: per-request connector credentials will be removed. Authenticate the connector through the Connectors API instead.
+	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
+	Authorization *struct {
+		union json.RawMessage
+	} `json:"authorization,omitempty"`
+	ConnectorId       string                         `json:"connector_id"`
+	Filler            *StaticToolFiller              `json:"filler,omitempty"`
+	ToolConfiguration *ToolConfiguration             `json:"tool_configuration,omitempty"`
+	Type              *VoiceAgentCustomConnectorType `json:"type,omitempty"`
+}
+
+// VoiceAgentCustomConnectorType defines model for VoiceAgentCustomConnector.Type.
+type VoiceAgentCustomConnectorType string
+
+// VoiceAgentDocumentLibraryTool defines model for VoiceAgentDocumentLibraryTool.
+type VoiceAgentDocumentLibraryTool struct {
+	Filler *StaticToolFiller `json:"filler,omitempty"`
+
+	// LibraryIds Ids of the library in which to search.
+	LibraryIds        []string                           `json:"library_ids"`
+	ToolConfiguration *ToolConfiguration                 `json:"tool_configuration,omitempty"`
+	Type              *VoiceAgentDocumentLibraryToolType `json:"type,omitempty"`
+}
+
+// VoiceAgentDocumentLibraryToolType defines model for VoiceAgentDocumentLibraryTool.Type.
+type VoiceAgentDocumentLibraryToolType string
+
+// VoiceAgentFunctionTool defines model for VoiceAgentFunctionTool.
+type VoiceAgentFunctionTool struct {
+	Filler    *StaticToolFiller           `json:"filler,omitempty"`
+	Function  Function                    `json:"function"`
+	TimeoutMs *int                        `json:"timeout_ms,omitempty"`
+	Type      *VoiceAgentFunctionToolType `json:"type,omitempty"`
+}
+
+// VoiceAgentFunctionToolType defines model for VoiceAgentFunctionTool.Type.
+type VoiceAgentFunctionToolType string
+
+// VoiceAgentFunctionToolRequest defines model for VoiceAgentFunctionToolRequest.
+type VoiceAgentFunctionToolRequest struct {
+	Filler    *StaticToolFiller                  `json:"filler,omitempty"`
+	Function  FunctionRequest                    `json:"function"`
+	TimeoutMs *int                               `json:"timeout_ms,omitempty"`
+	Type      *VoiceAgentFunctionToolRequestType `json:"type,omitempty"`
+}
+
+// VoiceAgentFunctionToolRequestType defines model for VoiceAgentFunctionToolRequest.Type.
+type VoiceAgentFunctionToolRequestType string
+
+// VoiceAgentWebSearchTool defines model for VoiceAgentWebSearchTool.
+type VoiceAgentWebSearchTool struct {
+	Filler            *StaticToolFiller            `json:"filler,omitempty"`
+	ToolConfiguration *ToolConfiguration           `json:"tool_configuration,omitempty"`
+	Type              *VoiceAgentWebSearchToolType `json:"type,omitempty"`
+}
+
+// VoiceAgentWebSearchToolType defines model for VoiceAgentWebSearchTool.Type.
+type VoiceAgentWebSearchToolType string
+
 // VoiceCreateRequest Request model for creating a new voice with base64 audio.
 type VoiceCreateRequest struct {
-	Age             *int      `json:"age,omitempty"`
-	Color           *string   `json:"color,omitempty"`
-	Description     *string   `json:"description,omitempty"`
-	Gender          *string   `json:"gender,omitempty"`
-	Languages       *[]string `json:"languages,omitempty"`
-	Name            string    `json:"name"`
-	RetentionNotice *int      `json:"retention_notice,omitempty"`
+	Age             *int         `json:"age,omitempty"`
+	Color           *string      `json:"color,omitempty"`
+	Description     *string      `json:"description,omitempty"`
+	Gender          *VoiceGender `json:"gender,omitempty"`
+	Languages       *[]string    `json:"languages,omitempty"`
+	Name            string       `json:"name"`
+	RetentionNotice *int         `json:"retention_notice,omitempty"`
 
 	// SampleAudio Base64-encoded audio file
 	SampleAudio *openapi_types.File `json:"sample_audio,omitempty"`
 
 	// SampleFilename Original filename for extension detection
 	SampleFilename *string   `json:"sample_filename,omitempty"`
-	Slug           *string   `json:"slug,omitempty"`
 	Tags           *[]string `json:"tags,omitempty"`
 }
 
@@ -23531,13 +25274,13 @@ type VoiceResponseType string
 
 // VoiceUpdateRequest Request model for partially updating voice metadata.
 type VoiceUpdateRequest struct {
-	Age             *int      `json:"age,omitempty"`
-	Description     *string   `json:"description,omitempty"`
-	Gender          *string   `json:"gender,omitempty"`
-	Languages       *[]string `json:"languages,omitempty"`
-	Name            *string   `json:"name,omitempty"`
-	RetentionNotice *int      `json:"retention_notice,omitempty"`
-	Tags            *[]string `json:"tags,omitempty"`
+	Age             *int         `json:"age,omitempty"`
+	Description     *string      `json:"description,omitempty"`
+	Gender          *VoiceGender `json:"gender,omitempty"`
+	Languages       *[]string    `json:"languages,omitempty"`
+	Name            *string      `json:"name,omitempty"`
+	RetentionNotice *int         `json:"retention_notice,omitempty"`
+	Tags            *[]string    `json:"tags,omitempty"`
 }
 
 // WebSearchPremiumTool defines model for WebSearchPremiumTool.
@@ -23557,6 +25300,46 @@ type WebSearchTool struct {
 
 // WebSearchToolType defines model for WebSearchTool.Type.
 type WebSearchToolType string
+
+// Webhook defines model for Webhook.
+type Webhook struct {
+	CreatedAt               time.Time                      `json:"created_at"`
+	CreatorId               openapi_types.UUID             `json:"creator_id"`
+	EventTypePath           *string                        `json:"event_type_path"`
+	ExpiresAt               *time.Time                     `json:"expires_at"`
+	HttpMethod              string                         `json:"http_method"`
+	Id                      openapi_types.UUID             `json:"id"`
+	Name                    string                         `json:"name"`
+	OrganizationId          openapi_types.UUID             `json:"organization_id"`
+	OwnerType               TriggersOwnerType              `json:"owner_type"`
+	Provider                WebhookProvider                `json:"provider"`
+	SignatureEncoding       *WebhookSignatureEncoding      `json:"signature_encoding"`
+	SignatureExtractorRegex *string                        `json:"signature_extractor_regex"`
+	SignatureHashAlgorithm  *WebhookSignatureHashAlgorithm `json:"signature_hash_algorithm"`
+	SignatureHeaderName     *string                        `json:"signature_header_name"`
+	SignaturePayloadPattern *string                        `json:"signature_payload_pattern"`
+	SuccessStatusCode       *int                           `json:"success_status_code"`
+	TimestampExtractorRegex *string                        `json:"timestamp_extractor_regex"`
+	UpdatedAt               time.Time                      `json:"updated_at"`
+	Url                     string                         `json:"url"`
+	UrlVerified             *bool                          `json:"url_verified"`
+	ValidityPeriodSecond    *int                           `json:"validity_period_second"`
+	WorkspaceId             openapi_types.UUID             `json:"workspace_id"`
+}
+
+// WebhookProvider defines model for WebhookProvider.
+type WebhookProvider string
+
+// WebhookSignatureEncoding defines model for WebhookSignatureEncoding.
+type WebhookSignatureEncoding string
+
+// WebhookSignatureHashAlgorithm defines model for WebhookSignatureHashAlgorithm.
+type WebhookSignatureHashAlgorithm string
+
+// WebhookSigningSecret Signing secret for a Notion webhook, returned to complete URL verification
+type WebhookSigningSecret struct {
+	SigningSecret string `json:"signing_secret"`
+}
 
 // WhoamiOrganization Organization identity and context for the authenticated caller.
 type WhoamiOrganization struct {
@@ -24700,6 +26483,12 @@ type WorkflowScheduleUpdateRequest struct {
 	Schedule PartialScheduleDefinition `json:"schedule"`
 }
 
+// WorkflowTagsAddRequest defines model for WorkflowTagsAddRequest.
+type WorkflowTagsAddRequest struct {
+	// Tags Tags to add to the workflow. Existing tags are kept.
+	Tags []string `json:"tags"`
+}
+
 // WorkflowTaskFailedAttributes Attributes for workflow task failed events.
 type WorkflowTaskFailedAttributes struct {
 	// Failure Details about the failure that caused the task to fail.
@@ -24888,10 +26677,16 @@ type WorkflowWithWorkerStatus struct {
 
 // WorkflowsWorkerSpecUpdate defines model for WorkflowsWorkerSpecUpdate.
 type WorkflowsWorkerSpecUpdate struct {
+	// ArchiveId Rebuild the worker from this archive, dropping 'github_url' and 'revision'. Sending 'github_url' instead moves it back to a repository.
+	ArchiveId *openapi_types.UUID `json:"archive_id,omitempty"`
+
 	// BackendSpec Backend-specific configuration for the Mistral Cloud backend.
 	BackendSpec *DeploymentMistralCloudBackendSpec `json:"backend_spec,omitempty"`
 	GithubUrl   *string                            `json:"github_url,omitempty"`
-	Revision    *string                            `json:"revision,omitempty"`
+
+	// RequestedRoles The complete workspace-role set after the update, beyond `workflow_executor`. Replaces the current roles; omit it to leave them unchanged, send an empty list to drop all extras. Granted only if the deploying user holds them.
+	RequestedRoles *[]string `json:"requested_roles,omitempty"`
+	Revision       *string   `json:"revision,omitempty"`
 }
 
 // WorkspaceEnrichedOUT defines model for WorkspaceEnrichedOUT.
@@ -25271,6 +27066,42 @@ type AgentsApiV1AgentsListVersionsParams struct {
 	PageSize *int `form:"page_size,omitempty" json:"page_size,omitempty"`
 }
 
+// ListAgentsV1AudioAgentsGetParams defines parameters for ListAgentsV1AudioAgentsGet.
+type ListAgentsV1AudioAgentsGetParams struct {
+	// PageSize Maximum number of agents to return
+	PageSize *int `form:"page_size,omitempty" json:"page_size,omitempty"`
+
+	// PageToken Cursor returned as next_page_token by the previous page
+	PageToken *string `form:"page_token,omitempty" json:"page_token,omitempty"`
+
+	// Search Substring match on the agent name
+	Search *string `form:"search,omitempty" json:"search,omitempty"`
+}
+
+// GetAgentV1AudioAgentsAgentIdGetParams defines parameters for GetAgentV1AudioAgentsAgentIdGet.
+type GetAgentV1AudioAgentsAgentIdGetParams struct {
+	// Version Version to return. Defaults to the latest version.
+	Version *int `form:"version,omitempty" json:"version,omitempty"`
+}
+
+// ListAgentSessionsV1AudioAgentsAgentIdSessionsGetParams defines parameters for ListAgentSessionsV1AudioAgentsAgentIdSessionsGet.
+type ListAgentSessionsV1AudioAgentsAgentIdSessionsGetParams struct {
+	// PageSize Maximum number of sessions to return
+	PageSize *int `form:"page_size,omitempty" json:"page_size,omitempty"`
+
+	// PageToken Cursor returned as next_page_token by the previous page
+	PageToken *string `form:"page_token,omitempty" json:"page_token,omitempty"`
+}
+
+// ListAgentVersionsV1AudioAgentsAgentIdVersionsGetParams defines parameters for ListAgentVersionsV1AudioAgentsAgentIdVersionsGet.
+type ListAgentVersionsV1AudioAgentsAgentIdVersionsGetParams struct {
+	// PageSize Maximum number of versions to return
+	PageSize *int `form:"page_size,omitempty" json:"page_size,omitempty"`
+
+	// PageToken Cursor returned as next_page_token by the previous page
+	PageToken *string `form:"page_token,omitempty" json:"page_token,omitempty"`
+}
+
 // ListVoicesV1AudioVoicesGetParams defines parameters for ListVoicesV1AudioVoicesGet.
 type ListVoicesV1AudioVoicesGetParams struct {
 	// Limit Maximum number of voices to return
@@ -25478,6 +27309,44 @@ type ConnectorActivateForConsumerV1ParamsConsumerScope string
 
 // ConnectorDeactivateForConsumerV1ParamsConsumerScope defines parameters for ConnectorDeactivateForConsumerV1.
 type ConnectorDeactivateForConsumerV1ParamsConsumerScope string
+
+// ListIndexesV1ContextSearchIndexesGetParams defines parameters for ListIndexesV1ContextSearchIndexesGet.
+type ListIndexesV1ContextSearchIndexesGetParams struct {
+	// PageSize Maximum number of indexes to return
+	PageSize *int `form:"page_size,omitempty" json:"page_size,omitempty"`
+
+	// PageToken Cursor returned as next_page_token by the previous page
+	PageToken *string `form:"page_token,omitempty" json:"page_token,omitempty"`
+
+	// Name Case-insensitive substring to match against index names
+	Name *string `form:"name,omitempty" json:"name,omitempty"`
+
+	// Status Status to match
+	Status *ManagedIndexStatus `form:"status,omitempty" json:"status,omitempty"`
+
+	// CreatorId Creator ID to match
+	CreatorId *string `form:"creator_id,omitempty" json:"creator_id,omitempty"`
+}
+
+// SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item defines parameters for SearchIndexV1ContextSearchIndexesIndexNameSearchPost.
+type SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item struct {
+	union json.RawMessage
+}
+
+// GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage defines parameters for GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGet.
+type GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage string
+
+// GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParams defines parameters for GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost.
+type GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParams struct {
+	// Force Regenerate the summary even if one already exists for this language
+	Force *bool `form:"force,omitempty" json:"force,omitempty"`
+}
+
+// GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage defines parameters for GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost.
+type GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage string
+
+// SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage defines parameters for SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut.
+type SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage string
 
 // AgentsApiV1ConversationsListParams defines parameters for AgentsApiV1ConversationsList.
 type AgentsApiV1ConversationsListParams struct {
@@ -25821,29 +27690,6 @@ type UpdateIndexMetricsV1RagDeploymentsDeploymentIdMetricsPutJSONBody struct {
 	union json.RawMessage
 }
 
-// ListIndexesV1RagManagedIndexesGetParams defines parameters for ListIndexesV1RagManagedIndexesGet.
-type ListIndexesV1RagManagedIndexesGetParams struct {
-	// PageSize Maximum number of indexes to return
-	PageSize *int `form:"page_size,omitempty" json:"page_size,omitempty"`
-
-	// PageToken Cursor returned as next_page_token by the previous page
-	PageToken *string `form:"page_token,omitempty" json:"page_token,omitempty"`
-
-	// Name Case-insensitive substring to match against index names
-	Name *string `form:"name,omitempty" json:"name,omitempty"`
-
-	// Status Status to match
-	Status *ManagedIndexStatus `form:"status,omitempty" json:"status,omitempty"`
-
-	// CreatorId Creator ID to match
-	CreatorId *string `form:"creator_id,omitempty" json:"creator_id,omitempty"`
-}
-
-// SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item defines parameters for SearchIndexV1RagManagedIndexesIndexNameSearchPost.
-type SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item struct {
-	union json.RawMessage
-}
-
 // ListServiceAccountsV1ServiceAccountsGetParams defines parameters for ListServiceAccountsV1ServiceAccountsGet.
 type ListServiceAccountsV1ServiceAccountsGetParams struct {
 	WorkspaceId    *openapi_types.UUID `form:"workspace_id,omitempty" json:"workspace_id,omitempty"`
@@ -25857,6 +27703,24 @@ type ListServiceAccountsV1ServiceAccountsGetParams struct {
 // ListAssignableServiceAccountRolesV1ServiceAccountsAssignableRolesGetParams defines parameters for ListAssignableServiceAccountRolesV1ServiceAccountsAssignableRolesGet.
 type ListAssignableServiceAccountRolesV1ServiceAccountsAssignableRolesGetParams struct {
 	WorkspaceId openapi_types.UUID `form:"workspace_id" json:"workspace_id"`
+}
+
+// ListTriggersV1TriggersGetParams defines parameters for ListTriggersV1TriggersGet.
+type ListTriggersV1TriggersGetParams struct {
+	// Handler Filter by handler type
+	Handler *TriggerHandler `form:"handler,omitempty" json:"handler,omitempty"`
+
+	// PrimitiveId Filter by primitive ID (workflow, agent, or app)
+	PrimitiveId *string `form:"primitive_id,omitempty" json:"primitive_id,omitempty"`
+
+	// EventSourceId Filter by event source ID (webhook id)
+	EventSourceId *openapi_types.UUID `form:"event_source_id,omitempty" json:"event_source_id,omitempty"`
+}
+
+// ListTriggerEventsV1TriggersTriggerIdEventsGetParams defines parameters for ListTriggerEventsV1TriggersTriggerIdEventsGet.
+type ListTriggerEventsV1TriggersTriggerIdEventsGetParams struct {
+	// Limit Maximum number of events to return
+	Limit *int `form:"limit,omitempty" json:"limit,omitempty"`
 }
 
 // UsersApiListOrganizationsParams defines parameters for UsersApiListOrganizations.
@@ -25971,6 +27835,12 @@ type ListDeploymentsV1WorkflowsDeploymentsGetParams struct {
 
 	// WorkspaceId Workspace ID to scope the request to. Defaults to the caller's context.
 	WorkspaceId *openapi_types.UUID `form:"workspace_id,omitempty" json:"workspace_id,omitempty"`
+
+	// RepositoryUrl Filter managed deployments by source repository URL (exact match)
+	RepositoryUrl *string `form:"repository_url,omitempty" json:"repository_url,omitempty"`
+
+	// DockerfilePath Filter managed deployments by Dockerfile path (exact match)
+	DockerfilePath *string `form:"dockerfile_path,omitempty" json:"dockerfile_path,omitempty"`
 }
 
 // ListDeploymentsV1WorkflowsDeploymentsGetParamsOrderBy defines parameters for ListDeploymentsV1WorkflowsDeploymentsGet.
@@ -26290,7 +28160,7 @@ type GetSchedulesV1WorkflowsSchedulesGetParams struct {
 	// Status Filter by schedule status: 'active' or 'paused'
 	Status *GetSchedulesV1WorkflowsSchedulesGetParamsStatus `form:"status,omitempty" json:"status,omitempty"`
 
-	// Search Prefix search query for workflow name
+	// Search Fuzzy search query for workflow name, display name, description, or ID
 	Search *string `form:"search,omitempty" json:"search,omitempty"`
 
 	// PageSize Number of items per page. Omitting this parameter fetches all results at once (deprecated — pass page_size to use pagination).
@@ -26345,6 +28215,9 @@ type AudioV2VoicesListParams struct {
 
 	// Query Case-insensitive match on voice name
 	Query *string `form:"query,omitempty" json:"query,omitempty"`
+
+	// Kind Keep voices cloned with this technology
+	Kind *VoiceKind `form:"kind,omitempty" json:"kind,omitempty"`
 }
 
 // AudioV2VoicesListParamsType defines parameters for AudioV2VoicesList.
@@ -26420,10 +28293,12 @@ type PromptsUpdateVersionMetadataJSONBody struct {
 
 // SkillsListParams defines parameters for SkillsList.
 type SkillsListParams struct {
-	PageSize  *int32    `form:"pageSize,omitempty" json:"pageSize,omitempty"`
-	PageToken *string   `form:"pageToken,omitempty" json:"pageToken,omitempty"`
-	Alias     *string   `form:"alias,omitempty" json:"alias,omitempty"`
-	Fields    *[]string `form:"fields,omitempty" json:"fields,omitempty"`
+	PageSize  *int32  `form:"pageSize,omitempty" json:"pageSize,omitempty"`
+	PageToken *string `form:"pageToken,omitempty" json:"pageToken,omitempty"`
+	Alias     *string `form:"alias,omitempty" json:"alias,omitempty"`
+
+	// Fields Projection over each listed Skill. definition.description is the only definition path a list accepts; body and assets are read one skill at a time with GetSkill.
+	Fields *[]string `form:"fields,omitempty" json:"fields,omitempty"`
 
 	// SortField Defaults to created_at when omitted.
 	SortField *ListSortField `form:"sort.field,omitempty" json:"sort.field,omitempty"`
@@ -26554,6 +28429,15 @@ type AgentsCompletionV1AgentsCompletionsPostJSONRequestBody = AgentsCompletionRe
 // AgentsApiV1AgentsUpdateJSONRequestBody defines body for AgentsApiV1AgentsUpdate for application/json ContentType.
 type AgentsApiV1AgentsUpdateJSONRequestBody = UpdateAgentRequest
 
+// CreateAgentV1AudioAgentsPostJSONRequestBody defines body for CreateAgentV1AudioAgentsPost for application/json ContentType.
+type CreateAgentV1AudioAgentsPostJSONRequestBody = AudioAgentCreateRequest
+
+// UpdateAgentV1AudioAgentsAgentIdPutJSONRequestBody defines body for UpdateAgentV1AudioAgentsAgentIdPut for application/json ContentType.
+type UpdateAgentV1AudioAgentsAgentIdPutJSONRequestBody = AudioAgentUpdateRequest
+
+// CreateSessionV1AudioSessionsPostJSONRequestBody defines body for CreateSessionV1AudioSessionsPost for application/json ContentType.
+type CreateSessionV1AudioSessionsPostJSONRequestBody = AudioSessionCreateRequest
+
 // SpeechV1AudioSpeechPostJSONRequestBody defines body for SpeechV1AudioSpeechPost for application/json ContentType.
 type SpeechV1AudioSpeechPostJSONRequestBody = SpeechRequest
 
@@ -26603,6 +28487,33 @@ type ConnectorCreateCredentialsV1JSONRequestBody = CredentialsCreateOrUpdate
 
 // ConnectorUpdateV1JSONRequestBody defines body for ConnectorUpdateV1 for application/json ContentType.
 type ConnectorUpdateV1JSONRequestBody ConnectorUpdateV1JSONBody
+
+// CreateIndexV1ContextSearchIndexesPostJSONRequestBody defines body for CreateIndexV1ContextSearchIndexesPost for application/json ContentType.
+type CreateIndexV1ContextSearchIndexesPostJSONRequestBody = CreateManagedIndexRequest
+
+// UpdateIndexV1ContextSearchIndexesIndexNamePutJSONRequestBody defines body for UpdateIndexV1ContextSearchIndexesIndexNamePut for application/json ContentType.
+type UpdateIndexV1ContextSearchIndexesIndexNamePutJSONRequestBody = UpdateManagedIndexRequest
+
+// DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteJSONRequestBody defines body for DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete for application/json ContentType.
+type DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteJSONRequestBody = DeleteDocumentsRequest
+
+// IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostJSONRequestBody defines body for IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost for application/json ContentType.
+type IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostJSONRequestBody = IngestDocumentsRequest
+
+// GrepIndexV1ContextSearchIndexesIndexNameGrepPostJSONRequestBody defines body for GrepIndexV1ContextSearchIndexesIndexNameGrepPost for application/json ContentType.
+type GrepIndexV1ContextSearchIndexesIndexNameGrepPostJSONRequestBody = GrepRequest
+
+// NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostJSONRequestBody defines body for NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost for application/json ContentType.
+type NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostJSONRequestBody = NavigateRequest
+
+// ReadIndexV1ContextSearchIndexesIndexNameReadPostJSONRequestBody defines body for ReadIndexV1ContextSearchIndexesIndexNameReadPost for application/json ContentType.
+type ReadIndexV1ContextSearchIndexesIndexNameReadPostJSONRequestBody = ReadRequest
+
+// SearchIndexV1ContextSearchIndexesIndexNameSearchPostJSONRequestBody defines body for SearchIndexV1ContextSearchIndexesIndexNameSearchPost for application/json ContentType.
+type SearchIndexV1ContextSearchIndexesIndexNameSearchPostJSONRequestBody = SearchRequest
+
+// SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutJSONRequestBody defines body for SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut for application/json ContentType.
+type SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutJSONRequestBody = UpdateSummaryRequestSummary
 
 // AgentsApiV1ConversationsStartJSONRequestBody defines body for AgentsApiV1ConversationsStart for application/json ContentType.
 type AgentsApiV1ConversationsStartJSONRequestBody = ConversationRequest
@@ -26767,30 +28678,6 @@ type RegisterConfigV1RagIngestionPipelineConfigurationsPutJSONRequestBody = Crea
 // UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPutJSONRequestBody defines body for UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPut for application/json ContentType.
 type UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPutJSONRequestBody = UpdateRunInfo
 
-// CreateIndexV1RagManagedIndexesPostJSONRequestBody defines body for CreateIndexV1RagManagedIndexesPost for application/json ContentType.
-type CreateIndexV1RagManagedIndexesPostJSONRequestBody = CreateManagedIndexRequest
-
-// UpdateIndexV1RagManagedIndexesIndexNamePutJSONRequestBody defines body for UpdateIndexV1RagManagedIndexesIndexNamePut for application/json ContentType.
-type UpdateIndexV1RagManagedIndexesIndexNamePutJSONRequestBody = UpdateManagedIndexRequest
-
-// DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteJSONRequestBody defines body for DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete for application/json ContentType.
-type DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteJSONRequestBody = DeleteDocumentsRequest
-
-// IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostJSONRequestBody defines body for IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost for application/json ContentType.
-type IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostJSONRequestBody = IngestDocumentsRequest
-
-// GrepIndexV1RagManagedIndexesIndexNameGrepPostJSONRequestBody defines body for GrepIndexV1RagManagedIndexesIndexNameGrepPost for application/json ContentType.
-type GrepIndexV1RagManagedIndexesIndexNameGrepPostJSONRequestBody = GrepRequest
-
-// NavigateIndexV1RagManagedIndexesIndexNameNavigatePostJSONRequestBody defines body for NavigateIndexV1RagManagedIndexesIndexNameNavigatePost for application/json ContentType.
-type NavigateIndexV1RagManagedIndexesIndexNameNavigatePostJSONRequestBody = NavigateRequest
-
-// ReadIndexV1RagManagedIndexesIndexNameReadPostJSONRequestBody defines body for ReadIndexV1RagManagedIndexesIndexNameReadPost for application/json ContentType.
-type ReadIndexV1RagManagedIndexesIndexNameReadPostJSONRequestBody = ReadRequest
-
-// SearchIndexV1RagManagedIndexesIndexNameSearchPostJSONRequestBody defines body for SearchIndexV1RagManagedIndexesIndexNameSearchPost for application/json ContentType.
-type SearchIndexV1RagManagedIndexesIndexNameSearchPostJSONRequestBody = SearchRequest
-
 // CreateResponseV1ResponsesPostJSONRequestBody defines body for CreateResponseV1ResponsesPost for application/json ContentType.
 type CreateResponseV1ResponsesPostJSONRequestBody = CreateResponseRequest
 
@@ -26805,6 +28692,12 @@ type UpdateServiceAccountV1ServiceAccountsServiceAccountIdPatchJSONRequestBody =
 
 // SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPutJSONRequestBody defines body for SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPut for application/json ContentType.
 type SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPutJSONRequestBody = SetServiceAccountRolesRequest
+
+// CreateTriggerV1TriggersPostJSONRequestBody defines body for CreateTriggerV1TriggersPost for application/json ContentType.
+type CreateTriggerV1TriggersPostJSONRequestBody = CreateTrigger
+
+// CreateWebhookV1WebhooksPostJSONRequestBody defines body for CreateWebhookV1WebhooksPost for application/json ContentType.
+type CreateWebhookV1WebhooksPostJSONRequestBody = CreateWebhook
 
 // BulkArchiveWorkflowsV1WorkflowsArchivePutJSONRequestBody defines body for BulkArchiveWorkflowsV1WorkflowsArchivePut for application/json ContentType.
 type BulkArchiveWorkflowsV1WorkflowsArchivePutJSONRequestBody = WorkflowBulkArchiveRequest
@@ -26861,6 +28754,9 @@ type UpdateWorkflowV1WorkflowsWorkflowIdentifierPutJSONRequestBody = WorkflowUpd
 
 // ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostJSONRequestBody defines body for ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePost for application/json ContentType.
 type ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostJSONRequestBody = WorkflowExecutionRequest
+
+// AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostJSONRequestBody defines body for AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost for application/json ContentType.
+type AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostJSONRequestBody = WorkflowTagsAddRequest
 
 // PromptsCreateJSONRequestBody defines body for PromptsCreate for application/json ContentType.
 type PromptsCreateJSONRequestBody = CreatePromptRequest
@@ -36730,6 +38626,22 @@ func (a *SpeechRequest) UnmarshalJSON(b []byte) error {
 		return err
 	}
 
+	if raw, found := object["conversation_history"]; found {
+		err = json.Unmarshal(raw, &a.ConversationHistory)
+		if err != nil {
+			return fmt.Errorf("error reading 'conversation_history': %w", err)
+		}
+		delete(object, "conversation_history")
+	}
+
+	if raw, found := object["expressiveness"]; found {
+		err = json.Unmarshal(raw, &a.Expressiveness)
+		if err != nil {
+			return fmt.Errorf("error reading 'expressiveness': %w", err)
+		}
+		delete(object, "expressiveness")
+	}
+
 	if raw, found := object["input"]; found {
 		err = json.Unmarshal(raw, &a.Input)
 		if err != nil {
@@ -36820,6 +38732,20 @@ func (a *SpeechRequest) UnmarshalJSON(b []byte) error {
 func (a SpeechRequest) MarshalJSON() ([]byte, error) {
 	var err error
 	object := make(map[string]json.RawMessage)
+
+	if a.ConversationHistory != nil {
+		object["conversation_history"], err = json.Marshal(a.ConversationHistory)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'conversation_history': %w", err)
+		}
+	}
+
+	if a.Expressiveness != nil {
+		object["expressiveness"], err = json.Marshal(a.Expressiveness)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'expressiveness': %w", err)
+		}
+	}
 
 	object["input"], err = json.Marshal(a.Input)
 	if err != nil {
@@ -38984,6 +40910,496 @@ func (t *AssistantMessage_Content) UnmarshalJSON(b []byte) error {
 	return err
 }
 
+// AsVoiceAgentWebSearchTool returns the union data inside the AudioAgentConfigurationRequest_Tools_Item as a VoiceAgentWebSearchTool
+func (t AudioAgentConfigurationRequest_Tools_Item) AsVoiceAgentWebSearchTool() (VoiceAgentWebSearchTool, error) {
+	var body VoiceAgentWebSearchTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentWebSearchTool overwrites any union data inside the AudioAgentConfigurationRequest_Tools_Item as the provided VoiceAgentWebSearchTool
+func (t *AudioAgentConfigurationRequest_Tools_Item) FromVoiceAgentWebSearchTool(v VoiceAgentWebSearchTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"web_search"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentWebSearchTool performs a merge with any union data inside the AudioAgentConfigurationRequest_Tools_Item, using the provided VoiceAgentWebSearchTool
+func (t *AudioAgentConfigurationRequest_Tools_Item) MergeVoiceAgentWebSearchTool(v VoiceAgentWebSearchTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"web_search"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentDocumentLibraryTool returns the union data inside the AudioAgentConfigurationRequest_Tools_Item as a VoiceAgentDocumentLibraryTool
+func (t AudioAgentConfigurationRequest_Tools_Item) AsVoiceAgentDocumentLibraryTool() (VoiceAgentDocumentLibraryTool, error) {
+	var body VoiceAgentDocumentLibraryTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentDocumentLibraryTool overwrites any union data inside the AudioAgentConfigurationRequest_Tools_Item as the provided VoiceAgentDocumentLibraryTool
+func (t *AudioAgentConfigurationRequest_Tools_Item) FromVoiceAgentDocumentLibraryTool(v VoiceAgentDocumentLibraryTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"document_library"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentDocumentLibraryTool performs a merge with any union data inside the AudioAgentConfigurationRequest_Tools_Item, using the provided VoiceAgentDocumentLibraryTool
+func (t *AudioAgentConfigurationRequest_Tools_Item) MergeVoiceAgentDocumentLibraryTool(v VoiceAgentDocumentLibraryTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"document_library"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentCustomConnector returns the union data inside the AudioAgentConfigurationRequest_Tools_Item as a VoiceAgentCustomConnector
+func (t AudioAgentConfigurationRequest_Tools_Item) AsVoiceAgentCustomConnector() (VoiceAgentCustomConnector, error) {
+	var body VoiceAgentCustomConnector
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentCustomConnector overwrites any union data inside the AudioAgentConfigurationRequest_Tools_Item as the provided VoiceAgentCustomConnector
+func (t *AudioAgentConfigurationRequest_Tools_Item) FromVoiceAgentCustomConnector(v VoiceAgentCustomConnector) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"connector"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentCustomConnector performs a merge with any union data inside the AudioAgentConfigurationRequest_Tools_Item, using the provided VoiceAgentCustomConnector
+func (t *AudioAgentConfigurationRequest_Tools_Item) MergeVoiceAgentCustomConnector(v VoiceAgentCustomConnector) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"connector"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentFunctionToolRequest returns the union data inside the AudioAgentConfigurationRequest_Tools_Item as a VoiceAgentFunctionToolRequest
+func (t AudioAgentConfigurationRequest_Tools_Item) AsVoiceAgentFunctionToolRequest() (VoiceAgentFunctionToolRequest, error) {
+	var body VoiceAgentFunctionToolRequest
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentFunctionToolRequest overwrites any union data inside the AudioAgentConfigurationRequest_Tools_Item as the provided VoiceAgentFunctionToolRequest
+func (t *AudioAgentConfigurationRequest_Tools_Item) FromVoiceAgentFunctionToolRequest(v VoiceAgentFunctionToolRequest) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"function"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentFunctionToolRequest performs a merge with any union data inside the AudioAgentConfigurationRequest_Tools_Item, using the provided VoiceAgentFunctionToolRequest
+func (t *AudioAgentConfigurationRequest_Tools_Item) MergeVoiceAgentFunctionToolRequest(v VoiceAgentFunctionToolRequest) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"function"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsTransferCallTool returns the union data inside the AudioAgentConfigurationRequest_Tools_Item as a TransferCallTool
+func (t AudioAgentConfigurationRequest_Tools_Item) AsTransferCallTool() (TransferCallTool, error) {
+	var body TransferCallTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromTransferCallTool overwrites any union data inside the AudioAgentConfigurationRequest_Tools_Item as the provided TransferCallTool
+func (t *AudioAgentConfigurationRequest_Tools_Item) FromTransferCallTool(v TransferCallTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"transfer_call"}`))
+	t.union = b
+	return err
+}
+
+// MergeTransferCallTool performs a merge with any union data inside the AudioAgentConfigurationRequest_Tools_Item, using the provided TransferCallTool
+func (t *AudioAgentConfigurationRequest_Tools_Item) MergeTransferCallTool(v TransferCallTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"transfer_call"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsHangUpTool returns the union data inside the AudioAgentConfigurationRequest_Tools_Item as a HangUpTool
+func (t AudioAgentConfigurationRequest_Tools_Item) AsHangUpTool() (HangUpTool, error) {
+	var body HangUpTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromHangUpTool overwrites any union data inside the AudioAgentConfigurationRequest_Tools_Item as the provided HangUpTool
+func (t *AudioAgentConfigurationRequest_Tools_Item) FromHangUpTool(v HangUpTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"hang_up"}`))
+	t.union = b
+	return err
+}
+
+// MergeHangUpTool performs a merge with any union data inside the AudioAgentConfigurationRequest_Tools_Item, using the provided HangUpTool
+func (t *AudioAgentConfigurationRequest_Tools_Item) MergeHangUpTool(v HangUpTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"hang_up"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t AudioAgentConfigurationRequest_Tools_Item) Discriminator() (string, error) {
+	var discriminator struct {
+		Discriminator string `json:"type"`
+	}
+	err := json.Unmarshal(t.union, &discriminator)
+	return discriminator.Discriminator, err
+}
+
+func (t AudioAgentConfigurationRequest_Tools_Item) ValueByDiscriminator() (interface{}, error) {
+	discriminator, err := t.Discriminator()
+	if err != nil {
+		return nil, err
+	}
+	switch discriminator {
+	case "connector":
+		return t.AsVoiceAgentCustomConnector()
+	case "document_library":
+		return t.AsVoiceAgentDocumentLibraryTool()
+	case "function":
+		return t.AsVoiceAgentFunctionToolRequest()
+	case "hang_up":
+		return t.AsHangUpTool()
+	case "transfer_call":
+		return t.AsTransferCallTool()
+	case "web_search":
+		return t.AsVoiceAgentWebSearchTool()
+	default:
+		return nil, errors.New("unknown discriminator value: " + discriminator)
+	}
+}
+
+func (t AudioAgentConfigurationRequest_Tools_Item) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *AudioAgentConfigurationRequest_Tools_Item) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsVoiceAgentWebSearchTool returns the union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as a VoiceAgentWebSearchTool
+func (t AudioAgentConfigurationResponseConfig_Tools_Item) AsVoiceAgentWebSearchTool() (VoiceAgentWebSearchTool, error) {
+	var body VoiceAgentWebSearchTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentWebSearchTool overwrites any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as the provided VoiceAgentWebSearchTool
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) FromVoiceAgentWebSearchTool(v VoiceAgentWebSearchTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"web_search"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentWebSearchTool performs a merge with any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item, using the provided VoiceAgentWebSearchTool
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) MergeVoiceAgentWebSearchTool(v VoiceAgentWebSearchTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"web_search"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentDocumentLibraryTool returns the union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as a VoiceAgentDocumentLibraryTool
+func (t AudioAgentConfigurationResponseConfig_Tools_Item) AsVoiceAgentDocumentLibraryTool() (VoiceAgentDocumentLibraryTool, error) {
+	var body VoiceAgentDocumentLibraryTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentDocumentLibraryTool overwrites any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as the provided VoiceAgentDocumentLibraryTool
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) FromVoiceAgentDocumentLibraryTool(v VoiceAgentDocumentLibraryTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"document_library"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentDocumentLibraryTool performs a merge with any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item, using the provided VoiceAgentDocumentLibraryTool
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) MergeVoiceAgentDocumentLibraryTool(v VoiceAgentDocumentLibraryTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"document_library"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentCustomConnector returns the union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as a VoiceAgentCustomConnector
+func (t AudioAgentConfigurationResponseConfig_Tools_Item) AsVoiceAgentCustomConnector() (VoiceAgentCustomConnector, error) {
+	var body VoiceAgentCustomConnector
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentCustomConnector overwrites any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as the provided VoiceAgentCustomConnector
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) FromVoiceAgentCustomConnector(v VoiceAgentCustomConnector) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"connector"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentCustomConnector performs a merge with any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item, using the provided VoiceAgentCustomConnector
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) MergeVoiceAgentCustomConnector(v VoiceAgentCustomConnector) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"connector"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentFunctionTool returns the union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as a VoiceAgentFunctionTool
+func (t AudioAgentConfigurationResponseConfig_Tools_Item) AsVoiceAgentFunctionTool() (VoiceAgentFunctionTool, error) {
+	var body VoiceAgentFunctionTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentFunctionTool overwrites any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as the provided VoiceAgentFunctionTool
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) FromVoiceAgentFunctionTool(v VoiceAgentFunctionTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"function"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentFunctionTool performs a merge with any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item, using the provided VoiceAgentFunctionTool
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) MergeVoiceAgentFunctionTool(v VoiceAgentFunctionTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"function"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsTransferCallTool returns the union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as a TransferCallTool
+func (t AudioAgentConfigurationResponseConfig_Tools_Item) AsTransferCallTool() (TransferCallTool, error) {
+	var body TransferCallTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromTransferCallTool overwrites any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as the provided TransferCallTool
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) FromTransferCallTool(v TransferCallTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"transfer_call"}`))
+	t.union = b
+	return err
+}
+
+// MergeTransferCallTool performs a merge with any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item, using the provided TransferCallTool
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) MergeTransferCallTool(v TransferCallTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"transfer_call"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsHangUpTool returns the union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as a HangUpTool
+func (t AudioAgentConfigurationResponseConfig_Tools_Item) AsHangUpTool() (HangUpTool, error) {
+	var body HangUpTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromHangUpTool overwrites any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item as the provided HangUpTool
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) FromHangUpTool(v HangUpTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"hang_up"}`))
+	t.union = b
+	return err
+}
+
+// MergeHangUpTool performs a merge with any union data inside the AudioAgentConfigurationResponseConfig_Tools_Item, using the provided HangUpTool
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) MergeHangUpTool(v HangUpTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"hang_up"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t AudioAgentConfigurationResponseConfig_Tools_Item) Discriminator() (string, error) {
+	var discriminator struct {
+		Discriminator string `json:"type"`
+	}
+	err := json.Unmarshal(t.union, &discriminator)
+	return discriminator.Discriminator, err
+}
+
+func (t AudioAgentConfigurationResponseConfig_Tools_Item) ValueByDiscriminator() (interface{}, error) {
+	discriminator, err := t.Discriminator()
+	if err != nil {
+		return nil, err
+	}
+	switch discriminator {
+	case "connector":
+		return t.AsVoiceAgentCustomConnector()
+	case "document_library":
+		return t.AsVoiceAgentDocumentLibraryTool()
+	case "function":
+		return t.AsVoiceAgentFunctionTool()
+	case "hang_up":
+		return t.AsHangUpTool()
+	case "transfer_call":
+		return t.AsTransferCallTool()
+	case "web_search":
+		return t.AsVoiceAgentWebSearchTool()
+	default:
+		return nil, errors.New("unknown discriminator value: " + discriminator)
+	}
+}
+
+func (t AudioAgentConfigurationResponseConfig_Tools_Item) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *AudioAgentConfigurationResponseConfig_Tools_Item) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsAudioChunkInputAudio0 returns the union data inside the AudioChunk_InputAudio as a AudioChunkInputAudio0
 func (t AudioChunk_InputAudio) AsAudioChunkInputAudio0() (AudioChunkInputAudio0, error) {
 	var body AudioChunkInputAudio0
@@ -39042,6 +41458,388 @@ func (t AudioChunk_InputAudio) MarshalJSON() ([]byte, error) {
 }
 
 func (t *AudioChunk_InputAudio) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsVoiceAgentWebSearchTool returns the union data inside the AudioSessionCreateRequest_Tools_Item as a VoiceAgentWebSearchTool
+func (t AudioSessionCreateRequest_Tools_Item) AsVoiceAgentWebSearchTool() (VoiceAgentWebSearchTool, error) {
+	var body VoiceAgentWebSearchTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentWebSearchTool overwrites any union data inside the AudioSessionCreateRequest_Tools_Item as the provided VoiceAgentWebSearchTool
+func (t *AudioSessionCreateRequest_Tools_Item) FromVoiceAgentWebSearchTool(v VoiceAgentWebSearchTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"web_search"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentWebSearchTool performs a merge with any union data inside the AudioSessionCreateRequest_Tools_Item, using the provided VoiceAgentWebSearchTool
+func (t *AudioSessionCreateRequest_Tools_Item) MergeVoiceAgentWebSearchTool(v VoiceAgentWebSearchTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"web_search"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentDocumentLibraryTool returns the union data inside the AudioSessionCreateRequest_Tools_Item as a VoiceAgentDocumentLibraryTool
+func (t AudioSessionCreateRequest_Tools_Item) AsVoiceAgentDocumentLibraryTool() (VoiceAgentDocumentLibraryTool, error) {
+	var body VoiceAgentDocumentLibraryTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentDocumentLibraryTool overwrites any union data inside the AudioSessionCreateRequest_Tools_Item as the provided VoiceAgentDocumentLibraryTool
+func (t *AudioSessionCreateRequest_Tools_Item) FromVoiceAgentDocumentLibraryTool(v VoiceAgentDocumentLibraryTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"document_library"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentDocumentLibraryTool performs a merge with any union data inside the AudioSessionCreateRequest_Tools_Item, using the provided VoiceAgentDocumentLibraryTool
+func (t *AudioSessionCreateRequest_Tools_Item) MergeVoiceAgentDocumentLibraryTool(v VoiceAgentDocumentLibraryTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"document_library"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentCustomConnector returns the union data inside the AudioSessionCreateRequest_Tools_Item as a VoiceAgentCustomConnector
+func (t AudioSessionCreateRequest_Tools_Item) AsVoiceAgentCustomConnector() (VoiceAgentCustomConnector, error) {
+	var body VoiceAgentCustomConnector
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentCustomConnector overwrites any union data inside the AudioSessionCreateRequest_Tools_Item as the provided VoiceAgentCustomConnector
+func (t *AudioSessionCreateRequest_Tools_Item) FromVoiceAgentCustomConnector(v VoiceAgentCustomConnector) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"connector"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentCustomConnector performs a merge with any union data inside the AudioSessionCreateRequest_Tools_Item, using the provided VoiceAgentCustomConnector
+func (t *AudioSessionCreateRequest_Tools_Item) MergeVoiceAgentCustomConnector(v VoiceAgentCustomConnector) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"connector"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentFunctionToolRequest returns the union data inside the AudioSessionCreateRequest_Tools_Item as a VoiceAgentFunctionToolRequest
+func (t AudioSessionCreateRequest_Tools_Item) AsVoiceAgentFunctionToolRequest() (VoiceAgentFunctionToolRequest, error) {
+	var body VoiceAgentFunctionToolRequest
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentFunctionToolRequest overwrites any union data inside the AudioSessionCreateRequest_Tools_Item as the provided VoiceAgentFunctionToolRequest
+func (t *AudioSessionCreateRequest_Tools_Item) FromVoiceAgentFunctionToolRequest(v VoiceAgentFunctionToolRequest) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"function"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentFunctionToolRequest performs a merge with any union data inside the AudioSessionCreateRequest_Tools_Item, using the provided VoiceAgentFunctionToolRequest
+func (t *AudioSessionCreateRequest_Tools_Item) MergeVoiceAgentFunctionToolRequest(v VoiceAgentFunctionToolRequest) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"function"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsTransferCallTool returns the union data inside the AudioSessionCreateRequest_Tools_Item as a TransferCallTool
+func (t AudioSessionCreateRequest_Tools_Item) AsTransferCallTool() (TransferCallTool, error) {
+	var body TransferCallTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromTransferCallTool overwrites any union data inside the AudioSessionCreateRequest_Tools_Item as the provided TransferCallTool
+func (t *AudioSessionCreateRequest_Tools_Item) FromTransferCallTool(v TransferCallTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"transfer_call"}`))
+	t.union = b
+	return err
+}
+
+// MergeTransferCallTool performs a merge with any union data inside the AudioSessionCreateRequest_Tools_Item, using the provided TransferCallTool
+func (t *AudioSessionCreateRequest_Tools_Item) MergeTransferCallTool(v TransferCallTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"transfer_call"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsHangUpTool returns the union data inside the AudioSessionCreateRequest_Tools_Item as a HangUpTool
+func (t AudioSessionCreateRequest_Tools_Item) AsHangUpTool() (HangUpTool, error) {
+	var body HangUpTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromHangUpTool overwrites any union data inside the AudioSessionCreateRequest_Tools_Item as the provided HangUpTool
+func (t *AudioSessionCreateRequest_Tools_Item) FromHangUpTool(v HangUpTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"hang_up"}`))
+	t.union = b
+	return err
+}
+
+// MergeHangUpTool performs a merge with any union data inside the AudioSessionCreateRequest_Tools_Item, using the provided HangUpTool
+func (t *AudioSessionCreateRequest_Tools_Item) MergeHangUpTool(v HangUpTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"hang_up"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t AudioSessionCreateRequest_Tools_Item) Discriminator() (string, error) {
+	var discriminator struct {
+		Discriminator string `json:"type"`
+	}
+	err := json.Unmarshal(t.union, &discriminator)
+	return discriminator.Discriminator, err
+}
+
+func (t AudioSessionCreateRequest_Tools_Item) ValueByDiscriminator() (interface{}, error) {
+	discriminator, err := t.Discriminator()
+	if err != nil {
+		return nil, err
+	}
+	switch discriminator {
+	case "connector":
+		return t.AsVoiceAgentCustomConnector()
+	case "document_library":
+		return t.AsVoiceAgentDocumentLibraryTool()
+	case "function":
+		return t.AsVoiceAgentFunctionToolRequest()
+	case "hang_up":
+		return t.AsHangUpTool()
+	case "transfer_call":
+		return t.AsTransferCallTool()
+	case "web_search":
+		return t.AsVoiceAgentWebSearchTool()
+	default:
+		return nil, errors.New("unknown discriminator value: " + discriminator)
+	}
+}
+
+func (t AudioSessionCreateRequest_Tools_Item) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *AudioSessionCreateRequest_Tools_Item) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsAudioUserTranscriptTurn returns the union data inside the AudioSessionResponse_Transcripts_Item as a AudioUserTranscriptTurn
+func (t AudioSessionResponse_Transcripts_Item) AsAudioUserTranscriptTurn() (AudioUserTranscriptTurn, error) {
+	var body AudioUserTranscriptTurn
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromAudioUserTranscriptTurn overwrites any union data inside the AudioSessionResponse_Transcripts_Item as the provided AudioUserTranscriptTurn
+func (t *AudioSessionResponse_Transcripts_Item) FromAudioUserTranscriptTurn(v AudioUserTranscriptTurn) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"role":"user"}`))
+	t.union = b
+	return err
+}
+
+// MergeAudioUserTranscriptTurn performs a merge with any union data inside the AudioSessionResponse_Transcripts_Item, using the provided AudioUserTranscriptTurn
+func (t *AudioSessionResponse_Transcripts_Item) MergeAudioUserTranscriptTurn(v AudioUserTranscriptTurn) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"role":"user"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsAudioAssistantTranscriptTurn returns the union data inside the AudioSessionResponse_Transcripts_Item as a AudioAssistantTranscriptTurn
+func (t AudioSessionResponse_Transcripts_Item) AsAudioAssistantTranscriptTurn() (AudioAssistantTranscriptTurn, error) {
+	var body AudioAssistantTranscriptTurn
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromAudioAssistantTranscriptTurn overwrites any union data inside the AudioSessionResponse_Transcripts_Item as the provided AudioAssistantTranscriptTurn
+func (t *AudioSessionResponse_Transcripts_Item) FromAudioAssistantTranscriptTurn(v AudioAssistantTranscriptTurn) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"role":"assistant"}`))
+	t.union = b
+	return err
+}
+
+// MergeAudioAssistantTranscriptTurn performs a merge with any union data inside the AudioSessionResponse_Transcripts_Item, using the provided AudioAssistantTranscriptTurn
+func (t *AudioSessionResponse_Transcripts_Item) MergeAudioAssistantTranscriptTurn(v AudioAssistantTranscriptTurn) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"role":"assistant"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsAudioToolTranscriptTurn returns the union data inside the AudioSessionResponse_Transcripts_Item as a AudioToolTranscriptTurn
+func (t AudioSessionResponse_Transcripts_Item) AsAudioToolTranscriptTurn() (AudioToolTranscriptTurn, error) {
+	var body AudioToolTranscriptTurn
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromAudioToolTranscriptTurn overwrites any union data inside the AudioSessionResponse_Transcripts_Item as the provided AudioToolTranscriptTurn
+func (t *AudioSessionResponse_Transcripts_Item) FromAudioToolTranscriptTurn(v AudioToolTranscriptTurn) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"role":"tool"}`))
+	t.union = b
+	return err
+}
+
+// MergeAudioToolTranscriptTurn performs a merge with any union data inside the AudioSessionResponse_Transcripts_Item, using the provided AudioToolTranscriptTurn
+func (t *AudioSessionResponse_Transcripts_Item) MergeAudioToolTranscriptTurn(v AudioToolTranscriptTurn) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"role":"tool"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t AudioSessionResponse_Transcripts_Item) Discriminator() (string, error) {
+	var discriminator struct {
+		Discriminator string `json:"role"`
+	}
+	err := json.Unmarshal(t.union, &discriminator)
+	return discriminator.Discriminator, err
+}
+
+func (t AudioSessionResponse_Transcripts_Item) ValueByDiscriminator() (interface{}, error) {
+	discriminator, err := t.Discriminator()
+	if err != nil {
+		return nil, err
+	}
+	switch discriminator {
+	case "assistant":
+		return t.AsAudioAssistantTranscriptTurn()
+	case "tool":
+		return t.AsAudioToolTranscriptTurn()
+	case "user":
+		return t.AsAudioUserTranscriptTurn()
+	default:
+		return nil, errors.New("unknown discriminator value: " + discriminator)
+	}
+}
+
+func (t AudioSessionResponse_Transcripts_Item) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *AudioSessionResponse_Transcripts_Item) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -45581,6 +48379,107 @@ func (t *GetDeploymentSummariesResponseDeployment_Deployment) UnmarshalJSON(b []
 	return err
 }
 
+// AsOtelEnumFieldDefinition returns the union data inside the GetPipelineResultFields_FieldDefinitions_Item as a OtelEnumFieldDefinition
+func (t GetPipelineResultFields_FieldDefinitions_Item) AsOtelEnumFieldDefinition() (OtelEnumFieldDefinition, error) {
+	var body OtelEnumFieldDefinition
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromOtelEnumFieldDefinition overwrites any union data inside the GetPipelineResultFields_FieldDefinitions_Item as the provided OtelEnumFieldDefinition
+func (t *GetPipelineResultFields_FieldDefinitions_Item) FromOtelEnumFieldDefinition(v OtelEnumFieldDefinition) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"ENUM"}`))
+	t.union = b
+	return err
+}
+
+// MergeOtelEnumFieldDefinition performs a merge with any union data inside the GetPipelineResultFields_FieldDefinitions_Item, using the provided OtelEnumFieldDefinition
+func (t *GetPipelineResultFields_FieldDefinitions_Item) MergeOtelEnumFieldDefinition(v OtelEnumFieldDefinition) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"ENUM"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsOtelFloatFieldDefinition returns the union data inside the GetPipelineResultFields_FieldDefinitions_Item as a OtelFloatFieldDefinition
+func (t GetPipelineResultFields_FieldDefinitions_Item) AsOtelFloatFieldDefinition() (OtelFloatFieldDefinition, error) {
+	var body OtelFloatFieldDefinition
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromOtelFloatFieldDefinition overwrites any union data inside the GetPipelineResultFields_FieldDefinitions_Item as the provided OtelFloatFieldDefinition
+func (t *GetPipelineResultFields_FieldDefinitions_Item) FromOtelFloatFieldDefinition(v OtelFloatFieldDefinition) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"FLOAT"}`))
+	t.union = b
+	return err
+}
+
+// MergeOtelFloatFieldDefinition performs a merge with any union data inside the GetPipelineResultFields_FieldDefinitions_Item, using the provided OtelFloatFieldDefinition
+func (t *GetPipelineResultFields_FieldDefinitions_Item) MergeOtelFloatFieldDefinition(v OtelFloatFieldDefinition) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"FLOAT"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t GetPipelineResultFields_FieldDefinitions_Item) Discriminator() (string, error) {
+	var discriminator struct {
+		Discriminator string `json:"type"`
+	}
+	err := json.Unmarshal(t.union, &discriminator)
+	return discriminator.Discriminator, err
+}
+
+func (t GetPipelineResultFields_FieldDefinitions_Item) ValueByDiscriminator() (interface{}, error) {
+	discriminator, err := t.Discriminator()
+	if err != nil {
+		return nil, err
+	}
+	switch discriminator {
+	case "ENUM":
+		return t.AsOtelEnumFieldDefinition()
+	case "FLOAT":
+		return t.AsOtelFloatFieldDefinition()
+	default:
+		return nil, errors.New("unknown discriminator value: " + discriminator)
+	}
+}
+
+func (t GetPipelineResultFields_FieldDefinitions_Item) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *GetPipelineResultFields_FieldDefinitions_Item) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsImageURL returns the union data inside the ImageURLChunk_ImageUrl as a ImageURL
 func (t ImageURLChunk_ImageUrl) AsImageURL() (ImageURL, error) {
 	var body ImageURL
@@ -50923,6 +53822,107 @@ func (t *OCRRequest_Pages) UnmarshalJSON(b []byte) error {
 	return err
 }
 
+// AsOpenApiUrlSource returns the union data inside the OpenApiSpecSource as a OpenApiUrlSource
+func (t OpenApiSpecSource) AsOpenApiUrlSource() (OpenApiUrlSource, error) {
+	var body OpenApiUrlSource
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromOpenApiUrlSource overwrites any union data inside the OpenApiSpecSource as the provided OpenApiUrlSource
+func (t *OpenApiSpecSource) FromOpenApiUrlSource(v OpenApiUrlSource) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"url"}`))
+	t.union = b
+	return err
+}
+
+// MergeOpenApiUrlSource performs a merge with any union data inside the OpenApiSpecSource, using the provided OpenApiUrlSource
+func (t *OpenApiSpecSource) MergeOpenApiUrlSource(v OpenApiUrlSource) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"url"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsOpenApiFileSource returns the union data inside the OpenApiSpecSource as a OpenApiFileSource
+func (t OpenApiSpecSource) AsOpenApiFileSource() (OpenApiFileSource, error) {
+	var body OpenApiFileSource
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromOpenApiFileSource overwrites any union data inside the OpenApiSpecSource as the provided OpenApiFileSource
+func (t *OpenApiSpecSource) FromOpenApiFileSource(v OpenApiFileSource) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"file"}`))
+	t.union = b
+	return err
+}
+
+// MergeOpenApiFileSource performs a merge with any union data inside the OpenApiSpecSource, using the provided OpenApiFileSource
+func (t *OpenApiSpecSource) MergeOpenApiFileSource(v OpenApiFileSource) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"file"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t OpenApiSpecSource) Discriminator() (string, error) {
+	var discriminator struct {
+		Discriminator string `json:"type"`
+	}
+	err := json.Unmarshal(t.union, &discriminator)
+	return discriminator.Discriminator, err
+}
+
+func (t OpenApiSpecSource) ValueByDiscriminator() (interface{}, error) {
+	discriminator, err := t.Discriminator()
+	if err != nil {
+		return nil, err
+	}
+	switch discriminator {
+	case "file":
+		return t.AsOpenApiFileSource()
+	case "url":
+		return t.AsOpenApiUrlSource()
+	default:
+		return nil, errors.New("unknown discriminator value: " + discriminator)
+	}
+}
+
+func (t OpenApiSpecSource) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *OpenApiSpecSource) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsAnd returns the union data inside the Or_Matches_Item as a And
 func (t Or_Matches_Item) AsAnd() (And, error) {
 	var body And
@@ -52680,6 +55680,68 @@ func (t Range_Lte) MarshalJSON() ([]byte, error) {
 }
 
 func (t *Range_Lte) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsRawAudioData0 returns the union data inside the RawAudio_Data as a RawAudioData0
+func (t RawAudio_Data) AsRawAudioData0() (RawAudioData0, error) {
+	var body RawAudioData0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromRawAudioData0 overwrites any union data inside the RawAudio_Data as the provided RawAudioData0
+func (t *RawAudio_Data) FromRawAudioData0(v RawAudioData0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergeRawAudioData0 performs a merge with any union data inside the RawAudio_Data, using the provided RawAudioData0
+func (t *RawAudio_Data) MergeRawAudioData0(v RawAudioData0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsRawAudioData1 returns the union data inside the RawAudio_Data as a RawAudioData1
+func (t RawAudio_Data) AsRawAudioData1() (RawAudioData1, error) {
+	var body RawAudioData1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromRawAudioData1 overwrites any union data inside the RawAudio_Data as the provided RawAudioData1
+func (t *RawAudio_Data) FromRawAudioData1(v RawAudioData1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergeRawAudioData1 performs a merge with any union data inside the RawAudio_Data, using the provided RawAudioData1
+func (t *RawAudio_Data) MergeRawAudioData1(v RawAudioData1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t RawAudio_Data) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *RawAudio_Data) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -55354,6 +58416,107 @@ func (t *SkillAssetContent) UnmarshalJSON(b []byte) error {
 	return err
 }
 
+// AsSpeechUserTurn returns the union data inside the SpeechRequest_ConversationHistory_Item as a SpeechUserTurn
+func (t SpeechRequest_ConversationHistory_Item) AsSpeechUserTurn() (SpeechUserTurn, error) {
+	var body SpeechUserTurn
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromSpeechUserTurn overwrites any union data inside the SpeechRequest_ConversationHistory_Item as the provided SpeechUserTurn
+func (t *SpeechRequest_ConversationHistory_Item) FromSpeechUserTurn(v SpeechUserTurn) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"role":"user"}`))
+	t.union = b
+	return err
+}
+
+// MergeSpeechUserTurn performs a merge with any union data inside the SpeechRequest_ConversationHistory_Item, using the provided SpeechUserTurn
+func (t *SpeechRequest_ConversationHistory_Item) MergeSpeechUserTurn(v SpeechUserTurn) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"role":"user"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsSpeechAssistantTurn returns the union data inside the SpeechRequest_ConversationHistory_Item as a SpeechAssistantTurn
+func (t SpeechRequest_ConversationHistory_Item) AsSpeechAssistantTurn() (SpeechAssistantTurn, error) {
+	var body SpeechAssistantTurn
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromSpeechAssistantTurn overwrites any union data inside the SpeechRequest_ConversationHistory_Item as the provided SpeechAssistantTurn
+func (t *SpeechRequest_ConversationHistory_Item) FromSpeechAssistantTurn(v SpeechAssistantTurn) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"role":"assistant"}`))
+	t.union = b
+	return err
+}
+
+// MergeSpeechAssistantTurn performs a merge with any union data inside the SpeechRequest_ConversationHistory_Item, using the provided SpeechAssistantTurn
+func (t *SpeechRequest_ConversationHistory_Item) MergeSpeechAssistantTurn(v SpeechAssistantTurn) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"role":"assistant"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t SpeechRequest_ConversationHistory_Item) Discriminator() (string, error) {
+	var discriminator struct {
+		Discriminator string `json:"role"`
+	}
+	err := json.Unmarshal(t.union, &discriminator)
+	return discriminator.Discriminator, err
+}
+
+func (t SpeechRequest_ConversationHistory_Item) ValueByDiscriminator() (interface{}, error) {
+	discriminator, err := t.Discriminator()
+	if err != nil {
+		return nil, err
+	}
+	switch discriminator {
+	case "assistant":
+		return t.AsSpeechAssistantTurn()
+	case "user":
+		return t.AsSpeechUserTurn()
+	default:
+		return nil, errors.New("unknown discriminator value: " + discriminator)
+	}
+}
+
+func (t SpeechRequest_ConversationHistory_Item) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *SpeechRequest_ConversationHistory_Item) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsSpeechRequestRefAudio0 returns the union data inside the SpeechRequest_RefAudio as a SpeechRequestRefAudio0
 func (t SpeechRequest_RefAudio) AsSpeechRequestRefAudio0() (SpeechRequestRefAudio0, error) {
 	var body SpeechRequestRefAudio0
@@ -55965,6 +59128,94 @@ func (t StreamEventSsePayload_Data) MarshalJSON() ([]byte, error) {
 }
 
 func (t *StreamEventSsePayload_Data) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsSummaryMetadata returns the union data inside the SummaryStreamTypes as a SummaryMetadata
+func (t SummaryStreamTypes) AsSummaryMetadata() (SummaryMetadata, error) {
+	var body SummaryMetadata
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromSummaryMetadata overwrites any union data inside the SummaryStreamTypes as the provided SummaryMetadata
+func (t *SummaryStreamTypes) FromSummaryMetadata(v SummaryMetadata) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergeSummaryMetadata performs a merge with any union data inside the SummaryStreamTypes, using the provided SummaryMetadata
+func (t *SummaryStreamTypes) MergeSummaryMetadata(v SummaryMetadata) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsSummaryChunk returns the union data inside the SummaryStreamTypes as a SummaryChunk
+func (t SummaryStreamTypes) AsSummaryChunk() (SummaryChunk, error) {
+	var body SummaryChunk
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromSummaryChunk overwrites any union data inside the SummaryStreamTypes as the provided SummaryChunk
+func (t *SummaryStreamTypes) FromSummaryChunk(v SummaryChunk) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergeSummaryChunk performs a merge with any union data inside the SummaryStreamTypes, using the provided SummaryChunk
+func (t *SummaryStreamTypes) MergeSummaryChunk(v SummaryChunk) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsSummaryError returns the union data inside the SummaryStreamTypes as a SummaryError
+func (t SummaryStreamTypes) AsSummaryError() (SummaryError, error) {
+	var body SummaryError
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromSummaryError overwrites any union data inside the SummaryStreamTypes as the provided SummaryError
+func (t *SummaryStreamTypes) FromSummaryError(v SummaryError) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergeSummaryError performs a merge with any union data inside the SummaryStreamTypes, using the provided SummaryError
+func (t *SummaryStreamTypes) MergeSummaryError(v SummaryError) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t SummaryStreamTypes) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *SummaryStreamTypes) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -57341,6 +60592,107 @@ func (t TranscriptionStreamEvents_Data) MarshalJSON() ([]byte, error) {
 }
 
 func (t *TranscriptionStreamEvents_Data) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPhoneDestination returns the union data inside the TransferTarget_Destination as a PhoneDestination
+func (t TransferTarget_Destination) AsPhoneDestination() (PhoneDestination, error) {
+	var body PhoneDestination
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPhoneDestination overwrites any union data inside the TransferTarget_Destination as the provided PhoneDestination
+func (t *TransferTarget_Destination) FromPhoneDestination(v PhoneDestination) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"phone"}`))
+	t.union = b
+	return err
+}
+
+// MergePhoneDestination performs a merge with any union data inside the TransferTarget_Destination, using the provided PhoneDestination
+func (t *TransferTarget_Destination) MergePhoneDestination(v PhoneDestination) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"phone"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsSipDestination returns the union data inside the TransferTarget_Destination as a SipDestination
+func (t TransferTarget_Destination) AsSipDestination() (SipDestination, error) {
+	var body SipDestination
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromSipDestination overwrites any union data inside the TransferTarget_Destination as the provided SipDestination
+func (t *TransferTarget_Destination) FromSipDestination(v SipDestination) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"sip"}`))
+	t.union = b
+	return err
+}
+
+// MergeSipDestination performs a merge with any union data inside the TransferTarget_Destination, using the provided SipDestination
+func (t *TransferTarget_Destination) MergeSipDestination(v SipDestination) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"sip"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t TransferTarget_Destination) Discriminator() (string, error) {
+	var discriminator struct {
+		Discriminator string `json:"type"`
+	}
+	err := json.Unmarshal(t.union, &discriminator)
+	return discriminator.Discriminator, err
+}
+
+func (t TransferTarget_Destination) ValueByDiscriminator() (interface{}, error) {
+	discriminator, err := t.Discriminator()
+	if err != nil {
+		return nil, err
+	}
+	switch discriminator {
+	case "phone":
+		return t.AsPhoneDestination()
+	case "sip":
+		return t.AsSipDestination()
+	default:
+		return nil, errors.New("unknown discriminator value: " + discriminator)
+	}
+}
+
+func (t TransferTarget_Destination) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *TransferTarget_Destination) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -59216,6 +62568,251 @@ func (t *ConnectorUpdateV1JSONBody) UnmarshalJSON(b []byte) error {
 	return err
 }
 
+// AsMissingFieldResponse returns the union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as a MissingFieldResponse
+func (t SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) AsMissingFieldResponse() (MissingFieldResponse, error) {
+	var body MissingFieldResponse
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromMissingFieldResponse overwrites any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided MissingFieldResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) FromMissingFieldResponse(v MissingFieldResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"missing_field"}`))
+	t.union = b
+	return err
+}
+
+// MergeMissingFieldResponse performs a merge with any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided MissingFieldResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeMissingFieldResponse(v MissingFieldResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"missing_field"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsMissingEmbeddingResponse returns the union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as a MissingEmbeddingResponse
+func (t SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) AsMissingEmbeddingResponse() (MissingEmbeddingResponse, error) {
+	var body MissingEmbeddingResponse
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromMissingEmbeddingResponse overwrites any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided MissingEmbeddingResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) FromMissingEmbeddingResponse(v MissingEmbeddingResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"missing_embedding"}`))
+	t.union = b
+	return err
+}
+
+// MergeMissingEmbeddingResponse performs a merge with any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided MissingEmbeddingResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeMissingEmbeddingResponse(v MissingEmbeddingResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"missing_embedding"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsIncorrectFieldTypeResponse returns the union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as a IncorrectFieldTypeResponse
+func (t SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) AsIncorrectFieldTypeResponse() (IncorrectFieldTypeResponse, error) {
+	var body IncorrectFieldTypeResponse
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromIncorrectFieldTypeResponse overwrites any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided IncorrectFieldTypeResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) FromIncorrectFieldTypeResponse(v IncorrectFieldTypeResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"incorrect_field_type"}`))
+	t.union = b
+	return err
+}
+
+// MergeIncorrectFieldTypeResponse performs a merge with any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided IncorrectFieldTypeResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeIncorrectFieldTypeResponse(v IncorrectFieldTypeResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"incorrect_field_type"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsEmbeddingMismatchResponse returns the union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as a EmbeddingMismatchResponse
+func (t SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) AsEmbeddingMismatchResponse() (EmbeddingMismatchResponse, error) {
+	var body EmbeddingMismatchResponse
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromEmbeddingMismatchResponse overwrites any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided EmbeddingMismatchResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) FromEmbeddingMismatchResponse(v EmbeddingMismatchResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"embedding_mismatch"}`))
+	t.union = b
+	return err
+}
+
+// MergeEmbeddingMismatchResponse performs a merge with any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided EmbeddingMismatchResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeEmbeddingMismatchResponse(v EmbeddingMismatchResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"embedding_mismatch"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsMaxCandidatesTooSmallResponse returns the union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as a MaxCandidatesTooSmallResponse
+func (t SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) AsMaxCandidatesTooSmallResponse() (MaxCandidatesTooSmallResponse, error) {
+	var body MaxCandidatesTooSmallResponse
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromMaxCandidatesTooSmallResponse overwrites any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided MaxCandidatesTooSmallResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) FromMaxCandidatesTooSmallResponse(v MaxCandidatesTooSmallResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"max_candidates_too_small"}`))
+	t.union = b
+	return err
+}
+
+// MergeMaxCandidatesTooSmallResponse performs a merge with any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided MaxCandidatesTooSmallResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeMaxCandidatesTooSmallResponse(v MaxCandidatesTooSmallResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"max_candidates_too_small"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsTopKTooLargeResponse returns the union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as a TopKTooLargeResponse
+func (t SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) AsTopKTooLargeResponse() (TopKTooLargeResponse, error) {
+	var body TopKTooLargeResponse
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromTopKTooLargeResponse overwrites any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided TopKTooLargeResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) FromTopKTooLargeResponse(v TopKTooLargeResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"top_k_too_large"}`))
+	t.union = b
+	return err
+}
+
+// MergeTopKTooLargeResponse performs a merge with any union data inside the SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided TopKTooLargeResponse
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeTopKTooLargeResponse(v TopKTooLargeResponse) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"top_k_too_large"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) Discriminator() (string, error) {
+	var discriminator struct {
+		Discriminator string `json:"type"`
+	}
+	err := json.Unmarshal(t.union, &discriminator)
+	return discriminator.Discriminator, err
+}
+
+func (t SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) ValueByDiscriminator() (interface{}, error) {
+	discriminator, err := t.Discriminator()
+	if err != nil {
+		return nil, err
+	}
+	switch discriminator {
+	case "embedding_mismatch":
+		return t.AsEmbeddingMismatchResponse()
+	case "incorrect_field_type":
+		return t.AsIncorrectFieldTypeResponse()
+	case "max_candidates_too_small":
+		return t.AsMaxCandidatesTooSmallResponse()
+	case "missing_embedding":
+		return t.AsMissingEmbeddingResponse()
+	case "missing_field":
+		return t.AsMissingFieldResponse()
+	case "top_k_too_large":
+		return t.AsTopKTooLargeResponse()
+	default:
+		return nil, errors.New("unknown discriminator value: " + discriminator)
+	}
+}
+
+func (t SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsModelConversation returns the union data inside the AgentsApiV1ConversationsList200JSONResponseBody_Item as a ModelConversation
 func (t AgentsApiV1ConversationsList200JSONResponseBody_Item) AsModelConversation() (ModelConversation, error) {
 	var body ModelConversation
@@ -59600,251 +63197,6 @@ func (t UpdateIndexMetricsV1RagDeploymentsDeploymentIdMetricsPutJSONBody) Marsha
 }
 
 func (t *UpdateIndexMetricsV1RagDeploymentsDeploymentIdMetricsPutJSONBody) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
-// AsMissingFieldResponse returns the union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as a MissingFieldResponse
-func (t SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) AsMissingFieldResponse() (MissingFieldResponse, error) {
-	var body MissingFieldResponse
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromMissingFieldResponse overwrites any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided MissingFieldResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) FromMissingFieldResponse(v MissingFieldResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"missing_field"}`))
-	t.union = b
-	return err
-}
-
-// MergeMissingFieldResponse performs a merge with any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided MissingFieldResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeMissingFieldResponse(v MissingFieldResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"missing_field"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsMissingEmbeddingResponse returns the union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as a MissingEmbeddingResponse
-func (t SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) AsMissingEmbeddingResponse() (MissingEmbeddingResponse, error) {
-	var body MissingEmbeddingResponse
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromMissingEmbeddingResponse overwrites any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided MissingEmbeddingResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) FromMissingEmbeddingResponse(v MissingEmbeddingResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"missing_embedding"}`))
-	t.union = b
-	return err
-}
-
-// MergeMissingEmbeddingResponse performs a merge with any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided MissingEmbeddingResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeMissingEmbeddingResponse(v MissingEmbeddingResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"missing_embedding"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsIncorrectFieldTypeResponse returns the union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as a IncorrectFieldTypeResponse
-func (t SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) AsIncorrectFieldTypeResponse() (IncorrectFieldTypeResponse, error) {
-	var body IncorrectFieldTypeResponse
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromIncorrectFieldTypeResponse overwrites any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided IncorrectFieldTypeResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) FromIncorrectFieldTypeResponse(v IncorrectFieldTypeResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"incorrect_field_type"}`))
-	t.union = b
-	return err
-}
-
-// MergeIncorrectFieldTypeResponse performs a merge with any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided IncorrectFieldTypeResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeIncorrectFieldTypeResponse(v IncorrectFieldTypeResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"incorrect_field_type"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsEmbeddingMismatchResponse returns the union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as a EmbeddingMismatchResponse
-func (t SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) AsEmbeddingMismatchResponse() (EmbeddingMismatchResponse, error) {
-	var body EmbeddingMismatchResponse
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromEmbeddingMismatchResponse overwrites any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided EmbeddingMismatchResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) FromEmbeddingMismatchResponse(v EmbeddingMismatchResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"embedding_mismatch"}`))
-	t.union = b
-	return err
-}
-
-// MergeEmbeddingMismatchResponse performs a merge with any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided EmbeddingMismatchResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeEmbeddingMismatchResponse(v EmbeddingMismatchResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"embedding_mismatch"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsMaxCandidatesTooSmallResponse returns the union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as a MaxCandidatesTooSmallResponse
-func (t SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) AsMaxCandidatesTooSmallResponse() (MaxCandidatesTooSmallResponse, error) {
-	var body MaxCandidatesTooSmallResponse
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromMaxCandidatesTooSmallResponse overwrites any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided MaxCandidatesTooSmallResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) FromMaxCandidatesTooSmallResponse(v MaxCandidatesTooSmallResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"max_candidates_too_small"}`))
-	t.union = b
-	return err
-}
-
-// MergeMaxCandidatesTooSmallResponse performs a merge with any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided MaxCandidatesTooSmallResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeMaxCandidatesTooSmallResponse(v MaxCandidatesTooSmallResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"max_candidates_too_small"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsTopKTooLargeResponse returns the union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as a TopKTooLargeResponse
-func (t SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) AsTopKTooLargeResponse() (TopKTooLargeResponse, error) {
-	var body TopKTooLargeResponse
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromTopKTooLargeResponse overwrites any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item as the provided TopKTooLargeResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) FromTopKTooLargeResponse(v TopKTooLargeResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"top_k_too_large"}`))
-	t.union = b
-	return err
-}
-
-// MergeTopKTooLargeResponse performs a merge with any union data inside the SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item, using the provided TopKTooLargeResponse
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) MergeTopKTooLargeResponse(v TopKTooLargeResponse) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"top_k_too_large"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) Discriminator() (string, error) {
-	var discriminator struct {
-		Discriminator string `json:"type"`
-	}
-	err := json.Unmarshal(t.union, &discriminator)
-	return discriminator.Discriminator, err
-}
-
-func (t SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) ValueByDiscriminator() (interface{}, error) {
-	discriminator, err := t.Discriminator()
-	if err != nil {
-		return nil, err
-	}
-	switch discriminator {
-	case "embedding_mismatch":
-		return t.AsEmbeddingMismatchResponse()
-	case "incorrect_field_type":
-		return t.AsIncorrectFieldTypeResponse()
-	case "max_candidates_too_small":
-		return t.AsMaxCandidatesTooSmallResponse()
-	case "missing_embedding":
-		return t.AsMissingEmbeddingResponse()
-	case "missing_field":
-		return t.AsMissingFieldResponse()
-	case "top_k_too_large":
-		return t.AsTopKTooLargeResponse()
-	default:
-		return nil, errors.New("unknown discriminator value: " + discriminator)
-	}
-}
-
-func (t SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -60868,6 +64220,91 @@ type ClientInterface interface {
 	// Corresponds with GET /v1/agents/{agent_id}/versions/{version} (the `AgentsApiV1AgentsGetVersion` operationId).
 	AgentsApiV1AgentsGetVersion(ctx context.Context, agentId string, version string, reqEditors ...RequestEditorFn) (*http.Response, error)
 
+	// ListAgentsV1AudioAgentsGet List audio agents
+	//
+	// Corresponds with GET /v1/audio/agents (the `ListAgentsV1AudioAgentsGet` operationId).
+	ListAgentsV1AudioAgentsGet(ctx context.Context, params *ListAgentsV1AudioAgentsGetParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateAgentV1AudioAgentsPostWithBody Create an audio agent
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/audio/agents (the `CreateAgentV1AudioAgentsPost` operationId).
+	CreateAgentV1AudioAgentsPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateAgentV1AudioAgentsPost Create an audio agent
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/audio/agents (the `CreateAgentV1AudioAgentsPost` operationId).
+	CreateAgentV1AudioAgentsPost(ctx context.Context, body CreateAgentV1AudioAgentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// DeleteAgentV1AudioAgentsAgentIdDelete Delete an audio agent
+	//
+	// Corresponds with DELETE /v1/audio/agents/{agent_id} (the `DeleteAgentV1AudioAgentsAgentIdDelete` operationId).
+	DeleteAgentV1AudioAgentsAgentIdDelete(ctx context.Context, agentId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GetAgentV1AudioAgentsAgentIdGet Get an audio agent
+	//
+	// Corresponds with GET /v1/audio/agents/{agent_id} (the `GetAgentV1AudioAgentsAgentIdGet` operationId).
+	GetAgentV1AudioAgentsAgentIdGet(ctx context.Context, agentId openapi_types.UUID, params *GetAgentV1AudioAgentsAgentIdGetParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// UpdateAgentV1AudioAgentsAgentIdPutWithBody Update an audio agent
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with PUT /v1/audio/agents/{agent_id} (the `UpdateAgentV1AudioAgentsAgentIdPut` operationId).
+	UpdateAgentV1AudioAgentsAgentIdPutWithBody(ctx context.Context, agentId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// UpdateAgentV1AudioAgentsAgentIdPut Update an audio agent
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with PUT /v1/audio/agents/{agent_id} (the `UpdateAgentV1AudioAgentsAgentIdPut` operationId).
+	UpdateAgentV1AudioAgentsAgentIdPut(ctx context.Context, agentId openapi_types.UUID, body UpdateAgentV1AudioAgentsAgentIdPutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// ListAgentSessionsV1AudioAgentsAgentIdSessionsGet List audio agent sessions
+	//
+	// Corresponds with GET /v1/audio/agents/{agent_id}/sessions (the `ListAgentSessionsV1AudioAgentsAgentIdSessionsGet` operationId).
+	ListAgentSessionsV1AudioAgentsAgentIdSessionsGet(ctx context.Context, agentId openapi_types.UUID, params *ListAgentSessionsV1AudioAgentsAgentIdSessionsGetParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// ListAgentVersionsV1AudioAgentsAgentIdVersionsGet List audio agent versions
+	//
+	// Corresponds with GET /v1/audio/agents/{agent_id}/versions (the `ListAgentVersionsV1AudioAgentsAgentIdVersionsGet` operationId).
+	ListAgentVersionsV1AudioAgentsAgentIdVersionsGet(ctx context.Context, agentId openapi_types.UUID, params *ListAgentVersionsV1AudioAgentsAgentIdVersionsGetParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateSessionV1AudioSessionsPostWithBody Create an agent session
+	//
+	// Create a real-time audio agent session.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/audio/sessions (the `CreateSessionV1AudioSessionsPost` operationId).
+	CreateSessionV1AudioSessionsPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateSessionV1AudioSessionsPost Create an agent session
+	//
+	// Create a real-time audio agent session.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/audio/sessions (the `CreateSessionV1AudioSessionsPost` operationId).
+	CreateSessionV1AudioSessionsPost(ctx context.Context, body CreateSessionV1AudioSessionsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// DeleteSessionV1AudioSessionsSessionIdDelete Stop an agent session
+	//
+	// Stop an audio agent session and release its resources.
+	//
+	// Corresponds with DELETE /v1/audio/sessions/{session_id} (the `DeleteSessionV1AudioSessionsSessionIdDelete` operationId).
+	DeleteSessionV1AudioSessionsSessionIdDelete(ctx context.Context, sessionId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GetSessionV1AudioSessionsSessionIdGet Get session status
+	//
+	// Retrieve an audio agent session with the transcript of its conversation.
+	//
+	// Corresponds with GET /v1/audio/sessions/{session_id} (the `GetSessionV1AudioSessionsSessionIdGet` operationId).
+	GetSessionV1AudioSessionsSessionIdGet(ctx context.Context, sessionId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
 	// SpeechV1AudioSpeechPostWithBody Speech
 	//
 	// Takes any type of body and a specified content type.
@@ -61008,6 +64445,22 @@ type ClientInterface interface {
 	//
 	// Corresponds with POST /v1/batch/jobs/{job_id}/cancel (the `JobsApiRoutesBatchCancelBatchJob` operationId).
 	JobsApiRoutesBatchCancelBatchJob(ctx context.Context, jobId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// BillingApiPublicGetBudget Get Budget
+	//
+	// Return the organization's API and Vibe budgets for the current billing period.
+	//
+	// Requires the `see_org_inference_usage` permission.
+	//
+	// Corresponds with GET /v1/billing/budget (the `BillingApiPublicGetBudget` operationId).
+	BillingApiPublicGetBudget(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// BillingApiPublicGetSubscription Get Subscription
+	//
+	// Return the organization's plan and whether pay-as-you-go is enabled.
+	//
+	// Corresponds with GET /v1/billing/subscription (the `BillingApiPublicGetSubscription` operationId).
+	BillingApiPublicGetSubscription(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// ChatClassificationsV1ChatClassificationsPostWithBody Chat Classifications
 	//
@@ -61325,6 +64778,216 @@ type ClientInterface interface {
 	//
 	// Corresponds with POST /v1/connectors/{connector_id}/{consumer_scope}/deactivate (the `ConnectorDeactivateForConsumerV1` operationId).
 	ConnectorDeactivateForConsumerV1(ctx context.Context, connectorId openapi_types.UUID, consumerScope ConnectorDeactivateForConsumerV1ParamsConsumerScope, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// ListIndexesV1ContextSearchIndexesGet List managed indexes
+	//
+	// Lists all managed search indexes for the current workspace.
+	//
+	// Corresponds with GET /v1/context/search-indexes (the `ListIndexesV1ContextSearchIndexesGet` operationId).
+	ListIndexesV1ContextSearchIndexesGet(ctx context.Context, params *ListIndexesV1ContextSearchIndexesGetParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateIndexV1ContextSearchIndexesPostWithBody Create a managed index
+	//
+	// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes (the `CreateIndexV1ContextSearchIndexesPost` operationId).
+	CreateIndexV1ContextSearchIndexesPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateIndexV1ContextSearchIndexesPost Create a managed index
+	//
+	// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes (the `CreateIndexV1ContextSearchIndexesPost` operationId).
+	CreateIndexV1ContextSearchIndexesPost(ctx context.Context, body CreateIndexV1ContextSearchIndexesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// DeleteIndexV1ContextSearchIndexesIndexNameDelete Delete a managed index
+	//
+	// Marks the managed search index for deletion and returns it with status deleting. The backing table is dropped asynchronously; poll the index until it returns 404.
+	//
+	// Corresponds with DELETE /v1/context/search-indexes/{index_name} (the `DeleteIndexV1ContextSearchIndexesIndexNameDelete` operationId).
+	DeleteIndexV1ContextSearchIndexesIndexNameDelete(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GetIndexV1ContextSearchIndexesIndexNameGet Get a managed index
+	//
+	// Returns the managed search index with the given name.
+	//
+	// Corresponds with GET /v1/context/search-indexes/{index_name} (the `GetIndexV1ContextSearchIndexesIndexNameGet` operationId).
+	GetIndexV1ContextSearchIndexesIndexNameGet(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// UpdateIndexV1ContextSearchIndexesIndexNamePutWithBody Update a managed index schema
+	//
+	// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with PUT /v1/context/search-indexes/{index_name} (the `UpdateIndexV1ContextSearchIndexesIndexNamePut` operationId).
+	UpdateIndexV1ContextSearchIndexesIndexNamePutWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// UpdateIndexV1ContextSearchIndexesIndexNamePut Update a managed index schema
+	//
+	// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with PUT /v1/context/search-indexes/{index_name} (the `UpdateIndexV1ContextSearchIndexesIndexNamePut` operationId).
+	UpdateIndexV1ContextSearchIndexesIndexNamePut(ctx context.Context, indexName string, body UpdateIndexV1ContextSearchIndexesIndexNamePutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGet Get a single chunk by id
+	//
+	// Returns a single chunk by its canonical id. A 404 means no chunk with that id exists in the index.
+	//
+	// Corresponds with GET /v1/context/search-indexes/{index_name}/chunks/{chunk_id} (the `GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGet` operationId).
+	GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGet(ctx context.Context, indexName string, chunkId string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithBody Delete documents from a managed index
+	//
+	// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with DELETE /v1/context/search-indexes/{index_name}/documents (the `DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete` operationId).
+	DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete Delete documents from a managed index
+	//
+	// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with DELETE /v1/context/search-indexes/{index_name}/documents (the `DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete` operationId).
+	DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete(ctx context.Context, indexName string, body DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithBody Ingest documents into a managed index
+	//
+	// Validates and persists documents. Returns 200 with each document reported as accepted or rejected in the response body, or 403 once the index holds its limit of chunks.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/documents (the `IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost` operationId).
+	IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost Ingest documents into a managed index
+	//
+	// Validates and persists documents. Returns 200 with each document reported as accepted or rejected in the response body, or 403 once the index holds its limit of chunks.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/documents (the `IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost` operationId).
+	IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost(ctx context.Context, indexName string, body IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithBody Grep for a pattern within a source
+	//
+	// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/grep (the `GrepIndexV1ContextSearchIndexesIndexNameGrepPost` operationId).
+	GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GrepIndexV1ContextSearchIndexesIndexNameGrepPost Grep for a pattern within a source
+	//
+	// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/grep (the `GrepIndexV1ContextSearchIndexesIndexNameGrepPost` operationId).
+	GrepIndexV1ContextSearchIndexesIndexNameGrepPost(ctx context.Context, indexName string, body GrepIndexV1ContextSearchIndexesIndexNameGrepPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithBody Navigate to adjacent chunks
+	//
+	// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/navigate (the `NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost` operationId).
+	NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost Navigate to adjacent chunks
+	//
+	// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/navigate (the `NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost` operationId).
+	NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost(ctx context.Context, indexName string, body NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// ReadIndexV1ContextSearchIndexesIndexNameReadPostWithBody Read chunks within a span
+	//
+	// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/read (the `ReadIndexV1ContextSearchIndexesIndexNameReadPost` operationId).
+	ReadIndexV1ContextSearchIndexesIndexNameReadPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// ReadIndexV1ContextSearchIndexesIndexNameReadPost Read chunks within a span
+	//
+	// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/read (the `ReadIndexV1ContextSearchIndexesIndexNameReadPost` operationId).
+	ReadIndexV1ContextSearchIndexesIndexNameReadPost(ctx context.Context, indexName string, body ReadIndexV1ContextSearchIndexesIndexNameReadPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithBody Search a managed index
+	//
+	// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/search (the `SearchIndexV1ContextSearchIndexesIndexNameSearchPost` operationId).
+	SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// SearchIndexV1ContextSearchIndexesIndexNameSearchPost Search a managed index
+	//
+	// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/search (the `SearchIndexV1ContextSearchIndexesIndexNameSearchPost` operationId).
+	SearchIndexV1ContextSearchIndexesIndexNameSearchPost(ctx context.Context, indexName string, body SearchIndexV1ContextSearchIndexesIndexNameSearchPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGet Get Managed Index Summary
+	//
+	// Retrieve the summary field for a managed index if it exists.
+	//
+	// Corresponds with GET /v1/context/search-indexes/{index_name}/summary_field/{language} (the `GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGet` operationId).
+	GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGet(ctx context.Context, indexName string, language GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost Generate a summary field for a managed index
+	//
+	// Streams a summary for the managed index in chunks of json.
+	//
+	// The first chunk contains metadata for the summary, the following contain
+	// chunks of 'content' that should be joined together to form a full summary.
+	//
+	// If force is true, regenerate the requested language even if a summary
+	// already exists.
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/summary_field/{language} (the `GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost` operationId).
+	GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost(ctx context.Context, indexName string, language GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage, params *GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithBody Set Managed Index Summary
+	//
+	// Update the summary field for a managed index.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with PUT /v1/context/search-indexes/{index_name}/summary_field/{language} (the `SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut` operationId).
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithBody(ctx context.Context, indexName string, language SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut Set Managed Index Summary
+	//
+	// Update the summary field for a managed index.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with PUT /v1/context/search-indexes/{index_name}/summary_field/{language} (the `SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut` operationId).
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut(ctx context.Context, indexName string, language SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage, body SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// AgentsApiV1ConversationsList List all created conversations.
 	//
@@ -62273,6 +65936,11 @@ type ClientInterface interface {
 	// Corresponds with PUT /v1/observability/pipelines/{pipeline_id} (the `UpdatePipelineV1ObservabilityPipelinesPipelineIdPut` operationId).
 	UpdatePipelineV1ObservabilityPipelinesPipelineIdPut(ctx context.Context, pipelineId openapi_types.UUID, body UpdatePipelineV1ObservabilityPipelinesPipelineIdPutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
+	// GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGet Get pipeline result field definitions
+	//
+	// Corresponds with GET /v1/observability/pipelines/{pipeline_id}/results/fields (the `GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGet` operationId).
+	GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGet(ctx context.Context, pipelineId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
 	// GetProjectsV1ObservabilityProjectsGet List projects
 	//
 	// Corresponds with GET /v1/observability/projects (the `GetProjectsV1ObservabilityProjectsGet` operationId).
@@ -62530,178 +66198,6 @@ type ClientInterface interface {
 	// Corresponds with PUT /v1/rag/ingestion_pipeline_configurations/{id}/run_info (the `UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPut` operationId).
 	UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPut(ctx context.Context, id openapi_types.UUID, body UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
-	// ListIndexesV1RagManagedIndexesGet List managed indexes
-	//
-	// Lists all managed search indexes for the current workspace.
-	//
-	// Corresponds with GET /v1/rag/managed_indexes (the `ListIndexesV1RagManagedIndexesGet` operationId).
-	ListIndexesV1RagManagedIndexesGet(ctx context.Context, params *ListIndexesV1RagManagedIndexesGetParams, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// CreateIndexV1RagManagedIndexesPostWithBody Create a managed index
-	//
-	// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes (the `CreateIndexV1RagManagedIndexesPost` operationId).
-	CreateIndexV1RagManagedIndexesPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// CreateIndexV1RagManagedIndexesPost Create a managed index
-	//
-	// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes (the `CreateIndexV1RagManagedIndexesPost` operationId).
-	CreateIndexV1RagManagedIndexesPost(ctx context.Context, body CreateIndexV1RagManagedIndexesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// DeleteIndexV1RagManagedIndexesIndexNameDelete Delete a managed index
-	//
-	// Marks the managed search index for deletion and returns it with status deleting. The backing table is dropped asynchronously; poll the index until it returns 404.
-	//
-	// Corresponds with DELETE /v1/rag/managed_indexes/{index_name} (the `DeleteIndexV1RagManagedIndexesIndexNameDelete` operationId).
-	DeleteIndexV1RagManagedIndexesIndexNameDelete(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// GetIndexV1RagManagedIndexesIndexNameGet Get a managed index
-	//
-	// Returns the managed search index with the given name.
-	//
-	// Corresponds with GET /v1/rag/managed_indexes/{index_name} (the `GetIndexV1RagManagedIndexesIndexNameGet` operationId).
-	GetIndexV1RagManagedIndexesIndexNameGet(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// UpdateIndexV1RagManagedIndexesIndexNamePutWithBody Update a managed index schema
-	//
-	// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with PUT /v1/rag/managed_indexes/{index_name} (the `UpdateIndexV1RagManagedIndexesIndexNamePut` operationId).
-	UpdateIndexV1RagManagedIndexesIndexNamePutWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// UpdateIndexV1RagManagedIndexesIndexNamePut Update a managed index schema
-	//
-	// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with PUT /v1/rag/managed_indexes/{index_name} (the `UpdateIndexV1RagManagedIndexesIndexNamePut` operationId).
-	UpdateIndexV1RagManagedIndexesIndexNamePut(ctx context.Context, indexName string, body UpdateIndexV1RagManagedIndexesIndexNamePutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGet Get a single chunk by id
-	//
-	// Returns a single chunk by its canonical id. A 404 means no chunk with that id exists in the index.
-	//
-	// Corresponds with GET /v1/rag/managed_indexes/{index_name}/chunks/{chunk_id} (the `GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGet` operationId).
-	GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGet(ctx context.Context, indexName string, chunkId string, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithBody Delete documents from a managed index
-	//
-	// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with DELETE /v1/rag/managed_indexes/{index_name}/documents (the `DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete` operationId).
-	DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete Delete documents from a managed index
-	//
-	// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with DELETE /v1/rag/managed_indexes/{index_name}/documents (the `DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete` operationId).
-	DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete(ctx context.Context, indexName string, body DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithBody Ingest documents into a managed index
-	//
-	// Validates and persists documents. Always returns 200; each document is reported as accepted or rejected in the response body.
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/documents (the `IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost` operationId).
-	IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost Ingest documents into a managed index
-	//
-	// Validates and persists documents. Always returns 200; each document is reported as accepted or rejected in the response body.
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/documents (the `IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost` operationId).
-	IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost(ctx context.Context, indexName string, body IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// GrepIndexV1RagManagedIndexesIndexNameGrepPostWithBody Grep for a pattern within a source
-	//
-	// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/grep (the `GrepIndexV1RagManagedIndexesIndexNameGrepPost` operationId).
-	GrepIndexV1RagManagedIndexesIndexNameGrepPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// GrepIndexV1RagManagedIndexesIndexNameGrepPost Grep for a pattern within a source
-	//
-	// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/grep (the `GrepIndexV1RagManagedIndexesIndexNameGrepPost` operationId).
-	GrepIndexV1RagManagedIndexesIndexNameGrepPost(ctx context.Context, indexName string, body GrepIndexV1RagManagedIndexesIndexNameGrepPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithBody Navigate to adjacent chunks
-	//
-	// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/navigate (the `NavigateIndexV1RagManagedIndexesIndexNameNavigatePost` operationId).
-	NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// NavigateIndexV1RagManagedIndexesIndexNameNavigatePost Navigate to adjacent chunks
-	//
-	// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/navigate (the `NavigateIndexV1RagManagedIndexesIndexNameNavigatePost` operationId).
-	NavigateIndexV1RagManagedIndexesIndexNameNavigatePost(ctx context.Context, indexName string, body NavigateIndexV1RagManagedIndexesIndexNameNavigatePostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// ReadIndexV1RagManagedIndexesIndexNameReadPostWithBody Read chunks within a span
-	//
-	// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/read (the `ReadIndexV1RagManagedIndexesIndexNameReadPost` operationId).
-	ReadIndexV1RagManagedIndexesIndexNameReadPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// ReadIndexV1RagManagedIndexesIndexNameReadPost Read chunks within a span
-	//
-	// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/read (the `ReadIndexV1RagManagedIndexesIndexNameReadPost` operationId).
-	ReadIndexV1RagManagedIndexesIndexNameReadPost(ctx context.Context, indexName string, body ReadIndexV1RagManagedIndexesIndexNameReadPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// SearchIndexV1RagManagedIndexesIndexNameSearchPostWithBody Search a managed index
-	//
-	// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/search (the `SearchIndexV1RagManagedIndexesIndexNameSearchPost` operationId).
-	SearchIndexV1RagManagedIndexesIndexNameSearchPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// SearchIndexV1RagManagedIndexesIndexNameSearchPost Search a managed index
-	//
-	// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/search (the `SearchIndexV1RagManagedIndexesIndexNameSearchPost` operationId).
-	SearchIndexV1RagManagedIndexesIndexNameSearchPost(ctx context.Context, indexName string, body SearchIndexV1RagManagedIndexesIndexNameSearchPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
 	// CreateResponseV1ResponsesPostWithBody Create Response
 	//
 	// Create a response.
@@ -62882,6 +66378,40 @@ type ClientInterface interface {
 	// Corresponds with PUT /v1/service-accounts/{service_account_id}/roles (the `SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPut` operationId).
 	SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPut(ctx context.Context, serviceAccountId openapi_types.UUID, body SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
+	// ListTriggersV1TriggersGet List Triggers
+	//
+	// Corresponds with GET /v1/triggers (the `ListTriggersV1TriggersGet` operationId).
+	ListTriggersV1TriggersGet(ctx context.Context, params *ListTriggersV1TriggersGetParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateTriggerV1TriggersPostWithBody Create Trigger
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/triggers (the `CreateTriggerV1TriggersPost` operationId).
+	CreateTriggerV1TriggersPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateTriggerV1TriggersPost Create Trigger
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/triggers (the `CreateTriggerV1TriggersPost` operationId).
+	CreateTriggerV1TriggersPost(ctx context.Context, body CreateTriggerV1TriggersPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// DeleteTriggerV1TriggersTriggerIdDelete Delete Trigger
+	//
+	// Corresponds with DELETE /v1/triggers/{trigger_id} (the `DeleteTriggerV1TriggersTriggerIdDelete` operationId).
+	DeleteTriggerV1TriggersTriggerIdDelete(ctx context.Context, triggerId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GetTriggerV1TriggersTriggerIdGet Get Trigger
+	//
+	// Corresponds with GET /v1/triggers/{trigger_id} (the `GetTriggerV1TriggersTriggerIdGet` operationId).
+	GetTriggerV1TriggersTriggerIdGet(ctx context.Context, triggerId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// ListTriggerEventsV1TriggersTriggerIdEventsGet List Trigger Events
+	//
+	// Corresponds with GET /v1/triggers/{trigger_id}/events (the `ListTriggerEventsV1TriggersTriggerIdEventsGet` operationId).
+	ListTriggerEventsV1TriggersTriggerIdEventsGet(ctx context.Context, triggerId openapi_types.UUID, params *ListTriggerEventsV1TriggersTriggerIdEventsGetParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
 	// UsersApiGetIdentity Get Identity
 	//
 	// Corresponds with GET /v1/users/me (the `UsersApiGetIdentity` operationId).
@@ -62904,6 +66434,40 @@ type ClientInterface interface {
 	//
 	// Corresponds with GET /v1/users/me/workspaces (the `UsersApiListWorkspaces` operationId).
 	UsersApiListWorkspaces(ctx context.Context, params *UsersApiListWorkspacesParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// ListWebhooksV1WebhooksGet List Webhooks
+	//
+	// Corresponds with GET /v1/webhooks (the `ListWebhooksV1WebhooksGet` operationId).
+	ListWebhooksV1WebhooksGet(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateWebhookV1WebhooksPostWithBody Create Webhook
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/webhooks (the `CreateWebhookV1WebhooksPost` operationId).
+	CreateWebhookV1WebhooksPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateWebhookV1WebhooksPost Create Webhook
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/webhooks (the `CreateWebhookV1WebhooksPost` operationId).
+	CreateWebhookV1WebhooksPost(ctx context.Context, body CreateWebhookV1WebhooksPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// DeleteWebhookV1WebhooksWebhookIdDelete Delete Webhook
+	//
+	// Corresponds with DELETE /v1/webhooks/{webhook_id} (the `DeleteWebhookV1WebhooksWebhookIdDelete` operationId).
+	DeleteWebhookV1WebhooksWebhookIdDelete(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GetWebhookV1WebhooksWebhookIdGet Get Webhook
+	//
+	// Corresponds with GET /v1/webhooks/{webhook_id} (the `GetWebhookV1WebhooksWebhookIdGet` operationId).
+	GetWebhookV1WebhooksWebhookIdGet(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGet Get Webhook Signing Secret
+	//
+	// Corresponds with GET /v1/webhooks/{webhook_id}/signing-secret (the `GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGet` operationId).
+	GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGet(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// UsersApiWhoami Whoami
 	//
@@ -62980,6 +66544,16 @@ type ClientInterface interface {
 	//
 	// Corresponds with PATCH /v1/workflows/deployments/{name} (the `UpdateDeploymentV1WorkflowsDeploymentsNamePatch` operationId).
 	UpdateDeploymentV1WorkflowsDeploymentsNamePatch(ctx context.Context, name string, body UpdateDeploymentV1WorkflowsDeploymentsNamePatchJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGet Get Deployment Archive
+	//
+	// Get the archive a managed deployment builds from, with a signed URL to download it.
+	//
+	// `download_url` expires within 24 hours, and is null once Mistral Cloud has deleted the archive.
+	// A deployment that builds from a repository answers 404.
+	//
+	// Corresponds with GET /v1/workflows/deployments/{name}/archive (the `GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGet` operationId).
+	GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGet(ctx context.Context, name string, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// GetDeploymentLogs Get Deployment Logs
 	//
@@ -63366,6 +66940,20 @@ type ClientInterface interface {
 	//
 	// Corresponds with POST /v1/workflows/{workflow_identifier}/execute (the `ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePost` operationId).
 	ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePost(ctx context.Context, workflowIdentifier string, body ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithBody Add Workflow Tags
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/workflows/{workflow_identifier}/tags (the `AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost` operationId).
+	AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithBody(ctx context.Context, workflowIdentifier string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost Add Workflow Tags
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/workflows/{workflow_identifier}/tags (the `AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost` operationId).
+	AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost(ctx context.Context, workflowIdentifier string, body AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// UnarchiveWorkflowV1WorkflowsWorkflowIdentifierUnarchivePut Unarchive Workflow
 	//
@@ -65144,6 +68732,221 @@ func (c *Client) AgentsApiV1AgentsGetVersion(ctx context.Context, agentId string
 	return c.Client.Do(req)
 }
 
+// ListAgentsV1AudioAgentsGet List audio agents
+//
+// Corresponds with GET /v1/audio/agents (the `ListAgentsV1AudioAgentsGet` operationId).
+func (c *Client) ListAgentsV1AudioAgentsGet(ctx context.Context, params *ListAgentsV1AudioAgentsGetParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewListAgentsV1AudioAgentsGetRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateAgentV1AudioAgentsPostWithBody Create an audio agent
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/audio/agents (the `CreateAgentV1AudioAgentsPost` operationId).
+func (c *Client) CreateAgentV1AudioAgentsPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateAgentV1AudioAgentsPostRequestWithBody(c.Server, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateAgentV1AudioAgentsPost Create an audio agent
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/audio/agents (the `CreateAgentV1AudioAgentsPost` operationId).
+func (c *Client) CreateAgentV1AudioAgentsPost(ctx context.Context, body CreateAgentV1AudioAgentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateAgentV1AudioAgentsPostRequest(c.Server, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// DeleteAgentV1AudioAgentsAgentIdDelete Delete an audio agent
+//
+// Corresponds with DELETE /v1/audio/agents/{agent_id} (the `DeleteAgentV1AudioAgentsAgentIdDelete` operationId).
+func (c *Client) DeleteAgentV1AudioAgentsAgentIdDelete(ctx context.Context, agentId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewDeleteAgentV1AudioAgentsAgentIdDeleteRequest(c.Server, agentId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GetAgentV1AudioAgentsAgentIdGet Get an audio agent
+//
+// Corresponds with GET /v1/audio/agents/{agent_id} (the `GetAgentV1AudioAgentsAgentIdGet` operationId).
+func (c *Client) GetAgentV1AudioAgentsAgentIdGet(ctx context.Context, agentId openapi_types.UUID, params *GetAgentV1AudioAgentsAgentIdGetParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetAgentV1AudioAgentsAgentIdGetRequest(c.Server, agentId, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// UpdateAgentV1AudioAgentsAgentIdPutWithBody Update an audio agent
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with PUT /v1/audio/agents/{agent_id} (the `UpdateAgentV1AudioAgentsAgentIdPut` operationId).
+func (c *Client) UpdateAgentV1AudioAgentsAgentIdPutWithBody(ctx context.Context, agentId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewUpdateAgentV1AudioAgentsAgentIdPutRequestWithBody(c.Server, agentId, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// UpdateAgentV1AudioAgentsAgentIdPut Update an audio agent
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with PUT /v1/audio/agents/{agent_id} (the `UpdateAgentV1AudioAgentsAgentIdPut` operationId).
+func (c *Client) UpdateAgentV1AudioAgentsAgentIdPut(ctx context.Context, agentId openapi_types.UUID, body UpdateAgentV1AudioAgentsAgentIdPutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewUpdateAgentV1AudioAgentsAgentIdPutRequest(c.Server, agentId, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// ListAgentSessionsV1AudioAgentsAgentIdSessionsGet List audio agent sessions
+//
+// Corresponds with GET /v1/audio/agents/{agent_id}/sessions (the `ListAgentSessionsV1AudioAgentsAgentIdSessionsGet` operationId).
+func (c *Client) ListAgentSessionsV1AudioAgentsAgentIdSessionsGet(ctx context.Context, agentId openapi_types.UUID, params *ListAgentSessionsV1AudioAgentsAgentIdSessionsGetParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewListAgentSessionsV1AudioAgentsAgentIdSessionsGetRequest(c.Server, agentId, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// ListAgentVersionsV1AudioAgentsAgentIdVersionsGet List audio agent versions
+//
+// Corresponds with GET /v1/audio/agents/{agent_id}/versions (the `ListAgentVersionsV1AudioAgentsAgentIdVersionsGet` operationId).
+func (c *Client) ListAgentVersionsV1AudioAgentsAgentIdVersionsGet(ctx context.Context, agentId openapi_types.UUID, params *ListAgentVersionsV1AudioAgentsAgentIdVersionsGetParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewListAgentVersionsV1AudioAgentsAgentIdVersionsGetRequest(c.Server, agentId, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateSessionV1AudioSessionsPostWithBody Create an agent session
+//
+// Create a real-time audio agent session.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/audio/sessions (the `CreateSessionV1AudioSessionsPost` operationId).
+func (c *Client) CreateSessionV1AudioSessionsPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateSessionV1AudioSessionsPostRequestWithBody(c.Server, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateSessionV1AudioSessionsPost Create an agent session
+//
+// Create a real-time audio agent session.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/audio/sessions (the `CreateSessionV1AudioSessionsPost` operationId).
+func (c *Client) CreateSessionV1AudioSessionsPost(ctx context.Context, body CreateSessionV1AudioSessionsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateSessionV1AudioSessionsPostRequest(c.Server, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// DeleteSessionV1AudioSessionsSessionIdDelete Stop an agent session
+//
+// Stop an audio agent session and release its resources.
+//
+// Corresponds with DELETE /v1/audio/sessions/{session_id} (the `DeleteSessionV1AudioSessionsSessionIdDelete` operationId).
+func (c *Client) DeleteSessionV1AudioSessionsSessionIdDelete(ctx context.Context, sessionId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewDeleteSessionV1AudioSessionsSessionIdDeleteRequest(c.Server, sessionId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GetSessionV1AudioSessionsSessionIdGet Get session status
+//
+// Retrieve an audio agent session with the transcript of its conversation.
+//
+// Corresponds with GET /v1/audio/sessions/{session_id} (the `GetSessionV1AudioSessionsSessionIdGet` operationId).
+func (c *Client) GetSessionV1AudioSessionsSessionIdGet(ctx context.Context, sessionId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetSessionV1AudioSessionsSessionIdGetRequest(c.Server, sessionId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
 // SpeechV1AudioSpeechPostWithBody Speech
 //
 // Takes any type of body and a specified content type.
@@ -65455,6 +69258,42 @@ func (c *Client) JobsApiRoutesBatchGetBatchJob(ctx context.Context, jobId openap
 // Corresponds with POST /v1/batch/jobs/{job_id}/cancel (the `JobsApiRoutesBatchCancelBatchJob` operationId).
 func (c *Client) JobsApiRoutesBatchCancelBatchJob(ctx context.Context, jobId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewJobsApiRoutesBatchCancelBatchJobRequest(c.Server, jobId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// BillingApiPublicGetBudget Get Budget
+//
+// Return the organization's API and Vibe budgets for the current billing period.
+//
+// Requires the `see_org_inference_usage` permission.
+//
+// Corresponds with GET /v1/billing/budget (the `BillingApiPublicGetBudget` operationId).
+func (c *Client) BillingApiPublicGetBudget(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewBillingApiPublicGetBudgetRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// BillingApiPublicGetSubscription Get Subscription
+//
+// Return the organization's plan and whether pay-as-you-go is enabled.
+//
+// Corresponds with GET /v1/billing/subscription (the `BillingApiPublicGetSubscription` operationId).
+func (c *Client) BillingApiPublicGetSubscription(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewBillingApiPublicGetSubscriptionRequest(c.Server)
 	if err != nil {
 		return nil, err
 	}
@@ -66140,6 +69979,456 @@ func (c *Client) ConnectorActivateForConsumerV1(ctx context.Context, connectorId
 // Corresponds with POST /v1/connectors/{connector_id}/{consumer_scope}/deactivate (the `ConnectorDeactivateForConsumerV1` operationId).
 func (c *Client) ConnectorDeactivateForConsumerV1(ctx context.Context, connectorId openapi_types.UUID, consumerScope ConnectorDeactivateForConsumerV1ParamsConsumerScope, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewConnectorDeactivateForConsumerV1Request(c.Server, connectorId, consumerScope)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// ListIndexesV1ContextSearchIndexesGet List managed indexes
+//
+// Lists all managed search indexes for the current workspace.
+//
+// Corresponds with GET /v1/context/search-indexes (the `ListIndexesV1ContextSearchIndexesGet` operationId).
+func (c *Client) ListIndexesV1ContextSearchIndexesGet(ctx context.Context, params *ListIndexesV1ContextSearchIndexesGetParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewListIndexesV1ContextSearchIndexesGetRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateIndexV1ContextSearchIndexesPostWithBody Create a managed index
+//
+// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/context/search-indexes (the `CreateIndexV1ContextSearchIndexesPost` operationId).
+func (c *Client) CreateIndexV1ContextSearchIndexesPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateIndexV1ContextSearchIndexesPostRequestWithBody(c.Server, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateIndexV1ContextSearchIndexesPost Create a managed index
+//
+// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/context/search-indexes (the `CreateIndexV1ContextSearchIndexesPost` operationId).
+func (c *Client) CreateIndexV1ContextSearchIndexesPost(ctx context.Context, body CreateIndexV1ContextSearchIndexesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateIndexV1ContextSearchIndexesPostRequest(c.Server, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// DeleteIndexV1ContextSearchIndexesIndexNameDelete Delete a managed index
+//
+// Marks the managed search index for deletion and returns it with status deleting. The backing table is dropped asynchronously; poll the index until it returns 404.
+//
+// Corresponds with DELETE /v1/context/search-indexes/{index_name} (the `DeleteIndexV1ContextSearchIndexesIndexNameDelete` operationId).
+func (c *Client) DeleteIndexV1ContextSearchIndexesIndexNameDelete(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewDeleteIndexV1ContextSearchIndexesIndexNameDeleteRequest(c.Server, indexName)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GetIndexV1ContextSearchIndexesIndexNameGet Get a managed index
+//
+// Returns the managed search index with the given name.
+//
+// Corresponds with GET /v1/context/search-indexes/{index_name} (the `GetIndexV1ContextSearchIndexesIndexNameGet` operationId).
+func (c *Client) GetIndexV1ContextSearchIndexesIndexNameGet(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetIndexV1ContextSearchIndexesIndexNameGetRequest(c.Server, indexName)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// UpdateIndexV1ContextSearchIndexesIndexNamePutWithBody Update a managed index schema
+//
+// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with PUT /v1/context/search-indexes/{index_name} (the `UpdateIndexV1ContextSearchIndexesIndexNamePut` operationId).
+func (c *Client) UpdateIndexV1ContextSearchIndexesIndexNamePutWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewUpdateIndexV1ContextSearchIndexesIndexNamePutRequestWithBody(c.Server, indexName, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// UpdateIndexV1ContextSearchIndexesIndexNamePut Update a managed index schema
+//
+// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with PUT /v1/context/search-indexes/{index_name} (the `UpdateIndexV1ContextSearchIndexesIndexNamePut` operationId).
+func (c *Client) UpdateIndexV1ContextSearchIndexesIndexNamePut(ctx context.Context, indexName string, body UpdateIndexV1ContextSearchIndexesIndexNamePutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewUpdateIndexV1ContextSearchIndexesIndexNamePutRequest(c.Server, indexName, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGet Get a single chunk by id
+//
+// Returns a single chunk by its canonical id. A 404 means no chunk with that id exists in the index.
+//
+// Corresponds with GET /v1/context/search-indexes/{index_name}/chunks/{chunk_id} (the `GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGet` operationId).
+func (c *Client) GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGet(ctx context.Context, indexName string, chunkId string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetRequest(c.Server, indexName, chunkId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithBody Delete documents from a managed index
+//
+// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with DELETE /v1/context/search-indexes/{index_name}/documents (the `DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete` operationId).
+func (c *Client) DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewDeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteRequestWithBody(c.Server, indexName, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete Delete documents from a managed index
+//
+// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with DELETE /v1/context/search-indexes/{index_name}/documents (the `DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete` operationId).
+func (c *Client) DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete(ctx context.Context, indexName string, body DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewDeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteRequest(c.Server, indexName, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithBody Ingest documents into a managed index
+//
+// Validates and persists documents. Returns 200 with each document reported as accepted or rejected in the response body, or 403 once the index holds its limit of chunks.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/documents (the `IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost` operationId).
+func (c *Client) IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewIngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostRequestWithBody(c.Server, indexName, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost Ingest documents into a managed index
+//
+// Validates and persists documents. Returns 200 with each document reported as accepted or rejected in the response body, or 403 once the index holds its limit of chunks.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/documents (the `IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost` operationId).
+func (c *Client) IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost(ctx context.Context, indexName string, body IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewIngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostRequest(c.Server, indexName, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithBody Grep for a pattern within a source
+//
+// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/grep (the `GrepIndexV1ContextSearchIndexesIndexNameGrepPost` operationId).
+func (c *Client) GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGrepIndexV1ContextSearchIndexesIndexNameGrepPostRequestWithBody(c.Server, indexName, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GrepIndexV1ContextSearchIndexesIndexNameGrepPost Grep for a pattern within a source
+//
+// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/grep (the `GrepIndexV1ContextSearchIndexesIndexNameGrepPost` operationId).
+func (c *Client) GrepIndexV1ContextSearchIndexesIndexNameGrepPost(ctx context.Context, indexName string, body GrepIndexV1ContextSearchIndexesIndexNameGrepPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGrepIndexV1ContextSearchIndexesIndexNameGrepPostRequest(c.Server, indexName, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithBody Navigate to adjacent chunks
+//
+// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/navigate (the `NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost` operationId).
+func (c *Client) NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewNavigateIndexV1ContextSearchIndexesIndexNameNavigatePostRequestWithBody(c.Server, indexName, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost Navigate to adjacent chunks
+//
+// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/navigate (the `NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost` operationId).
+func (c *Client) NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost(ctx context.Context, indexName string, body NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewNavigateIndexV1ContextSearchIndexesIndexNameNavigatePostRequest(c.Server, indexName, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// ReadIndexV1ContextSearchIndexesIndexNameReadPostWithBody Read chunks within a span
+//
+// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/read (the `ReadIndexV1ContextSearchIndexesIndexNameReadPost` operationId).
+func (c *Client) ReadIndexV1ContextSearchIndexesIndexNameReadPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewReadIndexV1ContextSearchIndexesIndexNameReadPostRequestWithBody(c.Server, indexName, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// ReadIndexV1ContextSearchIndexesIndexNameReadPost Read chunks within a span
+//
+// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/read (the `ReadIndexV1ContextSearchIndexesIndexNameReadPost` operationId).
+func (c *Client) ReadIndexV1ContextSearchIndexesIndexNameReadPost(ctx context.Context, indexName string, body ReadIndexV1ContextSearchIndexesIndexNameReadPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewReadIndexV1ContextSearchIndexesIndexNameReadPostRequest(c.Server, indexName, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithBody Search a managed index
+//
+// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/search (the `SearchIndexV1ContextSearchIndexesIndexNameSearchPost` operationId).
+func (c *Client) SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewSearchIndexV1ContextSearchIndexesIndexNameSearchPostRequestWithBody(c.Server, indexName, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// SearchIndexV1ContextSearchIndexesIndexNameSearchPost Search a managed index
+//
+// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/search (the `SearchIndexV1ContextSearchIndexesIndexNameSearchPost` operationId).
+func (c *Client) SearchIndexV1ContextSearchIndexesIndexNameSearchPost(ctx context.Context, indexName string, body SearchIndexV1ContextSearchIndexesIndexNameSearchPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewSearchIndexV1ContextSearchIndexesIndexNameSearchPostRequest(c.Server, indexName, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGet Get Managed Index Summary
+//
+// Retrieve the summary field for a managed index if it exists.
+//
+// Corresponds with GET /v1/context/search-indexes/{index_name}/summary_field/{language} (the `GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGet` operationId).
+func (c *Client) GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGet(ctx context.Context, indexName string, language GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetRequest(c.Server, indexName, language)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost Generate a summary field for a managed index
+//
+// Streams a summary for the managed index in chunks of json.
+//
+// The first chunk contains metadata for the summary, the following contain
+// chunks of 'content' that should be joined together to form a full summary.
+//
+// If force is true, regenerate the requested language even if a summary
+// already exists.
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/summary_field/{language} (the `GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost` operationId).
+func (c *Client) GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost(ctx context.Context, indexName string, language GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage, params *GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostRequest(c.Server, indexName, language, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithBody Set Managed Index Summary
+//
+// Update the summary field for a managed index.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with PUT /v1/context/search-indexes/{index_name}/summary_field/{language} (the `SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut` operationId).
+func (c *Client) SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithBody(ctx context.Context, indexName string, language SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewSetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutRequestWithBody(c.Server, indexName, language, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut Set Managed Index Summary
+//
+// Update the summary field for a managed index.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with PUT /v1/context/search-indexes/{index_name}/summary_field/{language} (the `SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut` operationId).
+func (c *Client) SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut(ctx context.Context, indexName string, language SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage, body SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewSetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutRequest(c.Server, indexName, language, body)
 	if err != nil {
 		return nil, err
 	}
@@ -68403,6 +72692,21 @@ func (c *Client) UpdatePipelineV1ObservabilityPipelinesPipelineIdPut(ctx context
 	return c.Client.Do(req)
 }
 
+// GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGet Get pipeline result field definitions
+//
+// Corresponds with GET /v1/observability/pipelines/{pipeline_id}/results/fields (the `GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGet` operationId).
+func (c *Client) GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGet(ctx context.Context, pipelineId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetRequest(c.Server, pipelineId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
 // GetProjectsV1ObservabilityProjectsGet List projects
 //
 // Corresponds with GET /v1/observability/projects (the `GetProjectsV1ObservabilityProjectsGet` operationId).
@@ -69050,378 +73354,6 @@ func (c *Client) UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPut(c
 	return c.Client.Do(req)
 }
 
-// ListIndexesV1RagManagedIndexesGet List managed indexes
-//
-// Lists all managed search indexes for the current workspace.
-//
-// Corresponds with GET /v1/rag/managed_indexes (the `ListIndexesV1RagManagedIndexesGet` operationId).
-func (c *Client) ListIndexesV1RagManagedIndexesGet(ctx context.Context, params *ListIndexesV1RagManagedIndexesGetParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewListIndexesV1RagManagedIndexesGetRequest(c.Server, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// CreateIndexV1RagManagedIndexesPostWithBody Create a managed index
-//
-// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes (the `CreateIndexV1RagManagedIndexesPost` operationId).
-func (c *Client) CreateIndexV1RagManagedIndexesPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewCreateIndexV1RagManagedIndexesPostRequestWithBody(c.Server, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// CreateIndexV1RagManagedIndexesPost Create a managed index
-//
-// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes (the `CreateIndexV1RagManagedIndexesPost` operationId).
-func (c *Client) CreateIndexV1RagManagedIndexesPost(ctx context.Context, body CreateIndexV1RagManagedIndexesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewCreateIndexV1RagManagedIndexesPostRequest(c.Server, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// DeleteIndexV1RagManagedIndexesIndexNameDelete Delete a managed index
-//
-// Marks the managed search index for deletion and returns it with status deleting. The backing table is dropped asynchronously; poll the index until it returns 404.
-//
-// Corresponds with DELETE /v1/rag/managed_indexes/{index_name} (the `DeleteIndexV1RagManagedIndexesIndexNameDelete` operationId).
-func (c *Client) DeleteIndexV1RagManagedIndexesIndexNameDelete(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewDeleteIndexV1RagManagedIndexesIndexNameDeleteRequest(c.Server, indexName)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// GetIndexV1RagManagedIndexesIndexNameGet Get a managed index
-//
-// Returns the managed search index with the given name.
-//
-// Corresponds with GET /v1/rag/managed_indexes/{index_name} (the `GetIndexV1RagManagedIndexesIndexNameGet` operationId).
-func (c *Client) GetIndexV1RagManagedIndexesIndexNameGet(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGetIndexV1RagManagedIndexesIndexNameGetRequest(c.Server, indexName)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// UpdateIndexV1RagManagedIndexesIndexNamePutWithBody Update a managed index schema
-//
-// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with PUT /v1/rag/managed_indexes/{index_name} (the `UpdateIndexV1RagManagedIndexesIndexNamePut` operationId).
-func (c *Client) UpdateIndexV1RagManagedIndexesIndexNamePutWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewUpdateIndexV1RagManagedIndexesIndexNamePutRequestWithBody(c.Server, indexName, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// UpdateIndexV1RagManagedIndexesIndexNamePut Update a managed index schema
-//
-// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with PUT /v1/rag/managed_indexes/{index_name} (the `UpdateIndexV1RagManagedIndexesIndexNamePut` operationId).
-func (c *Client) UpdateIndexV1RagManagedIndexesIndexNamePut(ctx context.Context, indexName string, body UpdateIndexV1RagManagedIndexesIndexNamePutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewUpdateIndexV1RagManagedIndexesIndexNamePutRequest(c.Server, indexName, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGet Get a single chunk by id
-//
-// Returns a single chunk by its canonical id. A 404 means no chunk with that id exists in the index.
-//
-// Corresponds with GET /v1/rag/managed_indexes/{index_name}/chunks/{chunk_id} (the `GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGet` operationId).
-func (c *Client) GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGet(ctx context.Context, indexName string, chunkId string, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetRequest(c.Server, indexName, chunkId)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithBody Delete documents from a managed index
-//
-// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with DELETE /v1/rag/managed_indexes/{index_name}/documents (the `DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete` operationId).
-func (c *Client) DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewDeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteRequestWithBody(c.Server, indexName, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete Delete documents from a managed index
-//
-// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with DELETE /v1/rag/managed_indexes/{index_name}/documents (the `DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete` operationId).
-func (c *Client) DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete(ctx context.Context, indexName string, body DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewDeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteRequest(c.Server, indexName, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithBody Ingest documents into a managed index
-//
-// Validates and persists documents. Always returns 200; each document is reported as accepted or rejected in the response body.
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/documents (the `IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost` operationId).
-func (c *Client) IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewIngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostRequestWithBody(c.Server, indexName, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost Ingest documents into a managed index
-//
-// Validates and persists documents. Always returns 200; each document is reported as accepted or rejected in the response body.
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/documents (the `IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost` operationId).
-func (c *Client) IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost(ctx context.Context, indexName string, body IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewIngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostRequest(c.Server, indexName, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// GrepIndexV1RagManagedIndexesIndexNameGrepPostWithBody Grep for a pattern within a source
-//
-// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/grep (the `GrepIndexV1RagManagedIndexesIndexNameGrepPost` operationId).
-func (c *Client) GrepIndexV1RagManagedIndexesIndexNameGrepPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGrepIndexV1RagManagedIndexesIndexNameGrepPostRequestWithBody(c.Server, indexName, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// GrepIndexV1RagManagedIndexesIndexNameGrepPost Grep for a pattern within a source
-//
-// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/grep (the `GrepIndexV1RagManagedIndexesIndexNameGrepPost` operationId).
-func (c *Client) GrepIndexV1RagManagedIndexesIndexNameGrepPost(ctx context.Context, indexName string, body GrepIndexV1RagManagedIndexesIndexNameGrepPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGrepIndexV1RagManagedIndexesIndexNameGrepPostRequest(c.Server, indexName, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithBody Navigate to adjacent chunks
-//
-// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/navigate (the `NavigateIndexV1RagManagedIndexesIndexNameNavigatePost` operationId).
-func (c *Client) NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewNavigateIndexV1RagManagedIndexesIndexNameNavigatePostRequestWithBody(c.Server, indexName, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// NavigateIndexV1RagManagedIndexesIndexNameNavigatePost Navigate to adjacent chunks
-//
-// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/navigate (the `NavigateIndexV1RagManagedIndexesIndexNameNavigatePost` operationId).
-func (c *Client) NavigateIndexV1RagManagedIndexesIndexNameNavigatePost(ctx context.Context, indexName string, body NavigateIndexV1RagManagedIndexesIndexNameNavigatePostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewNavigateIndexV1RagManagedIndexesIndexNameNavigatePostRequest(c.Server, indexName, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// ReadIndexV1RagManagedIndexesIndexNameReadPostWithBody Read chunks within a span
-//
-// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/read (the `ReadIndexV1RagManagedIndexesIndexNameReadPost` operationId).
-func (c *Client) ReadIndexV1RagManagedIndexesIndexNameReadPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewReadIndexV1RagManagedIndexesIndexNameReadPostRequestWithBody(c.Server, indexName, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// ReadIndexV1RagManagedIndexesIndexNameReadPost Read chunks within a span
-//
-// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/read (the `ReadIndexV1RagManagedIndexesIndexNameReadPost` operationId).
-func (c *Client) ReadIndexV1RagManagedIndexesIndexNameReadPost(ctx context.Context, indexName string, body ReadIndexV1RagManagedIndexesIndexNameReadPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewReadIndexV1RagManagedIndexesIndexNameReadPostRequest(c.Server, indexName, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// SearchIndexV1RagManagedIndexesIndexNameSearchPostWithBody Search a managed index
-//
-// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/search (the `SearchIndexV1RagManagedIndexesIndexNameSearchPost` operationId).
-func (c *Client) SearchIndexV1RagManagedIndexesIndexNameSearchPostWithBody(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewSearchIndexV1RagManagedIndexesIndexNameSearchPostRequestWithBody(c.Server, indexName, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// SearchIndexV1RagManagedIndexesIndexNameSearchPost Search a managed index
-//
-// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/search (the `SearchIndexV1RagManagedIndexesIndexNameSearchPost` operationId).
-func (c *Client) SearchIndexV1RagManagedIndexesIndexNameSearchPost(ctx context.Context, indexName string, body SearchIndexV1RagManagedIndexesIndexNameSearchPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewSearchIndexV1RagManagedIndexesIndexNameSearchPostRequest(c.Server, indexName, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
 // CreateResponseV1ResponsesPostWithBody Create Response
 //
 // Create a response.
@@ -69752,6 +73684,100 @@ func (c *Client) SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPut
 	return c.Client.Do(req)
 }
 
+// ListTriggersV1TriggersGet List Triggers
+//
+// Corresponds with GET /v1/triggers (the `ListTriggersV1TriggersGet` operationId).
+func (c *Client) ListTriggersV1TriggersGet(ctx context.Context, params *ListTriggersV1TriggersGetParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewListTriggersV1TriggersGetRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateTriggerV1TriggersPostWithBody Create Trigger
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/triggers (the `CreateTriggerV1TriggersPost` operationId).
+func (c *Client) CreateTriggerV1TriggersPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateTriggerV1TriggersPostRequestWithBody(c.Server, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateTriggerV1TriggersPost Create Trigger
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/triggers (the `CreateTriggerV1TriggersPost` operationId).
+func (c *Client) CreateTriggerV1TriggersPost(ctx context.Context, body CreateTriggerV1TriggersPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateTriggerV1TriggersPostRequest(c.Server, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// DeleteTriggerV1TriggersTriggerIdDelete Delete Trigger
+//
+// Corresponds with DELETE /v1/triggers/{trigger_id} (the `DeleteTriggerV1TriggersTriggerIdDelete` operationId).
+func (c *Client) DeleteTriggerV1TriggersTriggerIdDelete(ctx context.Context, triggerId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewDeleteTriggerV1TriggersTriggerIdDeleteRequest(c.Server, triggerId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GetTriggerV1TriggersTriggerIdGet Get Trigger
+//
+// Corresponds with GET /v1/triggers/{trigger_id} (the `GetTriggerV1TriggersTriggerIdGet` operationId).
+func (c *Client) GetTriggerV1TriggersTriggerIdGet(ctx context.Context, triggerId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetTriggerV1TriggersTriggerIdGetRequest(c.Server, triggerId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// ListTriggerEventsV1TriggersTriggerIdEventsGet List Trigger Events
+//
+// Corresponds with GET /v1/triggers/{trigger_id}/events (the `ListTriggerEventsV1TriggersTriggerIdEventsGet` operationId).
+func (c *Client) ListTriggerEventsV1TriggersTriggerIdEventsGet(ctx context.Context, triggerId openapi_types.UUID, params *ListTriggerEventsV1TriggersTriggerIdEventsGetParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewListTriggerEventsV1TriggersTriggerIdEventsGetRequest(c.Server, triggerId, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
 // UsersApiGetIdentity Get Identity
 //
 // Corresponds with GET /v1/users/me (the `UsersApiGetIdentity` operationId).
@@ -69795,6 +73821,100 @@ func (c *Client) UsersApiListOrganizations(ctx context.Context, params *UsersApi
 // Corresponds with GET /v1/users/me/workspaces (the `UsersApiListWorkspaces` operationId).
 func (c *Client) UsersApiListWorkspaces(ctx context.Context, params *UsersApiListWorkspacesParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewUsersApiListWorkspacesRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// ListWebhooksV1WebhooksGet List Webhooks
+//
+// Corresponds with GET /v1/webhooks (the `ListWebhooksV1WebhooksGet` operationId).
+func (c *Client) ListWebhooksV1WebhooksGet(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewListWebhooksV1WebhooksGetRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateWebhookV1WebhooksPostWithBody Create Webhook
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/webhooks (the `CreateWebhookV1WebhooksPost` operationId).
+func (c *Client) CreateWebhookV1WebhooksPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateWebhookV1WebhooksPostRequestWithBody(c.Server, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateWebhookV1WebhooksPost Create Webhook
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/webhooks (the `CreateWebhookV1WebhooksPost` operationId).
+func (c *Client) CreateWebhookV1WebhooksPost(ctx context.Context, body CreateWebhookV1WebhooksPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateWebhookV1WebhooksPostRequest(c.Server, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// DeleteWebhookV1WebhooksWebhookIdDelete Delete Webhook
+//
+// Corresponds with DELETE /v1/webhooks/{webhook_id} (the `DeleteWebhookV1WebhooksWebhookIdDelete` operationId).
+func (c *Client) DeleteWebhookV1WebhooksWebhookIdDelete(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewDeleteWebhookV1WebhooksWebhookIdDeleteRequest(c.Server, webhookId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GetWebhookV1WebhooksWebhookIdGet Get Webhook
+//
+// Corresponds with GET /v1/webhooks/{webhook_id} (the `GetWebhookV1WebhooksWebhookIdGet` operationId).
+func (c *Client) GetWebhookV1WebhooksWebhookIdGet(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetWebhookV1WebhooksWebhookIdGetRequest(c.Server, webhookId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGet Get Webhook Signing Secret
+//
+// Corresponds with GET /v1/webhooks/{webhook_id}/signing-secret (the `GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGet` operationId).
+func (c *Client) GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGet(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetRequest(c.Server, webhookId)
 	if err != nil {
 		return nil, err
 	}
@@ -69991,6 +74111,26 @@ func (c *Client) UpdateDeploymentV1WorkflowsDeploymentsNamePatchWithBody(ctx con
 // Corresponds with PATCH /v1/workflows/deployments/{name} (the `UpdateDeploymentV1WorkflowsDeploymentsNamePatch` operationId).
 func (c *Client) UpdateDeploymentV1WorkflowsDeploymentsNamePatch(ctx context.Context, name string, body UpdateDeploymentV1WorkflowsDeploymentsNamePatchJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewUpdateDeploymentV1WorkflowsDeploymentsNamePatchRequest(c.Server, name, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGet Get Deployment Archive
+//
+// Get the archive a managed deployment builds from, with a signed URL to download it.
+//
+// `download_url` expires within 24 hours, and is null once Mistral Cloud has deleted the archive.
+// A deployment that builds from a repository answers 404.
+//
+// Corresponds with GET /v1/workflows/deployments/{name}/archive (the `GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGet` operationId).
+func (c *Client) GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGet(ctx context.Context, name string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetRequest(c.Server, name)
 	if err != nil {
 		return nil, err
 	}
@@ -70965,6 +75105,40 @@ func (c *Client) ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostWithBody
 // Corresponds with POST /v1/workflows/{workflow_identifier}/execute (the `ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePost` operationId).
 func (c *Client) ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePost(ctx context.Context, workflowIdentifier string, body ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostRequest(c.Server, workflowIdentifier, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithBody Add Workflow Tags
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/workflows/{workflow_identifier}/tags (the `AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost` operationId).
+func (c *Client) AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithBody(ctx context.Context, workflowIdentifier string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewAddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostRequestWithBody(c.Server, workflowIdentifier, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost Add Workflow Tags
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/workflows/{workflow_identifier}/tags (the `AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost` operationId).
+func (c *Client) AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost(ctx context.Context, workflowIdentifier string, body AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewAddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostRequest(c.Server, workflowIdentifier, body)
 	if err != nil {
 		return nil, err
 	}
@@ -74719,6 +78893,520 @@ func NewAgentsApiV1AgentsGetVersionRequest(server string, agentId string, versio
 	return req, nil
 }
 
+// NewListAgentsV1AudioAgentsGetRequest constructs an http.Request for the ListAgentsV1AudioAgentsGet method
+func NewListAgentsV1AudioAgentsGetRequest(server string, params *ListAgentsV1AudioAgentsGetParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/audio/agents")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		// queryValues collects non-styled parameters (passthrough, JSON)
+		// that are safe to round-trip through url.Values.Encode().
+		queryValues := queryURL.Query()
+		// rawQueryFragments collects pre-encoded query fragments from
+		// styled parameters, preserving literal commas as delimiters
+		// per the OpenAPI spec (e.g. "color=blue,black,brown").
+		var rawQueryFragments []string
+
+		if params.PageSize != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_size", *params.PageSize, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.PageToken != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_token", *params.PageToken, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.Search != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "search", *params.Search, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if encoded := queryValues.Encode(); encoded != "" {
+			rawQueryFragments = append(rawQueryFragments, encoded)
+		}
+		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewCreateAgentV1AudioAgentsPostRequest calls the generic CreateAgentV1AudioAgentsPost builder with application/json body
+func NewCreateAgentV1AudioAgentsPostRequest(server string, body CreateAgentV1AudioAgentsPostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewCreateAgentV1AudioAgentsPostRequestWithBody(server, "application/json", bodyReader)
+}
+
+// NewCreateAgentV1AudioAgentsPostRequestWithBody constructs an http.Request for the CreateAgentV1AudioAgentsPost method, with any body, and a specified content type
+func NewCreateAgentV1AudioAgentsPostRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/audio/agents")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewDeleteAgentV1AudioAgentsAgentIdDeleteRequest constructs an http.Request for the DeleteAgentV1AudioAgentsAgentIdDelete method
+func NewDeleteAgentV1AudioAgentsAgentIdDeleteRequest(server string, agentId openapi_types.UUID) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "agent_id", agentId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/audio/agents/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodDelete, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGetAgentV1AudioAgentsAgentIdGetRequest constructs an http.Request for the GetAgentV1AudioAgentsAgentIdGet method
+func NewGetAgentV1AudioAgentsAgentIdGetRequest(server string, agentId openapi_types.UUID, params *GetAgentV1AudioAgentsAgentIdGetParams) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "agent_id", agentId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/audio/agents/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		// queryValues collects non-styled parameters (passthrough, JSON)
+		// that are safe to round-trip through url.Values.Encode().
+		queryValues := queryURL.Query()
+		// rawQueryFragments collects pre-encoded query fragments from
+		// styled parameters, preserving literal commas as delimiters
+		// per the OpenAPI spec (e.g. "color=blue,black,brown").
+		var rawQueryFragments []string
+
+		if params.Version != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "version", *params.Version, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if encoded := queryValues.Encode(); encoded != "" {
+			rawQueryFragments = append(rawQueryFragments, encoded)
+		}
+		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewUpdateAgentV1AudioAgentsAgentIdPutRequest calls the generic UpdateAgentV1AudioAgentsAgentIdPut builder with application/json body
+func NewUpdateAgentV1AudioAgentsAgentIdPutRequest(server string, agentId openapi_types.UUID, body UpdateAgentV1AudioAgentsAgentIdPutJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewUpdateAgentV1AudioAgentsAgentIdPutRequestWithBody(server, agentId, "application/json", bodyReader)
+}
+
+// NewUpdateAgentV1AudioAgentsAgentIdPutRequestWithBody constructs an http.Request for the UpdateAgentV1AudioAgentsAgentIdPut method, with any body, and a specified content type
+func NewUpdateAgentV1AudioAgentsAgentIdPutRequestWithBody(server string, agentId openapi_types.UUID, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "agent_id", agentId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/audio/agents/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPut, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewListAgentSessionsV1AudioAgentsAgentIdSessionsGetRequest constructs an http.Request for the ListAgentSessionsV1AudioAgentsAgentIdSessionsGet method
+func NewListAgentSessionsV1AudioAgentsAgentIdSessionsGetRequest(server string, agentId openapi_types.UUID, params *ListAgentSessionsV1AudioAgentsAgentIdSessionsGetParams) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "agent_id", agentId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/audio/agents/%s/sessions", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		// queryValues collects non-styled parameters (passthrough, JSON)
+		// that are safe to round-trip through url.Values.Encode().
+		queryValues := queryURL.Query()
+		// rawQueryFragments collects pre-encoded query fragments from
+		// styled parameters, preserving literal commas as delimiters
+		// per the OpenAPI spec (e.g. "color=blue,black,brown").
+		var rawQueryFragments []string
+
+		if params.PageSize != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_size", *params.PageSize, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.PageToken != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_token", *params.PageToken, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if encoded := queryValues.Encode(); encoded != "" {
+			rawQueryFragments = append(rawQueryFragments, encoded)
+		}
+		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewListAgentVersionsV1AudioAgentsAgentIdVersionsGetRequest constructs an http.Request for the ListAgentVersionsV1AudioAgentsAgentIdVersionsGet method
+func NewListAgentVersionsV1AudioAgentsAgentIdVersionsGetRequest(server string, agentId openapi_types.UUID, params *ListAgentVersionsV1AudioAgentsAgentIdVersionsGetParams) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "agent_id", agentId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/audio/agents/%s/versions", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		// queryValues collects non-styled parameters (passthrough, JSON)
+		// that are safe to round-trip through url.Values.Encode().
+		queryValues := queryURL.Query()
+		// rawQueryFragments collects pre-encoded query fragments from
+		// styled parameters, preserving literal commas as delimiters
+		// per the OpenAPI spec (e.g. "color=blue,black,brown").
+		var rawQueryFragments []string
+
+		if params.PageSize != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_size", *params.PageSize, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.PageToken != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_token", *params.PageToken, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if encoded := queryValues.Encode(); encoded != "" {
+			rawQueryFragments = append(rawQueryFragments, encoded)
+		}
+		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewCreateSessionV1AudioSessionsPostRequest calls the generic CreateSessionV1AudioSessionsPost builder with application/json body
+func NewCreateSessionV1AudioSessionsPostRequest(server string, body CreateSessionV1AudioSessionsPostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewCreateSessionV1AudioSessionsPostRequestWithBody(server, "application/json", bodyReader)
+}
+
+// NewCreateSessionV1AudioSessionsPostRequestWithBody constructs an http.Request for the CreateSessionV1AudioSessionsPost method, with any body, and a specified content type
+func NewCreateSessionV1AudioSessionsPostRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/audio/sessions")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewDeleteSessionV1AudioSessionsSessionIdDeleteRequest constructs an http.Request for the DeleteSessionV1AudioSessionsSessionIdDelete method
+func NewDeleteSessionV1AudioSessionsSessionIdDeleteRequest(server string, sessionId openapi_types.UUID) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "session_id", sessionId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/audio/sessions/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodDelete, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGetSessionV1AudioSessionsSessionIdGetRequest constructs an http.Request for the GetSessionV1AudioSessionsSessionIdGet method
+func NewGetSessionV1AudioSessionsSessionIdGetRequest(server string, sessionId openapi_types.UUID) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "session_id", sessionId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/audio/sessions/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
 // NewSpeechV1AudioSpeechPostRequest calls the generic SpeechV1AudioSpeechPost builder with application/json body
 func NewSpeechV1AudioSpeechPostRequest(server string, body SpeechV1AudioSpeechPostJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
@@ -75396,6 +80084,60 @@ func NewJobsApiRoutesBatchCancelBatchJobRequest(server string, jobId openapi_typ
 	}
 
 	req, err := http.NewRequest(http.MethodPost, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewBillingApiPublicGetBudgetRequest constructs an http.Request for the BillingApiPublicGetBudget method
+func NewBillingApiPublicGetBudgetRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/billing/budget")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewBillingApiPublicGetSubscriptionRequest constructs an http.Request for the BillingApiPublicGetSubscription method
+func NewBillingApiPublicGetSubscriptionRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/billing/subscription")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
 	if err != nil {
 		return nil, err
 	}
@@ -76837,6 +81579,749 @@ func NewConnectorDeactivateForConsumerV1Request(server string, connectorId opena
 	if err != nil {
 		return nil, err
 	}
+
+	return req, nil
+}
+
+// NewListIndexesV1ContextSearchIndexesGetRequest constructs an http.Request for the ListIndexesV1ContextSearchIndexesGet method
+func NewListIndexesV1ContextSearchIndexesGetRequest(server string, params *ListIndexesV1ContextSearchIndexesGetParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		// queryValues collects non-styled parameters (passthrough, JSON)
+		// that are safe to round-trip through url.Values.Encode().
+		queryValues := queryURL.Query()
+		// rawQueryFragments collects pre-encoded query fragments from
+		// styled parameters, preserving literal commas as delimiters
+		// per the OpenAPI spec (e.g. "color=blue,black,brown").
+		var rawQueryFragments []string
+
+		if params.PageSize != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_size", *params.PageSize, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.PageToken != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_token", *params.PageToken, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.Name != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "name", *params.Name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.Status != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "status", *params.Status, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.CreatorId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "creator_id", *params.CreatorId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if encoded := queryValues.Encode(); encoded != "" {
+			rawQueryFragments = append(rawQueryFragments, encoded)
+		}
+		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewCreateIndexV1ContextSearchIndexesPostRequest calls the generic CreateIndexV1ContextSearchIndexesPost builder with application/json body
+func NewCreateIndexV1ContextSearchIndexesPostRequest(server string, body CreateIndexV1ContextSearchIndexesPostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewCreateIndexV1ContextSearchIndexesPostRequestWithBody(server, "application/json", bodyReader)
+}
+
+// NewCreateIndexV1ContextSearchIndexesPostRequestWithBody constructs an http.Request for the CreateIndexV1ContextSearchIndexesPost method, with any body, and a specified content type
+func NewCreateIndexV1ContextSearchIndexesPostRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewDeleteIndexV1ContextSearchIndexesIndexNameDeleteRequest constructs an http.Request for the DeleteIndexV1ContextSearchIndexesIndexNameDelete method
+func NewDeleteIndexV1ContextSearchIndexesIndexNameDeleteRequest(server string, indexName string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodDelete, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGetIndexV1ContextSearchIndexesIndexNameGetRequest constructs an http.Request for the GetIndexV1ContextSearchIndexesIndexNameGet method
+func NewGetIndexV1ContextSearchIndexesIndexNameGetRequest(server string, indexName string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewUpdateIndexV1ContextSearchIndexesIndexNamePutRequest calls the generic UpdateIndexV1ContextSearchIndexesIndexNamePut builder with application/json body
+func NewUpdateIndexV1ContextSearchIndexesIndexNamePutRequest(server string, indexName string, body UpdateIndexV1ContextSearchIndexesIndexNamePutJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewUpdateIndexV1ContextSearchIndexesIndexNamePutRequestWithBody(server, indexName, "application/json", bodyReader)
+}
+
+// NewUpdateIndexV1ContextSearchIndexesIndexNamePutRequestWithBody constructs an http.Request for the UpdateIndexV1ContextSearchIndexesIndexNamePut method, with any body, and a specified content type
+func NewUpdateIndexV1ContextSearchIndexesIndexNamePutRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPut, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewGetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetRequest constructs an http.Request for the GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGet method
+func NewGetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetRequest(server string, indexName string, chunkId string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	var pathParam1 string
+
+	pathParam1, err = runtime.StyleParamWithOptions("simple", false, "chunk_id", chunkId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s/chunks/%s", pathParam0, pathParam1)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewDeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteRequest calls the generic DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete builder with application/json body
+func NewDeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteRequest(server string, indexName string, body DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewDeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteRequestWithBody(server, indexName, "application/json", bodyReader)
+}
+
+// NewDeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteRequestWithBody constructs an http.Request for the DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete method, with any body, and a specified content type
+func NewDeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s/documents", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodDelete, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewIngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostRequest calls the generic IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost builder with application/json body
+func NewIngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostRequest(server string, indexName string, body IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewIngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostRequestWithBody(server, indexName, "application/json", bodyReader)
+}
+
+// NewIngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostRequestWithBody constructs an http.Request for the IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost method, with any body, and a specified content type
+func NewIngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s/documents", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewGrepIndexV1ContextSearchIndexesIndexNameGrepPostRequest calls the generic GrepIndexV1ContextSearchIndexesIndexNameGrepPost builder with application/json body
+func NewGrepIndexV1ContextSearchIndexesIndexNameGrepPostRequest(server string, indexName string, body GrepIndexV1ContextSearchIndexesIndexNameGrepPostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewGrepIndexV1ContextSearchIndexesIndexNameGrepPostRequestWithBody(server, indexName, "application/json", bodyReader)
+}
+
+// NewGrepIndexV1ContextSearchIndexesIndexNameGrepPostRequestWithBody constructs an http.Request for the GrepIndexV1ContextSearchIndexesIndexNameGrepPost method, with any body, and a specified content type
+func NewGrepIndexV1ContextSearchIndexesIndexNameGrepPostRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s/grep", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewNavigateIndexV1ContextSearchIndexesIndexNameNavigatePostRequest calls the generic NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost builder with application/json body
+func NewNavigateIndexV1ContextSearchIndexesIndexNameNavigatePostRequest(server string, indexName string, body NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewNavigateIndexV1ContextSearchIndexesIndexNameNavigatePostRequestWithBody(server, indexName, "application/json", bodyReader)
+}
+
+// NewNavigateIndexV1ContextSearchIndexesIndexNameNavigatePostRequestWithBody constructs an http.Request for the NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost method, with any body, and a specified content type
+func NewNavigateIndexV1ContextSearchIndexesIndexNameNavigatePostRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s/navigate", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewReadIndexV1ContextSearchIndexesIndexNameReadPostRequest calls the generic ReadIndexV1ContextSearchIndexesIndexNameReadPost builder with application/json body
+func NewReadIndexV1ContextSearchIndexesIndexNameReadPostRequest(server string, indexName string, body ReadIndexV1ContextSearchIndexesIndexNameReadPostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewReadIndexV1ContextSearchIndexesIndexNameReadPostRequestWithBody(server, indexName, "application/json", bodyReader)
+}
+
+// NewReadIndexV1ContextSearchIndexesIndexNameReadPostRequestWithBody constructs an http.Request for the ReadIndexV1ContextSearchIndexesIndexNameReadPost method, with any body, and a specified content type
+func NewReadIndexV1ContextSearchIndexesIndexNameReadPostRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s/read", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewSearchIndexV1ContextSearchIndexesIndexNameSearchPostRequest calls the generic SearchIndexV1ContextSearchIndexesIndexNameSearchPost builder with application/json body
+func NewSearchIndexV1ContextSearchIndexesIndexNameSearchPostRequest(server string, indexName string, body SearchIndexV1ContextSearchIndexesIndexNameSearchPostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewSearchIndexV1ContextSearchIndexesIndexNameSearchPostRequestWithBody(server, indexName, "application/json", bodyReader)
+}
+
+// NewSearchIndexV1ContextSearchIndexesIndexNameSearchPostRequestWithBody constructs an http.Request for the SearchIndexV1ContextSearchIndexesIndexNameSearchPost method, with any body, and a specified content type
+func NewSearchIndexV1ContextSearchIndexesIndexNameSearchPostRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s/search", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewGetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetRequest constructs an http.Request for the GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGet method
+func NewGetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetRequest(server string, indexName string, language GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	var pathParam1 string
+
+	pathParam1, err = runtime.StyleParamWithOptions("simple", false, "language", language, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s/summary_field/%s", pathParam0, pathParam1)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostRequest constructs an http.Request for the GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost method
+func NewGenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostRequest(server string, indexName string, language GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage, params *GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParams) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	var pathParam1 string
+
+	pathParam1, err = runtime.StyleParamWithOptions("simple", false, "language", language, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s/summary_field/%s", pathParam0, pathParam1)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		// queryValues collects non-styled parameters (passthrough, JSON)
+		// that are safe to round-trip through url.Values.Encode().
+		queryValues := queryURL.Query()
+		// rawQueryFragments collects pre-encoded query fragments from
+		// styled parameters, preserving literal commas as delimiters
+		// per the OpenAPI spec (e.g. "color=blue,black,brown").
+		var rawQueryFragments []string
+
+		if params.Force != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "force", *params.Force, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if encoded := queryValues.Encode(); encoded != "" {
+			rawQueryFragments = append(rawQueryFragments, encoded)
+		}
+		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewSetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutRequest calls the generic SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut builder with application/json body
+func NewSetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutRequest(server string, indexName string, language SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage, body SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewSetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutRequestWithBody(server, indexName, language, "application/json", bodyReader)
+}
+
+// NewSetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutRequestWithBody constructs an http.Request for the SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut method, with any body, and a specified content type
+func NewSetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutRequestWithBody(server string, indexName string, language SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	var pathParam1 string
+
+	pathParam1, err = runtime.StyleParamWithOptions("simple", false, "language", language, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/context/search-indexes/%s/summary_field/%s", pathParam0, pathParam1)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPut, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
 
 	return req, nil
 }
@@ -81510,6 +86995,40 @@ func NewUpdatePipelineV1ObservabilityPipelinesPipelineIdPutRequestWithBody(serve
 	return req, nil
 }
 
+// NewGetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetRequest constructs an http.Request for the GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGet method
+func NewGetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetRequest(server string, pipelineId openapi_types.UUID) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "pipeline_id", pipelineId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/observability/pipelines/%s/results/fields", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
 // NewGetProjectsV1ObservabilityProjectsGetRequest constructs an http.Request for the GetProjectsV1ObservabilityProjectsGet method
 func NewGetProjectsV1ObservabilityProjectsGetRequest(server string, params *GetProjectsV1ObservabilityProjectsGetParams) (*http.Request, error) {
 	var err error
@@ -83157,586 +88676,6 @@ func NewUpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPutRequestWith
 	return req, nil
 }
 
-// NewListIndexesV1RagManagedIndexesGetRequest constructs an http.Request for the ListIndexesV1RagManagedIndexesGet method
-func NewListIndexesV1RagManagedIndexesGetRequest(server string, params *ListIndexesV1RagManagedIndexesGetParams) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		// queryValues collects non-styled parameters (passthrough, JSON)
-		// that are safe to round-trip through url.Values.Encode().
-		queryValues := queryURL.Query()
-		// rawQueryFragments collects pre-encoded query fragments from
-		// styled parameters, preserving literal commas as delimiters
-		// per the OpenAPI spec (e.g. "color=blue,black,brown").
-		var rawQueryFragments []string
-
-		if params.PageSize != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_size", *params.PageSize, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
-				return nil, err
-			} else {
-				for _, qp := range strings.Split(queryFrag, "&") {
-					rawQueryFragments = append(rawQueryFragments, qp)
-				}
-			}
-
-		}
-
-		if params.PageToken != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_token", *params.PageToken, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
-				return nil, err
-			} else {
-				for _, qp := range strings.Split(queryFrag, "&") {
-					rawQueryFragments = append(rawQueryFragments, qp)
-				}
-			}
-
-		}
-
-		if params.Name != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "name", *params.Name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
-				return nil, err
-			} else {
-				for _, qp := range strings.Split(queryFrag, "&") {
-					rawQueryFragments = append(rawQueryFragments, qp)
-				}
-			}
-
-		}
-
-		if params.Status != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "status", *params.Status, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
-				return nil, err
-			} else {
-				for _, qp := range strings.Split(queryFrag, "&") {
-					rawQueryFragments = append(rawQueryFragments, qp)
-				}
-			}
-
-		}
-
-		if params.CreatorId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "creator_id", *params.CreatorId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
-				return nil, err
-			} else {
-				for _, qp := range strings.Split(queryFrag, "&") {
-					rawQueryFragments = append(rawQueryFragments, qp)
-				}
-			}
-
-		}
-
-		if encoded := queryValues.Encode(); encoded != "" {
-			rawQueryFragments = append(rawQueryFragments, encoded)
-		}
-		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
-	}
-
-	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
-}
-
-// NewCreateIndexV1RagManagedIndexesPostRequest calls the generic CreateIndexV1RagManagedIndexesPost builder with application/json body
-func NewCreateIndexV1RagManagedIndexesPostRequest(server string, body CreateIndexV1RagManagedIndexesPostJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewCreateIndexV1RagManagedIndexesPostRequestWithBody(server, "application/json", bodyReader)
-}
-
-// NewCreateIndexV1RagManagedIndexesPostRequestWithBody constructs an http.Request for the CreateIndexV1RagManagedIndexesPost method, with any body, and a specified content type
-func NewCreateIndexV1RagManagedIndexesPostRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
-// NewDeleteIndexV1RagManagedIndexesIndexNameDeleteRequest constructs an http.Request for the DeleteIndexV1RagManagedIndexesIndexNameDelete method
-func NewDeleteIndexV1RagManagedIndexesIndexNameDeleteRequest(server string, indexName string) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodDelete, queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
-}
-
-// NewGetIndexV1RagManagedIndexesIndexNameGetRequest constructs an http.Request for the GetIndexV1RagManagedIndexesIndexNameGet method
-func NewGetIndexV1RagManagedIndexesIndexNameGetRequest(server string, indexName string) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
-}
-
-// NewUpdateIndexV1RagManagedIndexesIndexNamePutRequest calls the generic UpdateIndexV1RagManagedIndexesIndexNamePut builder with application/json body
-func NewUpdateIndexV1RagManagedIndexesIndexNamePutRequest(server string, indexName string, body UpdateIndexV1RagManagedIndexesIndexNamePutJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewUpdateIndexV1RagManagedIndexesIndexNamePutRequestWithBody(server, indexName, "application/json", bodyReader)
-}
-
-// NewUpdateIndexV1RagManagedIndexesIndexNamePutRequestWithBody constructs an http.Request for the UpdateIndexV1RagManagedIndexesIndexNamePut method, with any body, and a specified content type
-func NewUpdateIndexV1RagManagedIndexesIndexNamePutRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPut, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
-// NewGetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetRequest constructs an http.Request for the GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGet method
-func NewGetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetRequest(server string, indexName string, chunkId string) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam1 string
-
-	pathParam1, err = runtime.StyleParamWithOptions("simple", false, "chunk_id", chunkId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes/%s/chunks/%s", pathParam0, pathParam1)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
-}
-
-// NewDeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteRequest calls the generic DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete builder with application/json body
-func NewDeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteRequest(server string, indexName string, body DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewDeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteRequestWithBody(server, indexName, "application/json", bodyReader)
-}
-
-// NewDeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteRequestWithBody constructs an http.Request for the DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete method, with any body, and a specified content type
-func NewDeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes/%s/documents", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodDelete, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
-// NewIngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostRequest calls the generic IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost builder with application/json body
-func NewIngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostRequest(server string, indexName string, body IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewIngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostRequestWithBody(server, indexName, "application/json", bodyReader)
-}
-
-// NewIngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostRequestWithBody constructs an http.Request for the IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost method, with any body, and a specified content type
-func NewIngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes/%s/documents", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
-// NewGrepIndexV1RagManagedIndexesIndexNameGrepPostRequest calls the generic GrepIndexV1RagManagedIndexesIndexNameGrepPost builder with application/json body
-func NewGrepIndexV1RagManagedIndexesIndexNameGrepPostRequest(server string, indexName string, body GrepIndexV1RagManagedIndexesIndexNameGrepPostJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewGrepIndexV1RagManagedIndexesIndexNameGrepPostRequestWithBody(server, indexName, "application/json", bodyReader)
-}
-
-// NewGrepIndexV1RagManagedIndexesIndexNameGrepPostRequestWithBody constructs an http.Request for the GrepIndexV1RagManagedIndexesIndexNameGrepPost method, with any body, and a specified content type
-func NewGrepIndexV1RagManagedIndexesIndexNameGrepPostRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes/%s/grep", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
-// NewNavigateIndexV1RagManagedIndexesIndexNameNavigatePostRequest calls the generic NavigateIndexV1RagManagedIndexesIndexNameNavigatePost builder with application/json body
-func NewNavigateIndexV1RagManagedIndexesIndexNameNavigatePostRequest(server string, indexName string, body NavigateIndexV1RagManagedIndexesIndexNameNavigatePostJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewNavigateIndexV1RagManagedIndexesIndexNameNavigatePostRequestWithBody(server, indexName, "application/json", bodyReader)
-}
-
-// NewNavigateIndexV1RagManagedIndexesIndexNameNavigatePostRequestWithBody constructs an http.Request for the NavigateIndexV1RagManagedIndexesIndexNameNavigatePost method, with any body, and a specified content type
-func NewNavigateIndexV1RagManagedIndexesIndexNameNavigatePostRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes/%s/navigate", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
-// NewReadIndexV1RagManagedIndexesIndexNameReadPostRequest calls the generic ReadIndexV1RagManagedIndexesIndexNameReadPost builder with application/json body
-func NewReadIndexV1RagManagedIndexesIndexNameReadPostRequest(server string, indexName string, body ReadIndexV1RagManagedIndexesIndexNameReadPostJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewReadIndexV1RagManagedIndexesIndexNameReadPostRequestWithBody(server, indexName, "application/json", bodyReader)
-}
-
-// NewReadIndexV1RagManagedIndexesIndexNameReadPostRequestWithBody constructs an http.Request for the ReadIndexV1RagManagedIndexesIndexNameReadPost method, with any body, and a specified content type
-func NewReadIndexV1RagManagedIndexesIndexNameReadPostRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes/%s/read", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
-// NewSearchIndexV1RagManagedIndexesIndexNameSearchPostRequest calls the generic SearchIndexV1RagManagedIndexesIndexNameSearchPost builder with application/json body
-func NewSearchIndexV1RagManagedIndexesIndexNameSearchPostRequest(server string, indexName string, body SearchIndexV1RagManagedIndexesIndexNameSearchPostJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewSearchIndexV1RagManagedIndexesIndexNameSearchPostRequestWithBody(server, indexName, "application/json", bodyReader)
-}
-
-// NewSearchIndexV1RagManagedIndexesIndexNameSearchPostRequestWithBody constructs an http.Request for the SearchIndexV1RagManagedIndexesIndexNameSearchPost method, with any body, and a specified content type
-func NewSearchIndexV1RagManagedIndexesIndexNameSearchPostRequestWithBody(server string, indexName string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "index_name", indexName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/rag/managed_indexes/%s/search", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
 // NewCreateResponseV1ResponsesPostRequest calls the generic CreateResponseV1ResponsesPost builder with application/json body
 func NewCreateResponseV1ResponsesPostRequest(server string, body CreateResponseV1ResponsesPostJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
@@ -84209,6 +89148,253 @@ func NewSetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPutRequestWi
 	return req, nil
 }
 
+// NewListTriggersV1TriggersGetRequest constructs an http.Request for the ListTriggersV1TriggersGet method
+func NewListTriggersV1TriggersGetRequest(server string, params *ListTriggersV1TriggersGetParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/triggers")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		// queryValues collects non-styled parameters (passthrough, JSON)
+		// that are safe to round-trip through url.Values.Encode().
+		queryValues := queryURL.Query()
+		// rawQueryFragments collects pre-encoded query fragments from
+		// styled parameters, preserving literal commas as delimiters
+		// per the OpenAPI spec (e.g. "color=blue,black,brown").
+		var rawQueryFragments []string
+
+		if params.Handler != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "handler", *params.Handler, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.PrimitiveId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "primitive_id", *params.PrimitiveId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.EventSourceId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "event_source_id", *params.EventSourceId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if encoded := queryValues.Encode(); encoded != "" {
+			rawQueryFragments = append(rawQueryFragments, encoded)
+		}
+		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewCreateTriggerV1TriggersPostRequest calls the generic CreateTriggerV1TriggersPost builder with application/json body
+func NewCreateTriggerV1TriggersPostRequest(server string, body CreateTriggerV1TriggersPostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewCreateTriggerV1TriggersPostRequestWithBody(server, "application/json", bodyReader)
+}
+
+// NewCreateTriggerV1TriggersPostRequestWithBody constructs an http.Request for the CreateTriggerV1TriggersPost method, with any body, and a specified content type
+func NewCreateTriggerV1TriggersPostRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/triggers")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewDeleteTriggerV1TriggersTriggerIdDeleteRequest constructs an http.Request for the DeleteTriggerV1TriggersTriggerIdDelete method
+func NewDeleteTriggerV1TriggersTriggerIdDeleteRequest(server string, triggerId openapi_types.UUID) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "trigger_id", triggerId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/triggers/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodDelete, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGetTriggerV1TriggersTriggerIdGetRequest constructs an http.Request for the GetTriggerV1TriggersTriggerIdGet method
+func NewGetTriggerV1TriggersTriggerIdGetRequest(server string, triggerId openapi_types.UUID) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "trigger_id", triggerId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/triggers/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewListTriggerEventsV1TriggersTriggerIdEventsGetRequest constructs an http.Request for the ListTriggerEventsV1TriggersTriggerIdEventsGet method
+func NewListTriggerEventsV1TriggersTriggerIdEventsGetRequest(server string, triggerId openapi_types.UUID, params *ListTriggerEventsV1TriggersTriggerIdEventsGetParams) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "trigger_id", triggerId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/triggers/%s/events", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		// queryValues collects non-styled parameters (passthrough, JSON)
+		// that are safe to round-trip through url.Values.Encode().
+		queryValues := queryURL.Query()
+		// rawQueryFragments collects pre-encoded query fragments from
+		// styled parameters, preserving literal commas as delimiters
+		// per the OpenAPI spec (e.g. "color=blue,black,brown").
+		var rawQueryFragments []string
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if encoded := queryValues.Encode(); encoded != "" {
+			rawQueryFragments = append(rawQueryFragments, encoded)
+		}
+		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
 // NewUsersApiGetIdentityRequest constructs an http.Request for the UsersApiGetIdentity method
 func NewUsersApiGetIdentityRequest(server string) (*http.Request, error) {
 	var err error
@@ -84370,6 +89556,175 @@ func NewUsersApiListWorkspacesRequest(server string, params *UsersApiListWorkspa
 			rawQueryFragments = append(rawQueryFragments, encoded)
 		}
 		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewListWebhooksV1WebhooksGetRequest constructs an http.Request for the ListWebhooksV1WebhooksGet method
+func NewListWebhooksV1WebhooksGetRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/webhooks")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewCreateWebhookV1WebhooksPostRequest calls the generic CreateWebhookV1WebhooksPost builder with application/json body
+func NewCreateWebhookV1WebhooksPostRequest(server string, body CreateWebhookV1WebhooksPostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewCreateWebhookV1WebhooksPostRequestWithBody(server, "application/json", bodyReader)
+}
+
+// NewCreateWebhookV1WebhooksPostRequestWithBody constructs an http.Request for the CreateWebhookV1WebhooksPost method, with any body, and a specified content type
+func NewCreateWebhookV1WebhooksPostRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/webhooks")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewDeleteWebhookV1WebhooksWebhookIdDeleteRequest constructs an http.Request for the DeleteWebhookV1WebhooksWebhookIdDelete method
+func NewDeleteWebhookV1WebhooksWebhookIdDeleteRequest(server string, webhookId openapi_types.UUID) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "webhook_id", webhookId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/webhooks/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodDelete, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGetWebhookV1WebhooksWebhookIdGetRequest constructs an http.Request for the GetWebhookV1WebhooksWebhookIdGet method
+func NewGetWebhookV1WebhooksWebhookIdGetRequest(server string, webhookId openapi_types.UUID) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "webhook_id", webhookId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/webhooks/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetRequest constructs an http.Request for the GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGet method
+func NewGetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetRequest(server string, webhookId openapi_types.UUID) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "webhook_id", webhookId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/webhooks/%s/signing-secret", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
 	}
 
 	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
@@ -84817,6 +90172,30 @@ func NewListDeploymentsV1WorkflowsDeploymentsGetRequest(server string, params *L
 
 		}
 
+		if params.RepositoryUrl != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repository_url", *params.RepositoryUrl, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.DockerfilePath != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "dockerfile_path", *params.DockerfilePath, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
 		if encoded := queryValues.Encode(); encoded != "" {
 			rawQueryFragments = append(rawQueryFragments, encoded)
 		}
@@ -85070,6 +90449,40 @@ func NewUpdateDeploymentV1WorkflowsDeploymentsNamePatchRequestWithBody(server st
 	}
 
 	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewGetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetRequest constructs an http.Request for the GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGet method
+func NewGetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetRequest(server string, name string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "name", name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/workflows/deployments/%s/archive", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
 
 	return req, nil
 }
@@ -88007,6 +93420,53 @@ func NewExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostRequestWithBody(s
 	return req, nil
 }
 
+// NewAddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostRequest calls the generic AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost builder with application/json body
+func NewAddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostRequest(server string, workflowIdentifier string, body AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewAddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostRequestWithBody(server, workflowIdentifier, "application/json", bodyReader)
+}
+
+// NewAddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostRequestWithBody constructs an http.Request for the AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost method, with any body, and a specified content type
+func NewAddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostRequestWithBody(server string, workflowIdentifier string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "workflow_identifier", workflowIdentifier, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/workflows/%s/tags", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
 // NewUnarchiveWorkflowV1WorkflowsWorkflowIdentifierUnarchivePutRequest constructs an http.Request for the UnarchiveWorkflowV1WorkflowsWorkflowIdentifierUnarchivePut method
 func NewUnarchiveWorkflowV1WorkflowsWorkflowIdentifierUnarchivePutRequest(server string, workflowIdentifier string) (*http.Request, error) {
 	var err error
@@ -88205,6 +93665,18 @@ func NewAudioV2VoicesListRequest(server string, params *AudioV2VoicesListParams)
 		if params.Query != nil {
 
 			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "query", *params.Query, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.Kind != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "kind", *params.Kind, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
 				return nil, err
 			} else {
 				for _, qp := range strings.Split(queryFrag, "&") {
@@ -90163,6 +95635,105 @@ type ClientWithResponsesInterface interface {
 	// Corresponds with GET /v1/agents/{agent_id}/versions/{version} (the `AgentsApiV1AgentsGetVersion` operationId).
 	AgentsApiV1AgentsGetVersionWithResponse(ctx context.Context, agentId string, version string, reqEditors ...RequestEditorFn) (*AgentsApiV1AgentsGetVersionResponse, error)
 
+	// ListAgentsV1AudioAgentsGetWithResponse List audio agents
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/audio/agents (the `ListAgentsV1AudioAgentsGet` operationId).
+	ListAgentsV1AudioAgentsGetWithResponse(ctx context.Context, params *ListAgentsV1AudioAgentsGetParams, reqEditors ...RequestEditorFn) (*ListAgentsV1AudioAgentsGetResponse, error)
+
+	// CreateAgentV1AudioAgentsPostWithBodyWithResponse Create an audio agent
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/audio/agents (the `CreateAgentV1AudioAgentsPost` operationId).
+	CreateAgentV1AudioAgentsPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateAgentV1AudioAgentsPostResponse, error)
+
+	// CreateAgentV1AudioAgentsPostWithResponse Create an audio agent
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/audio/agents (the `CreateAgentV1AudioAgentsPost` operationId).
+	CreateAgentV1AudioAgentsPostWithResponse(ctx context.Context, body CreateAgentV1AudioAgentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateAgentV1AudioAgentsPostResponse, error)
+
+	// DeleteAgentV1AudioAgentsAgentIdDeleteWithResponse Delete an audio agent
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with DELETE /v1/audio/agents/{agent_id} (the `DeleteAgentV1AudioAgentsAgentIdDelete` operationId).
+	DeleteAgentV1AudioAgentsAgentIdDeleteWithResponse(ctx context.Context, agentId openapi_types.UUID, reqEditors ...RequestEditorFn) (*DeleteAgentV1AudioAgentsAgentIdDeleteResponse, error)
+
+	// GetAgentV1AudioAgentsAgentIdGetWithResponse Get an audio agent
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/audio/agents/{agent_id} (the `GetAgentV1AudioAgentsAgentIdGet` operationId).
+	GetAgentV1AudioAgentsAgentIdGetWithResponse(ctx context.Context, agentId openapi_types.UUID, params *GetAgentV1AudioAgentsAgentIdGetParams, reqEditors ...RequestEditorFn) (*GetAgentV1AudioAgentsAgentIdGetResponse, error)
+
+	// UpdateAgentV1AudioAgentsAgentIdPutWithBodyWithResponse Update an audio agent
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with PUT /v1/audio/agents/{agent_id} (the `UpdateAgentV1AudioAgentsAgentIdPut` operationId).
+	UpdateAgentV1AudioAgentsAgentIdPutWithBodyWithResponse(ctx context.Context, agentId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UpdateAgentV1AudioAgentsAgentIdPutResponse, error)
+
+	// UpdateAgentV1AudioAgentsAgentIdPutWithResponse Update an audio agent
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with PUT /v1/audio/agents/{agent_id} (the `UpdateAgentV1AudioAgentsAgentIdPut` operationId).
+	UpdateAgentV1AudioAgentsAgentIdPutWithResponse(ctx context.Context, agentId openapi_types.UUID, body UpdateAgentV1AudioAgentsAgentIdPutJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateAgentV1AudioAgentsAgentIdPutResponse, error)
+
+	// ListAgentSessionsV1AudioAgentsAgentIdSessionsGetWithResponse List audio agent sessions
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/audio/agents/{agent_id}/sessions (the `ListAgentSessionsV1AudioAgentsAgentIdSessionsGet` operationId).
+	ListAgentSessionsV1AudioAgentsAgentIdSessionsGetWithResponse(ctx context.Context, agentId openapi_types.UUID, params *ListAgentSessionsV1AudioAgentsAgentIdSessionsGetParams, reqEditors ...RequestEditorFn) (*ListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse, error)
+
+	// ListAgentVersionsV1AudioAgentsAgentIdVersionsGetWithResponse List audio agent versions
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/audio/agents/{agent_id}/versions (the `ListAgentVersionsV1AudioAgentsAgentIdVersionsGet` operationId).
+	ListAgentVersionsV1AudioAgentsAgentIdVersionsGetWithResponse(ctx context.Context, agentId openapi_types.UUID, params *ListAgentVersionsV1AudioAgentsAgentIdVersionsGetParams, reqEditors ...RequestEditorFn) (*ListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse, error)
+
+	// CreateSessionV1AudioSessionsPostWithBodyWithResponse Create an agent session
+	//
+	// Create a real-time audio agent session.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/audio/sessions (the `CreateSessionV1AudioSessionsPost` operationId).
+	CreateSessionV1AudioSessionsPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateSessionV1AudioSessionsPostResponse, error)
+
+	// CreateSessionV1AudioSessionsPostWithResponse Create an agent session
+	//
+	// Create a real-time audio agent session.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/audio/sessions (the `CreateSessionV1AudioSessionsPost` operationId).
+	CreateSessionV1AudioSessionsPostWithResponse(ctx context.Context, body CreateSessionV1AudioSessionsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateSessionV1AudioSessionsPostResponse, error)
+
+	// DeleteSessionV1AudioSessionsSessionIdDeleteWithResponse Stop an agent session
+	//
+	// Stop an audio agent session and release its resources.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with DELETE /v1/audio/sessions/{session_id} (the `DeleteSessionV1AudioSessionsSessionIdDelete` operationId).
+	DeleteSessionV1AudioSessionsSessionIdDeleteWithResponse(ctx context.Context, sessionId openapi_types.UUID, reqEditors ...RequestEditorFn) (*DeleteSessionV1AudioSessionsSessionIdDeleteResponse, error)
+
+	// GetSessionV1AudioSessionsSessionIdGetWithResponse Get session status
+	//
+	// Retrieve an audio agent session with the transcript of its conversation.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/audio/sessions/{session_id} (the `GetSessionV1AudioSessionsSessionIdGet` operationId).
+	GetSessionV1AudioSessionsSessionIdGetWithResponse(ctx context.Context, sessionId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetSessionV1AudioSessionsSessionIdGetResponse, error)
+
 	// SpeechV1AudioSpeechPostWithBodyWithResponse Speech
 	//
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
@@ -90319,6 +95890,26 @@ type ClientWithResponsesInterface interface {
 	//
 	// Corresponds with POST /v1/batch/jobs/{job_id}/cancel (the `JobsApiRoutesBatchCancelBatchJob` operationId).
 	JobsApiRoutesBatchCancelBatchJobWithResponse(ctx context.Context, jobId openapi_types.UUID, reqEditors ...RequestEditorFn) (*JobsApiRoutesBatchCancelBatchJobResponse, error)
+
+	// BillingApiPublicGetBudgetWithResponse Get Budget
+	//
+	// Return the organization's API and Vibe budgets for the current billing period.
+	//
+	// Requires the `see_org_inference_usage` permission.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/billing/budget (the `BillingApiPublicGetBudget` operationId).
+	BillingApiPublicGetBudgetWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*BillingApiPublicGetBudgetResponse, error)
+
+	// BillingApiPublicGetSubscriptionWithResponse Get Subscription
+	//
+	// Return the organization's plan and whether pay-as-you-go is enabled.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/billing/subscription (the `BillingApiPublicGetSubscription` operationId).
+	BillingApiPublicGetSubscriptionWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*BillingApiPublicGetSubscriptionResponse, error)
 
 	// ChatClassificationsV1ChatClassificationsPostWithBodyWithResponse Chat Classifications
 	//
@@ -90670,6 +96261,228 @@ type ClientWithResponsesInterface interface {
 	//
 	// Corresponds with POST /v1/connectors/{connector_id}/{consumer_scope}/deactivate (the `ConnectorDeactivateForConsumerV1` operationId).
 	ConnectorDeactivateForConsumerV1WithResponse(ctx context.Context, connectorId openapi_types.UUID, consumerScope ConnectorDeactivateForConsumerV1ParamsConsumerScope, reqEditors ...RequestEditorFn) (*ConnectorDeactivateForConsumerV1Response, error)
+
+	// ListIndexesV1ContextSearchIndexesGetWithResponse List managed indexes
+	//
+	// Lists all managed search indexes for the current workspace.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/context/search-indexes (the `ListIndexesV1ContextSearchIndexesGet` operationId).
+	ListIndexesV1ContextSearchIndexesGetWithResponse(ctx context.Context, params *ListIndexesV1ContextSearchIndexesGetParams, reqEditors ...RequestEditorFn) (*ListIndexesV1ContextSearchIndexesGetResponse, error)
+
+	// CreateIndexV1ContextSearchIndexesPostWithBodyWithResponse Create a managed index
+	//
+	// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes (the `CreateIndexV1ContextSearchIndexesPost` operationId).
+	CreateIndexV1ContextSearchIndexesPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateIndexV1ContextSearchIndexesPostResponse, error)
+
+	// CreateIndexV1ContextSearchIndexesPostWithResponse Create a managed index
+	//
+	// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes (the `CreateIndexV1ContextSearchIndexesPost` operationId).
+	CreateIndexV1ContextSearchIndexesPostWithResponse(ctx context.Context, body CreateIndexV1ContextSearchIndexesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateIndexV1ContextSearchIndexesPostResponse, error)
+
+	// DeleteIndexV1ContextSearchIndexesIndexNameDeleteWithResponse Delete a managed index
+	//
+	// Marks the managed search index for deletion and returns it with status deleting. The backing table is dropped asynchronously; poll the index until it returns 404.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with DELETE /v1/context/search-indexes/{index_name} (the `DeleteIndexV1ContextSearchIndexesIndexNameDelete` operationId).
+	DeleteIndexV1ContextSearchIndexesIndexNameDeleteWithResponse(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*DeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse, error)
+
+	// GetIndexV1ContextSearchIndexesIndexNameGetWithResponse Get a managed index
+	//
+	// Returns the managed search index with the given name.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/context/search-indexes/{index_name} (the `GetIndexV1ContextSearchIndexesIndexNameGet` operationId).
+	GetIndexV1ContextSearchIndexesIndexNameGetWithResponse(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*GetIndexV1ContextSearchIndexesIndexNameGetResponse, error)
+
+	// UpdateIndexV1ContextSearchIndexesIndexNamePutWithBodyWithResponse Update a managed index schema
+	//
+	// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with PUT /v1/context/search-indexes/{index_name} (the `UpdateIndexV1ContextSearchIndexesIndexNamePut` operationId).
+	UpdateIndexV1ContextSearchIndexesIndexNamePutWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UpdateIndexV1ContextSearchIndexesIndexNamePutResponse, error)
+
+	// UpdateIndexV1ContextSearchIndexesIndexNamePutWithResponse Update a managed index schema
+	//
+	// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with PUT /v1/context/search-indexes/{index_name} (the `UpdateIndexV1ContextSearchIndexesIndexNamePut` operationId).
+	UpdateIndexV1ContextSearchIndexesIndexNamePutWithResponse(ctx context.Context, indexName string, body UpdateIndexV1ContextSearchIndexesIndexNamePutJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateIndexV1ContextSearchIndexesIndexNamePutResponse, error)
+
+	// GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetWithResponse Get a single chunk by id
+	//
+	// Returns a single chunk by its canonical id. A 404 means no chunk with that id exists in the index.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/context/search-indexes/{index_name}/chunks/{chunk_id} (the `GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGet` operationId).
+	GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetWithResponse(ctx context.Context, indexName string, chunkId string, reqEditors ...RequestEditorFn) (*GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse, error)
+
+	// DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithBodyWithResponse Delete documents from a managed index
+	//
+	// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with DELETE /v1/context/search-indexes/{index_name}/documents (the `DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete` operationId).
+	DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse, error)
+
+	// DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithResponse Delete documents from a managed index
+	//
+	// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with DELETE /v1/context/search-indexes/{index_name}/documents (the `DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete` operationId).
+	DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithResponse(ctx context.Context, indexName string, body DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteJSONRequestBody, reqEditors ...RequestEditorFn) (*DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse, error)
+
+	// IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithBodyWithResponse Ingest documents into a managed index
+	//
+	// Validates and persists documents. Returns 200 with each document reported as accepted or rejected in the response body, or 403 once the index holds its limit of chunks.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/documents (the `IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost` operationId).
+	IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse, error)
+
+	// IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithResponse Ingest documents into a managed index
+	//
+	// Validates and persists documents. Returns 200 with each document reported as accepted or rejected in the response body, or 403 once the index holds its limit of chunks.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/documents (the `IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost` operationId).
+	IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithResponse(ctx context.Context, indexName string, body IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse, error)
+
+	// GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithBodyWithResponse Grep for a pattern within a source
+	//
+	// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/grep (the `GrepIndexV1ContextSearchIndexesIndexNameGrepPost` operationId).
+	GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse, error)
+
+	// GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithResponse Grep for a pattern within a source
+	//
+	// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/grep (the `GrepIndexV1ContextSearchIndexesIndexNameGrepPost` operationId).
+	GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithResponse(ctx context.Context, indexName string, body GrepIndexV1ContextSearchIndexesIndexNameGrepPostJSONRequestBody, reqEditors ...RequestEditorFn) (*GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse, error)
+
+	// NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithBodyWithResponse Navigate to adjacent chunks
+	//
+	// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/navigate (the `NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost` operationId).
+	NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse, error)
+
+	// NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithResponse Navigate to adjacent chunks
+	//
+	// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/navigate (the `NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost` operationId).
+	NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithResponse(ctx context.Context, indexName string, body NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostJSONRequestBody, reqEditors ...RequestEditorFn) (*NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse, error)
+
+	// ReadIndexV1ContextSearchIndexesIndexNameReadPostWithBodyWithResponse Read chunks within a span
+	//
+	// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/read (the `ReadIndexV1ContextSearchIndexesIndexNameReadPost` operationId).
+	ReadIndexV1ContextSearchIndexesIndexNameReadPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse, error)
+
+	// ReadIndexV1ContextSearchIndexesIndexNameReadPostWithResponse Read chunks within a span
+	//
+	// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/read (the `ReadIndexV1ContextSearchIndexesIndexNameReadPost` operationId).
+	ReadIndexV1ContextSearchIndexesIndexNameReadPostWithResponse(ctx context.Context, indexName string, body ReadIndexV1ContextSearchIndexesIndexNameReadPostJSONRequestBody, reqEditors ...RequestEditorFn) (*ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse, error)
+
+	// SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithBodyWithResponse Search a managed index
+	//
+	// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/search (the `SearchIndexV1ContextSearchIndexesIndexNameSearchPost` operationId).
+	SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse, error)
+
+	// SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithResponse Search a managed index
+	//
+	// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/search (the `SearchIndexV1ContextSearchIndexesIndexNameSearchPost` operationId).
+	SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithResponse(ctx context.Context, indexName string, body SearchIndexV1ContextSearchIndexesIndexNameSearchPostJSONRequestBody, reqEditors ...RequestEditorFn) (*SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse, error)
+
+	// GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetWithResponse Get Managed Index Summary
+	//
+	// Retrieve the summary field for a managed index if it exists.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/context/search-indexes/{index_name}/summary_field/{language} (the `GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGet` operationId).
+	GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetWithResponse(ctx context.Context, indexName string, language GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage, reqEditors ...RequestEditorFn) (*GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse, error)
+
+	// GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostWithResponse Generate a summary field for a managed index
+	//
+	// Streams a summary for the managed index in chunks of json.
+	//
+	// The first chunk contains metadata for the summary, the following contain
+	// chunks of 'content' that should be joined together to form a full summary.
+	//
+	// If force is true, regenerate the requested language even if a summary
+	// already exists.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/context/search-indexes/{index_name}/summary_field/{language} (the `GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost` operationId).
+	GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostWithResponse(ctx context.Context, indexName string, language GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage, params *GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParams, reqEditors ...RequestEditorFn) (*GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse, error)
+
+	// SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithBodyWithResponse Set Managed Index Summary
+	//
+	// Update the summary field for a managed index.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with PUT /v1/context/search-indexes/{index_name}/summary_field/{language} (the `SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut` operationId).
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithBodyWithResponse(ctx context.Context, indexName string, language SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse, error)
+
+	// SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithResponse Set Managed Index Summary
+	//
+	// Update the summary field for a managed index.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with PUT /v1/context/search-indexes/{index_name}/summary_field/{language} (the `SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut` operationId).
+	SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithResponse(ctx context.Context, indexName string, language SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage, body SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutJSONRequestBody, reqEditors ...RequestEditorFn) (*SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse, error)
 
 	// AgentsApiV1ConversationsListWithResponse List all created conversations.
 	//
@@ -91720,6 +97533,13 @@ type ClientWithResponsesInterface interface {
 	// Corresponds with PUT /v1/observability/pipelines/{pipeline_id} (the `UpdatePipelineV1ObservabilityPipelinesPipelineIdPut` operationId).
 	UpdatePipelineV1ObservabilityPipelinesPipelineIdPutWithResponse(ctx context.Context, pipelineId openapi_types.UUID, body UpdatePipelineV1ObservabilityPipelinesPipelineIdPutJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdatePipelineV1ObservabilityPipelinesPipelineIdPutResponse, error)
 
+	// GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetWithResponse Get pipeline result field definitions
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/observability/pipelines/{pipeline_id}/results/fields (the `GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGet` operationId).
+	GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetWithResponse(ctx context.Context, pipelineId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse, error)
+
 	// GetProjectsV1ObservabilityProjectsGetWithResponse List projects
 	//
 	// Returns a wrapper object for the known response body format(s).
@@ -92007,186 +97827,6 @@ type ClientWithResponsesInterface interface {
 	// Corresponds with PUT /v1/rag/ingestion_pipeline_configurations/{id}/run_info (the `UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPut` operationId).
 	UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPutWithResponse(ctx context.Context, id openapi_types.UUID, body UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPutJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPutResponse, error)
 
-	// ListIndexesV1RagManagedIndexesGetWithResponse List managed indexes
-	//
-	// Lists all managed search indexes for the current workspace.
-	//
-	// Returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with GET /v1/rag/managed_indexes (the `ListIndexesV1RagManagedIndexesGet` operationId).
-	ListIndexesV1RagManagedIndexesGetWithResponse(ctx context.Context, params *ListIndexesV1RagManagedIndexesGetParams, reqEditors ...RequestEditorFn) (*ListIndexesV1RagManagedIndexesGetResponse, error)
-
-	// CreateIndexV1RagManagedIndexesPostWithBodyWithResponse Create a managed index
-	//
-	// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes (the `CreateIndexV1RagManagedIndexesPost` operationId).
-	CreateIndexV1RagManagedIndexesPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateIndexV1RagManagedIndexesPostResponse, error)
-
-	// CreateIndexV1RagManagedIndexesPostWithResponse Create a managed index
-	//
-	// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes (the `CreateIndexV1RagManagedIndexesPost` operationId).
-	CreateIndexV1RagManagedIndexesPostWithResponse(ctx context.Context, body CreateIndexV1RagManagedIndexesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateIndexV1RagManagedIndexesPostResponse, error)
-
-	// DeleteIndexV1RagManagedIndexesIndexNameDeleteWithResponse Delete a managed index
-	//
-	// Marks the managed search index for deletion and returns it with status deleting. The backing table is dropped asynchronously; poll the index until it returns 404.
-	//
-	// Returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with DELETE /v1/rag/managed_indexes/{index_name} (the `DeleteIndexV1RagManagedIndexesIndexNameDelete` operationId).
-	DeleteIndexV1RagManagedIndexesIndexNameDeleteWithResponse(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*DeleteIndexV1RagManagedIndexesIndexNameDeleteResponse, error)
-
-	// GetIndexV1RagManagedIndexesIndexNameGetWithResponse Get a managed index
-	//
-	// Returns the managed search index with the given name.
-	//
-	// Returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with GET /v1/rag/managed_indexes/{index_name} (the `GetIndexV1RagManagedIndexesIndexNameGet` operationId).
-	GetIndexV1RagManagedIndexesIndexNameGetWithResponse(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*GetIndexV1RagManagedIndexesIndexNameGetResponse, error)
-
-	// UpdateIndexV1RagManagedIndexesIndexNamePutWithBodyWithResponse Update a managed index schema
-	//
-	// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with PUT /v1/rag/managed_indexes/{index_name} (the `UpdateIndexV1RagManagedIndexesIndexNamePut` operationId).
-	UpdateIndexV1RagManagedIndexesIndexNamePutWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UpdateIndexV1RagManagedIndexesIndexNamePutResponse, error)
-
-	// UpdateIndexV1RagManagedIndexesIndexNamePutWithResponse Update a managed index schema
-	//
-	// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with PUT /v1/rag/managed_indexes/{index_name} (the `UpdateIndexV1RagManagedIndexesIndexNamePut` operationId).
-	UpdateIndexV1RagManagedIndexesIndexNamePutWithResponse(ctx context.Context, indexName string, body UpdateIndexV1RagManagedIndexesIndexNamePutJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateIndexV1RagManagedIndexesIndexNamePutResponse, error)
-
-	// GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetWithResponse Get a single chunk by id
-	//
-	// Returns a single chunk by its canonical id. A 404 means no chunk with that id exists in the index.
-	//
-	// Returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with GET /v1/rag/managed_indexes/{index_name}/chunks/{chunk_id} (the `GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGet` operationId).
-	GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetWithResponse(ctx context.Context, indexName string, chunkId string, reqEditors ...RequestEditorFn) (*GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse, error)
-
-	// DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithBodyWithResponse Delete documents from a managed index
-	//
-	// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with DELETE /v1/rag/managed_indexes/{index_name}/documents (the `DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete` operationId).
-	DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse, error)
-
-	// DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithResponse Delete documents from a managed index
-	//
-	// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with DELETE /v1/rag/managed_indexes/{index_name}/documents (the `DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete` operationId).
-	DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithResponse(ctx context.Context, indexName string, body DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteJSONRequestBody, reqEditors ...RequestEditorFn) (*DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse, error)
-
-	// IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithBodyWithResponse Ingest documents into a managed index
-	//
-	// Validates and persists documents. Always returns 200; each document is reported as accepted or rejected in the response body.
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/documents (the `IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost` operationId).
-	IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse, error)
-
-	// IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithResponse Ingest documents into a managed index
-	//
-	// Validates and persists documents. Always returns 200; each document is reported as accepted or rejected in the response body.
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/documents (the `IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost` operationId).
-	IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithResponse(ctx context.Context, indexName string, body IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse, error)
-
-	// GrepIndexV1RagManagedIndexesIndexNameGrepPostWithBodyWithResponse Grep for a pattern within a source
-	//
-	// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/grep (the `GrepIndexV1RagManagedIndexesIndexNameGrepPost` operationId).
-	GrepIndexV1RagManagedIndexesIndexNameGrepPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse, error)
-
-	// GrepIndexV1RagManagedIndexesIndexNameGrepPostWithResponse Grep for a pattern within a source
-	//
-	// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/grep (the `GrepIndexV1RagManagedIndexesIndexNameGrepPost` operationId).
-	GrepIndexV1RagManagedIndexesIndexNameGrepPostWithResponse(ctx context.Context, indexName string, body GrepIndexV1RagManagedIndexesIndexNameGrepPostJSONRequestBody, reqEditors ...RequestEditorFn) (*GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse, error)
-
-	// NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithBodyWithResponse Navigate to adjacent chunks
-	//
-	// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/navigate (the `NavigateIndexV1RagManagedIndexesIndexNameNavigatePost` operationId).
-	NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse, error)
-
-	// NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithResponse Navigate to adjacent chunks
-	//
-	// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/navigate (the `NavigateIndexV1RagManagedIndexesIndexNameNavigatePost` operationId).
-	NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithResponse(ctx context.Context, indexName string, body NavigateIndexV1RagManagedIndexesIndexNameNavigatePostJSONRequestBody, reqEditors ...RequestEditorFn) (*NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse, error)
-
-	// ReadIndexV1RagManagedIndexesIndexNameReadPostWithBodyWithResponse Read chunks within a span
-	//
-	// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/read (the `ReadIndexV1RagManagedIndexesIndexNameReadPost` operationId).
-	ReadIndexV1RagManagedIndexesIndexNameReadPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ReadIndexV1RagManagedIndexesIndexNameReadPostResponse, error)
-
-	// ReadIndexV1RagManagedIndexesIndexNameReadPostWithResponse Read chunks within a span
-	//
-	// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/read (the `ReadIndexV1RagManagedIndexesIndexNameReadPost` operationId).
-	ReadIndexV1RagManagedIndexesIndexNameReadPostWithResponse(ctx context.Context, indexName string, body ReadIndexV1RagManagedIndexesIndexNameReadPostJSONRequestBody, reqEditors ...RequestEditorFn) (*ReadIndexV1RagManagedIndexesIndexNameReadPostResponse, error)
-
-	// SearchIndexV1RagManagedIndexesIndexNameSearchPostWithBodyWithResponse Search a managed index
-	//
-	// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/search (the `SearchIndexV1RagManagedIndexesIndexNameSearchPost` operationId).
-	SearchIndexV1RagManagedIndexesIndexNameSearchPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse, error)
-
-	// SearchIndexV1RagManagedIndexesIndexNameSearchPostWithResponse Search a managed index
-	//
-	// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/rag/managed_indexes/{index_name}/search (the `SearchIndexV1RagManagedIndexesIndexNameSearchPost` operationId).
-	SearchIndexV1RagManagedIndexesIndexNameSearchPostWithResponse(ctx context.Context, indexName string, body SearchIndexV1RagManagedIndexesIndexNameSearchPostJSONRequestBody, reqEditors ...RequestEditorFn) (*SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse, error)
-
 	// CreateResponseV1ResponsesPostWithBodyWithResponse Create Response
 	//
 	// Create a response.
@@ -92377,6 +98017,48 @@ type ClientWithResponsesInterface interface {
 	// Corresponds with PUT /v1/service-accounts/{service_account_id}/roles (the `SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPut` operationId).
 	SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPutWithResponse(ctx context.Context, serviceAccountId openapi_types.UUID, body SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPutJSONRequestBody, reqEditors ...RequestEditorFn) (*SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPutResponse, error)
 
+	// ListTriggersV1TriggersGetWithResponse List Triggers
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/triggers (the `ListTriggersV1TriggersGet` operationId).
+	ListTriggersV1TriggersGetWithResponse(ctx context.Context, params *ListTriggersV1TriggersGetParams, reqEditors ...RequestEditorFn) (*ListTriggersV1TriggersGetResponse, error)
+
+	// CreateTriggerV1TriggersPostWithBodyWithResponse Create Trigger
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/triggers (the `CreateTriggerV1TriggersPost` operationId).
+	CreateTriggerV1TriggersPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateTriggerV1TriggersPostResponse, error)
+
+	// CreateTriggerV1TriggersPostWithResponse Create Trigger
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/triggers (the `CreateTriggerV1TriggersPost` operationId).
+	CreateTriggerV1TriggersPostWithResponse(ctx context.Context, body CreateTriggerV1TriggersPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateTriggerV1TriggersPostResponse, error)
+
+	// DeleteTriggerV1TriggersTriggerIdDeleteWithResponse Delete Trigger
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with DELETE /v1/triggers/{trigger_id} (the `DeleteTriggerV1TriggersTriggerIdDelete` operationId).
+	DeleteTriggerV1TriggersTriggerIdDeleteWithResponse(ctx context.Context, triggerId openapi_types.UUID, reqEditors ...RequestEditorFn) (*DeleteTriggerV1TriggersTriggerIdDeleteResponse, error)
+
+	// GetTriggerV1TriggersTriggerIdGetWithResponse Get Trigger
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/triggers/{trigger_id} (the `GetTriggerV1TriggersTriggerIdGet` operationId).
+	GetTriggerV1TriggersTriggerIdGetWithResponse(ctx context.Context, triggerId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetTriggerV1TriggersTriggerIdGetResponse, error)
+
+	// ListTriggerEventsV1TriggersTriggerIdEventsGetWithResponse List Trigger Events
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/triggers/{trigger_id}/events (the `ListTriggerEventsV1TriggersTriggerIdEventsGet` operationId).
+	ListTriggerEventsV1TriggersTriggerIdEventsGetWithResponse(ctx context.Context, triggerId openapi_types.UUID, params *ListTriggerEventsV1TriggersTriggerIdEventsGetParams, reqEditors ...RequestEditorFn) (*ListTriggerEventsV1TriggersTriggerIdEventsGetResponse, error)
+
 	// UsersApiGetIdentityWithResponse Get Identity
 	//
 	// Returns a wrapper object for the known response body format(s).
@@ -92405,6 +98087,48 @@ type ClientWithResponsesInterface interface {
 	//
 	// Corresponds with GET /v1/users/me/workspaces (the `UsersApiListWorkspaces` operationId).
 	UsersApiListWorkspacesWithResponse(ctx context.Context, params *UsersApiListWorkspacesParams, reqEditors ...RequestEditorFn) (*UsersApiListWorkspacesResponse, error)
+
+	// ListWebhooksV1WebhooksGetWithResponse List Webhooks
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/webhooks (the `ListWebhooksV1WebhooksGet` operationId).
+	ListWebhooksV1WebhooksGetWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*ListWebhooksV1WebhooksGetResponse, error)
+
+	// CreateWebhookV1WebhooksPostWithBodyWithResponse Create Webhook
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/webhooks (the `CreateWebhookV1WebhooksPost` operationId).
+	CreateWebhookV1WebhooksPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateWebhookV1WebhooksPostResponse, error)
+
+	// CreateWebhookV1WebhooksPostWithResponse Create Webhook
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/webhooks (the `CreateWebhookV1WebhooksPost` operationId).
+	CreateWebhookV1WebhooksPostWithResponse(ctx context.Context, body CreateWebhookV1WebhooksPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateWebhookV1WebhooksPostResponse, error)
+
+	// DeleteWebhookV1WebhooksWebhookIdDeleteWithResponse Delete Webhook
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with DELETE /v1/webhooks/{webhook_id} (the `DeleteWebhookV1WebhooksWebhookIdDelete` operationId).
+	DeleteWebhookV1WebhooksWebhookIdDeleteWithResponse(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*DeleteWebhookV1WebhooksWebhookIdDeleteResponse, error)
+
+	// GetWebhookV1WebhooksWebhookIdGetWithResponse Get Webhook
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/webhooks/{webhook_id} (the `GetWebhookV1WebhooksWebhookIdGet` operationId).
+	GetWebhookV1WebhooksWebhookIdGetWithResponse(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetWebhookV1WebhooksWebhookIdGetResponse, error)
+
+	// GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetWithResponse Get Webhook Signing Secret
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/webhooks/{webhook_id}/signing-secret (the `GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGet` operationId).
+	GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetWithResponse(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse, error)
 
 	// UsersApiWhoamiWithResponse Whoami
 	//
@@ -92493,6 +98217,18 @@ type ClientWithResponsesInterface interface {
 	//
 	// Corresponds with PATCH /v1/workflows/deployments/{name} (the `UpdateDeploymentV1WorkflowsDeploymentsNamePatch` operationId).
 	UpdateDeploymentV1WorkflowsDeploymentsNamePatchWithResponse(ctx context.Context, name string, body UpdateDeploymentV1WorkflowsDeploymentsNamePatchJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateDeploymentV1WorkflowsDeploymentsNamePatchResponse, error)
+
+	// GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetWithResponse Get Deployment Archive
+	//
+	// Get the archive a managed deployment builds from, with a signed URL to download it.
+	//
+	// `download_url` expires within 24 hours, and is null once Mistral Cloud has deleted the archive.
+	// A deployment that builds from a repository answers 404.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/workflows/deployments/{name}/archive (the `GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGet` operationId).
+	GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetWithResponse(ctx context.Context, name string, reqEditors ...RequestEditorFn) (*GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse, error)
 
 	// GetDeploymentLogsWithResponse Get Deployment Logs
 	//
@@ -92937,6 +98673,20 @@ type ClientWithResponsesInterface interface {
 	//
 	// Corresponds with POST /v1/workflows/{workflow_identifier}/execute (the `ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePost` operationId).
 	ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostWithResponse(ctx context.Context, workflowIdentifier string, body ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostJSONRequestBody, reqEditors ...RequestEditorFn) (*ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostResponse, error)
+
+	// AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithBodyWithResponse Add Workflow Tags
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/workflows/{workflow_identifier}/tags (the `AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost` operationId).
+	AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithBodyWithResponse(ctx context.Context, workflowIdentifier string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse, error)
+
+	// AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithResponse Add Workflow Tags
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/workflows/{workflow_identifier}/tags (the `AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost` operationId).
+	AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithResponse(ctx context.Context, workflowIdentifier string, body AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse, error)
 
 	// UnarchiveWorkflowV1WorkflowsWorkflowIdentifierUnarchivePutWithResponse Unarchive Workflow
 	//
@@ -95761,6 +101511,472 @@ func (r AgentsApiV1AgentsGetVersionResponse) ContentType() string {
 	return ""
 }
 
+type ListAgentsV1AudioAgentsGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *AudioAgentListPage
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r ListAgentsV1AudioAgentsGetResponse) GetJSON200() *AudioAgentListPage {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r ListAgentsV1AudioAgentsGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r ListAgentsV1AudioAgentsGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r ListAgentsV1AudioAgentsGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r ListAgentsV1AudioAgentsGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r ListAgentsV1AudioAgentsGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type CreateAgentV1AudioAgentsPostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *AudioAgentResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r CreateAgentV1AudioAgentsPostResponse) GetJSON200() *AudioAgentResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r CreateAgentV1AudioAgentsPostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r CreateAgentV1AudioAgentsPostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r CreateAgentV1AudioAgentsPostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r CreateAgentV1AudioAgentsPostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r CreateAgentV1AudioAgentsPostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type DeleteAgentV1AudioAgentsAgentIdDeleteResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r DeleteAgentV1AudioAgentsAgentIdDeleteResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r DeleteAgentV1AudioAgentsAgentIdDeleteResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r DeleteAgentV1AudioAgentsAgentIdDeleteResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r DeleteAgentV1AudioAgentsAgentIdDeleteResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r DeleteAgentV1AudioAgentsAgentIdDeleteResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GetAgentV1AudioAgentsAgentIdGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *AudioAgentResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetAgentV1AudioAgentsAgentIdGetResponse) GetJSON200() *AudioAgentResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GetAgentV1AudioAgentsAgentIdGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GetAgentV1AudioAgentsAgentIdGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetAgentV1AudioAgentsAgentIdGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetAgentV1AudioAgentsAgentIdGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetAgentV1AudioAgentsAgentIdGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type UpdateAgentV1AudioAgentsAgentIdPutResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *AudioAgentResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r UpdateAgentV1AudioAgentsAgentIdPutResponse) GetJSON200() *AudioAgentResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r UpdateAgentV1AudioAgentsAgentIdPutResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r UpdateAgentV1AudioAgentsAgentIdPutResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r UpdateAgentV1AudioAgentsAgentIdPutResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r UpdateAgentV1AudioAgentsAgentIdPutResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r UpdateAgentV1AudioAgentsAgentIdPutResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type ListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *AudioAgentSessionListPage
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r ListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse) GetJSON200() *AudioAgentSessionListPage {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r ListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r ListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r ListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r ListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r ListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type ListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *AudioAgentListPage
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r ListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse) GetJSON200() *AudioAgentListPage {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r ListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r ListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r ListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r ListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r ListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type CreateSessionV1AudioSessionsPostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *AudioSessionCreateResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r CreateSessionV1AudioSessionsPostResponse) GetJSON200() *AudioSessionCreateResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r CreateSessionV1AudioSessionsPostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r CreateSessionV1AudioSessionsPostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r CreateSessionV1AudioSessionsPostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r CreateSessionV1AudioSessionsPostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r CreateSessionV1AudioSessionsPostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type DeleteSessionV1AudioSessionsSessionIdDeleteResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r DeleteSessionV1AudioSessionsSessionIdDeleteResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r DeleteSessionV1AudioSessionsSessionIdDeleteResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r DeleteSessionV1AudioSessionsSessionIdDeleteResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r DeleteSessionV1AudioSessionsSessionIdDeleteResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r DeleteSessionV1AudioSessionsSessionIdDeleteResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GetSessionV1AudioSessionsSessionIdGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *AudioSessionResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetSessionV1AudioSessionsSessionIdGetResponse) GetJSON200() *AudioSessionResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GetSessionV1AudioSessionsSessionIdGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GetSessionV1AudioSessionsSessionIdGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetSessionV1AudioSessionsSessionIdGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetSessionV1AudioSessionsSessionIdGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetSessionV1AudioSessionsSessionIdGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
 type SpeechV1AudioSpeechPostResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -96370,6 +102586,88 @@ func (r JobsApiRoutesBatchCancelBatchJobResponse) StatusCode() int {
 
 // ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
 func (r JobsApiRoutesBatchCancelBatchJobResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type BillingApiPublicGetBudgetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *GetBudgetResponse
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r BillingApiPublicGetBudgetResponse) GetJSON200() *GetBudgetResponse {
+	return r.JSON200
+}
+
+// GetBody returns the raw response body bytes
+func (r BillingApiPublicGetBudgetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r BillingApiPublicGetBudgetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r BillingApiPublicGetBudgetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r BillingApiPublicGetBudgetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type BillingApiPublicGetSubscriptionResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *GetSubscriptionResponse
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r BillingApiPublicGetSubscriptionResponse) GetJSON200() *GetSubscriptionResponse {
+	return r.JSON200
+}
+
+// GetBody returns the raw response body bytes
+func (r BillingApiPublicGetSubscriptionResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r BillingApiPublicGetSubscriptionResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r BillingApiPublicGetSubscriptionResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r BillingApiPublicGetSubscriptionResponse) ContentType() string {
 	if r.HTTPResponse != nil {
 		return r.HTTPResponse.Header.Get("Content-Type")
 	}
@@ -97666,6 +103964,726 @@ func (r ConnectorDeactivateForConsumerV1Response) StatusCode() int {
 
 // ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
 func (r ConnectorDeactivateForConsumerV1Response) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type ListIndexesV1ContextSearchIndexesGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *ListManagedIndexesResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r ListIndexesV1ContextSearchIndexesGetResponse) GetJSON200() *ListManagedIndexesResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r ListIndexesV1ContextSearchIndexesGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r ListIndexesV1ContextSearchIndexesGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r ListIndexesV1ContextSearchIndexesGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r ListIndexesV1ContextSearchIndexesGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r ListIndexesV1ContextSearchIndexesGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+// CreateIndexV1ContextSearchIndexesPostResponse202Headers the declared response headers of an HTTP 202 response for CreateIndexV1ContextSearchIndexesPost
+type CreateIndexV1ContextSearchIndexesPostResponse202Headers struct {
+	Location *string
+}
+
+type CreateIndexV1ContextSearchIndexesPostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON202 the response for an HTTP 202 `application/json` response
+	JSON202 *ManagedIndexResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+	// Headers202 the parsed response headers for an HTTP 202 response
+	Headers202 *CreateIndexV1ContextSearchIndexesPostResponse202Headers
+}
+
+// GetJSON202 returns the response for an HTTP 202 `application/json` response
+func (r CreateIndexV1ContextSearchIndexesPostResponse) GetJSON202() *ManagedIndexResponse {
+	return r.JSON202
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r CreateIndexV1ContextSearchIndexesPostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r CreateIndexV1ContextSearchIndexesPostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r CreateIndexV1ContextSearchIndexesPostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r CreateIndexV1ContextSearchIndexesPostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r CreateIndexV1ContextSearchIndexesPostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type DeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON202 the response for an HTTP 202 `application/json` response
+	JSON202 *DeleteManagedIndexResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON202 returns the response for an HTTP 202 `application/json` response
+func (r DeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse) GetJSON202() *DeleteManagedIndexResponse {
+	return r.JSON202
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r DeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r DeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r DeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r DeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r DeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GetIndexV1ContextSearchIndexesIndexNameGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *ManagedIndexResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetIndexV1ContextSearchIndexesIndexNameGetResponse) GetJSON200() *ManagedIndexResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GetIndexV1ContextSearchIndexesIndexNameGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GetIndexV1ContextSearchIndexesIndexNameGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetIndexV1ContextSearchIndexesIndexNameGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetIndexV1ContextSearchIndexesIndexNameGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetIndexV1ContextSearchIndexesIndexNameGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type UpdateIndexV1ContextSearchIndexesIndexNamePutResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON202 the response for an HTTP 202 `application/json` response
+	JSON202 *ManagedIndexResponse
+}
+
+// GetJSON202 returns the response for an HTTP 202 `application/json` response
+func (r UpdateIndexV1ContextSearchIndexesIndexNamePutResponse) GetJSON202() *ManagedIndexResponse {
+	return r.JSON202
+}
+
+// GetBody returns the raw response body bytes
+func (r UpdateIndexV1ContextSearchIndexesIndexNamePutResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r UpdateIndexV1ContextSearchIndexesIndexNamePutResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r UpdateIndexV1ContextSearchIndexesIndexNamePutResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r UpdateIndexV1ContextSearchIndexesIndexNamePutResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *NavigationResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse) GetJSON200() *NavigationResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *DeleteDocumentsResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse) GetJSON200() *DeleteDocumentsResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *IngestDocumentsResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse) GetJSON200() *IngestDocumentsResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *NavigationResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse) GetJSON200() *NavigationResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *NavigationResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse) GetJSON200() *NavigationResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *NavigationResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse) GetJSON200() *NavigationResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *SearchResponse
+	// JSON400 the response for an HTTP 400 `application/json` response
+	JSON400 *[]SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse) GetJSON200() *SearchResponse {
+	return r.JSON200
+}
+
+// GetJSON400 returns the response for an HTTP 400 `application/json` response
+func (r SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse) GetJSON400() *[]SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item {
+	return r.JSON400
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *GetSummaryResponseSummary
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse) GetJSON200() *GetSummaryResponseSummary {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *interface{}
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse) GetJSON200() *interface{} {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse) ContentType() string {
 	if r.HTTPResponse != nil {
 		return r.HTTPResponse.Header.Get("Content-Type")
 	}
@@ -103215,6 +110233,82 @@ func (r UpdatePipelineV1ObservabilityPipelinesPipelineIdPutResponse) ContentType
 	return ""
 }
 
+type GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *GetPipelineResultFields
+	// JSON400 the response for an HTTP 400 `application/json` response
+	JSON400 *ObservabilityError
+	// JSON404 the response for an HTTP 404 `application/json` response
+	JSON404 *ObservabilityError
+	// JSON408 the response for an HTTP 408 `application/json` response
+	JSON408 *ObservabilityError
+	// JSON409 the response for an HTTP 409 `application/json` response
+	JSON409 *ObservabilityError
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *ObservabilityError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse) GetJSON200() *GetPipelineResultFields {
+	return r.JSON200
+}
+
+// GetJSON400 returns the response for an HTTP 400 `application/json` response
+func (r GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse) GetJSON400() *ObservabilityError {
+	return r.JSON400
+}
+
+// GetJSON404 returns the response for an HTTP 404 `application/json` response
+func (r GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse) GetJSON404() *ObservabilityError {
+	return r.JSON404
+}
+
+// GetJSON408 returns the response for an HTTP 408 `application/json` response
+func (r GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse) GetJSON408() *ObservabilityError {
+	return r.JSON408
+}
+
+// GetJSON409 returns the response for an HTTP 409 `application/json` response
+func (r GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse) GetJSON409() *ObservabilityError {
+	return r.JSON409
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse) GetJSON422() *ObservabilityError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
 type GetProjectsV1ObservabilityProjectsGetResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -105022,589 +112116,6 @@ func (r UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPutResponse) C
 	return ""
 }
 
-type ListIndexesV1RagManagedIndexesGetResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *ListManagedIndexesResponse
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *HTTPValidationError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r ListIndexesV1RagManagedIndexesGetResponse) GetJSON200() *ListManagedIndexesResponse {
-	return r.JSON200
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r ListIndexesV1RagManagedIndexesGetResponse) GetJSON422() *HTTPValidationError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r ListIndexesV1RagManagedIndexesGetResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r ListIndexesV1RagManagedIndexesGetResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r ListIndexesV1RagManagedIndexesGetResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r ListIndexesV1RagManagedIndexesGetResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-// CreateIndexV1RagManagedIndexesPostResponse202Headers the declared response headers of an HTTP 202 response for CreateIndexV1RagManagedIndexesPost
-type CreateIndexV1RagManagedIndexesPostResponse202Headers struct {
-	Location *string
-}
-
-type CreateIndexV1RagManagedIndexesPostResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON202 the response for an HTTP 202 `application/json` response
-	JSON202 *ManagedIndexResponse
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *HTTPValidationError
-	// Headers202 the parsed response headers for an HTTP 202 response
-	Headers202 *CreateIndexV1RagManagedIndexesPostResponse202Headers
-}
-
-// GetJSON202 returns the response for an HTTP 202 `application/json` response
-func (r CreateIndexV1RagManagedIndexesPostResponse) GetJSON202() *ManagedIndexResponse {
-	return r.JSON202
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r CreateIndexV1RagManagedIndexesPostResponse) GetJSON422() *HTTPValidationError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r CreateIndexV1RagManagedIndexesPostResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r CreateIndexV1RagManagedIndexesPostResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r CreateIndexV1RagManagedIndexesPostResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r CreateIndexV1RagManagedIndexesPostResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type DeleteIndexV1RagManagedIndexesIndexNameDeleteResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON202 the response for an HTTP 202 `application/json` response
-	JSON202 *DeleteManagedIndexResponse
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *HTTPValidationError
-}
-
-// GetJSON202 returns the response for an HTTP 202 `application/json` response
-func (r DeleteIndexV1RagManagedIndexesIndexNameDeleteResponse) GetJSON202() *DeleteManagedIndexResponse {
-	return r.JSON202
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r DeleteIndexV1RagManagedIndexesIndexNameDeleteResponse) GetJSON422() *HTTPValidationError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r DeleteIndexV1RagManagedIndexesIndexNameDeleteResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r DeleteIndexV1RagManagedIndexesIndexNameDeleteResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r DeleteIndexV1RagManagedIndexesIndexNameDeleteResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r DeleteIndexV1RagManagedIndexesIndexNameDeleteResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type GetIndexV1RagManagedIndexesIndexNameGetResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *ManagedIndexResponse
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *HTTPValidationError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r GetIndexV1RagManagedIndexesIndexNameGetResponse) GetJSON200() *ManagedIndexResponse {
-	return r.JSON200
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r GetIndexV1RagManagedIndexesIndexNameGetResponse) GetJSON422() *HTTPValidationError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r GetIndexV1RagManagedIndexesIndexNameGetResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r GetIndexV1RagManagedIndexesIndexNameGetResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r GetIndexV1RagManagedIndexesIndexNameGetResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r GetIndexV1RagManagedIndexesIndexNameGetResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type UpdateIndexV1RagManagedIndexesIndexNamePutResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON202 the response for an HTTP 202 `application/json` response
-	JSON202 *ManagedIndexResponse
-}
-
-// GetJSON202 returns the response for an HTTP 202 `application/json` response
-func (r UpdateIndexV1RagManagedIndexesIndexNamePutResponse) GetJSON202() *ManagedIndexResponse {
-	return r.JSON202
-}
-
-// GetBody returns the raw response body bytes
-func (r UpdateIndexV1RagManagedIndexesIndexNamePutResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r UpdateIndexV1RagManagedIndexesIndexNamePutResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r UpdateIndexV1RagManagedIndexesIndexNamePutResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r UpdateIndexV1RagManagedIndexesIndexNamePutResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *NavigationResponse
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *HTTPValidationError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse) GetJSON200() *NavigationResponse {
-	return r.JSON200
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse) GetJSON422() *HTTPValidationError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *DeleteDocumentsResponse
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *HTTPValidationError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse) GetJSON200() *DeleteDocumentsResponse {
-	return r.JSON200
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse) GetJSON422() *HTTPValidationError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *IngestDocumentsResponse
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *HTTPValidationError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse) GetJSON200() *IngestDocumentsResponse {
-	return r.JSON200
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse) GetJSON422() *HTTPValidationError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *NavigationResponse
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *HTTPValidationError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse) GetJSON200() *NavigationResponse {
-	return r.JSON200
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse) GetJSON422() *HTTPValidationError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *NavigationResponse
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *HTTPValidationError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse) GetJSON200() *NavigationResponse {
-	return r.JSON200
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse) GetJSON422() *HTTPValidationError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type ReadIndexV1RagManagedIndexesIndexNameReadPostResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *NavigationResponse
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *HTTPValidationError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r ReadIndexV1RagManagedIndexesIndexNameReadPostResponse) GetJSON200() *NavigationResponse {
-	return r.JSON200
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r ReadIndexV1RagManagedIndexesIndexNameReadPostResponse) GetJSON422() *HTTPValidationError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r ReadIndexV1RagManagedIndexesIndexNameReadPostResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r ReadIndexV1RagManagedIndexesIndexNameReadPostResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r ReadIndexV1RagManagedIndexesIndexNameReadPostResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r ReadIndexV1RagManagedIndexesIndexNameReadPostResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *SearchResponse
-	// JSON400 the response for an HTTP 400 `application/json` response
-	JSON400 *[]SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *HTTPValidationError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse) GetJSON200() *SearchResponse {
-	return r.JSON200
-}
-
-// GetJSON400 returns the response for an HTTP 400 `application/json` response
-func (r SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse) GetJSON400() *[]SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item {
-	return r.JSON400
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse) GetJSON422() *HTTPValidationError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
 type CreateResponseV1ResponsesPostResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -106064,6 +112575,239 @@ func (r SetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPutResponse)
 	return ""
 }
 
+type ListTriggersV1TriggersGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *[]Trigger
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r ListTriggersV1TriggersGetResponse) GetJSON200() *[]Trigger {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r ListTriggersV1TriggersGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r ListTriggersV1TriggersGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r ListTriggersV1TriggersGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r ListTriggersV1TriggersGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r ListTriggersV1TriggersGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type CreateTriggerV1TriggersPostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON201 the response for an HTTP 201 `application/json` response
+	JSON201 *Trigger
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON201 returns the response for an HTTP 201 `application/json` response
+func (r CreateTriggerV1TriggersPostResponse) GetJSON201() *Trigger {
+	return r.JSON201
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r CreateTriggerV1TriggersPostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r CreateTriggerV1TriggersPostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r CreateTriggerV1TriggersPostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r CreateTriggerV1TriggersPostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r CreateTriggerV1TriggersPostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type DeleteTriggerV1TriggersTriggerIdDeleteResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r DeleteTriggerV1TriggersTriggerIdDeleteResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r DeleteTriggerV1TriggersTriggerIdDeleteResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r DeleteTriggerV1TriggersTriggerIdDeleteResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r DeleteTriggerV1TriggersTriggerIdDeleteResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r DeleteTriggerV1TriggersTriggerIdDeleteResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GetTriggerV1TriggersTriggerIdGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *Trigger
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetTriggerV1TriggersTriggerIdGetResponse) GetJSON200() *Trigger {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GetTriggerV1TriggersTriggerIdGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GetTriggerV1TriggersTriggerIdGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetTriggerV1TriggersTriggerIdGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetTriggerV1TriggersTriggerIdGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetTriggerV1TriggersTriggerIdGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type ListTriggerEventsV1TriggersTriggerIdEventsGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *TriggerEventList
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r ListTriggerEventsV1TriggersTriggerIdEventsGetResponse) GetJSON200() *TriggerEventList {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r ListTriggerEventsV1TriggersTriggerIdEventsGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r ListTriggerEventsV1TriggersTriggerIdEventsGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r ListTriggerEventsV1TriggersTriggerIdEventsGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r ListTriggerEventsV1TriggersTriggerIdEventsGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r ListTriggerEventsV1TriggersTriggerIdEventsGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
 type UsersApiGetIdentityResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -106181,6 +112925,232 @@ func (r UsersApiListWorkspacesResponse) StatusCode() int {
 
 // ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
 func (r UsersApiListWorkspacesResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type ListWebhooksV1WebhooksGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *[]Webhook
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r ListWebhooksV1WebhooksGetResponse) GetJSON200() *[]Webhook {
+	return r.JSON200
+}
+
+// GetBody returns the raw response body bytes
+func (r ListWebhooksV1WebhooksGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r ListWebhooksV1WebhooksGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r ListWebhooksV1WebhooksGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r ListWebhooksV1WebhooksGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type CreateWebhookV1WebhooksPostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON201 the response for an HTTP 201 `application/json` response
+	JSON201 *Webhook
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON201 returns the response for an HTTP 201 `application/json` response
+func (r CreateWebhookV1WebhooksPostResponse) GetJSON201() *Webhook {
+	return r.JSON201
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r CreateWebhookV1WebhooksPostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r CreateWebhookV1WebhooksPostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r CreateWebhookV1WebhooksPostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r CreateWebhookV1WebhooksPostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r CreateWebhookV1WebhooksPostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type DeleteWebhookV1WebhooksWebhookIdDeleteResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r DeleteWebhookV1WebhooksWebhookIdDeleteResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r DeleteWebhookV1WebhooksWebhookIdDeleteResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r DeleteWebhookV1WebhooksWebhookIdDeleteResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r DeleteWebhookV1WebhooksWebhookIdDeleteResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r DeleteWebhookV1WebhooksWebhookIdDeleteResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GetWebhookV1WebhooksWebhookIdGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *Webhook
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetWebhookV1WebhooksWebhookIdGetResponse) GetJSON200() *Webhook {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GetWebhookV1WebhooksWebhookIdGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GetWebhookV1WebhooksWebhookIdGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetWebhookV1WebhooksWebhookIdGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetWebhookV1WebhooksWebhookIdGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetWebhookV1WebhooksWebhookIdGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *WebhookSigningSecret
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse) GetJSON200() *WebhookSigningSecret {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse) ContentType() string {
 	if r.HTTPResponse != nil {
 		return r.HTTPResponse.Header.Get("Content-Type")
 	}
@@ -106592,6 +113562,54 @@ func (r UpdateDeploymentV1WorkflowsDeploymentsNamePatchResponse) StatusCode() in
 
 // ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
 func (r UpdateDeploymentV1WorkflowsDeploymentsNamePatchResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *DeploymentArchiveResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse) GetJSON200() *DeploymentArchiveResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse) ContentType() string {
 	if r.HTTPResponse != nil {
 		return r.HTTPResponse.Header.Get("Content-Type")
 	}
@@ -108627,6 +115645,47 @@ func (r ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostResponse) StatusC
 
 // ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
 func (r ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse) ContentType() string {
 	if r.HTTPResponse != nil {
 		return r.HTTPResponse.Header.Get("Content-Type")
 	}
@@ -110827,6 +117886,183 @@ func (c *ClientWithResponses) AgentsApiV1AgentsGetVersionWithResponse(ctx contex
 	return ParseAgentsApiV1AgentsGetVersionResponse(rsp)
 }
 
+// ListAgentsV1AudioAgentsGetWithResponse List audio agents
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/audio/agents (the `ListAgentsV1AudioAgentsGet` operationId).
+func (c *ClientWithResponses) ListAgentsV1AudioAgentsGetWithResponse(ctx context.Context, params *ListAgentsV1AudioAgentsGetParams, reqEditors ...RequestEditorFn) (*ListAgentsV1AudioAgentsGetResponse, error) {
+	rsp, err := c.ListAgentsV1AudioAgentsGet(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseListAgentsV1AudioAgentsGetResponse(rsp)
+}
+
+// CreateAgentV1AudioAgentsPostWithBodyWithResponse Create an audio agent
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/audio/agents (the `CreateAgentV1AudioAgentsPost` operationId).
+func (c *ClientWithResponses) CreateAgentV1AudioAgentsPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateAgentV1AudioAgentsPostResponse, error) {
+	rsp, err := c.CreateAgentV1AudioAgentsPostWithBody(ctx, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateAgentV1AudioAgentsPostResponse(rsp)
+}
+
+// CreateAgentV1AudioAgentsPostWithResponse Create an audio agent
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/audio/agents (the `CreateAgentV1AudioAgentsPost` operationId).
+func (c *ClientWithResponses) CreateAgentV1AudioAgentsPostWithResponse(ctx context.Context, body CreateAgentV1AudioAgentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateAgentV1AudioAgentsPostResponse, error) {
+	rsp, err := c.CreateAgentV1AudioAgentsPost(ctx, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateAgentV1AudioAgentsPostResponse(rsp)
+}
+
+// DeleteAgentV1AudioAgentsAgentIdDeleteWithResponse Delete an audio agent
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with DELETE /v1/audio/agents/{agent_id} (the `DeleteAgentV1AudioAgentsAgentIdDelete` operationId).
+func (c *ClientWithResponses) DeleteAgentV1AudioAgentsAgentIdDeleteWithResponse(ctx context.Context, agentId openapi_types.UUID, reqEditors ...RequestEditorFn) (*DeleteAgentV1AudioAgentsAgentIdDeleteResponse, error) {
+	rsp, err := c.DeleteAgentV1AudioAgentsAgentIdDelete(ctx, agentId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseDeleteAgentV1AudioAgentsAgentIdDeleteResponse(rsp)
+}
+
+// GetAgentV1AudioAgentsAgentIdGetWithResponse Get an audio agent
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/audio/agents/{agent_id} (the `GetAgentV1AudioAgentsAgentIdGet` operationId).
+func (c *ClientWithResponses) GetAgentV1AudioAgentsAgentIdGetWithResponse(ctx context.Context, agentId openapi_types.UUID, params *GetAgentV1AudioAgentsAgentIdGetParams, reqEditors ...RequestEditorFn) (*GetAgentV1AudioAgentsAgentIdGetResponse, error) {
+	rsp, err := c.GetAgentV1AudioAgentsAgentIdGet(ctx, agentId, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetAgentV1AudioAgentsAgentIdGetResponse(rsp)
+}
+
+// UpdateAgentV1AudioAgentsAgentIdPutWithBodyWithResponse Update an audio agent
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with PUT /v1/audio/agents/{agent_id} (the `UpdateAgentV1AudioAgentsAgentIdPut` operationId).
+func (c *ClientWithResponses) UpdateAgentV1AudioAgentsAgentIdPutWithBodyWithResponse(ctx context.Context, agentId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UpdateAgentV1AudioAgentsAgentIdPutResponse, error) {
+	rsp, err := c.UpdateAgentV1AudioAgentsAgentIdPutWithBody(ctx, agentId, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseUpdateAgentV1AudioAgentsAgentIdPutResponse(rsp)
+}
+
+// UpdateAgentV1AudioAgentsAgentIdPutWithResponse Update an audio agent
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with PUT /v1/audio/agents/{agent_id} (the `UpdateAgentV1AudioAgentsAgentIdPut` operationId).
+func (c *ClientWithResponses) UpdateAgentV1AudioAgentsAgentIdPutWithResponse(ctx context.Context, agentId openapi_types.UUID, body UpdateAgentV1AudioAgentsAgentIdPutJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateAgentV1AudioAgentsAgentIdPutResponse, error) {
+	rsp, err := c.UpdateAgentV1AudioAgentsAgentIdPut(ctx, agentId, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseUpdateAgentV1AudioAgentsAgentIdPutResponse(rsp)
+}
+
+// ListAgentSessionsV1AudioAgentsAgentIdSessionsGetWithResponse List audio agent sessions
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/audio/agents/{agent_id}/sessions (the `ListAgentSessionsV1AudioAgentsAgentIdSessionsGet` operationId).
+func (c *ClientWithResponses) ListAgentSessionsV1AudioAgentsAgentIdSessionsGetWithResponse(ctx context.Context, agentId openapi_types.UUID, params *ListAgentSessionsV1AudioAgentsAgentIdSessionsGetParams, reqEditors ...RequestEditorFn) (*ListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse, error) {
+	rsp, err := c.ListAgentSessionsV1AudioAgentsAgentIdSessionsGet(ctx, agentId, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse(rsp)
+}
+
+// ListAgentVersionsV1AudioAgentsAgentIdVersionsGetWithResponse List audio agent versions
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/audio/agents/{agent_id}/versions (the `ListAgentVersionsV1AudioAgentsAgentIdVersionsGet` operationId).
+func (c *ClientWithResponses) ListAgentVersionsV1AudioAgentsAgentIdVersionsGetWithResponse(ctx context.Context, agentId openapi_types.UUID, params *ListAgentVersionsV1AudioAgentsAgentIdVersionsGetParams, reqEditors ...RequestEditorFn) (*ListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse, error) {
+	rsp, err := c.ListAgentVersionsV1AudioAgentsAgentIdVersionsGet(ctx, agentId, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse(rsp)
+}
+
+// CreateSessionV1AudioSessionsPostWithBodyWithResponse Create an agent session
+//
+// Create a real-time audio agent session.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/audio/sessions (the `CreateSessionV1AudioSessionsPost` operationId).
+func (c *ClientWithResponses) CreateSessionV1AudioSessionsPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateSessionV1AudioSessionsPostResponse, error) {
+	rsp, err := c.CreateSessionV1AudioSessionsPostWithBody(ctx, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateSessionV1AudioSessionsPostResponse(rsp)
+}
+
+// CreateSessionV1AudioSessionsPostWithResponse Create an agent session
+//
+// Create a real-time audio agent session.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/audio/sessions (the `CreateSessionV1AudioSessionsPost` operationId).
+func (c *ClientWithResponses) CreateSessionV1AudioSessionsPostWithResponse(ctx context.Context, body CreateSessionV1AudioSessionsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateSessionV1AudioSessionsPostResponse, error) {
+	rsp, err := c.CreateSessionV1AudioSessionsPost(ctx, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateSessionV1AudioSessionsPostResponse(rsp)
+}
+
+// DeleteSessionV1AudioSessionsSessionIdDeleteWithResponse Stop an agent session
+//
+// Stop an audio agent session and release its resources.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with DELETE /v1/audio/sessions/{session_id} (the `DeleteSessionV1AudioSessionsSessionIdDelete` operationId).
+func (c *ClientWithResponses) DeleteSessionV1AudioSessionsSessionIdDeleteWithResponse(ctx context.Context, sessionId openapi_types.UUID, reqEditors ...RequestEditorFn) (*DeleteSessionV1AudioSessionsSessionIdDeleteResponse, error) {
+	rsp, err := c.DeleteSessionV1AudioSessionsSessionIdDelete(ctx, sessionId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseDeleteSessionV1AudioSessionsSessionIdDeleteResponse(rsp)
+}
+
+// GetSessionV1AudioSessionsSessionIdGetWithResponse Get session status
+//
+// Retrieve an audio agent session with the transcript of its conversation.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/audio/sessions/{session_id} (the `GetSessionV1AudioSessionsSessionIdGet` operationId).
+func (c *ClientWithResponses) GetSessionV1AudioSessionsSessionIdGetWithResponse(ctx context.Context, sessionId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetSessionV1AudioSessionsSessionIdGetResponse, error) {
+	rsp, err := c.GetSessionV1AudioSessionsSessionIdGet(ctx, sessionId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetSessionV1AudioSessionsSessionIdGetResponse(rsp)
+}
+
 // SpeechV1AudioSpeechPostWithBodyWithResponse Speech
 //
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
@@ -111091,6 +118327,38 @@ func (c *ClientWithResponses) JobsApiRoutesBatchCancelBatchJobWithResponse(ctx c
 		return nil, err
 	}
 	return ParseJobsApiRoutesBatchCancelBatchJobResponse(rsp)
+}
+
+// BillingApiPublicGetBudgetWithResponse Get Budget
+//
+// Return the organization's API and Vibe budgets for the current billing period.
+//
+// Requires the `see_org_inference_usage` permission.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/billing/budget (the `BillingApiPublicGetBudget` operationId).
+func (c *ClientWithResponses) BillingApiPublicGetBudgetWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*BillingApiPublicGetBudgetResponse, error) {
+	rsp, err := c.BillingApiPublicGetBudget(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseBillingApiPublicGetBudgetResponse(rsp)
+}
+
+// BillingApiPublicGetSubscriptionWithResponse Get Subscription
+//
+// Return the organization's plan and whether pay-as-you-go is enabled.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/billing/subscription (the `BillingApiPublicGetSubscription` operationId).
+func (c *ClientWithResponses) BillingApiPublicGetSubscriptionWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*BillingApiPublicGetSubscriptionResponse, error) {
+	rsp, err := c.BillingApiPublicGetSubscription(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseBillingApiPublicGetSubscriptionResponse(rsp)
 }
 
 // ChatClassificationsV1ChatClassificationsPostWithBodyWithResponse Chat Classifications
@@ -111663,6 +118931,372 @@ func (c *ClientWithResponses) ConnectorDeactivateForConsumerV1WithResponse(ctx c
 		return nil, err
 	}
 	return ParseConnectorDeactivateForConsumerV1Response(rsp)
+}
+
+// ListIndexesV1ContextSearchIndexesGetWithResponse List managed indexes
+//
+// Lists all managed search indexes for the current workspace.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/context/search-indexes (the `ListIndexesV1ContextSearchIndexesGet` operationId).
+func (c *ClientWithResponses) ListIndexesV1ContextSearchIndexesGetWithResponse(ctx context.Context, params *ListIndexesV1ContextSearchIndexesGetParams, reqEditors ...RequestEditorFn) (*ListIndexesV1ContextSearchIndexesGetResponse, error) {
+	rsp, err := c.ListIndexesV1ContextSearchIndexesGet(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseListIndexesV1ContextSearchIndexesGetResponse(rsp)
+}
+
+// CreateIndexV1ContextSearchIndexesPostWithBodyWithResponse Create a managed index
+//
+// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes (the `CreateIndexV1ContextSearchIndexesPost` operationId).
+func (c *ClientWithResponses) CreateIndexV1ContextSearchIndexesPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateIndexV1ContextSearchIndexesPostResponse, error) {
+	rsp, err := c.CreateIndexV1ContextSearchIndexesPostWithBody(ctx, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateIndexV1ContextSearchIndexesPostResponse(rsp)
+}
+
+// CreateIndexV1ContextSearchIndexesPostWithResponse Create a managed index
+//
+// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes (the `CreateIndexV1ContextSearchIndexesPost` operationId).
+func (c *ClientWithResponses) CreateIndexV1ContextSearchIndexesPostWithResponse(ctx context.Context, body CreateIndexV1ContextSearchIndexesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateIndexV1ContextSearchIndexesPostResponse, error) {
+	rsp, err := c.CreateIndexV1ContextSearchIndexesPost(ctx, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateIndexV1ContextSearchIndexesPostResponse(rsp)
+}
+
+// DeleteIndexV1ContextSearchIndexesIndexNameDeleteWithResponse Delete a managed index
+//
+// Marks the managed search index for deletion and returns it with status deleting. The backing table is dropped asynchronously; poll the index until it returns 404.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with DELETE /v1/context/search-indexes/{index_name} (the `DeleteIndexV1ContextSearchIndexesIndexNameDelete` operationId).
+func (c *ClientWithResponses) DeleteIndexV1ContextSearchIndexesIndexNameDeleteWithResponse(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*DeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse, error) {
+	rsp, err := c.DeleteIndexV1ContextSearchIndexesIndexNameDelete(ctx, indexName, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseDeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse(rsp)
+}
+
+// GetIndexV1ContextSearchIndexesIndexNameGetWithResponse Get a managed index
+//
+// Returns the managed search index with the given name.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/context/search-indexes/{index_name} (the `GetIndexV1ContextSearchIndexesIndexNameGet` operationId).
+func (c *ClientWithResponses) GetIndexV1ContextSearchIndexesIndexNameGetWithResponse(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*GetIndexV1ContextSearchIndexesIndexNameGetResponse, error) {
+	rsp, err := c.GetIndexV1ContextSearchIndexesIndexNameGet(ctx, indexName, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetIndexV1ContextSearchIndexesIndexNameGetResponse(rsp)
+}
+
+// UpdateIndexV1ContextSearchIndexesIndexNamePutWithBodyWithResponse Update a managed index schema
+//
+// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with PUT /v1/context/search-indexes/{index_name} (the `UpdateIndexV1ContextSearchIndexesIndexNamePut` operationId).
+func (c *ClientWithResponses) UpdateIndexV1ContextSearchIndexesIndexNamePutWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UpdateIndexV1ContextSearchIndexesIndexNamePutResponse, error) {
+	rsp, err := c.UpdateIndexV1ContextSearchIndexesIndexNamePutWithBody(ctx, indexName, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseUpdateIndexV1ContextSearchIndexesIndexNamePutResponse(rsp)
+}
+
+// UpdateIndexV1ContextSearchIndexesIndexNamePutWithResponse Update a managed index schema
+//
+// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with PUT /v1/context/search-indexes/{index_name} (the `UpdateIndexV1ContextSearchIndexesIndexNamePut` operationId).
+func (c *ClientWithResponses) UpdateIndexV1ContextSearchIndexesIndexNamePutWithResponse(ctx context.Context, indexName string, body UpdateIndexV1ContextSearchIndexesIndexNamePutJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateIndexV1ContextSearchIndexesIndexNamePutResponse, error) {
+	rsp, err := c.UpdateIndexV1ContextSearchIndexesIndexNamePut(ctx, indexName, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseUpdateIndexV1ContextSearchIndexesIndexNamePutResponse(rsp)
+}
+
+// GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetWithResponse Get a single chunk by id
+//
+// Returns a single chunk by its canonical id. A 404 means no chunk with that id exists in the index.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/context/search-indexes/{index_name}/chunks/{chunk_id} (the `GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGet` operationId).
+func (c *ClientWithResponses) GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetWithResponse(ctx context.Context, indexName string, chunkId string, reqEditors ...RequestEditorFn) (*GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse, error) {
+	rsp, err := c.GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGet(ctx, indexName, chunkId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse(rsp)
+}
+
+// DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithBodyWithResponse Delete documents from a managed index
+//
+// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with DELETE /v1/context/search-indexes/{index_name}/documents (the `DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete` operationId).
+func (c *ClientWithResponses) DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse, error) {
+	rsp, err := c.DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithBody(ctx, indexName, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseDeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse(rsp)
+}
+
+// DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithResponse Delete documents from a managed index
+//
+// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with DELETE /v1/context/search-indexes/{index_name}/documents (the `DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete` operationId).
+func (c *ClientWithResponses) DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithResponse(ctx context.Context, indexName string, body DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteJSONRequestBody, reqEditors ...RequestEditorFn) (*DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse, error) {
+	rsp, err := c.DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDelete(ctx, indexName, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseDeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse(rsp)
+}
+
+// IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithBodyWithResponse Ingest documents into a managed index
+//
+// Validates and persists documents. Returns 200 with each document reported as accepted or rejected in the response body, or 403 once the index holds its limit of chunks.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/documents (the `IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost` operationId).
+func (c *ClientWithResponses) IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse, error) {
+	rsp, err := c.IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithBody(ctx, indexName, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseIngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse(rsp)
+}
+
+// IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithResponse Ingest documents into a managed index
+//
+// Validates and persists documents. Returns 200 with each document reported as accepted or rejected in the response body, or 403 once the index holds its limit of chunks.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/documents (the `IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost` operationId).
+func (c *ClientWithResponses) IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithResponse(ctx context.Context, indexName string, body IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse, error) {
+	rsp, err := c.IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPost(ctx, indexName, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseIngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse(rsp)
+}
+
+// GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithBodyWithResponse Grep for a pattern within a source
+//
+// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/grep (the `GrepIndexV1ContextSearchIndexesIndexNameGrepPost` operationId).
+func (c *ClientWithResponses) GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse, error) {
+	rsp, err := c.GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithBody(ctx, indexName, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse(rsp)
+}
+
+// GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithResponse Grep for a pattern within a source
+//
+// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/grep (the `GrepIndexV1ContextSearchIndexesIndexNameGrepPost` operationId).
+func (c *ClientWithResponses) GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithResponse(ctx context.Context, indexName string, body GrepIndexV1ContextSearchIndexesIndexNameGrepPostJSONRequestBody, reqEditors ...RequestEditorFn) (*GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse, error) {
+	rsp, err := c.GrepIndexV1ContextSearchIndexesIndexNameGrepPost(ctx, indexName, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse(rsp)
+}
+
+// NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithBodyWithResponse Navigate to adjacent chunks
+//
+// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/navigate (the `NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost` operationId).
+func (c *ClientWithResponses) NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse, error) {
+	rsp, err := c.NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithBody(ctx, indexName, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseNavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse(rsp)
+}
+
+// NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithResponse Navigate to adjacent chunks
+//
+// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/navigate (the `NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost` operationId).
+func (c *ClientWithResponses) NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithResponse(ctx context.Context, indexName string, body NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostJSONRequestBody, reqEditors ...RequestEditorFn) (*NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse, error) {
+	rsp, err := c.NavigateIndexV1ContextSearchIndexesIndexNameNavigatePost(ctx, indexName, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseNavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse(rsp)
+}
+
+// ReadIndexV1ContextSearchIndexesIndexNameReadPostWithBodyWithResponse Read chunks within a span
+//
+// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/read (the `ReadIndexV1ContextSearchIndexesIndexNameReadPost` operationId).
+func (c *ClientWithResponses) ReadIndexV1ContextSearchIndexesIndexNameReadPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse, error) {
+	rsp, err := c.ReadIndexV1ContextSearchIndexesIndexNameReadPostWithBody(ctx, indexName, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseReadIndexV1ContextSearchIndexesIndexNameReadPostResponse(rsp)
+}
+
+// ReadIndexV1ContextSearchIndexesIndexNameReadPostWithResponse Read chunks within a span
+//
+// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/read (the `ReadIndexV1ContextSearchIndexesIndexNameReadPost` operationId).
+func (c *ClientWithResponses) ReadIndexV1ContextSearchIndexesIndexNameReadPostWithResponse(ctx context.Context, indexName string, body ReadIndexV1ContextSearchIndexesIndexNameReadPostJSONRequestBody, reqEditors ...RequestEditorFn) (*ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse, error) {
+	rsp, err := c.ReadIndexV1ContextSearchIndexesIndexNameReadPost(ctx, indexName, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseReadIndexV1ContextSearchIndexesIndexNameReadPostResponse(rsp)
+}
+
+// SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithBodyWithResponse Search a managed index
+//
+// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/search (the `SearchIndexV1ContextSearchIndexesIndexNameSearchPost` operationId).
+func (c *ClientWithResponses) SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse, error) {
+	rsp, err := c.SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithBody(ctx, indexName, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseSearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse(rsp)
+}
+
+// SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithResponse Search a managed index
+//
+// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/search (the `SearchIndexV1ContextSearchIndexesIndexNameSearchPost` operationId).
+func (c *ClientWithResponses) SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithResponse(ctx context.Context, indexName string, body SearchIndexV1ContextSearchIndexesIndexNameSearchPostJSONRequestBody, reqEditors ...RequestEditorFn) (*SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse, error) {
+	rsp, err := c.SearchIndexV1ContextSearchIndexesIndexNameSearchPost(ctx, indexName, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseSearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse(rsp)
+}
+
+// GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetWithResponse Get Managed Index Summary
+//
+// Retrieve the summary field for a managed index if it exists.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/context/search-indexes/{index_name}/summary_field/{language} (the `GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGet` operationId).
+func (c *ClientWithResponses) GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetWithResponse(ctx context.Context, indexName string, language GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetParamsLanguage, reqEditors ...RequestEditorFn) (*GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse, error) {
+	rsp, err := c.GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGet(ctx, indexName, language, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse(rsp)
+}
+
+// GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostWithResponse Generate a summary field for a managed index
+//
+// Streams a summary for the managed index in chunks of json.
+//
+// The first chunk contains metadata for the summary, the following contain
+// chunks of 'content' that should be joined together to form a full summary.
+//
+// If force is true, regenerate the requested language even if a summary
+// already exists.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/context/search-indexes/{index_name}/summary_field/{language} (the `GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost` operationId).
+func (c *ClientWithResponses) GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostWithResponse(ctx context.Context, indexName string, language GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParamsLanguage, params *GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostParams, reqEditors ...RequestEditorFn) (*GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse, error) {
+	rsp, err := c.GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePost(ctx, indexName, language, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse(rsp)
+}
+
+// SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithBodyWithResponse Set Managed Index Summary
+//
+// Update the summary field for a managed index.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with PUT /v1/context/search-indexes/{index_name}/summary_field/{language} (the `SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut` operationId).
+func (c *ClientWithResponses) SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithBodyWithResponse(ctx context.Context, indexName string, language SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse, error) {
+	rsp, err := c.SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithBody(ctx, indexName, language, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseSetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse(rsp)
+}
+
+// SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithResponse Set Managed Index Summary
+//
+// Update the summary field for a managed index.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with PUT /v1/context/search-indexes/{index_name}/summary_field/{language} (the `SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut` operationId).
+func (c *ClientWithResponses) SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithResponse(ctx context.Context, indexName string, language SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutParamsLanguage, body SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutJSONRequestBody, reqEditors ...RequestEditorFn) (*SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse, error) {
+	rsp, err := c.SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePut(ctx, indexName, language, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseSetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse(rsp)
 }
 
 // AgentsApiV1ConversationsListWithResponse List all created conversations.
@@ -113498,6 +121132,19 @@ func (c *ClientWithResponses) UpdatePipelineV1ObservabilityPipelinesPipelineIdPu
 	return ParseUpdatePipelineV1ObservabilityPipelinesPipelineIdPutResponse(rsp)
 }
 
+// GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetWithResponse Get pipeline result field definitions
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/observability/pipelines/{pipeline_id}/results/fields (the `GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGet` operationId).
+func (c *ClientWithResponses) GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetWithResponse(ctx context.Context, pipelineId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse, error) {
+	rsp, err := c.GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGet(ctx, pipelineId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse(rsp)
+}
+
 // GetProjectsV1ObservabilityProjectsGetWithResponse List projects
 //
 // Returns a wrapper object for the known response body format(s).
@@ -114019,306 +121666,6 @@ func (c *ClientWithResponses) UpdateRunInfoV1RagIngestionPipelineConfigurationsI
 	return ParseUpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPutResponse(rsp)
 }
 
-// ListIndexesV1RagManagedIndexesGetWithResponse List managed indexes
-//
-// Lists all managed search indexes for the current workspace.
-//
-// Returns a wrapper object for the known response body format(s).
-//
-// Corresponds with GET /v1/rag/managed_indexes (the `ListIndexesV1RagManagedIndexesGet` operationId).
-func (c *ClientWithResponses) ListIndexesV1RagManagedIndexesGetWithResponse(ctx context.Context, params *ListIndexesV1RagManagedIndexesGetParams, reqEditors ...RequestEditorFn) (*ListIndexesV1RagManagedIndexesGetResponse, error) {
-	rsp, err := c.ListIndexesV1RagManagedIndexesGet(ctx, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseListIndexesV1RagManagedIndexesGetResponse(rsp)
-}
-
-// CreateIndexV1RagManagedIndexesPostWithBodyWithResponse Create a managed index
-//
-// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes (the `CreateIndexV1RagManagedIndexesPost` operationId).
-func (c *ClientWithResponses) CreateIndexV1RagManagedIndexesPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateIndexV1RagManagedIndexesPostResponse, error) {
-	rsp, err := c.CreateIndexV1RagManagedIndexesPostWithBody(ctx, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseCreateIndexV1RagManagedIndexesPostResponse(rsp)
-}
-
-// CreateIndexV1RagManagedIndexesPostWithResponse Create a managed index
-//
-// Reserves a managed search index and starts asynchronous backing-table provisioning. Poll the returned Location until status is ready or failed.
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes (the `CreateIndexV1RagManagedIndexesPost` operationId).
-func (c *ClientWithResponses) CreateIndexV1RagManagedIndexesPostWithResponse(ctx context.Context, body CreateIndexV1RagManagedIndexesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateIndexV1RagManagedIndexesPostResponse, error) {
-	rsp, err := c.CreateIndexV1RagManagedIndexesPost(ctx, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseCreateIndexV1RagManagedIndexesPostResponse(rsp)
-}
-
-// DeleteIndexV1RagManagedIndexesIndexNameDeleteWithResponse Delete a managed index
-//
-// Marks the managed search index for deletion and returns it with status deleting. The backing table is dropped asynchronously; poll the index until it returns 404.
-//
-// Returns a wrapper object for the known response body format(s).
-//
-// Corresponds with DELETE /v1/rag/managed_indexes/{index_name} (the `DeleteIndexV1RagManagedIndexesIndexNameDelete` operationId).
-func (c *ClientWithResponses) DeleteIndexV1RagManagedIndexesIndexNameDeleteWithResponse(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*DeleteIndexV1RagManagedIndexesIndexNameDeleteResponse, error) {
-	rsp, err := c.DeleteIndexV1RagManagedIndexesIndexNameDelete(ctx, indexName, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseDeleteIndexV1RagManagedIndexesIndexNameDeleteResponse(rsp)
-}
-
-// GetIndexV1RagManagedIndexesIndexNameGetWithResponse Get a managed index
-//
-// Returns the managed search index with the given name.
-//
-// Returns a wrapper object for the known response body format(s).
-//
-// Corresponds with GET /v1/rag/managed_indexes/{index_name} (the `GetIndexV1RagManagedIndexesIndexNameGet` operationId).
-func (c *ClientWithResponses) GetIndexV1RagManagedIndexesIndexNameGetWithResponse(ctx context.Context, indexName string, reqEditors ...RequestEditorFn) (*GetIndexV1RagManagedIndexesIndexNameGetResponse, error) {
-	rsp, err := c.GetIndexV1RagManagedIndexesIndexNameGet(ctx, indexName, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGetIndexV1RagManagedIndexesIndexNameGetResponse(rsp)
-}
-
-// UpdateIndexV1RagManagedIndexesIndexNamePutWithBodyWithResponse Update a managed index schema
-//
-// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with PUT /v1/rag/managed_indexes/{index_name} (the `UpdateIndexV1RagManagedIndexesIndexNamePut` operationId).
-func (c *ClientWithResponses) UpdateIndexV1RagManagedIndexesIndexNamePutWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UpdateIndexV1RagManagedIndexesIndexNamePutResponse, error) {
-	rsp, err := c.UpdateIndexV1RagManagedIndexesIndexNamePutWithBody(ctx, indexName, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseUpdateIndexV1RagManagedIndexesIndexNamePutResponse(rsp)
-}
-
-// UpdateIndexV1RagManagedIndexesIndexNamePutWithResponse Update a managed index schema
-//
-// Records a new schema for the managed search index and applies it asynchronously. The index keeps serving its current schema until the new one is on disk; poll it until status is ready. Additive only: the new schema must keep every field the current one has.
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with PUT /v1/rag/managed_indexes/{index_name} (the `UpdateIndexV1RagManagedIndexesIndexNamePut` operationId).
-func (c *ClientWithResponses) UpdateIndexV1RagManagedIndexesIndexNamePutWithResponse(ctx context.Context, indexName string, body UpdateIndexV1RagManagedIndexesIndexNamePutJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateIndexV1RagManagedIndexesIndexNamePutResponse, error) {
-	rsp, err := c.UpdateIndexV1RagManagedIndexesIndexNamePut(ctx, indexName, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseUpdateIndexV1RagManagedIndexesIndexNamePutResponse(rsp)
-}
-
-// GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetWithResponse Get a single chunk by id
-//
-// Returns a single chunk by its canonical id. A 404 means no chunk with that id exists in the index.
-//
-// Returns a wrapper object for the known response body format(s).
-//
-// Corresponds with GET /v1/rag/managed_indexes/{index_name}/chunks/{chunk_id} (the `GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGet` operationId).
-func (c *ClientWithResponses) GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetWithResponse(ctx context.Context, indexName string, chunkId string, reqEditors ...RequestEditorFn) (*GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse, error) {
-	rsp, err := c.GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGet(ctx, indexName, chunkId, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse(rsp)
-}
-
-// DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithBodyWithResponse Delete documents from a managed index
-//
-// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with DELETE /v1/rag/managed_indexes/{index_name}/documents (the `DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete` operationId).
-func (c *ClientWithResponses) DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse, error) {
-	rsp, err := c.DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithBody(ctx, indexName, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseDeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse(rsp)
-}
-
-// DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithResponse Delete documents from a managed index
-//
-// Deletes the given documents by id. Returns the ids actually removed and, in `missing`, any requested ids that were not present.
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with DELETE /v1/rag/managed_indexes/{index_name}/documents (the `DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete` operationId).
-func (c *ClientWithResponses) DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithResponse(ctx context.Context, indexName string, body DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteJSONRequestBody, reqEditors ...RequestEditorFn) (*DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse, error) {
-	rsp, err := c.DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDelete(ctx, indexName, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseDeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse(rsp)
-}
-
-// IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithBodyWithResponse Ingest documents into a managed index
-//
-// Validates and persists documents. Always returns 200; each document is reported as accepted or rejected in the response body.
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/documents (the `IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost` operationId).
-func (c *ClientWithResponses) IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse, error) {
-	rsp, err := c.IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithBody(ctx, indexName, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseIngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse(rsp)
-}
-
-// IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithResponse Ingest documents into a managed index
-//
-// Validates and persists documents. Always returns 200; each document is reported as accepted or rejected in the response body.
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/documents (the `IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost` operationId).
-func (c *ClientWithResponses) IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithResponse(ctx context.Context, indexName string, body IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse, error) {
-	rsp, err := c.IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPost(ctx, indexName, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseIngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse(rsp)
-}
-
-// GrepIndexV1RagManagedIndexesIndexNameGrepPostWithBodyWithResponse Grep for a pattern within a source
-//
-// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/grep (the `GrepIndexV1RagManagedIndexesIndexNameGrepPost` operationId).
-func (c *ClientWithResponses) GrepIndexV1RagManagedIndexesIndexNameGrepPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse, error) {
-	rsp, err := c.GrepIndexV1RagManagedIndexesIndexNameGrepPostWithBody(ctx, indexName, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGrepIndexV1RagManagedIndexesIndexNameGrepPostResponse(rsp)
-}
-
-// GrepIndexV1RagManagedIndexesIndexNameGrepPostWithResponse Grep for a pattern within a source
-//
-// Lexical substring match within a single source, in reading order. PHRASE mode matches the pattern literally (whitespace-sensitive, case-insensitive); TERM mode requires every whitespace-split token present in any order. A 200 with an empty list means the source exists but no chunk matched; a 404 means the source has no chunks at all.
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/grep (the `GrepIndexV1RagManagedIndexesIndexNameGrepPost` operationId).
-func (c *ClientWithResponses) GrepIndexV1RagManagedIndexesIndexNameGrepPostWithResponse(ctx context.Context, indexName string, body GrepIndexV1RagManagedIndexesIndexNameGrepPostJSONRequestBody, reqEditors ...RequestEditorFn) (*GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse, error) {
-	rsp, err := c.GrepIndexV1RagManagedIndexesIndexNameGrepPost(ctx, indexName, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGrepIndexV1RagManagedIndexesIndexNameGrepPostResponse(rsp)
-}
-
-// NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithBodyWithResponse Navigate to adjacent chunks
-//
-// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/navigate (the `NavigateIndexV1RagManagedIndexesIndexNameNavigatePost` operationId).
-func (c *ClientWithResponses) NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse, error) {
-	rsp, err := c.NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithBody(ctx, indexName, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseNavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse(rsp)
-}
-
-// NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithResponse Navigate to adjacent chunks
-//
-// Returns the chunks adjacent to a position within a source, in reading order. NEXT fetches chunks at or after the end offset; PREVIOUS fetches chunks before the start offset. A 200 with an empty list means the source exists but no chunk falls in the requested direction; a 404 means the source has no chunks at all.
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/navigate (the `NavigateIndexV1RagManagedIndexesIndexNameNavigatePost` operationId).
-func (c *ClientWithResponses) NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithResponse(ctx context.Context, indexName string, body NavigateIndexV1RagManagedIndexesIndexNameNavigatePostJSONRequestBody, reqEditors ...RequestEditorFn) (*NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse, error) {
-	rsp, err := c.NavigateIndexV1RagManagedIndexesIndexNameNavigatePost(ctx, indexName, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseNavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse(rsp)
-}
-
-// ReadIndexV1RagManagedIndexesIndexNameReadPostWithBodyWithResponse Read chunks within a span
-//
-// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/read (the `ReadIndexV1RagManagedIndexesIndexNameReadPost` operationId).
-func (c *ClientWithResponses) ReadIndexV1RagManagedIndexesIndexNameReadPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ReadIndexV1RagManagedIndexesIndexNameReadPostResponse, error) {
-	rsp, err := c.ReadIndexV1RagManagedIndexesIndexNameReadPostWithBody(ctx, indexName, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseReadIndexV1RagManagedIndexesIndexNameReadPostResponse(rsp)
-}
-
-// ReadIndexV1RagManagedIndexesIndexNameReadPostWithResponse Read chunks within a span
-//
-// Returns the chunks of a source whose span falls within [start_offset, end_offset). Either bound may be omitted to leave that side open. A 200 with an empty list means the source exists but no chunk falls in the range; a 404 means the source has no chunks at all.
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/read (the `ReadIndexV1RagManagedIndexesIndexNameReadPost` operationId).
-func (c *ClientWithResponses) ReadIndexV1RagManagedIndexesIndexNameReadPostWithResponse(ctx context.Context, indexName string, body ReadIndexV1RagManagedIndexesIndexNameReadPostJSONRequestBody, reqEditors ...RequestEditorFn) (*ReadIndexV1RagManagedIndexesIndexNameReadPostResponse, error) {
-	rsp, err := c.ReadIndexV1RagManagedIndexesIndexNameReadPost(ctx, indexName, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseReadIndexV1RagManagedIndexesIndexNameReadPostResponse(rsp)
-}
-
-// SearchIndexV1RagManagedIndexesIndexNameSearchPostWithBodyWithResponse Search a managed index
-//
-// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/search (the `SearchIndexV1RagManagedIndexesIndexNameSearchPost` operationId).
-func (c *ClientWithResponses) SearchIndexV1RagManagedIndexesIndexNameSearchPostWithBodyWithResponse(ctx context.Context, indexName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse, error) {
-	rsp, err := c.SearchIndexV1RagManagedIndexesIndexNameSearchPostWithBody(ctx, indexName, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseSearchIndexV1RagManagedIndexesIndexNameSearchPostResponse(rsp)
-}
-
-// SearchIndexV1RagManagedIndexesIndexNameSearchPostWithResponse Search a managed index
-//
-// Runs an approximate-nearest-neighbor vector search over the index and returns matching chunks, closest-first.
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/rag/managed_indexes/{index_name}/search (the `SearchIndexV1RagManagedIndexesIndexNameSearchPost` operationId).
-func (c *ClientWithResponses) SearchIndexV1RagManagedIndexesIndexNameSearchPostWithResponse(ctx context.Context, indexName string, body SearchIndexV1RagManagedIndexesIndexNameSearchPostJSONRequestBody, reqEditors ...RequestEditorFn) (*SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse, error) {
-	rsp, err := c.SearchIndexV1RagManagedIndexesIndexNameSearchPost(ctx, indexName, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseSearchIndexV1RagManagedIndexesIndexNameSearchPostResponse(rsp)
-}
-
 // CreateResponseV1ResponsesPostWithBodyWithResponse Create Response
 //
 // Create a response.
@@ -114599,6 +121946,84 @@ func (c *ClientWithResponses) SetServiceAccountRolesV1ServiceAccountsServiceAcco
 	return ParseSetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPutResponse(rsp)
 }
 
+// ListTriggersV1TriggersGetWithResponse List Triggers
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/triggers (the `ListTriggersV1TriggersGet` operationId).
+func (c *ClientWithResponses) ListTriggersV1TriggersGetWithResponse(ctx context.Context, params *ListTriggersV1TriggersGetParams, reqEditors ...RequestEditorFn) (*ListTriggersV1TriggersGetResponse, error) {
+	rsp, err := c.ListTriggersV1TriggersGet(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseListTriggersV1TriggersGetResponse(rsp)
+}
+
+// CreateTriggerV1TriggersPostWithBodyWithResponse Create Trigger
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/triggers (the `CreateTriggerV1TriggersPost` operationId).
+func (c *ClientWithResponses) CreateTriggerV1TriggersPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateTriggerV1TriggersPostResponse, error) {
+	rsp, err := c.CreateTriggerV1TriggersPostWithBody(ctx, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateTriggerV1TriggersPostResponse(rsp)
+}
+
+// CreateTriggerV1TriggersPostWithResponse Create Trigger
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/triggers (the `CreateTriggerV1TriggersPost` operationId).
+func (c *ClientWithResponses) CreateTriggerV1TriggersPostWithResponse(ctx context.Context, body CreateTriggerV1TriggersPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateTriggerV1TriggersPostResponse, error) {
+	rsp, err := c.CreateTriggerV1TriggersPost(ctx, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateTriggerV1TriggersPostResponse(rsp)
+}
+
+// DeleteTriggerV1TriggersTriggerIdDeleteWithResponse Delete Trigger
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with DELETE /v1/triggers/{trigger_id} (the `DeleteTriggerV1TriggersTriggerIdDelete` operationId).
+func (c *ClientWithResponses) DeleteTriggerV1TriggersTriggerIdDeleteWithResponse(ctx context.Context, triggerId openapi_types.UUID, reqEditors ...RequestEditorFn) (*DeleteTriggerV1TriggersTriggerIdDeleteResponse, error) {
+	rsp, err := c.DeleteTriggerV1TriggersTriggerIdDelete(ctx, triggerId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseDeleteTriggerV1TriggersTriggerIdDeleteResponse(rsp)
+}
+
+// GetTriggerV1TriggersTriggerIdGetWithResponse Get Trigger
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/triggers/{trigger_id} (the `GetTriggerV1TriggersTriggerIdGet` operationId).
+func (c *ClientWithResponses) GetTriggerV1TriggersTriggerIdGetWithResponse(ctx context.Context, triggerId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetTriggerV1TriggersTriggerIdGetResponse, error) {
+	rsp, err := c.GetTriggerV1TriggersTriggerIdGet(ctx, triggerId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetTriggerV1TriggersTriggerIdGetResponse(rsp)
+}
+
+// ListTriggerEventsV1TriggersTriggerIdEventsGetWithResponse List Trigger Events
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/triggers/{trigger_id}/events (the `ListTriggerEventsV1TriggersTriggerIdEventsGet` operationId).
+func (c *ClientWithResponses) ListTriggerEventsV1TriggersTriggerIdEventsGetWithResponse(ctx context.Context, triggerId openapi_types.UUID, params *ListTriggerEventsV1TriggersTriggerIdEventsGetParams, reqEditors ...RequestEditorFn) (*ListTriggerEventsV1TriggersTriggerIdEventsGetResponse, error) {
+	rsp, err := c.ListTriggerEventsV1TriggersTriggerIdEventsGet(ctx, triggerId, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseListTriggerEventsV1TriggersTriggerIdEventsGetResponse(rsp)
+}
+
 // UsersApiGetIdentityWithResponse Get Identity
 //
 // Returns a wrapper object for the known response body format(s).
@@ -114644,6 +122069,84 @@ func (c *ClientWithResponses) UsersApiListWorkspacesWithResponse(ctx context.Con
 		return nil, err
 	}
 	return ParseUsersApiListWorkspacesResponse(rsp)
+}
+
+// ListWebhooksV1WebhooksGetWithResponse List Webhooks
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/webhooks (the `ListWebhooksV1WebhooksGet` operationId).
+func (c *ClientWithResponses) ListWebhooksV1WebhooksGetWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*ListWebhooksV1WebhooksGetResponse, error) {
+	rsp, err := c.ListWebhooksV1WebhooksGet(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseListWebhooksV1WebhooksGetResponse(rsp)
+}
+
+// CreateWebhookV1WebhooksPostWithBodyWithResponse Create Webhook
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/webhooks (the `CreateWebhookV1WebhooksPost` operationId).
+func (c *ClientWithResponses) CreateWebhookV1WebhooksPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateWebhookV1WebhooksPostResponse, error) {
+	rsp, err := c.CreateWebhookV1WebhooksPostWithBody(ctx, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateWebhookV1WebhooksPostResponse(rsp)
+}
+
+// CreateWebhookV1WebhooksPostWithResponse Create Webhook
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/webhooks (the `CreateWebhookV1WebhooksPost` operationId).
+func (c *ClientWithResponses) CreateWebhookV1WebhooksPostWithResponse(ctx context.Context, body CreateWebhookV1WebhooksPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateWebhookV1WebhooksPostResponse, error) {
+	rsp, err := c.CreateWebhookV1WebhooksPost(ctx, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateWebhookV1WebhooksPostResponse(rsp)
+}
+
+// DeleteWebhookV1WebhooksWebhookIdDeleteWithResponse Delete Webhook
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with DELETE /v1/webhooks/{webhook_id} (the `DeleteWebhookV1WebhooksWebhookIdDelete` operationId).
+func (c *ClientWithResponses) DeleteWebhookV1WebhooksWebhookIdDeleteWithResponse(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*DeleteWebhookV1WebhooksWebhookIdDeleteResponse, error) {
+	rsp, err := c.DeleteWebhookV1WebhooksWebhookIdDelete(ctx, webhookId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseDeleteWebhookV1WebhooksWebhookIdDeleteResponse(rsp)
+}
+
+// GetWebhookV1WebhooksWebhookIdGetWithResponse Get Webhook
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/webhooks/{webhook_id} (the `GetWebhookV1WebhooksWebhookIdGet` operationId).
+func (c *ClientWithResponses) GetWebhookV1WebhooksWebhookIdGetWithResponse(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetWebhookV1WebhooksWebhookIdGetResponse, error) {
+	rsp, err := c.GetWebhookV1WebhooksWebhookIdGet(ctx, webhookId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetWebhookV1WebhooksWebhookIdGetResponse(rsp)
+}
+
+// GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetWithResponse Get Webhook Signing Secret
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/webhooks/{webhook_id}/signing-secret (the `GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGet` operationId).
+func (c *ClientWithResponses) GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetWithResponse(ctx context.Context, webhookId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse, error) {
+	rsp, err := c.GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGet(ctx, webhookId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse(rsp)
 }
 
 // UsersApiWhoamiWithResponse Whoami
@@ -114804,6 +122307,24 @@ func (c *ClientWithResponses) UpdateDeploymentV1WorkflowsDeploymentsNamePatchWit
 		return nil, err
 	}
 	return ParseUpdateDeploymentV1WorkflowsDeploymentsNamePatchResponse(rsp)
+}
+
+// GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetWithResponse Get Deployment Archive
+//
+// Get the archive a managed deployment builds from, with a signed URL to download it.
+//
+// `download_url` expires within 24 hours, and is null once Mistral Cloud has deleted the archive.
+// A deployment that builds from a repository answers 404.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/workflows/deployments/{name}/archive (the `GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGet` operationId).
+func (c *ClientWithResponses) GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetWithResponse(ctx context.Context, name string, reqEditors ...RequestEditorFn) (*GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse, error) {
+	rsp, err := c.GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGet(ctx, name, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse(rsp)
 }
 
 // GetDeploymentLogsWithResponse Get Deployment Logs
@@ -115601,6 +123122,32 @@ func (c *ClientWithResponses) ExecuteWorkflowV1WorkflowsWorkflowIdentifierExecut
 		return nil, err
 	}
 	return ParseExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostResponse(rsp)
+}
+
+// AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithBodyWithResponse Add Workflow Tags
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/workflows/{workflow_identifier}/tags (the `AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost` operationId).
+func (c *ClientWithResponses) AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithBodyWithResponse(ctx context.Context, workflowIdentifier string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse, error) {
+	rsp, err := c.AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithBody(ctx, workflowIdentifier, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseAddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse(rsp)
+}
+
+// AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithResponse Add Workflow Tags
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/workflows/{workflow_identifier}/tags (the `AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost` operationId).
+func (c *ClientWithResponses) AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithResponse(ctx context.Context, workflowIdentifier string, body AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostJSONRequestBody, reqEditors ...RequestEditorFn) (*AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse, error) {
+	rsp, err := c.AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPost(ctx, workflowIdentifier, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseAddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse(rsp)
 }
 
 // UnarchiveWorkflowV1WorkflowsWorkflowIdentifierUnarchivePutWithResponse Unarchive Workflow
@@ -117648,6 +125195,328 @@ func ParseAgentsApiV1AgentsGetVersionResponse(rsp *http.Response) (*AgentsApiV1A
 	return response, nil
 }
 
+// ParseListAgentsV1AudioAgentsGetResponse parses an HTTP response from a ListAgentsV1AudioAgentsGetWithResponse call
+func ParseListAgentsV1AudioAgentsGetResponse(rsp *http.Response) (*ListAgentsV1AudioAgentsGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &ListAgentsV1AudioAgentsGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AudioAgentListPage
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseCreateAgentV1AudioAgentsPostResponse parses an HTTP response from a CreateAgentV1AudioAgentsPostWithResponse call
+func ParseCreateAgentV1AudioAgentsPostResponse(rsp *http.Response) (*CreateAgentV1AudioAgentsPostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &CreateAgentV1AudioAgentsPostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AudioAgentResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseDeleteAgentV1AudioAgentsAgentIdDeleteResponse parses an HTTP response from a DeleteAgentV1AudioAgentsAgentIdDeleteWithResponse call
+func ParseDeleteAgentV1AudioAgentsAgentIdDeleteResponse(rsp *http.Response) (*DeleteAgentV1AudioAgentsAgentIdDeleteResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &DeleteAgentV1AudioAgentsAgentIdDeleteResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case rsp.StatusCode == 204:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGetAgentV1AudioAgentsAgentIdGetResponse parses an HTTP response from a GetAgentV1AudioAgentsAgentIdGetWithResponse call
+func ParseGetAgentV1AudioAgentsAgentIdGetResponse(rsp *http.Response) (*GetAgentV1AudioAgentsAgentIdGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetAgentV1AudioAgentsAgentIdGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AudioAgentResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseUpdateAgentV1AudioAgentsAgentIdPutResponse parses an HTTP response from a UpdateAgentV1AudioAgentsAgentIdPutWithResponse call
+func ParseUpdateAgentV1AudioAgentsAgentIdPutResponse(rsp *http.Response) (*UpdateAgentV1AudioAgentsAgentIdPutResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &UpdateAgentV1AudioAgentsAgentIdPutResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AudioAgentResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse parses an HTTP response from a ListAgentSessionsV1AudioAgentsAgentIdSessionsGetWithResponse call
+func ParseListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse(rsp *http.Response) (*ListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &ListAgentSessionsV1AudioAgentsAgentIdSessionsGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AudioAgentSessionListPage
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse parses an HTTP response from a ListAgentVersionsV1AudioAgentsAgentIdVersionsGetWithResponse call
+func ParseListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse(rsp *http.Response) (*ListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &ListAgentVersionsV1AudioAgentsAgentIdVersionsGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AudioAgentListPage
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseCreateSessionV1AudioSessionsPostResponse parses an HTTP response from a CreateSessionV1AudioSessionsPostWithResponse call
+func ParseCreateSessionV1AudioSessionsPostResponse(rsp *http.Response) (*CreateSessionV1AudioSessionsPostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &CreateSessionV1AudioSessionsPostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AudioSessionCreateResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseDeleteSessionV1AudioSessionsSessionIdDeleteResponse parses an HTTP response from a DeleteSessionV1AudioSessionsSessionIdDeleteWithResponse call
+func ParseDeleteSessionV1AudioSessionsSessionIdDeleteResponse(rsp *http.Response) (*DeleteSessionV1AudioSessionsSessionIdDeleteResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &DeleteSessionV1AudioSessionsSessionIdDeleteResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case rsp.StatusCode == 204:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGetSessionV1AudioSessionsSessionIdGetResponse parses an HTTP response from a GetSessionV1AudioSessionsSessionIdGetWithResponse call
+func ParseGetSessionV1AudioSessionsSessionIdGetResponse(rsp *http.Response) (*GetSessionV1AudioSessionsSessionIdGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetSessionV1AudioSessionsSessionIdGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AudioSessionResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
 // ParseSpeechV1AudioSpeechPostResponse parses an HTTP response from a SpeechV1AudioSpeechPostWithResponse call
 func ParseSpeechV1AudioSpeechPostResponse(rsp *http.Response) (*SpeechV1AudioSpeechPostResponse, error) {
 	bodyBytes, err := io.ReadAll(rsp.Body)
@@ -118040,6 +125909,58 @@ func ParseJobsApiRoutesBatchCancelBatchJobResponse(rsp *http.Response) (*JobsApi
 	switch {
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest BatchJob
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseBillingApiPublicGetBudgetResponse parses an HTTP response from a BillingApiPublicGetBudgetWithResponse call
+func ParseBillingApiPublicGetBudgetResponse(rsp *http.Response) (*BillingApiPublicGetBudgetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &BillingApiPublicGetBudgetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest GetBudgetResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseBillingApiPublicGetSubscriptionResponse parses an HTTP response from a BillingApiPublicGetSubscriptionWithResponse call
+func ParseBillingApiPublicGetSubscriptionResponse(rsp *http.Response) (*BillingApiPublicGetSubscriptionResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &BillingApiPublicGetSubscriptionResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest GetSubscriptionResponse
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
 		}
@@ -118938,6 +126859,627 @@ func ParseConnectorDeactivateForConsumerV1Response(rsp *http.Response) (*Connect
 			return nil, err
 		}
 		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseListIndexesV1ContextSearchIndexesGetResponse parses an HTTP response from a ListIndexesV1ContextSearchIndexesGetWithResponse call
+func ParseListIndexesV1ContextSearchIndexesGetResponse(rsp *http.Response) (*ListIndexesV1ContextSearchIndexesGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &ListIndexesV1ContextSearchIndexesGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest ListManagedIndexesResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseCreateIndexV1ContextSearchIndexesPostResponse parses an HTTP response from a CreateIndexV1ContextSearchIndexesPostWithResponse call
+func ParseCreateIndexV1ContextSearchIndexesPostResponse(rsp *http.Response) (*CreateIndexV1ContextSearchIndexesPostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &CreateIndexV1ContextSearchIndexesPostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 202:
+		var dest ManagedIndexResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON202 = &dest
+
+	case rsp.StatusCode == 403:
+		break // No content-type
+
+	case rsp.StatusCode == 409:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	switch {
+	case rsp.StatusCode == 202:
+		var headers CreateIndexV1ContextSearchIndexesPostResponse202Headers
+		if values := rsp.Header.Values("Location"); len(values) > 0 {
+			var value string
+			if err := runtime.BindStyledParameterWithOptions("simple", "Location", values[0], &value, runtime.BindStyledParameterOptions{ParamLocation: runtime.ParamLocationHeader, Explode: false, Required: false, Type: "string", Format: ""}); err != nil {
+				return nil, err
+			}
+			headers.Location = &value
+		}
+		response.Headers202 = &headers
+	}
+
+	return response, nil
+}
+
+// ParseDeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse parses an HTTP response from a DeleteIndexV1ContextSearchIndexesIndexNameDeleteWithResponse call
+func ParseDeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse(rsp *http.Response) (*DeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &DeleteIndexV1ContextSearchIndexesIndexNameDeleteResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 202:
+		var dest DeleteManagedIndexResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON202 = &dest
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case rsp.StatusCode == 409:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGetIndexV1ContextSearchIndexesIndexNameGetResponse parses an HTTP response from a GetIndexV1ContextSearchIndexesIndexNameGetWithResponse call
+func ParseGetIndexV1ContextSearchIndexesIndexNameGetResponse(rsp *http.Response) (*GetIndexV1ContextSearchIndexesIndexNameGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetIndexV1ContextSearchIndexesIndexNameGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest ManagedIndexResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseUpdateIndexV1ContextSearchIndexesIndexNamePutResponse parses an HTTP response from a UpdateIndexV1ContextSearchIndexesIndexNamePutWithResponse call
+func ParseUpdateIndexV1ContextSearchIndexesIndexNamePutResponse(rsp *http.Response) (*UpdateIndexV1ContextSearchIndexesIndexNamePutResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &UpdateIndexV1ContextSearchIndexesIndexNamePutResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 202:
+		var dest ManagedIndexResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON202 = &dest
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case rsp.StatusCode == 409:
+		break // No content-type
+
+	case rsp.StatusCode == 422:
+		break // No content-type
+
+	}
+
+	return response, nil
+}
+
+// ParseGetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse parses an HTTP response from a GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetWithResponse call
+func ParseGetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse(rsp *http.Response) (*GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetChunkIndexV1ContextSearchIndexesIndexNameChunksChunkIdGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest NavigationResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case rsp.StatusCode == 409:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	case rsp.StatusCode == 500:
+		break // No content-type
+
+	}
+
+	return response, nil
+}
+
+// ParseDeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse parses an HTTP response from a DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteWithResponse call
+func ParseDeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse(rsp *http.Response) (*DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &DeleteDocumentsV1ContextSearchIndexesIndexNameDocumentsDeleteResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest DeleteDocumentsResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case rsp.StatusCode == 409:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseIngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse parses an HTTP response from a IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostWithResponse call
+func ParseIngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse(rsp *http.Response) (*IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &IngestDocumentsV1ContextSearchIndexesIndexNameDocumentsPostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest IngestDocumentsResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case rsp.StatusCode == 403:
+		break // No content-type
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case rsp.StatusCode == 409:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse parses an HTTP response from a GrepIndexV1ContextSearchIndexesIndexNameGrepPostWithResponse call
+func ParseGrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse(rsp *http.Response) (*GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GrepIndexV1ContextSearchIndexesIndexNameGrepPostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest NavigationResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case rsp.StatusCode == 409:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	case rsp.StatusCode == 500:
+		break // No content-type
+
+	}
+
+	return response, nil
+}
+
+// ParseNavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse parses an HTTP response from a NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostWithResponse call
+func ParseNavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse(rsp *http.Response) (*NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &NavigateIndexV1ContextSearchIndexesIndexNameNavigatePostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest NavigationResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case rsp.StatusCode == 409:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	case rsp.StatusCode == 500:
+		break // No content-type
+
+	}
+
+	return response, nil
+}
+
+// ParseReadIndexV1ContextSearchIndexesIndexNameReadPostResponse parses an HTTP response from a ReadIndexV1ContextSearchIndexesIndexNameReadPostWithResponse call
+func ParseReadIndexV1ContextSearchIndexesIndexNameReadPostResponse(rsp *http.Response) (*ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &ReadIndexV1ContextSearchIndexesIndexNameReadPostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest NavigationResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case rsp.StatusCode == 409:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	case rsp.StatusCode == 500:
+		break // No content-type
+
+	}
+
+	return response, nil
+}
+
+// ParseSearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse parses an HTTP response from a SearchIndexV1ContextSearchIndexesIndexNameSearchPostWithResponse call
+func ParseSearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse(rsp *http.Response) (*SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &SearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest SearchResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest []SearchIndexV1ContextSearchIndexesIndexNameSearchPost400JSONResponseBody_Item
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON400 = &dest
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case rsp.StatusCode == 409:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	case rsp.StatusCode == 500:
+		break // No content-type
+
+	}
+
+	return response, nil
+}
+
+// ParseGetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse parses an HTTP response from a GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetWithResponse call
+func ParseGetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse(rsp *http.Response) (*GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguageGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest GetSummaryResponseSummary
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case rsp.StatusCode == 400:
+		break // No content-type
+
+	case rsp.StatusCode == 403:
+		break // No content-type
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	case rsp.StatusCode == 500:
+		break // No content-type
+
+	}
+
+	return response, nil
+}
+
+// ParseGenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse parses an HTTP response from a GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostWithResponse call
+func ParseGenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse(rsp *http.Response) (*GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GenerateManagedIndexSummaryPostV1ContextSearchIndexesIndexNameSummaryFieldLanguagePostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case rsp.StatusCode == 400:
+		break // No content-type
+
+	case rsp.StatusCode == 403:
+		break // No content-type
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	case rsp.StatusCode == 500:
+		break // No content-type
+
+	}
+
+	return response, nil
+}
+
+// ParseSetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse parses an HTTP response from a SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutWithResponse call
+func ParseSetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse(rsp *http.Response) (*SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &SetManagedIndexSummaryV1ContextSearchIndexesIndexNameSummaryFieldLanguagePutResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest interface{}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case rsp.StatusCode == 400:
+		break // No content-type
+
+	case rsp.StatusCode == 403:
+		break // No content-type
+
+	case rsp.StatusCode == 404:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	case rsp.StatusCode == 500:
+		break // No content-type
 
 	}
 
@@ -123146,6 +131688,67 @@ func ParseUpdatePipelineV1ObservabilityPipelinesPipelineIdPutResponse(rsp *http.
 	return response, nil
 }
 
+// ParseGetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse parses an HTTP response from a GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetWithResponse call
+func ParseGetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse(rsp *http.Response) (*GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetPipelineResultFieldsV1ObservabilityPipelinesPipelineIdResultsFieldsGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest GetPipelineResultFields
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON400 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON404 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON408 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON409 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
 // ParseGetProjectsV1ObservabilityProjectsGetResponse parses an HTTP response from a GetProjectsV1ObservabilityProjectsGetWithResponse call
 func ParseGetProjectsV1ObservabilityProjectsGetResponse(rsp *http.Response) (*GetProjectsV1ObservabilityProjectsGetResponse, error) {
 	bodyBytes, err := io.ReadAll(rsp.Body)
@@ -124599,493 +133202,6 @@ func ParseUpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPutResponse(
 	return response, nil
 }
 
-// ParseListIndexesV1RagManagedIndexesGetResponse parses an HTTP response from a ListIndexesV1RagManagedIndexesGetWithResponse call
-func ParseListIndexesV1RagManagedIndexesGetResponse(rsp *http.Response) (*ListIndexesV1RagManagedIndexesGetResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ListIndexesV1RagManagedIndexesGetResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest ListManagedIndexesResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest HTTPValidationError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
-// ParseCreateIndexV1RagManagedIndexesPostResponse parses an HTTP response from a CreateIndexV1RagManagedIndexesPostWithResponse call
-func ParseCreateIndexV1RagManagedIndexesPostResponse(rsp *http.Response) (*CreateIndexV1RagManagedIndexesPostResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &CreateIndexV1RagManagedIndexesPostResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 202:
-		var dest ManagedIndexResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON202 = &dest
-
-	case rsp.StatusCode == 409:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest HTTPValidationError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	switch {
-	case rsp.StatusCode == 202:
-		var headers CreateIndexV1RagManagedIndexesPostResponse202Headers
-		if values := rsp.Header.Values("Location"); len(values) > 0 {
-			var value string
-			if err := runtime.BindStyledParameterWithOptions("simple", "Location", values[0], &value, runtime.BindStyledParameterOptions{ParamLocation: runtime.ParamLocationHeader, Explode: false, Required: false, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			}
-			headers.Location = &value
-		}
-		response.Headers202 = &headers
-	}
-
-	return response, nil
-}
-
-// ParseDeleteIndexV1RagManagedIndexesIndexNameDeleteResponse parses an HTTP response from a DeleteIndexV1RagManagedIndexesIndexNameDeleteWithResponse call
-func ParseDeleteIndexV1RagManagedIndexesIndexNameDeleteResponse(rsp *http.Response) (*DeleteIndexV1RagManagedIndexesIndexNameDeleteResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &DeleteIndexV1RagManagedIndexesIndexNameDeleteResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 202:
-		var dest DeleteManagedIndexResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON202 = &dest
-
-	case rsp.StatusCode == 404:
-		break // No content-type
-
-	case rsp.StatusCode == 409:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest HTTPValidationError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
-// ParseGetIndexV1RagManagedIndexesIndexNameGetResponse parses an HTTP response from a GetIndexV1RagManagedIndexesIndexNameGetWithResponse call
-func ParseGetIndexV1RagManagedIndexesIndexNameGetResponse(rsp *http.Response) (*GetIndexV1RagManagedIndexesIndexNameGetResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GetIndexV1RagManagedIndexesIndexNameGetResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest ManagedIndexResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case rsp.StatusCode == 404:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest HTTPValidationError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
-// ParseUpdateIndexV1RagManagedIndexesIndexNamePutResponse parses an HTTP response from a UpdateIndexV1RagManagedIndexesIndexNamePutWithResponse call
-func ParseUpdateIndexV1RagManagedIndexesIndexNamePutResponse(rsp *http.Response) (*UpdateIndexV1RagManagedIndexesIndexNamePutResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &UpdateIndexV1RagManagedIndexesIndexNamePutResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 202:
-		var dest ManagedIndexResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON202 = &dest
-
-	case rsp.StatusCode == 404:
-		break // No content-type
-
-	case rsp.StatusCode == 409:
-		break // No content-type
-
-	case rsp.StatusCode == 422:
-		break // No content-type
-
-	}
-
-	return response, nil
-}
-
-// ParseGetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse parses an HTTP response from a GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetWithResponse call
-func ParseGetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse(rsp *http.Response) (*GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GetChunkIndexV1RagManagedIndexesIndexNameChunksChunkIdGetResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest NavigationResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case rsp.StatusCode == 404:
-		break // No content-type
-
-	case rsp.StatusCode == 409:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest HTTPValidationError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	case rsp.StatusCode == 500:
-		break // No content-type
-
-	}
-
-	return response, nil
-}
-
-// ParseDeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse parses an HTTP response from a DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteWithResponse call
-func ParseDeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse(rsp *http.Response) (*DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &DeleteDocumentsV1RagManagedIndexesIndexNameDocumentsDeleteResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest DeleteDocumentsResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case rsp.StatusCode == 404:
-		break // No content-type
-
-	case rsp.StatusCode == 409:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest HTTPValidationError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
-// ParseIngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse parses an HTTP response from a IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostWithResponse call
-func ParseIngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse(rsp *http.Response) (*IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &IngestDocumentsV1RagManagedIndexesIndexNameDocumentsPostResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest IngestDocumentsResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case rsp.StatusCode == 404:
-		break // No content-type
-
-	case rsp.StatusCode == 409:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest HTTPValidationError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
-// ParseGrepIndexV1RagManagedIndexesIndexNameGrepPostResponse parses an HTTP response from a GrepIndexV1RagManagedIndexesIndexNameGrepPostWithResponse call
-func ParseGrepIndexV1RagManagedIndexesIndexNameGrepPostResponse(rsp *http.Response) (*GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GrepIndexV1RagManagedIndexesIndexNameGrepPostResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest NavigationResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case rsp.StatusCode == 404:
-		break // No content-type
-
-	case rsp.StatusCode == 409:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest HTTPValidationError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	case rsp.StatusCode == 500:
-		break // No content-type
-
-	}
-
-	return response, nil
-}
-
-// ParseNavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse parses an HTTP response from a NavigateIndexV1RagManagedIndexesIndexNameNavigatePostWithResponse call
-func ParseNavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse(rsp *http.Response) (*NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &NavigateIndexV1RagManagedIndexesIndexNameNavigatePostResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest NavigationResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case rsp.StatusCode == 404:
-		break // No content-type
-
-	case rsp.StatusCode == 409:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest HTTPValidationError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	case rsp.StatusCode == 500:
-		break // No content-type
-
-	}
-
-	return response, nil
-}
-
-// ParseReadIndexV1RagManagedIndexesIndexNameReadPostResponse parses an HTTP response from a ReadIndexV1RagManagedIndexesIndexNameReadPostWithResponse call
-func ParseReadIndexV1RagManagedIndexesIndexNameReadPostResponse(rsp *http.Response) (*ReadIndexV1RagManagedIndexesIndexNameReadPostResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ReadIndexV1RagManagedIndexesIndexNameReadPostResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest NavigationResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case rsp.StatusCode == 404:
-		break // No content-type
-
-	case rsp.StatusCode == 409:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest HTTPValidationError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	case rsp.StatusCode == 500:
-		break // No content-type
-
-	}
-
-	return response, nil
-}
-
-// ParseSearchIndexV1RagManagedIndexesIndexNameSearchPostResponse parses an HTTP response from a SearchIndexV1RagManagedIndexesIndexNameSearchPostWithResponse call
-func ParseSearchIndexV1RagManagedIndexesIndexNameSearchPostResponse(rsp *http.Response) (*SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &SearchIndexV1RagManagedIndexesIndexNameSearchPostResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest SearchResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
-		var dest []SearchIndexV1RagManagedIndexesIndexNameSearchPost400JSONResponseBody_Item
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON400 = &dest
-
-	case rsp.StatusCode == 404:
-		break // No content-type
-
-	case rsp.StatusCode == 409:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest HTTPValidationError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	case rsp.StatusCode == 500:
-		break // No content-type
-
-	}
-
-	return response, nil
-}
-
 // ParseCreateResponseV1ResponsesPostResponse parses an HTTP response from a CreateResponseV1ResponsesPostWithResponse call
 func ParseCreateResponseV1ResponsesPostResponse(rsp *http.Response) (*CreateResponseV1ResponsesPostResponse, error) {
 	bodyBytes, err := io.ReadAll(rsp.Body)
@@ -125401,6 +133517,167 @@ func ParseSetServiceAccountRolesV1ServiceAccountsServiceAccountIdRolesPutRespons
 	return response, nil
 }
 
+// ParseListTriggersV1TriggersGetResponse parses an HTTP response from a ListTriggersV1TriggersGetWithResponse call
+func ParseListTriggersV1TriggersGetResponse(rsp *http.Response) (*ListTriggersV1TriggersGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &ListTriggersV1TriggersGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest []Trigger
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseCreateTriggerV1TriggersPostResponse parses an HTTP response from a CreateTriggerV1TriggersPostWithResponse call
+func ParseCreateTriggerV1TriggersPostResponse(rsp *http.Response) (*CreateTriggerV1TriggersPostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &CreateTriggerV1TriggersPostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 201:
+		var dest Trigger
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON201 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseDeleteTriggerV1TriggersTriggerIdDeleteResponse parses an HTTP response from a DeleteTriggerV1TriggersTriggerIdDeleteWithResponse call
+func ParseDeleteTriggerV1TriggersTriggerIdDeleteResponse(rsp *http.Response) (*DeleteTriggerV1TriggersTriggerIdDeleteResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &DeleteTriggerV1TriggersTriggerIdDeleteResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case rsp.StatusCode == 204:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGetTriggerV1TriggersTriggerIdGetResponse parses an HTTP response from a GetTriggerV1TriggersTriggerIdGetWithResponse call
+func ParseGetTriggerV1TriggersTriggerIdGetResponse(rsp *http.Response) (*GetTriggerV1TriggersTriggerIdGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetTriggerV1TriggersTriggerIdGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest Trigger
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseListTriggerEventsV1TriggersTriggerIdEventsGetResponse parses an HTTP response from a ListTriggerEventsV1TriggersTriggerIdEventsGetWithResponse call
+func ParseListTriggerEventsV1TriggersTriggerIdEventsGetResponse(rsp *http.Response) (*ListTriggerEventsV1TriggersTriggerIdEventsGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &ListTriggerEventsV1TriggersTriggerIdEventsGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest TriggerEventList
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
 // ParseUsersApiGetIdentityResponse parses an HTTP response from a UsersApiGetIdentityWithResponse call
 func ParseUsersApiGetIdentityResponse(rsp *http.Response) (*UsersApiGetIdentityResponse, error) {
 	bodyBytes, err := io.ReadAll(rsp.Body)
@@ -125473,6 +133750,160 @@ func ParseUsersApiListWorkspacesResponse(rsp *http.Response) (*UsersApiListWorks
 			return nil, err
 		}
 		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseListWebhooksV1WebhooksGetResponse parses an HTTP response from a ListWebhooksV1WebhooksGetWithResponse call
+func ParseListWebhooksV1WebhooksGetResponse(rsp *http.Response) (*ListWebhooksV1WebhooksGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &ListWebhooksV1WebhooksGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest []Webhook
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseCreateWebhookV1WebhooksPostResponse parses an HTTP response from a CreateWebhookV1WebhooksPostWithResponse call
+func ParseCreateWebhookV1WebhooksPostResponse(rsp *http.Response) (*CreateWebhookV1WebhooksPostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &CreateWebhookV1WebhooksPostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 201:
+		var dest Webhook
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON201 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseDeleteWebhookV1WebhooksWebhookIdDeleteResponse parses an HTTP response from a DeleteWebhookV1WebhooksWebhookIdDeleteWithResponse call
+func ParseDeleteWebhookV1WebhooksWebhookIdDeleteResponse(rsp *http.Response) (*DeleteWebhookV1WebhooksWebhookIdDeleteResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &DeleteWebhookV1WebhooksWebhookIdDeleteResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case rsp.StatusCode == 204:
+		break // No content-type
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGetWebhookV1WebhooksWebhookIdGetResponse parses an HTTP response from a GetWebhookV1WebhooksWebhookIdGetWithResponse call
+func ParseGetWebhookV1WebhooksWebhookIdGetResponse(rsp *http.Response) (*GetWebhookV1WebhooksWebhookIdGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetWebhookV1WebhooksWebhookIdGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest Webhook
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse parses an HTTP response from a GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetWithResponse call
+func ParseGetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse(rsp *http.Response) (*GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetWebhookSigningSecretV1WebhooksWebhookIdSigningSecretGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest WebhookSigningSecret
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
 
 	}
 
@@ -125739,6 +134170,39 @@ func ParseUpdateDeploymentV1WorkflowsDeploymentsNamePatchResponse(rsp *http.Resp
 			return nil, err
 		}
 		response.JSON202 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse parses an HTTP response from a GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetWithResponse call
+func ParseGetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse(rsp *http.Response) (*GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetDeploymentArchiveV1WorkflowsDeploymentsNameArchiveGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest DeploymentArchiveResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
 
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
 		var dest HTTPValidationError
@@ -127150,6 +135614,35 @@ func ParseExecuteWorkflowV1WorkflowsWorkflowIdentifierExecutePostResponse(rsp *h
 			return nil, err
 		}
 		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseAddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse parses an HTTP response from a AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostWithResponse call
+func ParseAddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse(rsp *http.Response) (*AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &AddWorkflowTagsV1WorkflowsWorkflowIdentifierTagsPostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case rsp.StatusCode == 204:
+		break // No content-type
 
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
 		var dest HTTPValidationError

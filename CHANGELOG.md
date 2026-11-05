@@ -2,6 +2,11 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.3.0, 2026-11-05
+
+- Development image package installation uses HTTPS and bounded retries for signed snapshot indexes and package downloads.
+- Breaking: regenerated Mistral specification 1.0.0. Legacy managed-index operations and several earlier response models are no longer generated. Consumers of those names must update against the current generated API.
+
 ## v0.2.0, 2026-10-29
 
 - The client is generated from the spec Mistral AI publishes at `https://docs.mistral.ai/openapi.yaml`. The platform-docs-public repository it was downloaded from before no longer exists, so scheduled regeneration had stopped.

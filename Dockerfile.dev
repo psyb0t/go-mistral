@@ -6,16 +6,30 @@
 # image, so there is no host toolchain to drift).
 FROM golang:1.26.10-trixie@sha256:e18951cff6896c16909458a8e0cbd52364a347826ff1f5b86d095fe0670d52e7
 
-# The base image records the snapshot.debian.org timestamp it was built from.
-# Installing from that snapshot ties every apt package to the base image digest,
-# so the build never breaks when the live Debian mirrors move on.
+# Keep the snapshot tied to the base image, with bounded retries for archive
+# overloads during either index or package downloads.
 RUN set -eu; \
 	sources=/etc/apt/sources.list.d/debian.sources; \
 	snapshot="$(grep -m1 -oE '[0-9]{8}T[0-9]{6}Z' "$sources")"; \
 	test -n "$snapshot"; \
-	sed -i -E "s|^URIs: http://deb.debian.org/(debian(-security)?)$|URIs: http://snapshot.debian.org/archive/\1/${snapshot}|" "$sources"; \
-	apt-get -o Acquire::Retries=5 -o Acquire::Check-Valid-Until=false update; \
-	apt-get install -y --no-install-recommends python3-venv xz-utils; \
+	sed -i -E "s|^URIs: http://deb.debian.org/(debian(-security)?)$|URIs: https://snapshot.debian.org/archive/\1/${snapshot}|" "$sources"; \
+	max_attempts=3; \
+	attempt=1; \
+	while :; do \
+		if apt-get -o Acquire::Retries=5 -o Acquire::https::Timeout=60 \
+			-o Acquire::Check-Valid-Until=false -o APT::Update::Error-Mode=any update \
+			&& apt-get -o Acquire::Retries=5 -o Acquire::https::Timeout=60 \
+				install -y --no-install-recommends python3-venv xz-utils; then \
+			break; \
+		fi; \
+		if [ "$attempt" -ge "$max_attempts" ]; then \
+			printf 'Snapshot package installation failed after %s attempts\n' "$attempt" >&2; \
+			exit 1; \
+		fi; \
+		printf 'Retrying snapshot package installation, attempt %s of %s\n' "$((attempt + 1))" "$max_attempts" >&2; \
+		sleep "$((attempt * 5))"; \
+		attempt=$((attempt + 1)); \
+	done; \
 	rm -rf /var/lib/apt/lists/*
 
 # Security tools are pinned in the development image so local and CI scans use
