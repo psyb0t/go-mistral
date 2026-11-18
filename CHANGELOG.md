@@ -2,6 +2,17 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.4.0, 2026-11-18
+
+- Breaking: the Judges API is no longer generated. `CreateJudgeV1ObservabilityJudgesPost`, `GetJudgesV1ObservabilityJudgesGet`, `GetJudgeByIdV1ObservabilityJudgesJudgeIdGet`, `UpdateJudgeV1ObservabilityJudgesJudgeIdPut`, `DeleteJudgeV1ObservabilityJudgesJudgeIdDelete` and the two live judging operations are removed from `Client` and `ClientWithResponses`, with the `Judge`, `JudgeOutput`, `CreateJudgeRequest`, `JudgeConversationRequest`, `JudgeDatasetRecordRequest` and `ListJudgesResponse` types.
+- Breaking: `UsersApiAdminUserGroupsGetNestedGroups` and `UsersApiAdminUserGroupsSetNestedGroups` are removed, with `NestedGroupRef`, `NestedGroupsOut` and the `ParentGroupIds` fields on `AdminUserGroupIn`, `AdminUpdateUserGroupIn` and `AdminUserGroupOut`.
+- Breaking: `RawRoles` on `AdminOrganizationMemberOUT`, `AdminUserOUT`, `MemberWorkspaceInfo` and `OrganizationInviteOUT`, and `Roles` on `OrganizationUserInviteOUT`, are now plain slices such as `[]StaticOrganizationRoles` instead of union wrapper types. The `*_RawRole` and `*_RawRoles` wrapper types are removed.
+- Breaking: the `Filler` field on `HangUpTool`, `TransferCallTool` and the `VoiceAgent*Tool` types changed from `*StaticToolFiller` to an inline union type. `ConnectorToolResultMetadata.StructuredContent` changed from `*map[string]interface{}` to `interface{}`. `CreateWebhook.EventTypePath` and the constant `ConnectorCreateCredentialsV1ParamsConsumerScopeOrganization` are removed.
+- Added scorer operations: `ListScorersV1ObservabilityScorersGet`, `CreateScorerV1ObservabilityScorersPost`, `GetScorerV1ObservabilityScorersScorerSlugGet` and `EditScorerV1ObservabilityScorersScorerSlugPatch`.
+- Added `UpdateSessionV1AudioSessionsSessionIdPatch`, `UsersApiAdminUsersGetUserWorkspaces` and `UsersApiAdminUsersReactivateUser`, each with a `WithResponse` variant.
+- Added `LastLoginAt`, `Status` and `WorkspacesTotal` on `AdminUserOUT` and `AdminOrganizationMemberOUT`, `BridgeMetadata` on `AudioSessionResponse` and `AudioAgentSessionSummary`, the `AmazonConnectContact` type, and `AggregationRowMetricValue2` for `AggregationRow_MetricValue`.
+- Raised the Go requirement to 1.26.11 in `go.mod`, `Dockerfile.dev` and the setup guide, to pick up the fix for GO-2026-6859 in `net/http`.
+
 ## v0.3.0, 2026-11-05
 
 - Development image package installation uses HTTPS and bounded retries for signed snapshot indexes and package downloads.

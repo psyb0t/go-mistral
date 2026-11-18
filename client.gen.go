@@ -351,21 +351,22 @@ func (e AdminOrganizationMemberUpdateSubscriptionTypes) Valid() bool {
 
 // Defines values for AdminProvisionGroupToWorkspaceInWorkspaceRoleName.
 const (
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameBilling              AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "billing"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameCloudUser            AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "cloud_user"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameContributor          AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "contributor"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameDev                  AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "dev"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameDevContributor       AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "dev_contributor"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameMember               AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "member"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameMistralCloudAdmin    AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "mistral_cloud_admin"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameMistralCodeUser      AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "mistral_code_user"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameObservabilityViewer  AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "observability_viewer"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameSecretRevealer       AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "secret_revealer"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameUser                 AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "user"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameVibeCodeCliUser      AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "vibe_code_cli_user"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameWorkflowExecutor     AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "workflow_executor"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameWorkspaceAdmin       AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "workspace_admin"
-	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameWorkspaceContributor AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "workspace_contributor"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameBilling                   AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "billing"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameCloudUser                 AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "cloud_user"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameContributor               AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "contributor"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameDev                       AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "dev"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameDevContributor            AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "dev_contributor"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameMember                    AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "member"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameMistralCloudAdmin         AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "mistral_cloud_admin"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameMistralCodeUser           AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "mistral_code_user"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameObservabilityViewer       AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "observability_viewer"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameOfflineEvaluationsManager AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "offline_evaluations_manager"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameSecretRevealer            AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "secret_revealer"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameUser                      AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "user"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameVibeCodeCliUser           AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "vibe_code_cli_user"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameWorkflowExecutor          AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "workflow_executor"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameWorkspaceAdmin            AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "workspace_admin"
+	AdminProvisionGroupToWorkspaceInWorkspaceRoleNameWorkspaceContributor      AdminProvisionGroupToWorkspaceInWorkspaceRoleName = "workspace_contributor"
 )
 
 // Valid indicates whether the value is a known member of the AdminProvisionGroupToWorkspaceInWorkspaceRoleName enum.
@@ -388,6 +389,8 @@ func (e AdminProvisionGroupToWorkspaceInWorkspaceRoleName) Valid() bool {
 	case AdminProvisionGroupToWorkspaceInWorkspaceRoleNameMistralCodeUser:
 		return true
 	case AdminProvisionGroupToWorkspaceInWorkspaceRoleNameObservabilityViewer:
+		return true
+	case AdminProvisionGroupToWorkspaceInWorkspaceRoleNameOfflineEvaluationsManager:
 		return true
 	case AdminProvisionGroupToWorkspaceInWorkspaceRoleNameSecretRevealer:
 		return true
@@ -485,10 +488,13 @@ const (
 	AdminUsageQueryFilterFieldBillingDisplayName AdminUsageQueryFilterField = "billing_display_name"
 	AdminUsageQueryFilterFieldBillingGroup       AdminUsageQueryFilterField = "billing_group"
 	AdminUsageQueryFilterFieldBillingMetric      AdminUsageQueryFilterField = "billing_metric"
+	AdminUsageQueryFilterFieldCallSource         AdminUsageQueryFilterField = "call_source"
+	AdminUsageQueryFilterFieldCallType           AdminUsageQueryFilterField = "call_type"
 	AdminUsageQueryFilterFieldOrganizationId     AdminUsageQueryFilterField = "organization_id"
 	AdminUsageQueryFilterFieldServiceAccountId   AdminUsageQueryFilterField = "service_account_id"
 	AdminUsageQueryFilterFieldServiceTier        AdminUsageQueryFilterField = "service_tier"
 	AdminUsageQueryFilterFieldUsageType          AdminUsageQueryFilterField = "usage_type"
+	AdminUsageQueryFilterFieldUserAgent          AdminUsageQueryFilterField = "user_agent"
 	AdminUsageQueryFilterFieldUserId             AdminUsageQueryFilterField = "user_id"
 	AdminUsageQueryFilterFieldWorkspaceId        AdminUsageQueryFilterField = "workspace_id"
 )
@@ -506,6 +512,10 @@ func (e AdminUsageQueryFilterField) Valid() bool {
 		return true
 	case AdminUsageQueryFilterFieldBillingMetric:
 		return true
+	case AdminUsageQueryFilterFieldCallSource:
+		return true
+	case AdminUsageQueryFilterFieldCallType:
+		return true
 	case AdminUsageQueryFilterFieldOrganizationId:
 		return true
 	case AdminUsageQueryFilterFieldServiceAccountId:
@@ -513,6 +523,8 @@ func (e AdminUsageQueryFilterField) Valid() bool {
 	case AdminUsageQueryFilterFieldServiceTier:
 		return true
 	case AdminUsageQueryFilterFieldUsageType:
+		return true
+	case AdminUsageQueryFilterFieldUserAgent:
 		return true
 	case AdminUsageQueryFilterFieldUserId:
 		return true
@@ -766,6 +778,21 @@ func (e AgentListPageObject) Valid() bool {
 	}
 }
 
+// Defines values for AmazonConnectContactType.
+const (
+	AmazonConnectContactTypeAmazonConnect AmazonConnectContactType = "amazon_connect"
+)
+
+// Valid indicates whether the value is a known member of the AmazonConnectContactType enum.
+func (e AmazonConnectContactType) Valid() bool {
+	switch e {
+	case AmazonConnectContactTypeAmazonConnect:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for AndType.
 const (
 	AndTypeAnd AndType = "and"
@@ -1003,6 +1030,24 @@ func (e AudioSessionResponseStatus) Valid() bool {
 	}
 }
 
+// Defines values for AudioSessionUpdateResponseStatus.
+const (
+	AudioSessionUpdateResponseStatusActive AudioSessionUpdateResponseStatus = "active"
+	AudioSessionUpdateResponseStatusEnded  AudioSessionUpdateResponseStatus = "ended"
+)
+
+// Valid indicates whether the value is a known member of the AudioSessionUpdateResponseStatus enum.
+func (e AudioSessionUpdateResponseStatus) Valid() bool {
+	switch e {
+	case AudioSessionUpdateResponseStatusActive:
+		return true
+	case AudioSessionUpdateResponseStatusEnded:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for AudioToolTranscriptTurnRole.
 const (
 	AudioToolTranscriptTurnRoleTool AudioToolTranscriptTurnRole = "tool"
@@ -1083,6 +1128,9 @@ const (
 	AuditLogEventTypeBillingSeatGrant                                        AuditLogEventType = "billing.seat.grant"
 	AuditLogEventTypeBillingSeatRevoke                                       AuditLogEventType = "billing.seat.revoke"
 	AuditLogEventTypeBillingSharedBudgetOverrideUpdated                      AuditLogEventType = "billing.shared_budget_override.updated"
+	AuditLogEventTypeBillingSpendingLimitCreated                             AuditLogEventType = "billing.spending_limit.created"
+	AuditLogEventTypeBillingSpendingLimitDeleted                             AuditLogEventType = "billing.spending_limit.deleted"
+	AuditLogEventTypeBillingSpendingLimitUpdated                             AuditLogEventType = "billing.spending_limit.updated"
 	AuditLogEventTypeBillingSubscriptionAddSeats                             AuditLogEventType = "billing.subscription.add_seats"
 	AuditLogEventTypeBillingSubscriptionCancelUnsubscribe                    AuditLogEventType = "billing.subscription.cancel_unsubscribe"
 	AuditLogEventTypeBillingSubscriptionCouponUsed                           AuditLogEventType = "billing.subscription_coupon.used"
@@ -1177,6 +1225,7 @@ const (
 	AuditLogEventTypeIntegrationUpdated                                      AuditLogEventType = "integration.updated"
 	AuditLogEventTypeKnowledgeBaseCreate                                     AuditLogEventType = "knowledge_base.create"
 	AuditLogEventTypeKnowledgeBaseDelete                                     AuditLogEventType = "knowledge_base.delete"
+	AuditLogEventTypeKnowledgeBaseLoad                                       AuditLogEventType = "knowledge_base.load"
 	AuditLogEventTypeKnowledgeBaseUpdate                                     AuditLogEventType = "knowledge_base.update"
 	AuditLogEventTypeKnowledgeBaseVersionCreate                              AuditLogEventType = "knowledge_base.version.create"
 	AuditLogEventTypeLaPlateformeTrainingDisabled                            AuditLogEventType = "la_plateforme.training.disabled"
@@ -1219,6 +1268,7 @@ const (
 	AuditLogEventTypeOrganizationInviteSend                                  AuditLogEventType = "organization.invite.send"
 	AuditLogEventTypeOrganizationJoinByEmailDomain                           AuditLogEventType = "organization.join_by_email_domain"
 	AuditLogEventTypeOrganizationKindUpdate                                  AuditLogEventType = "organization.kind.update"
+	AuditLogEventTypeOrganizationMembersExport                               AuditLogEventType = "organization.members.export"
 	AuditLogEventTypeOrganizationSamlAuthenticationDisable                   AuditLogEventType = "organization.saml_authentication.disable"
 	AuditLogEventTypeOrganizationSamlAuthenticationEnable                    AuditLogEventType = "organization.saml_authentication.enable"
 	AuditLogEventTypeOrganizationSamlAuthenticationSsoUserProvisioningUpdate AuditLogEventType = "organization.saml_authentication.sso_user_provisioning.update"
@@ -1271,6 +1321,7 @@ const (
 	AuditLogEventTypeTrustedIssuerDelete                                     AuditLogEventType = "trusted_issuer.delete"
 	AuditLogEventTypeTrustedIssuerUpdate                                     AuditLogEventType = "trusted_issuer.update"
 	AuditLogEventTypeUserCreate                                              AuditLogEventType = "user.create"
+	AuditLogEventTypeUserDeactivate                                          AuditLogEventType = "user.deactivate"
 	AuditLogEventTypeUserDelete                                              AuditLogEventType = "user.delete"
 	AuditLogEventTypeUserGroupCreate                                         AuditLogEventType = "user_group.create"
 	AuditLogEventTypeUserGroupDelete                                         AuditLogEventType = "user_group.delete"
@@ -1288,6 +1339,7 @@ const (
 	AuditLogEventTypeUserOrganizationRoleUpdate                              AuditLogEventType = "user.organization.role.update"
 	AuditLogEventTypeUserPasswordUpdate                                      AuditLogEventType = "user.password.update"
 	AuditLogEventTypeUserPhoneNumberVerify                                   AuditLogEventType = "user.phone_number.verify"
+	AuditLogEventTypeUserReactivate                                          AuditLogEventType = "user.reactivate"
 	AuditLogEventTypeWebFiltersConfigUpdate                                  AuditLogEventType = "web_filters.config.update"
 	AuditLogEventTypeWebFiltersDomainAdd                                     AuditLogEventType = "web_filters.domain.add"
 	AuditLogEventTypeWebFiltersDomainRemove                                  AuditLogEventType = "web_filters.domain.remove"
@@ -1388,6 +1440,12 @@ func (e AuditLogEventType) Valid() bool {
 	case AuditLogEventTypeBillingSeatRevoke:
 		return true
 	case AuditLogEventTypeBillingSharedBudgetOverrideUpdated:
+		return true
+	case AuditLogEventTypeBillingSpendingLimitCreated:
+		return true
+	case AuditLogEventTypeBillingSpendingLimitDeleted:
+		return true
+	case AuditLogEventTypeBillingSpendingLimitUpdated:
 		return true
 	case AuditLogEventTypeBillingSubscriptionAddSeats:
 		return true
@@ -1577,6 +1635,8 @@ func (e AuditLogEventType) Valid() bool {
 		return true
 	case AuditLogEventTypeKnowledgeBaseDelete:
 		return true
+	case AuditLogEventTypeKnowledgeBaseLoad:
+		return true
 	case AuditLogEventTypeKnowledgeBaseUpdate:
 		return true
 	case AuditLogEventTypeKnowledgeBaseVersionCreate:
@@ -1660,6 +1720,8 @@ func (e AuditLogEventType) Valid() bool {
 	case AuditLogEventTypeOrganizationJoinByEmailDomain:
 		return true
 	case AuditLogEventTypeOrganizationKindUpdate:
+		return true
+	case AuditLogEventTypeOrganizationMembersExport:
 		return true
 	case AuditLogEventTypeOrganizationSamlAuthenticationDisable:
 		return true
@@ -1765,6 +1827,8 @@ func (e AuditLogEventType) Valid() bool {
 		return true
 	case AuditLogEventTypeUserCreate:
 		return true
+	case AuditLogEventTypeUserDeactivate:
+		return true
 	case AuditLogEventTypeUserDelete:
 		return true
 	case AuditLogEventTypeUserGroupCreate:
@@ -1798,6 +1862,8 @@ func (e AuditLogEventType) Valid() bool {
 	case AuditLogEventTypeUserPasswordUpdate:
 		return true
 	case AuditLogEventTypeUserPhoneNumberVerify:
+		return true
+	case AuditLogEventTypeUserReactivate:
 		return true
 	case AuditLogEventTypeWebFiltersConfigUpdate:
 		return true
@@ -2341,6 +2407,27 @@ func (e CompletionResponseStreamChoiceFinishReason) Valid() bool {
 	case CompletionResponseStreamChoiceFinishReasonStop:
 		return true
 	case CompletionResponseStreamChoiceFinishReasonToolCalls:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for ConnectorErrorCode.
+const (
+	ConnectorErrorCodeConnectorsCountLimitReached ConnectorErrorCode = "connectors_count_limit_reached"
+	ConnectorErrorCodeCredentialsRejected         ConnectorErrorCode = "credentials_rejected"
+	ConnectorErrorCodeServerUnreachable           ConnectorErrorCode = "server_unreachable"
+)
+
+// Valid indicates whether the value is a known member of the ConnectorErrorCode enum.
+func (e ConnectorErrorCode) Valid() bool {
+	switch e {
+	case ConnectorErrorCodeConnectorsCountLimitReached:
+		return true
+	case ConnectorErrorCodeCredentialsRejected:
+		return true
+	case ConnectorErrorCodeServerUnreachable:
 		return true
 	default:
 		return false
@@ -2898,11 +2985,13 @@ func (e CreateResponseResponsePromptCacheRetention) Valid() bool {
 
 // Defines values for CreateResponseResponseServiceTier.
 const (
-	CreateResponseResponseServiceTierAuto     CreateResponseResponseServiceTier = "auto"
-	CreateResponseResponseServiceTierDefault  CreateResponseResponseServiceTier = "default"
-	CreateResponseResponseServiceTierFlex     CreateResponseResponseServiceTier = "flex"
-	CreateResponseResponseServiceTierPriority CreateResponseResponseServiceTier = "priority"
-	CreateResponseResponseServiceTierScale    CreateResponseResponseServiceTier = "scale"
+	CreateResponseResponseServiceTierAuto      CreateResponseResponseServiceTier = "auto"
+	CreateResponseResponseServiceTierDefault   CreateResponseResponseServiceTier = "default"
+	CreateResponseResponseServiceTierFast      CreateResponseResponseServiceTier = "fast"
+	CreateResponseResponseServiceTierFlex      CreateResponseResponseServiceTier = "flex"
+	CreateResponseResponseServiceTierPriority  CreateResponseResponseServiceTier = "priority"
+	CreateResponseResponseServiceTierScale     CreateResponseResponseServiceTier = "scale"
+	CreateResponseResponseServiceTierUltrafast CreateResponseResponseServiceTier = "ultrafast"
 )
 
 // Valid indicates whether the value is a known member of the CreateResponseResponseServiceTier enum.
@@ -2912,11 +3001,15 @@ func (e CreateResponseResponseServiceTier) Valid() bool {
 		return true
 	case CreateResponseResponseServiceTierDefault:
 		return true
+	case CreateResponseResponseServiceTierFast:
+		return true
 	case CreateResponseResponseServiceTierFlex:
 		return true
 	case CreateResponseResponseServiceTierPriority:
 		return true
 	case CreateResponseResponseServiceTierScale:
+		return true
+	case CreateResponseResponseServiceTierUltrafast:
 		return true
 	default:
 		return false
@@ -3886,6 +3979,21 @@ func (e FunctionToolType) Valid() bool {
 	}
 }
 
+// Defines values for GeneratedToolFillerType.
+const (
+	GeneratedToolFillerTypeGenerated GeneratedToolFillerType = "generated"
+)
+
+// Valid indicates whether the value is a known member of the GeneratedToolFillerType enum.
+func (e GeneratedToolFillerType) Valid() bool {
+	switch e {
+	case GeneratedToolFillerTypeGenerated:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for GetDeploymentSummariesResponseDeploymentStatus.
 const (
 	GetDeploymentSummariesResponseDeploymentStatusOffline GetDeploymentSummariesResponseDeploymentStatus = "offline"
@@ -4765,54 +4873,6 @@ func (e JsonFieldDefinitionType) Valid() bool {
 	}
 }
 
-// Defines values for JudgeClassificationOutputType.
-const (
-	JudgeClassificationOutputTypeCLASSIFICATION JudgeClassificationOutputType = "CLASSIFICATION"
-)
-
-// Valid indicates whether the value is a known member of the JudgeClassificationOutputType enum.
-func (e JudgeClassificationOutputType) Valid() bool {
-	switch e {
-	case JudgeClassificationOutputTypeCLASSIFICATION:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for JudgeOutputType.
-const (
-	JudgeOutputTypeCLASSIFICATION JudgeOutputType = "CLASSIFICATION"
-	JudgeOutputTypeREGRESSION     JudgeOutputType = "REGRESSION"
-)
-
-// Valid indicates whether the value is a known member of the JudgeOutputType enum.
-func (e JudgeOutputType) Valid() bool {
-	switch e {
-	case JudgeOutputTypeCLASSIFICATION:
-		return true
-	case JudgeOutputTypeREGRESSION:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for JudgeRegressionOutputType.
-const (
-	JudgeRegressionOutputTypeREGRESSION JudgeRegressionOutputType = "REGRESSION"
-)
-
-// Valid indicates whether the value is a known member of the JudgeRegressionOutputType enum.
-func (e JudgeRegressionOutputType) Valid() bool {
-	switch e {
-	case JudgeRegressionOutputTypeREGRESSION:
-		return true
-	default:
-		return false
-	}
-}
-
 // Defines values for KeywordArrayFieldDefinitionType.
 const (
 	KeywordArrayFieldDefinitionTypeKeyword KeywordArrayFieldDefinitionType = "keyword[]"
@@ -5242,6 +5302,27 @@ const (
 func (e MaxCandidatesTooSmallResponseType) Valid() bool {
 	switch e {
 	case MaxCandidatesTooSmallResponseTypeMaxCandidatesTooSmall:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for MemberStatus.
+const (
+	MemberStatusActive      MemberStatus = "active"
+	MemberStatusBlocked     MemberStatus = "blocked"
+	MemberStatusDeactivated MemberStatus = "deactivated"
+)
+
+// Valid indicates whether the value is a known member of the MemberStatus enum.
+func (e MemberStatus) Valid() bool {
+	switch e {
+	case MemberStatusActive:
+		return true
+	case MemberStatusBlocked:
+		return true
+	case MemberStatusDeactivated:
 		return true
 	default:
 		return false
@@ -6028,6 +6109,7 @@ const (
 	ObservabilityErrorCodeEVALUATIONNAMEALREADYEXISTS               ObservabilityErrorCode = "EVALUATION_NAME_ALREADY_EXISTS"
 	ObservabilityErrorCodeEVALUATIONNOTFOUND                        ObservabilityErrorCode = "EVALUATION_NOT_FOUND"
 	ObservabilityErrorCodeEVALUATIONRECORDNOTFOUND                  ObservabilityErrorCode = "EVALUATION_RECORD_NOT_FOUND"
+	ObservabilityErrorCodeEVALUATIONRUNINPUTRECORDCONFLICT          ObservabilityErrorCode = "EVALUATION_RUN_INPUT_RECORD_CONFLICT"
 	ObservabilityErrorCodeEVALUATIONRUNNOTFOUND                     ObservabilityErrorCode = "EVALUATION_RUN_NOT_FOUND"
 	ObservabilityErrorCodeEVALUATIONRUNOUTPUTRECORDCONFLICT         ObservabilityErrorCode = "EVALUATION_RUN_OUTPUT_RECORD_CONFLICT"
 	ObservabilityErrorCodeEVALUATIONRUNTRANSITIONERROR              ObservabilityErrorCode = "EVALUATION_RUN_TRANSITION_ERROR"
@@ -6041,6 +6123,7 @@ const (
 	ObservabilityErrorCodeJUDGEMISTRALAPITIMEOUT                    ObservabilityErrorCode = "JUDGE_MISTRAL_API_TIMEOUT"
 	ObservabilityErrorCodeJUDGENAMEALREADYEXISTS                    ObservabilityErrorCode = "JUDGE_NAME_ALREADY_EXISTS"
 	ObservabilityErrorCodeJUDGENOTFOUND                             ObservabilityErrorCode = "JUDGE_NOT_FOUND"
+	ObservabilityErrorCodeJUDGEWRITESFROZEN                         ObservabilityErrorCode = "JUDGE_WRITES_FROZEN"
 	ObservabilityErrorCodeOPTIMIZATIONNOTFOUND                      ObservabilityErrorCode = "OPTIMIZATION_NOT_FOUND"
 	ObservabilityErrorCodeOPTIMIZATIONTRIALKEYALREADYEXISTS         ObservabilityErrorCode = "OPTIMIZATION_TRIAL_KEY_ALREADY_EXISTS"
 	ObservabilityErrorCodeOPTIMIZATIONTRIALOBSERVATIONALREADYEXISTS ObservabilityErrorCode = "OPTIMIZATION_TRIAL_OBSERVATION_ALREADY_EXISTS"
@@ -6105,6 +6188,8 @@ func (e ObservabilityErrorCode) Valid() bool {
 		return true
 	case ObservabilityErrorCodeEVALUATIONRECORDNOTFOUND:
 		return true
+	case ObservabilityErrorCodeEVALUATIONRUNINPUTRECORDCONFLICT:
+		return true
 	case ObservabilityErrorCodeEVALUATIONRUNNOTFOUND:
 		return true
 	case ObservabilityErrorCodeEVALUATIONRUNOUTPUTRECORDCONFLICT:
@@ -6130,6 +6215,8 @@ func (e ObservabilityErrorCode) Valid() bool {
 	case ObservabilityErrorCodeJUDGENAMEALREADYEXISTS:
 		return true
 	case ObservabilityErrorCodeJUDGENOTFOUND:
+		return true
+	case ObservabilityErrorCodeJUDGEWRITESFROZEN:
 		return true
 	case ObservabilityErrorCodeOPTIMIZATIONNOTFOUND:
 		return true
@@ -7486,6 +7573,7 @@ func (e ResponsesEasyInputMessageType) Valid() bool {
 // Defines values for ResponsesErrorCode.
 const (
 	ResponsesErrorCodeBioPolicy                   ResponsesErrorCode = "bio_policy"
+	ResponsesErrorCodeDataResidencyMismatch       ResponsesErrorCode = "data_residency_mismatch"
 	ResponsesErrorCodeEmptyImageFile              ResponsesErrorCode = "empty_image_file"
 	ResponsesErrorCodeFailedToDownloadImage       ResponsesErrorCode = "failed_to_download_image"
 	ResponsesErrorCodeImageContentPolicyViolation ResponsesErrorCode = "image_content_policy_violation"
@@ -7500,6 +7588,7 @@ const (
 	ResponsesErrorCodeInvalidImageMode            ResponsesErrorCode = "invalid_image_mode"
 	ResponsesErrorCodeInvalidImageUrl             ResponsesErrorCode = "invalid_image_url"
 	ResponsesErrorCodeInvalidPrompt               ResponsesErrorCode = "invalid_prompt"
+	ResponsesErrorCodeMisalignmentPolicyViolation ResponsesErrorCode = "misalignment_policy_violation"
 	ResponsesErrorCodeRateLimitExceeded           ResponsesErrorCode = "rate_limit_exceeded"
 	ResponsesErrorCodeServerError                 ResponsesErrorCode = "server_error"
 	ResponsesErrorCodeUnsupportedImageMediaType   ResponsesErrorCode = "unsupported_image_media_type"
@@ -7510,6 +7599,8 @@ const (
 func (e ResponsesErrorCode) Valid() bool {
 	switch e {
 	case ResponsesErrorCodeBioPolicy:
+		return true
+	case ResponsesErrorCodeDataResidencyMismatch:
 		return true
 	case ResponsesErrorCodeEmptyImageFile:
 		return true
@@ -7539,6 +7630,8 @@ func (e ResponsesErrorCode) Valid() bool {
 		return true
 	case ResponsesErrorCodeInvalidPrompt:
 		return true
+	case ResponsesErrorCodeMisalignmentPolicyViolation:
+		return true
 	case ResponsesErrorCodeRateLimitExceeded:
 		return true
 	case ResponsesErrorCodeServerError:
@@ -7546,6 +7639,27 @@ func (e ResponsesErrorCode) Valid() bool {
 	case ResponsesErrorCodeUnsupportedImageMediaType:
 		return true
 	case ResponsesErrorCodeVectorStoreTimeout:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for ResponsesErrorReason.
+const (
+	ResponsesErrorReasonGenerationFailed    ResponsesErrorReason = "generation_failed"
+	ResponsesErrorReasonInvalidOutputFormat ResponsesErrorReason = "invalid_output_format"
+	ResponsesErrorReasonMissingFinishReason ResponsesErrorReason = "missing_finish_reason"
+)
+
+// Valid indicates whether the value is a known member of the ResponsesErrorReason enum.
+func (e ResponsesErrorReason) Valid() bool {
+	switch e {
+	case ResponsesErrorReasonGenerationFailed:
+		return true
+	case ResponsesErrorReasonInvalidOutputFormat:
+		return true
+	case ResponsesErrorReasonMissingFinishReason:
 		return true
 	default:
 		return false
@@ -7843,7 +7957,9 @@ func (e ResponsesInProgressEventType) Valid() bool {
 // Defines values for ResponsesIncompleteDetailsReason.
 const (
 	ResponsesIncompleteDetailsReasonContentFilter   ResponsesIncompleteDetailsReason = "content_filter"
+	ResponsesIncompleteDetailsReasonMaxMessages     ResponsesIncompleteDetailsReason = "max_messages"
 	ResponsesIncompleteDetailsReasonMaxOutputTokens ResponsesIncompleteDetailsReason = "max_output_tokens"
+	ResponsesIncompleteDetailsReasonSteered         ResponsesIncompleteDetailsReason = "steered"
 )
 
 // Valid indicates whether the value is a known member of the ResponsesIncompleteDetailsReason enum.
@@ -7851,7 +7967,11 @@ func (e ResponsesIncompleteDetailsReason) Valid() bool {
 	switch e {
 	case ResponsesIncompleteDetailsReasonContentFilter:
 		return true
+	case ResponsesIncompleteDetailsReasonMaxMessages:
+		return true
 	case ResponsesIncompleteDetailsReasonMaxOutputTokens:
+		return true
+	case ResponsesIncompleteDetailsReasonSteered:
 		return true
 	default:
 		return false
@@ -8278,6 +8398,24 @@ const (
 func (e ResponsesPromptCacheBreakpointMode) Valid() bool {
 	switch e {
 	case ResponsesPromptCacheBreakpointModeExplicit:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for ResponsesPromptCacheBreakpointTtl.
+const (
+	ResponsesPromptCacheBreakpointTtlN12h ResponsesPromptCacheBreakpointTtl = "12h"
+	ResponsesPromptCacheBreakpointTtlN30m ResponsesPromptCacheBreakpointTtl = "30m"
+)
+
+// Valid indicates whether the value is a known member of the ResponsesPromptCacheBreakpointTtl enum.
+func (e ResponsesPromptCacheBreakpointTtl) Valid() bool {
+	switch e {
+	case ResponsesPromptCacheBreakpointTtlN12h:
+		return true
+	case ResponsesPromptCacheBreakpointTtlN30m:
 		return true
 	default:
 		return false
@@ -8839,6 +8977,21 @@ func (e ScoreSortInputKind) Valid() bool {
 	}
 }
 
+// Defines values for ScorerKind.
+const (
+	ScorerKindLlmJudge ScorerKind = "llm_judge"
+)
+
+// Valid indicates whether the value is a known member of the ScorerKind enum.
+func (e ScorerKind) Valid() bool {
+	switch e {
+	case ScorerKindLlmJudge:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for ServiceTier.
 const (
 	ServiceTierPriority ServiceTier = "priority"
@@ -9201,6 +9354,7 @@ const (
 	StaticWorkspaceRolesFf86d4327f2747f8B02fB5c102ef6a55  StaticWorkspaceRoles = "ff86d432-7f27-47f8-b02f-b5c102ef6a55"
 	StaticWorkspaceRolesN0f9acbf693b542c7A227Fc7652755f65 StaticWorkspaceRoles = "0f9acbf6-93b5-42c7-a227-fc7652755f65"
 	StaticWorkspaceRolesN17aa61c51c61477eA40aE52c8ccd74b9 StaticWorkspaceRoles = "17aa61c5-1c61-477e-a40a-e52c8ccd74b9"
+	StaticWorkspaceRolesN24b51cb872fe411c8652C719c7270ca2 StaticWorkspaceRoles = "24b51cb8-72fe-411c-8652-c719c7270ca2"
 	StaticWorkspaceRolesN252a082540b94b98Be807658956f13e9 StaticWorkspaceRoles = "252a0825-40b9-4b98-be80-7658956f13e9"
 	StaticWorkspaceRolesN348fc8daF6da4464Ad3eAf7bc137e221 StaticWorkspaceRoles = "348fc8da-f6da-4464-ad3e-af7bc137e221"
 	StaticWorkspaceRolesN375cd0db3bbe4b7980f3954ccf04f3d1 StaticWorkspaceRoles = "375cd0db-3bbe-4b79-80f3-954ccf04f3d1"
@@ -9226,6 +9380,8 @@ func (e StaticWorkspaceRoles) Valid() bool {
 	case StaticWorkspaceRolesN0f9acbf693b542c7A227Fc7652755f65:
 		return true
 	case StaticWorkspaceRolesN17aa61c51c61477eA40aE52c8ccd74b9:
+		return true
+	case StaticWorkspaceRolesN24b51cb872fe411c8652C719c7270ca2:
 		return true
 	case StaticWorkspaceRolesN252a082540b94b98Be807658956f13e9:
 		return true
@@ -9402,6 +9558,7 @@ const (
 	TargetTypeSHAREDBUDGET          TargetType = "SHARED_BUDGET"
 	TargetTypeSHAREDRESOURCE        TargetType = "SHARED_RESOURCE"
 	TargetTypeSKILL                 TargetType = "SKILL"
+	TargetTypeSPENDINGLIMIT         TargetType = "SPENDING_LIMIT"
 	TargetTypeSUBSCRIPTION          TargetType = "SUBSCRIPTION"
 	TargetTypeTRUSTEDISSUER         TargetType = "TRUSTED_ISSUER"
 	TargetTypeUSER                  TargetType = "USER"
@@ -9506,6 +9663,8 @@ func (e TargetType) Valid() bool {
 	case TargetTypeSHAREDRESOURCE:
 		return true
 	case TargetTypeSKILL:
+		return true
+	case TargetTypeSPENDINGLIMIT:
 		return true
 	case TargetTypeSUBSCRIPTION:
 		return true
@@ -10223,6 +10382,7 @@ const (
 	UsageQueryINGroupByServiceTier        UsageQueryINGroupBy = "service_tier"
 	UsageQueryINGroupByUntracked          UsageQueryINGroupBy = "untracked"
 	UsageQueryINGroupByUsageType          UsageQueryINGroupBy = "usage_type"
+	UsageQueryINGroupByUserAgent          UsageQueryINGroupBy = "user_agent"
 	UsageQueryINGroupByUserId             UsageQueryINGroupBy = "user_id"
 	UsageQueryINGroupByWorkspaceId        UsageQueryINGroupBy = "workspace_id"
 )
@@ -10257,6 +10417,8 @@ func (e UsageQueryINGroupBy) Valid() bool {
 	case UsageQueryINGroupByUntracked:
 		return true
 	case UsageQueryINGroupByUsageType:
+		return true
+	case UsageQueryINGroupByUserAgent:
 		return true
 	case UsageQueryINGroupByUserId:
 		return true
@@ -10325,6 +10487,7 @@ const (
 	UsageQueryParamsOUTGroupByServiceTier        UsageQueryParamsOUTGroupBy = "service_tier"
 	UsageQueryParamsOUTGroupByUntracked          UsageQueryParamsOUTGroupBy = "untracked"
 	UsageQueryParamsOUTGroupByUsageType          UsageQueryParamsOUTGroupBy = "usage_type"
+	UsageQueryParamsOUTGroupByUserAgent          UsageQueryParamsOUTGroupBy = "user_agent"
 	UsageQueryParamsOUTGroupByUserId             UsageQueryParamsOUTGroupBy = "user_id"
 	UsageQueryParamsOUTGroupByWorkspaceId        UsageQueryParamsOUTGroupBy = "workspace_id"
 )
@@ -10359,6 +10522,8 @@ func (e UsageQueryParamsOUTGroupBy) Valid() bool {
 	case UsageQueryParamsOUTGroupByUntracked:
 		return true
 	case UsageQueryParamsOUTGroupByUsageType:
+		return true
+	case UsageQueryParamsOUTGroupByUserAgent:
 		return true
 	case UsageQueryParamsOUTGroupByUserId:
 		return true
@@ -10721,6 +10886,7 @@ const (
 	WebhookProviderMicrosoft WebhookProvider = "microsoft"
 	WebhookProviderNotion    WebhookProvider = "notion"
 	WebhookProviderSlack     WebhookProvider = "slack"
+	WebhookProviderWhatsapp  WebhookProvider = "whatsapp"
 )
 
 // Valid indicates whether the value is a known member of the WebhookProvider enum.
@@ -10741,6 +10907,8 @@ func (e WebhookProvider) Valid() bool {
 	case WebhookProviderNotion:
 		return true
 	case WebhookProviderSlack:
+		return true
+	case WebhookProviderWhatsapp:
 		return true
 	default:
 		return false
@@ -11092,6 +11260,57 @@ func (e UsersApiAdminAuditLogsGetAuditLogsParamsSort) Valid() bool {
 	}
 }
 
+// Defines values for UsersApiAdminUserGroupsGetUserGroupsParamsRole.
+const (
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleBilling              UsersApiAdminUserGroupsGetUserGroupsParamsRole = "billing"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleCloudUser            UsersApiAdminUserGroupsGetUserGroupsParamsRole = "cloud_user"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleContributor          UsersApiAdminUserGroupsGetUserGroupsParamsRole = "contributor"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleDev                  UsersApiAdminUserGroupsGetUserGroupsParamsRole = "dev"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleDevContributor       UsersApiAdminUserGroupsGetUserGroupsParamsRole = "dev_contributor"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleMember               UsersApiAdminUserGroupsGetUserGroupsParamsRole = "member"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleMistralCodeUser      UsersApiAdminUserGroupsGetUserGroupsParamsRole = "mistral_code_user"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleObservabilityViewer  UsersApiAdminUserGroupsGetUserGroupsParamsRole = "observability_viewer"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleUser                 UsersApiAdminUserGroupsGetUserGroupsParamsRole = "user"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleVibeCodeCliUser      UsersApiAdminUserGroupsGetUserGroupsParamsRole = "vibe_code_cli_user"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleWorkflowExecutor     UsersApiAdminUserGroupsGetUserGroupsParamsRole = "workflow_executor"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleWorkspaceAdmin       UsersApiAdminUserGroupsGetUserGroupsParamsRole = "workspace_admin"
+	UsersApiAdminUserGroupsGetUserGroupsParamsRoleWorkspaceContributor UsersApiAdminUserGroupsGetUserGroupsParamsRole = "workspace_contributor"
+)
+
+// Valid indicates whether the value is a known member of the UsersApiAdminUserGroupsGetUserGroupsParamsRole enum.
+func (e UsersApiAdminUserGroupsGetUserGroupsParamsRole) Valid() bool {
+	switch e {
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleBilling:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleCloudUser:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleContributor:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleDev:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleDevContributor:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleMember:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleMistralCodeUser:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleObservabilityViewer:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleUser:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleVibeCodeCliUser:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleWorkflowExecutor:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleWorkspaceAdmin:
+		return true
+	case UsersApiAdminUserGroupsGetUserGroupsParamsRoleWorkspaceContributor:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for ListVoicesV1AudioVoicesGetParamsType.
 const (
 	ListVoicesV1AudioVoicesGetParamsTypeAll    ListVoicesV1AudioVoicesGetParamsType = "all"
@@ -11154,16 +11373,13 @@ func (e ConnectorUpdateCredentialsParamsConsumerScope) Valid() bool {
 
 // Defines values for ConnectorCreateCredentialsV1ParamsConsumerScope.
 const (
-	ConnectorCreateCredentialsV1ParamsConsumerScopeOrganization ConnectorCreateCredentialsV1ParamsConsumerScope = "organization"
-	ConnectorCreateCredentialsV1ParamsConsumerScopeUser         ConnectorCreateCredentialsV1ParamsConsumerScope = "user"
-	ConnectorCreateCredentialsV1ParamsConsumerScopeWorkspace    ConnectorCreateCredentialsV1ParamsConsumerScope = "workspace"
+	ConnectorCreateCredentialsV1ParamsConsumerScopeUser      ConnectorCreateCredentialsV1ParamsConsumerScope = "user"
+	ConnectorCreateCredentialsV1ParamsConsumerScopeWorkspace ConnectorCreateCredentialsV1ParamsConsumerScope = "workspace"
 )
 
 // Valid indicates whether the value is a known member of the ConnectorCreateCredentialsV1ParamsConsumerScope enum.
 func (e ConnectorCreateCredentialsV1ParamsConsumerScope) Valid() bool {
 	switch e {
-	case ConnectorCreateCredentialsV1ParamsConsumerScopeOrganization:
-		return true
 	case ConnectorCreateCredentialsV1ParamsConsumerScopeUser:
 		return true
 	case ConnectorCreateCredentialsV1ParamsConsumerScopeWorkspace:
@@ -12103,6 +12319,11 @@ type AdminOrganizationMemberOUT struct {
 	// IsSsoOutsider Whether the member is outside the SSO domain.
 	IsSsoOutsider *bool `json:"is_sso_outsider,omitempty"`
 
+	// LastLoginAt Last time the member signed in to the Organization, accurate to about 30 minutes. Null if they never signed in.
+	//
+	// Examples: 2026-11-04T09:12:00Z
+	LastLoginAt *time.Time `json:"last_login_at,omitempty"`
+
 	// Name Name of the Organization member.
 	//
 	// Examples: Alice Martin
@@ -12113,10 +12334,15 @@ type AdminOrganizationMemberOUT struct {
 
 	// RawRole Deprecated single organization role. Use 'raw_roles' instead.
 	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-	RawRole AdminOrganizationMemberOUT_RawRole `json:"raw_role"`
+	RawRole StaticOrganizationRoles `json:"raw_role"`
 
 	// RawRoles Organization roles assigned to the member.
-	RawRoles AdminOrganizationMemberOUT_RawRoles `json:"raw_roles"`
+	RawRoles []StaticOrganizationRoles `json:"raw_roles"`
+
+	// Status Account status of the member. Deactivated and blocked members cannot access the Organization.
+	//
+	// Examples: active
+	Status *MemberStatus `json:"status,omitempty"`
 
 	// SubscriptionTypes Product seats assigned to the member.
 	SubscriptionTypes *[]AdminOrganizationMemberOUTSubscriptionTypes `json:"subscription_types,omitempty"`
@@ -12127,26 +12353,14 @@ type AdminOrganizationMemberOUT struct {
 	// Uuid Organization member ID.
 	Uuid openapi_types.UUID `json:"uuid"`
 
-	// Workspaces Workspaces the member belongs to.
+	// Workspaces Deprecated: limited to the first 100 Workspaces the member belongs to, ordered by name. Use GET /users/{user_id}/workspaces instead.
+	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
 	Workspaces *[]MemberWorkspaceInfo `json:"workspaces,omitempty"`
-}
 
-// AdminOrganizationMemberOUT_RawRole Deprecated single organization role. Use 'raw_roles' instead.
-//
-// Deprecated: this type has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-type AdminOrganizationMemberOUT_RawRole struct {
-	union json.RawMessage
-}
-
-// AdminOrganizationMemberOUTRawRoles0 defines model for AdminOrganizationMemberOUT.RawRoles.0.
-type AdminOrganizationMemberOUTRawRoles0 = []UserRole
-
-// AdminOrganizationMemberOUTRawRoles1 defines model for AdminOrganizationMemberOUT.RawRoles.1.
-type AdminOrganizationMemberOUTRawRoles1 = []StaticOrganizationRoles
-
-// AdminOrganizationMemberOUT_RawRoles Organization roles assigned to the member.
-type AdminOrganizationMemberOUT_RawRoles struct {
-	union json.RawMessage
+	// WorkspacesTotal Total number of Workspaces the member belongs to, including those not returned in 'workspaces'.
+	//
+	// Examples: 3
+	WorkspacesTotal *int `json:"workspaces_total,omitempty"`
 }
 
 // AdminOrganizationMemberOUTSubscriptionTypes defines model for AdminOrganizationMemberOUT.SubscriptionTypes.
@@ -12276,8 +12490,6 @@ type AdminScimSyncRunOUT struct {
 	DryRun bool `json:"dry_run"`
 
 	// ErrorMessage Failure detail when the synchronization run could not complete.
-	//
-	// Examples: Failed to fetch users from the SCIM provider.
 	ErrorMessage *string `json:"error_message"`
 
 	// FinishedAt Time at which processing finished, if it has finished.
@@ -12301,8 +12513,6 @@ type AdminScimSyncRunOUT struct {
 	Status ScimSyncRunStatus `json:"status"`
 
 	// Summary Preview or result summary, available after the synchronization plan is built.
-	//
-	// Examples: {"groups":{},"memberships":[],"users":{"deprovision":[],"provision":[]}}
 	Summary *ScimSyncSummaryOut `json:"summary"`
 
 	// SyncConfig Categories selected for this synchronization run.
@@ -12371,11 +12581,6 @@ type AdminUpdateUserGroupIn struct {
 	//
 	// Examples: Engineering Team
 	Name *string `json:"name,omitempty"`
-
-	// ParentGroupIds Full replacement list of parent group UUIDs. Pass an empty list to remove all parents; omit the field to leave the parent groups unchanged.
-	//
-	// Examples: ["a1b2c3d4-e5f6-7890-abcd-ef1234567890"]
-	ParentGroupIds *[]openapi_types.UUID `json:"parent_group_ids,omitempty"`
 }
 
 // AdminUpdateUserGroupOrganizationRoleIn defines model for AdminUpdateUserGroupOrganizationRoleIn.
@@ -12431,11 +12636,6 @@ type AdminUserGroupIn struct {
 	//
 	// Examples: Engineering Team
 	Name string `json:"name"`
-
-	// ParentGroupIds UUIDs of existing groups to nest this new group inside. Omit or pass an empty list to create a top-level group.
-	//
-	// Examples: ["a1b2c3d4-e5f6-7890-abcd-ef1234567890"]
-	ParentGroupIds *[]openapi_types.UUID `json:"parent_group_ids,omitempty"`
 }
 
 // AdminUserGroupMemberOut defines model for AdminUserGroupMemberOut.
@@ -12487,11 +12687,6 @@ type AdminUserGroupOut struct {
 	// OrganizationRole Organization role assigned to the group.
 	OrganizationRole *string `json:"organization_role,omitempty"`
 
-	// ParentGroupIds UUIDs of the groups this group is directly nested inside.
-	//
-	// Examples: ["a1b2c3d4-e5f6-7890-abcd-ef1234567890"]
-	ParentGroupIds *[]openapi_types.UUID `json:"parent_group_ids,omitempty"`
-
 	// Uuid User group ID.
 	Uuid openapi_types.UUID `json:"uuid"`
 }
@@ -12529,6 +12724,11 @@ type AdminUserOUT struct {
 	// IsSsoOutsider Whether the member is outside the SSO domain.
 	IsSsoOutsider *bool `json:"is_sso_outsider,omitempty"`
 
+	// LastLoginAt Last time the member signed in to the Organization, accurate to about 30 minutes. Null if they never signed in.
+	//
+	// Examples: 2026-11-04T09:12:00Z
+	LastLoginAt *time.Time `json:"last_login_at,omitempty"`
+
 	// LastName User last name.
 	//
 	// Examples: Martin
@@ -12544,10 +12744,15 @@ type AdminUserOUT struct {
 
 	// RawRole Deprecated single organization role. Use 'raw_roles' instead.
 	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-	RawRole AdminUserOUT_RawRole `json:"raw_role"`
+	RawRole StaticOrganizationRoles `json:"raw_role"`
 
 	// RawRoles Organization roles assigned to the member.
-	RawRoles AdminUserOUT_RawRoles `json:"raw_roles"`
+	RawRoles []StaticOrganizationRoles `json:"raw_roles"`
+
+	// Status Account status of the member. Deactivated and blocked members cannot access the Organization.
+	//
+	// Examples: active
+	Status *MemberStatus `json:"status,omitempty"`
 
 	// SubscriptionTypes Product seats assigned to the member.
 	SubscriptionTypes *[]AdminUserOUTSubscriptionTypes `json:"subscription_types,omitempty"`
@@ -12558,30 +12763,39 @@ type AdminUserOUT struct {
 	// Uuid Organization member ID.
 	Uuid openapi_types.UUID `json:"uuid"`
 
-	// Workspaces Workspaces the member belongs to.
+	// Workspaces Deprecated: limited to the first 100 Workspaces the member belongs to, ordered by name. Use GET /users/{user_id}/workspaces instead.
+	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
 	Workspaces *[]MemberWorkspaceInfo `json:"workspaces,omitempty"`
-}
 
-// AdminUserOUT_RawRole Deprecated single organization role. Use 'raw_roles' instead.
-//
-// Deprecated: this type has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-type AdminUserOUT_RawRole struct {
-	union json.RawMessage
-}
-
-// AdminUserOUTRawRoles0 defines model for AdminUserOUT.RawRoles.0.
-type AdminUserOUTRawRoles0 = []UserRole
-
-// AdminUserOUTRawRoles1 defines model for AdminUserOUT.RawRoles.1.
-type AdminUserOUTRawRoles1 = []StaticOrganizationRoles
-
-// AdminUserOUT_RawRoles Organization roles assigned to the member.
-type AdminUserOUT_RawRoles struct {
-	union json.RawMessage
+	// WorkspacesTotal Total number of Workspaces the member belongs to, including those not returned in 'workspaces'.
+	//
+	// Examples: 3
+	WorkspacesTotal *int `json:"workspaces_total,omitempty"`
 }
 
 // AdminUserOUTSubscriptionTypes defines model for AdminUserOUT.SubscriptionTypes.
 type AdminUserOUTSubscriptionTypes string
+
+// AdminUserWorkspacesOUT defines model for AdminUserWorkspacesOUT.
+type AdminUserWorkspacesOUT struct {
+	// Items Workspaces the member belongs to on this page, ordered by name.
+	Items []MemberWorkspaceInfo `json:"items"`
+
+	// Page Page number returned.
+	//
+	// Examples: 1
+	Page int `json:"page"`
+
+	// PageSize Maximum number of results per page.
+	//
+	// Examples: 25
+	PageSize int `json:"page_size"`
+
+	// Total Total number of Workspaces the member belongs to.
+	//
+	// Examples: 3
+	Total int `json:"total"`
+}
 
 // AdminWorkspaceIn defines model for AdminWorkspaceIn.
 type AdminWorkspaceIn struct {
@@ -12912,6 +13126,9 @@ type AggregationRowMetricValue0 = float32
 // AggregationRowMetricValue1 defines model for AggregationRow.MetricValue.1.
 type AggregationRowMetricValue1 = int
 
+// AggregationRowMetricValue2 defines model for AggregationRow.MetricValue.2.
+type AggregationRowMetricValue2 = time.Time
+
 // AggregationRow_MetricValue defines model for AggregationRow.MetricValue.
 type AggregationRow_MetricValue struct {
 	union json.RawMessage
@@ -12921,6 +13138,24 @@ type AggregationRow_MetricValue struct {
 type AliasList struct {
 	Values *[]string `json:"values,omitempty"`
 }
+
+// AmazonConnectContact Contact metadata recorded when Amazon Connect starts a session.
+type AmazonConnectContact struct {
+	CalledNumber *string `json:"called_number,omitempty"`
+	CallerNumber *string `json:"caller_number,omitempty"`
+	Channel      *string `json:"channel,omitempty"`
+	ContactArn   *string `json:"contact_arn,omitempty"`
+	ContactId    *string `json:"contact_id,omitempty"`
+
+	// ContextId Amazon Connect session context ID.
+	ContextId   string                   `json:"context_id"`
+	InstanceArn *string                  `json:"instance_arn,omitempty"`
+	InstanceId  *string                  `json:"instance_id,omitempty"`
+	Type        AmazonConnectContactType `json:"type"`
+}
+
+// AmazonConnectContactType defines model for AmazonConnectContact.Type.
+type AmazonConnectContactType string
 
 // And Conjunction: rows must match every sub-filter.
 type And struct {
@@ -13094,7 +13329,8 @@ type AudioAgentSessionListPage struct {
 
 // AudioAgentSessionSummary A session of a saved agent, without its transcript.
 type AudioAgentSessionSummary struct {
-	AgentId openapi_types.UUID `json:"agent_id"`
+	AgentId        openapi_types.UUID    `json:"agent_id"`
+	BridgeMetadata *AmazonConnectContact `json:"bridge_metadata,omitempty"`
 
 	// Duration Seconds from the first participant joining to the session ending, null if nobody joined or it is still running.
 	Duration *int               `json:"duration,omitempty"`
@@ -13250,6 +13486,7 @@ type AudioSessionPhoneNumber struct {
 
 // AudioSessionResponse defines model for AudioSessionResponse.
 type AudioSessionResponse struct {
+	BridgeMetadata  *AmazonConnectContact      `json:"bridge_metadata,omitempty"`
 	CreatedAt       time.Time                  `json:"created_at"`
 	Id              openapi_types.UUID         `json:"id"`
 	NumParticipants int                        `json:"num_participants"`
@@ -13267,6 +13504,38 @@ type AudioSessionResponseStatus string
 type AudioSessionResponse_Transcripts_Item struct {
 	union json.RawMessage
 }
+
+// AudioSessionTurnUpdate defines model for AudioSessionTurnUpdate.
+type AudioSessionTurnUpdate struct {
+	AllowInterruptions *bool `json:"allow_interruptions,omitempty"`
+}
+
+// AudioSessionUpdateRequest defines model for AudioSessionUpdateRequest.
+type AudioSessionUpdateRequest struct {
+	Instructions *string                                 `json:"instructions,omitempty"`
+	Tools        *[]AudioSessionUpdateRequest_Tools_Item `json:"tools,omitempty"`
+	Turn         *AudioSessionTurnUpdate                 `json:"turn,omitempty"`
+}
+
+// AudioSessionUpdateRequest_Tools_Item defines model for AudioSessionUpdateRequest.tools.Item.
+type AudioSessionUpdateRequest_Tools_Item struct {
+	union json.RawMessage
+}
+
+// AudioSessionUpdateResponse The session the update was sent to. The agent applies the update at its
+// next turn boundary and reports the outcome through the `session_updated`
+// and `session_update_failed` webhooks.
+type AudioSessionUpdateResponse struct {
+	BridgeMetadata  *AmazonConnectContact            `json:"bridge_metadata,omitempty"`
+	CreatedAt       time.Time                        `json:"created_at"`
+	Id              openapi_types.UUID               `json:"id"`
+	NumParticipants int                              `json:"num_participants"`
+	PhoneCall       *AudioSessionPhoneCall           `json:"phone_call,omitempty"`
+	Status          AudioSessionUpdateResponseStatus `json:"status"`
+}
+
+// AudioSessionUpdateResponseStatus defines model for AudioSessionUpdateResponse.Status.
+type AudioSessionUpdateResponseStatus string
 
 // AudioSpeechCapabilities defines model for AudioSpeechCapabilities.
 type AudioSpeechCapabilities struct {
@@ -14130,11 +14399,15 @@ type ConnectionCredentialsInput struct {
 	BearerToken *string                       `json:"bearer_token,omitempty"`
 	Headers     *map[string]string            `json:"headers,omitempty"`
 	Oauth       *OAuth2ClientCredentialsInput `json:"oauth,omitempty"`
+	QueryParams *map[string]string            `json:"query_params,omitempty"`
 }
 
 // ConnectionPreference defines model for ConnectionPreference.
 type ConnectionPreference struct {
 	ConsumerType *ConsumerType `json:"consumer_type,omitempty"`
+
+	// HttpProxyEnabled Whether raw HTTP calls through this connector are allowed at this level. Only applies to HTTP connectors: null when the level has no opinion, always the case for other connectors. False at any level switches them off for this level and the ones below.
+	HttpProxyEnabled *bool `json:"http_proxy_enabled,omitempty"`
 
 	// IsDefault Deprecated: always `true`.
 	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
@@ -14161,6 +14434,15 @@ type ConnectorAuthenticationHeader struct {
 // ConnectorCallToolRequest Request body for calling an MCP tool.
 type ConnectorCallToolRequest struct {
 	Arguments *map[string]interface{} `json:"arguments,omitempty"`
+}
+
+// ConnectorErrorCode defines model for ConnectorErrorCode.
+type ConnectorErrorCode string
+
+// ConnectorErrorResponse defines model for ConnectorErrorResponse.
+type ConnectorErrorResponse struct {
+	Code   *ConnectorErrorCode `json:"code,omitempty"`
+	Detail string              `json:"detail"`
 }
 
 // ConnectorLocale defines model for ConnectorLocale.
@@ -14267,7 +14549,7 @@ type ConnectorToolLocale struct {
 type ConnectorToolResultMetadata struct {
 	UnderscoreMeta       *map[string]interface{} `json:"_meta,omitempty"`
 	IsError              *bool                   `json:"isError,omitempty"`
-	StructuredContent    *map[string]interface{} `json:"structuredContent,omitempty"`
+	StructuredContent    interface{}             `json:"structuredContent,omitempty"`
 	AdditionalProperties map[string]interface{}  `json:"-"`
 }
 
@@ -14888,21 +15170,6 @@ type CreateIngestionPipelineConfigurationRequest struct {
 	TargetIndexes       *[]IngestionPipelineTargetIndexRef `json:"target_indexes,omitempty"`
 }
 
-// CreateJudgeRequest defines model for CreateJudgeRequest.
-type CreateJudgeRequest struct {
-	Description  string                    `json:"description"`
-	Instructions string                    `json:"instructions"`
-	ModelName    string                    `json:"model_name"`
-	Name         string                    `json:"name"`
-	Output       CreateJudgeRequest_Output `json:"output"`
-	Tools        []string                  `json:"tools"`
-}
-
-// CreateJudgeRequest_Output defines model for CreateJudgeRequest.Output.
-type CreateJudgeRequest_Output struct {
-	union json.RawMessage
-}
-
 // CreateLibraryRequest defines model for CreateLibraryRequest.
 type CreateLibraryRequest struct {
 	// ChunkSize The size of the chunks (in characters) to split document text into. Must be between 256 and 32768.
@@ -14969,6 +15236,8 @@ type CreatePromptVersionResponse struct {
 
 // CreateRealtimeSessionRequest Payload used to create realtime client sessions.
 type CreateRealtimeSessionRequest struct {
+	// Metadata Request metadata applied to the realtime session, as if sent in the `x-metadata` header.
+	Metadata   *MetadataDict                        `json:"metadata,omitempty"`
 	Model      string                               `json:"model"`
 	Purpose    *CreateRealtimeSessionRequestPurpose `json:"purpose,omitempty"`
 	TtlSeconds *int                                 `json:"ttl_seconds,omitempty"`
@@ -15121,6 +15390,14 @@ type CreateResponseResponse_Tools_Item struct {
 // CreateResponseResponseTruncation defines model for CreateResponseResponse.Truncation.
 type CreateResponseResponseTruncation string
 
+// CreateScorerRequest defines model for CreateScorerRequest.
+type CreateScorerRequest struct {
+	Config      LlmJudgeConfig `json:"config"`
+	Description *string        `json:"description,omitempty"`
+	Kind        ScorerKind     `json:"kind"`
+	Name        string         `json:"name"`
+}
+
 // CreateServiceAccountRequest defines model for CreateServiceAccountRequest.
 type CreateServiceAccountRequest struct {
 	Description *string `json:"description,omitempty"`
@@ -15191,9 +15468,12 @@ type CreateWebhook struct {
 	// EncryptionKey Encryption key used to decrypt webhook payloads
 	EncryptionKey *string `json:"encryption_key,omitempty"`
 
-	// EventTypePath Path to extract event type, eg body.type or headers.X-GitHub-Event
-	EventTypePath *string    `json:"event_type_path,omitempty"`
-	ExpiresAt     *time.Time `json:"expires_at,omitempty"`
+	// EventIdPattern Pattern for a unique event identifier used to deduplicate deliveries, with {body.<path>} and {headers.<Header-Name>} placeholders, eg {body.id} or {body.event_id}.{headers.X-Delivery-Id}. Defaults to a hash of the request body
+	EventIdPattern *string `json:"event_id_pattern,omitempty"`
+
+	// EventTypePattern Pattern for the event type, with {body.<path>} and {headers.<Header-Name>} placeholders, eg {body.type} or {headers.X-GitHub-Event}
+	EventTypePattern *string    `json:"event_type_pattern,omitempty"`
+	ExpiresAt        *time.Time `json:"expires_at,omitempty"`
 
 	// Name Human-readable name for this webhook
 	Name      string             `json:"name"`
@@ -15212,13 +15492,20 @@ type CreateWebhook struct {
 	// SignaturePayloadPattern Pattern for signature payload, eg {body} or {timestamp}.{body}
 	SignaturePayloadPattern *string `json:"signature_payload_pattern,omitempty"`
 	SuccessStatusCode       *int    `json:"success_status_code,omitempty"`
+
+	// TimestampExtractorRegex Regex to extract the timestamp from the signature header, used as {timestamp}, eg t=([^,]+)
 	TimestampExtractorRegex *string `json:"timestamp_extractor_regex,omitempty"`
-	ValidityPeriodSecond    *int    `json:"validity_period_second,omitempty"`
+
+	// UrlVerificationToken Token the provider echoes back when verifying the URL. Required for WhatsApp (paste the same value in the Verify token field of the Meta App Dashboard), forbidden for other providers
+	UrlVerificationToken *string `json:"url_verification_token,omitempty"`
+
+	// ValidityPeriodSecond Maximum allowed drift in seconds between the signed timestamp and reception time, eg 300
+	ValidityPeriodSecond *int `json:"validity_period_second,omitempty"`
 }
 
 // CredentialsCreateOrUpdate Request to create or update credentials for a connector.
 type CredentialsCreateOrUpdate struct {
-	// Credentials The credential data (headers, bearer_token, or OAuth2 client credentials).
+	// Credentials The credential data (headers, query_params, bearer_token, or OAuth2 client credentials).
 	Credentials *ConnectionCredentialsInput `json:"credentials,omitempty"`
 
 	// IsDefault Controls whether this credential is the default for its auth method. On creation: if no credential exists yet for this auth method, the credential is automatically set as default when is_default is true or omitted; setting is_default to false is rejected because a default must exist. If other credentials already exist, setting is_default to true promotes this credential (demoting the previous default); false or omitted creates it as non-default. On update: true promotes this credential, false is rejected if it is currently the default (promote another credential first), omitted leaves the default status unchanged.
@@ -15645,6 +15932,7 @@ type Dataset struct {
 	Id          openapi_types.UUID `json:"id"`
 	Name        string             `json:"name"`
 	OwnerId     openapi_types.UUID `json:"owner_id"`
+	OwnerType   *PrincipalType     `json:"owner_type,omitempty"`
 	Slug        string             `json:"slug"`
 	UpdatedAt   time.Time          `json:"updated_at"`
 	WorkspaceId openapi_types.UUID `json:"workspace_id"`
@@ -15661,6 +15949,7 @@ type DatasetImportResult struct {
 type DatasetImportTask struct {
 	CreatedAt   time.Time            `json:"created_at"`
 	CreatorId   openapi_types.UUID   `json:"creator_id"`
+	CreatorType *PrincipalType       `json:"creator_type,omitempty"`
 	DatasetId   openapi_types.UUID   `json:"dataset_id"`
 	DeletedAt   *time.Time           `json:"deleted_at"`
 	Id          openapi_types.UUID   `json:"id"`
@@ -15680,6 +15969,7 @@ type DatasetPreview struct {
 	Id          openapi_types.UUID `json:"id"`
 	Name        string             `json:"name"`
 	OwnerId     openapi_types.UUID `json:"owner_id"`
+	OwnerType   *PrincipalType     `json:"owner_type,omitempty"`
 	Slug        string             `json:"slug"`
 	UpdatedAt   time.Time          `json:"updated_at"`
 	WorkspaceId openapi_types.UUID `json:"workspace_id"`
@@ -15990,15 +16280,16 @@ type DeploymentMistralCloudBackendSpecType string
 
 // DeploymentObservedState defines model for DeploymentObservedState.
 type DeploymentObservedState struct {
-	AvailableReplicas *int                  `json:"available_replicas,omitempty"`
-	BuildState        *DeploymentBuildState `json:"build_state,omitempty"`
-	DeployedRevision  *string               `json:"deployed_revision,omitempty"`
-	Endpoint          *string               `json:"endpoint,omitempty"`
-	Generation        *int                  `json:"generation,omitempty"`
-	LastSeen          *time.Time            `json:"last_seen,omitempty"`
-	Message           *string               `json:"message,omitempty"`
-	Phase             *string               `json:"phase,omitempty"`
-	ReadyReplicas     *int                  `json:"ready_replicas,omitempty"`
+	AvailableReplicas  *int                  `json:"available_replicas,omitempty"`
+	BuildState         *DeploymentBuildState `json:"build_state,omitempty"`
+	DeployedRevision   *string               `json:"deployed_revision,omitempty"`
+	Endpoint           *string               `json:"endpoint,omitempty"`
+	Generation         *int                  `json:"generation,omitempty"`
+	LastPhaseChangedAt *time.Time            `json:"last_phase_changed_at,omitempty"`
+	LastSeen           *time.Time            `json:"last_seen,omitempty"`
+	Message            *string               `json:"message,omitempty"`
+	Phase              *string               `json:"phase,omitempty"`
+	ReadyReplicas      *int                  `json:"ready_replicas,omitempty"`
 }
 
 // DeploymentResourceConfig defines model for DeploymentResourceConfig.
@@ -16103,8 +16394,11 @@ type DeploymentWorkerSpecInput struct {
 	// BackendSpec Backend-specific configuration for the Mistral Cloud backend.
 	BackendSpec *DeploymentMistralCloudBackendSpec `json:"backend_spec,omitempty"`
 
-	// GithubUrl GitHub repository to build the worker from. Set this or 'archive_id', not both.
+	// GithubUrl Deprecated alias of 'repository_url' for a GitHub repository. Set only 'repository_url'.
 	GithubUrl *string `json:"github_url,omitempty"`
+
+	// RepositoryUrl Repository to build the worker from, set instead of 'archive_id': a GitHub repository (`https://github.com/<owner>/<repo>`) or a repository on the Mistral git server (`https://api.globalaegis.net/v1/git/<workspace>/<repo>.git`). On the git server you must be able to read the repository; the worker builds from an archive of 'revision' and 'build_directory'.
+	RepositoryUrl *string `json:"repository_url,omitempty"`
 
 	// RequestedRoles Workspace roles, by name, that the deployment's service account holds beyond `workflow_executor`. Granted only if the deploying user holds them.
 	RequestedRoles *[]string `json:"requested_roles,omitempty"`
@@ -16121,7 +16415,10 @@ type DeploymentWorkerSpecResponse struct {
 	Commit      *GitCommitMetadata                       `json:"commit,omitempty"`
 
 	// GithubUrl GitHub repository the worker builds from. Empty for a worker built from an archive.
-	GithubUrl      string    `json:"github_url"`
+	GithubUrl string `json:"github_url"`
+
+	// RepositoryUrl Repository the worker builds from, on GitHub or the git server, if any.
+	RepositoryUrl  *string   `json:"repository_url,omitempty"`
 	RequestedRoles *[]string `json:"requested_roles,omitempty"`
 	RestartedAt    *string   `json:"restarted_at,omitempty"`
 	Revision       *string   `json:"revision,omitempty"`
@@ -16227,6 +16524,13 @@ type DocumentURLChunk struct {
 
 // DocumentURLChunkType defines model for DocumentURLChunk.Type.
 type DocumentURLChunkType string
+
+// EditScorerRequest defines model for EditScorerRequest.
+type EditScorerRequest struct {
+	Config      *LlmJudgeConfig `json:"config,omitempty"`
+	Description *string         `json:"description,omitempty"`
+	Name        *string         `json:"name,omitempty"`
+}
 
 // ElicitationCapability Capability for elicitation operations.
 //
@@ -16480,62 +16784,77 @@ type EvaluationRunScoreV2 struct {
 
 // EvaluationRunV2Response defines model for EvaluationRunV2Response.
 type EvaluationRunV2Response struct {
-	CreatedAt      time.Time                        `json:"created_at"`
-	CreatorId      openapi_types.UUID               `json:"creator_id"`
-	DatasetId      *openapi_types.UUID              `json:"dataset_id,omitempty"`
-	DeletedAt      *time.Time                       `json:"deleted_at"`
-	Description    *string                          `json:"description"`
-	EvaluationId   openapi_types.UUID               `json:"evaluation_id"`
-	Evaluators     []EvaluatorV2                    `json:"evaluators"`
-	GoalResults    *map[string]GoalResult           `json:"goal_results,omitempty"`
-	Id             openapi_types.UUID               `json:"id"`
-	Metadata       map[string]JsonValue             `json:"metadata_"`
-	Name           string                           `json:"name"`
-	NumGenerations int                              `json:"num_generations"`
-	Optimization   *RunOptimizationRef              `json:"optimization,omitempty"`
-	Passed         *bool                            `json:"passed,omitempty"`
-	RunEvaluators  *[]EvaluatorV2                   `json:"run_evaluators,omitempty"`
-	RunInfo        *map[string]JsonValue            `json:"run_info,omitempty"`
-	RunScores      *map[string]EvaluationRunScoreV2 `json:"run_scores,omitempty"`
-	Statistics     *map[string]EvaluatorStatistics  `json:"statistics,omitempty"`
-	Status         *string                          `json:"status,omitempty"`
-	System         *SystemV2                        `json:"system,omitempty"`
-	Tags           []string                         `json:"tags"`
-	UpdatedAt      time.Time                        `json:"updated_at"`
+	CreatedAt    time.Time           `json:"created_at"`
+	CreatorId    openapi_types.UUID  `json:"creator_id"`
+	CreatorType  *PrincipalType      `json:"creator_type,omitempty"`
+	DatasetId    *openapi_types.UUID `json:"dataset_id,omitempty"`
+	DeletedAt    *time.Time          `json:"deleted_at"`
+	Description  *string             `json:"description"`
+	EvaluationId openapi_types.UUID  `json:"evaluation_id"`
+	Evaluators   []EvaluatorV2       `json:"evaluators"`
+
+	// FailedRecordCount Records whose task or at least one score failed, out of `record_count`. Failed tasks and scores are left out of `statistics`, `goal_results` and `passed`. Null for runs created before this counter existed.
+	FailedRecordCount *int                   `json:"failed_record_count,omitempty"`
+	GoalResults       *map[string]GoalResult `json:"goal_results,omitempty"`
+	Id                openapi_types.UUID     `json:"id"`
+	Metadata          map[string]JsonValue   `json:"metadata_"`
+	Name              string                 `json:"name"`
+	NumGenerations    int                    `json:"num_generations"`
+	Optimization      *RunOptimizationRef    `json:"optimization,omitempty"`
+	Passed            *bool                  `json:"passed,omitempty"`
+
+	// RecordCount Records whose results were uploaded so far, failed or not. Null for runs created before this counter existed.
+	RecordCount   *int                             `json:"record_count,omitempty"`
+	RunEvaluators *[]EvaluatorV2                   `json:"run_evaluators,omitempty"`
+	RunInfo       *map[string]JsonValue            `json:"run_info,omitempty"`
+	RunScores     *map[string]EvaluationRunScoreV2 `json:"run_scores,omitempty"`
+	Statistics    *map[string]EvaluatorStatistics  `json:"statistics,omitempty"`
+	Status        *string                          `json:"status,omitempty"`
+	System        *SystemV2                        `json:"system,omitempty"`
+	Tags          []string                         `json:"tags"`
+	UpdatedAt     time.Time                        `json:"updated_at"`
 }
 
 // EvaluationRunV2WithRefsResponse defines model for EvaluationRunV2WithRefsResponse.
 type EvaluationRunV2WithRefsResponse struct {
-	CreatedAt      time.Time                        `json:"created_at"`
-	CreatorId      openapi_types.UUID               `json:"creator_id"`
-	DatasetId      *openapi_types.UUID              `json:"dataset_id,omitempty"`
-	DeletedAt      *time.Time                       `json:"deleted_at"`
-	Description    *string                          `json:"description"`
-	Evaluation     *RunEvaluationSummary            `json:"evaluation,omitempty"`
-	EvaluationId   openapi_types.UUID               `json:"evaluation_id"`
-	Evaluators     []EvaluatorV2                    `json:"evaluators"`
-	GoalResults    *map[string]GoalResult           `json:"goal_results,omitempty"`
-	Id             openapi_types.UUID               `json:"id"`
-	Metadata       map[string]JsonValue             `json:"metadata_"`
-	Name           string                           `json:"name"`
-	NumGenerations int                              `json:"num_generations"`
-	Optimization   *RunOptimizationRef              `json:"optimization,omitempty"`
-	Passed         *bool                            `json:"passed,omitempty"`
-	Project        *RunProjectSummary               `json:"project,omitempty"`
-	RunEvaluators  *[]EvaluatorV2                   `json:"run_evaluators,omitempty"`
-	RunInfo        *map[string]JsonValue            `json:"run_info,omitempty"`
-	RunScores      *map[string]EvaluationRunScoreV2 `json:"run_scores,omitempty"`
-	Statistics     *map[string]EvaluatorStatistics  `json:"statistics,omitempty"`
-	Status         *string                          `json:"status,omitempty"`
-	System         *SystemV2                        `json:"system,omitempty"`
-	Tags           []string                         `json:"tags"`
-	UpdatedAt      time.Time                        `json:"updated_at"`
+	CreatedAt    time.Time             `json:"created_at"`
+	CreatorId    openapi_types.UUID    `json:"creator_id"`
+	CreatorType  *PrincipalType        `json:"creator_type,omitempty"`
+	DatasetId    *openapi_types.UUID   `json:"dataset_id,omitempty"`
+	DeletedAt    *time.Time            `json:"deleted_at"`
+	Description  *string               `json:"description"`
+	Evaluation   *RunEvaluationSummary `json:"evaluation,omitempty"`
+	EvaluationId openapi_types.UUID    `json:"evaluation_id"`
+	Evaluators   []EvaluatorV2         `json:"evaluators"`
+
+	// FailedRecordCount Records whose task or at least one score failed, out of `record_count`. Failed tasks and scores are left out of `statistics`, `goal_results` and `passed`. Null for runs created before this counter existed.
+	FailedRecordCount *int                   `json:"failed_record_count,omitempty"`
+	GoalResults       *map[string]GoalResult `json:"goal_results,omitempty"`
+	Id                openapi_types.UUID     `json:"id"`
+	Metadata          map[string]JsonValue   `json:"metadata_"`
+	Name              string                 `json:"name"`
+	NumGenerations    int                    `json:"num_generations"`
+	Optimization      *RunOptimizationRef    `json:"optimization,omitempty"`
+	Passed            *bool                  `json:"passed,omitempty"`
+	Project           *RunProjectSummary     `json:"project,omitempty"`
+
+	// RecordCount Records whose results were uploaded so far, failed or not. Null for runs created before this counter existed.
+	RecordCount   *int                             `json:"record_count,omitempty"`
+	RunEvaluators *[]EvaluatorV2                   `json:"run_evaluators,omitempty"`
+	RunInfo       *map[string]JsonValue            `json:"run_info,omitempty"`
+	RunScores     *map[string]EvaluationRunScoreV2 `json:"run_scores,omitempty"`
+	Statistics    *map[string]EvaluatorStatistics  `json:"statistics,omitempty"`
+	Status        *string                          `json:"status,omitempty"`
+	System        *SystemV2                        `json:"system,omitempty"`
+	Tags          []string                         `json:"tags"`
+	UpdatedAt     time.Time                        `json:"updated_at"`
 }
 
 // EvaluationV2 defines model for EvaluationV2.
 type EvaluationV2 struct {
 	CreatedAt   time.Time            `json:"created_at"`
 	CreatorId   openapi_types.UUID   `json:"creator_id"`
+	CreatorType *PrincipalType       `json:"creator_type,omitempty"`
 	DeletedAt   *time.Time           `json:"deleted_at"`
 	Description *string              `json:"description"`
 	Id          openapi_types.UUID   `json:"id"`
@@ -17055,6 +17374,21 @@ type FunctionTool struct {
 
 // FunctionToolType defines model for FunctionTool.Type.
 type FunctionToolType string
+
+// GeneratedToolFiller A filler the model writes for each call, in the user's language.
+//
+// `instructions` guide what it says. `fallback` is spoken when it writes none;
+// without one, the call is silent.
+type GeneratedToolFiller struct {
+	Fallback *struct {
+		union json.RawMessage
+	} `json:"fallback,omitempty"`
+	Instructions *string                  `json:"instructions,omitempty"`
+	Type         *GeneratedToolFillerType `json:"type,omitempty"`
+}
+
+// GeneratedToolFillerType defines model for GeneratedToolFiller.Type.
+type GeneratedToolFillerType string
 
 // GetBudgetResponse defines model for GetBudgetResponse.
 type GetBudgetResponse struct {
@@ -17600,8 +17934,10 @@ type HTTPValidationError struct {
 
 // HangUpTool defines model for HangUpTool.
 type HangUpTool struct {
-	Filler *StaticToolFiller `json:"filler,omitempty"`
-	Type   *HangUpToolType   `json:"type,omitempty"`
+	Filler *struct {
+		union json.RawMessage
+	} `json:"filler,omitempty"`
+	Type *HangUpToolType `json:"type,omitempty"`
 }
 
 // HangUpToolType defines model for HangUpTool.Type.
@@ -17950,56 +18286,6 @@ type JsonSchema struct {
 // JsonValue defines model for JsonValue.
 type JsonValue = interface{}
 
-// Judge defines model for Judge.
-type Judge struct {
-	BaseRevision *openapi_types.UUID `json:"base_revision,omitempty"`
-	CreatedAt    time.Time           `json:"created_at"`
-	DeletedAt    *time.Time          `json:"deleted_at"`
-	Description  string              `json:"description"`
-	DownRevision *openapi_types.UUID `json:"down_revision,omitempty"`
-	Id           openapi_types.UUID  `json:"id"`
-	Instructions string              `json:"instructions"`
-	ModelName    string              `json:"model_name"`
-	Name         string              `json:"name"`
-	Output       Judge_Output        `json:"output"`
-	OwnerId      openapi_types.UUID  `json:"owner_id"`
-	Tools        []string            `json:"tools"`
-	UpRevision   *openapi_types.UUID `json:"up_revision,omitempty"`
-	UpdatedAt    time.Time           `json:"updated_at"`
-	WorkspaceId  openapi_types.UUID  `json:"workspace_id"`
-}
-
-// Judge_Output defines model for Judge.Output.
-type Judge_Output struct {
-	union json.RawMessage
-}
-
-// JudgeClassificationOutput defines model for JudgeClassificationOutput.
-type JudgeClassificationOutput struct {
-	Options []JudgeClassificationOutputOption `json:"options"`
-	Type    *JudgeClassificationOutputType    `json:"type,omitempty"`
-}
-
-// JudgeClassificationOutputType defines model for JudgeClassificationOutput.Type.
-type JudgeClassificationOutputType string
-
-// JudgeClassificationOutputOption defines model for JudgeClassificationOutputOption.
-type JudgeClassificationOutputOption struct {
-	Description string `json:"description"`
-	Value       string `json:"value"`
-}
-
-// JudgeConversationRequest defines model for JudgeConversationRequest.
-type JudgeConversationRequest struct {
-	Messages   []map[string]interface{} `json:"messages"`
-	Properties *map[string]interface{}  `json:"properties,omitempty"`
-}
-
-// JudgeDatasetRecordRequest defines model for JudgeDatasetRecordRequest.
-type JudgeDatasetRecordRequest struct {
-	JudgeDefinition CreateJudgeRequest `json:"judge_definition"`
-}
-
 // JudgeDefinitionV1 The fully materialized LLM judge behavior stored in a pipeline config.
 type JudgeDefinitionV1 struct {
 	Mapping     *map[string]string   `json:"mapping,omitempty"`
@@ -18012,38 +18298,6 @@ type JudgeDefinitionV1 struct {
 	TopP        *float32             `json:"top_p,omitempty"`
 	UseCache    *bool                `json:"use_cache,omitempty"`
 }
-
-// JudgeOutput defines model for JudgeOutput.
-type JudgeOutput struct {
-	Analysis string             `json:"analysis"`
-	Answer   JudgeOutput_Answer `json:"answer"`
-}
-
-// JudgeOutputAnswer0 defines model for JudgeOutput.Answer.0.
-type JudgeOutputAnswer0 = string
-
-// JudgeOutputAnswer1 defines model for JudgeOutput.Answer.1.
-type JudgeOutputAnswer1 = float32
-
-// JudgeOutput_Answer defines model for JudgeOutput.Answer.
-type JudgeOutput_Answer struct {
-	union json.RawMessage
-}
-
-// JudgeOutputType defines model for JudgeOutputType.
-type JudgeOutputType string
-
-// JudgeRegressionOutput defines model for JudgeRegressionOutput.
-type JudgeRegressionOutput struct {
-	Max            *float32                   `json:"max,omitempty"`
-	MaxDescription string                     `json:"max_description"`
-	Min            *float32                   `json:"min,omitempty"`
-	MinDescription string                     `json:"min_description"`
-	Type           *JudgeRegressionOutputType `json:"type,omitempty"`
-}
-
-// JudgeRegressionOutputType defines model for JudgeRegressionOutput.Type.
-type JudgeRegressionOutputType string
 
 // KeywordArrayFieldDefinition defines model for KeywordArrayFieldDefinition.
 type KeywordArrayFieldDefinition struct {
@@ -18078,9 +18332,11 @@ type KeywordRetriever struct {
 		union json.RawMessage
 	} `json:"filter,omitempty"`
 	Operator *KeywordRetrieverOperator `json:"operator,omitempty"`
-	Query    string                    `json:"query"`
-	TopK     *int                      `json:"top_k,omitempty"`
-	Type     *KeywordRetrieverType     `json:"type,omitempty"`
+
+	// Query The query string from which to match keywords: at most 20 whitespace-separated words.
+	Query string                `json:"query"`
+	TopK  *int                  `json:"top_k,omitempty"`
+	Type  *KeywordRetrieverType `json:"type,omitempty"`
 }
 
 // KeywordRetrieverOperator defines model for KeywordRetriever.Operator.
@@ -18209,11 +18465,6 @@ type ListFilesResponse struct {
 	Total  *int         `json:"total,omitempty"`
 }
 
-// ListJudgesResponse defines model for ListJudgesResponse.
-type ListJudgesResponse struct {
-	Judges PaginatedResultJudgePreview `json:"judges"`
-}
-
 // ListLibrariesResponse defines model for ListLibrariesResponse.
 type ListLibrariesResponse struct {
 	Data []Library `json:"data"`
@@ -18257,6 +18508,11 @@ type ListPromptVersionsResponse struct {
 type ListPromptsResponse struct {
 	Data          *[]Prompt `json:"data,omitempty"`
 	NextPageToken *string   `json:"nextPageToken,omitempty"`
+}
+
+// ListScorersResponse defines model for ListScorersResponse.
+type ListScorersResponse struct {
+	Scorers PaginatedResultScorerSummary `json:"scorers"`
 }
 
 // ListServiceAccountRolesResponse defines model for ListServiceAccountRolesResponse.
@@ -18309,6 +18565,22 @@ type ListWorkflowEventResponse_Events_Item struct {
 type ListWorkspacesResponse struct {
 	// Workspaces The workspaces the authenticated user is a member of, each tagged with the organization it belongs to.
 	Workspaces []UserWorkspace `json:"workspaces"`
+}
+
+// LlmJudgeConfig defines model for LlmJudgeConfig.
+type LlmJudgeConfig struct {
+	Model          string               `json:"model"`
+	OutputSpec     EvaluationResultSpec `json:"output_spec"`
+	Params         *LlmJudgeParams      `json:"params,omitempty"`
+	PromptTemplate string               `json:"prompt_template"`
+}
+
+// LlmJudgeParams defines model for LlmJudgeParams.
+type LlmJudgeParams struct {
+	MaxTokens   *int     `json:"max_tokens,omitempty"`
+	RandomSeed  *int     `json:"random_seed,omitempty"`
+	Temperature *float32 `json:"temperature,omitempty"`
+	TopP        *float32 `json:"top_p,omitempty"`
 }
 
 // LlmJudgeReference The scorer selected to build a judge pipeline configuration.
@@ -18682,6 +18954,9 @@ type MaxCandidatesTooSmallResponse struct {
 // MaxCandidatesTooSmallResponseType defines model for MaxCandidatesTooSmallResponse.Type.
 type MaxCandidatesTooSmallResponseType string
 
+// MemberStatus defines model for MemberStatus.
+type MemberStatus string
+
 // MemberSubscriptionOUT defines model for MemberSubscriptionOUT.
 type MemberSubscriptionOUT struct {
 	// MemberHasAccess Whether the member currently has access to the plan.
@@ -18720,31 +18995,13 @@ type MemberWorkspaceInfo struct {
 
 	// RawRole Deprecated single workspace role. Use 'raw_roles' instead.
 	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-	RawRole MemberWorkspaceInfo_RawRole `json:"raw_role"`
+	RawRole StaticWorkspaceRoles `json:"raw_role"`
 
 	// RawRoles Workspace roles assigned to the member.
-	RawRoles MemberWorkspaceInfo_RawRoles `json:"raw_roles"`
+	RawRoles []StaticWorkspaceRoles `json:"raw_roles"`
 
 	// Uuid Workspace ID.
 	Uuid openapi_types.UUID `json:"uuid"`
-}
-
-// MemberWorkspaceInfo_RawRole Deprecated single workspace role. Use 'raw_roles' instead.
-//
-// Deprecated: this type has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-type MemberWorkspaceInfo_RawRole struct {
-	union json.RawMessage
-}
-
-// MemberWorkspaceInfoRawRoles0 defines model for MemberWorkspaceInfo.RawRoles.0.
-type MemberWorkspaceInfoRawRoles0 = []WorkspaceRole
-
-// MemberWorkspaceInfoRawRoles1 defines model for MemberWorkspaceInfo.RawRoles.1.
-type MemberWorkspaceInfoRawRoles1 = []StaticWorkspaceRoles
-
-// MemberWorkspaceInfo_RawRoles Workspace roles assigned to the member.
-type MemberWorkspaceInfo_RawRoles struct {
-	union json.RawMessage
 }
 
 // MessageEntries defines model for MessageEntries.
@@ -19126,27 +19383,6 @@ type NearestNeighbourRetriever struct {
 
 // NearestNeighbourRetrieverType defines model for NearestNeighbourRetriever.Type.
 type NearestNeighbourRetrieverType string
-
-// NestedGroupRef defines model for NestedGroupRef.
-type NestedGroupRef struct {
-	// Name Display name of the group.
-	//
-	// Examples: Engineering Team
-	Name string `json:"name"`
-
-	// Uuid UUID of the group.
-	//
-	// Examples: a1b2c3d4-e5f6-7890-abcd-ef1234567890
-	Uuid openapi_types.UUID `json:"uuid"`
-}
-
-// NestedGroupsOut defines model for NestedGroupsOut.
-type NestedGroupsOut struct {
-	// Children Groups directly nested inside this group (its direct children).
-	//
-	// Examples: [{"name":"Engineering Team","uuid":"a1b2c3d4-e5f6-7890-abcd-ef1234567890"}]
-	Children []NestedGroupRef `json:"children"`
-}
 
 // NetworkEncodedInput defines model for NetworkEncodedInput.
 type NetworkEncodedInput struct {
@@ -19822,6 +20058,7 @@ type Optimization struct {
 	Algorithm           string                `json:"algorithm"`
 	CreatedAt           time.Time             `json:"created_at"`
 	CreatorId           openapi_types.UUID    `json:"creator_id"`
+	CreatorType         *PrincipalType        `json:"creator_type,omitempty"`
 	DeletedAt           *time.Time            `json:"deleted_at"`
 	Description         *string               `json:"description,omitempty"`
 	EvaluationId        *openapi_types.UUID   `json:"evaluation_id,omitempty"`
@@ -19844,6 +20081,7 @@ type OptimizationDetail struct {
 	Algorithm           string                 `json:"algorithm"`
 	CreatedAt           time.Time              `json:"created_at"`
 	CreatorId           openapi_types.UUID     `json:"creator_id"`
+	CreatorType         *PrincipalType         `json:"creator_type,omitempty"`
 	DeletedAt           *time.Time             `json:"deleted_at"`
 	Description         *string                `json:"description,omitempty"`
 	Evaluation          *OptimizationReference `json:"evaluation,omitempty"`
@@ -20014,34 +20252,16 @@ type OrganizationInviteOUT struct {
 
 	// RawRole Deprecated single invite role. Use 'raw_roles' instead.
 	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-	RawRole OrganizationInviteOUT_RawRole `json:"raw_role"`
+	RawRole StaticOrganizationRoles `json:"raw_role"`
 
 	// RawRoles Organization roles assigned by the invite.
-	RawRoles OrganizationInviteOUT_RawRoles `json:"raw_roles"`
+	RawRoles []StaticOrganizationRoles `json:"raw_roles"`
 
 	// Uuid Organization invitation ID.
 	Uuid openapi_types.UUID `json:"uuid"`
 
 	// WorkspaceUuids Workspace IDs the invited user will join.
 	WorkspaceUuids *[]openapi_types.UUID `json:"workspace_uuids,omitempty"`
-}
-
-// OrganizationInviteOUT_RawRole Deprecated single invite role. Use 'raw_roles' instead.
-//
-// Deprecated: this type has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-type OrganizationInviteOUT_RawRole struct {
-	union json.RawMessage
-}
-
-// OrganizationInviteOUTRawRoles0 defines model for OrganizationInviteOUT.RawRoles.0.
-type OrganizationInviteOUTRawRoles0 = []UserRole
-
-// OrganizationInviteOUTRawRoles1 defines model for OrganizationInviteOUT.RawRoles.1.
-type OrganizationInviteOUTRawRoles1 = []StaticOrganizationRoles
-
-// OrganizationInviteOUT_RawRoles Organization roles assigned by the invite.
-type OrganizationInviteOUT_RawRoles struct {
-	union json.RawMessage
 }
 
 // OrganizationInvitesCreateOUT defines model for OrganizationInvitesCreateOUT.
@@ -20127,28 +20347,10 @@ type OrganizationUserInviteOUT struct {
 
 	// Role Deprecated single invite role. Use 'roles' instead.
 	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-	Role OrganizationUserInviteOUT_Role `json:"role"`
+	Role StaticOrganizationRoles `json:"role"`
 
 	// Roles Organization roles assigned by the invite.
-	Roles OrganizationUserInviteOUT_Roles `json:"roles"`
-}
-
-// OrganizationUserInviteOUT_Role Deprecated single invite role. Use 'roles' instead.
-//
-// Deprecated: this type has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-type OrganizationUserInviteOUT_Role struct {
-	union json.RawMessage
-}
-
-// OrganizationUserInviteOUTRoles0 defines model for OrganizationUserInviteOUT.Roles.0.
-type OrganizationUserInviteOUTRoles0 = []UserRole
-
-// OrganizationUserInviteOUTRoles1 defines model for OrganizationUserInviteOUT.Roles.1.
-type OrganizationUserInviteOUTRoles1 = []StaticOrganizationRoles
-
-// OrganizationUserInviteOUT_Roles Organization roles assigned by the invite.
-type OrganizationUserInviteOUT_Roles struct {
-	union json.RawMessage
+	Roles []StaticOrganizationRoles `json:"roles"`
 }
 
 // OrganizationUsersCreateOUT defines model for OrganizationUsersCreateOUT.
@@ -20286,14 +20488,6 @@ type PaginatedResultEvaluationV2 struct {
 	Results  *[]EvaluationV2 `json:"results,omitempty"`
 }
 
-// PaginatedResultJudgePreview defines model for PaginatedResultJudgePreview.
-type PaginatedResultJudgePreview struct {
-	Count    int      `json:"count"`
-	Next     *string  `json:"next,omitempty"`
-	Previous *string  `json:"previous,omitempty"`
-	Results  *[]Judge `json:"results,omitempty"`
-}
-
 // PaginatedResultOptimization defines model for PaginatedResultOptimization.
 type PaginatedResultOptimization struct {
 	Count    int             `json:"count"`
@@ -20324,6 +20518,14 @@ type PaginatedResultProject struct {
 	Next     *string    `json:"next,omitempty"`
 	Previous *string    `json:"previous,omitempty"`
 	Results  *[]Project `json:"results,omitempty"`
+}
+
+// PaginatedResultScorerSummary defines model for PaginatedResultScorerSummary.
+type PaginatedResultScorerSummary struct {
+	Count    int              `json:"count"`
+	Next     *string          `json:"next,omitempty"`
+	Previous *string          `json:"previous,omitempty"`
+	Results  *[]ScorerSummary `json:"results,omitempty"`
 }
 
 // PaginationInfo defines model for PaginationInfo.
@@ -20481,8 +20683,10 @@ type PipelineResult struct {
 	JudgeExplanations map[string]string  `json:"judge_explanations"`
 	JudgeLabels       map[string]string  `json:"judge_labels"`
 	JudgeScores       map[string]float32 `json:"judge_scores"`
+	OperationName     string             `json:"operation_name"`
 	SpanId            string             `json:"span_id"`
 	SpanName          string             `json:"span_name"`
+	ToolName          string             `json:"tool_name"`
 	TraceId           string             `json:"trace_id"`
 }
 
@@ -20570,6 +20774,7 @@ type ProcessingStatus struct {
 type Project struct {
 	CreatedAt   time.Time                   `json:"created_at"`
 	CreatorId   openapi_types.UUID          `json:"creator_id"`
+	CreatorType *PrincipalType              `json:"creator_type,omitempty"`
 	DeletedAt   *time.Time                  `json:"deleted_at"`
 	Description *string                     `json:"description"`
 	Evaluations *[]ProjectEvaluationSummary `json:"evaluations,omitempty"`
@@ -20856,6 +21061,14 @@ type RawAudioData1 = openapi_types.File
 // RawAudio_Data defines model for RawAudio.Data.
 type RawAudio_Data struct {
 	union json.RawMessage
+}
+
+// ReactivateUserOUT defines model for ReactivateUserOUT.
+type ReactivateUserOUT struct {
+	// Message Reactivation result message.
+	//
+	// Examples: User reactivated successfully
+	Message string `json:"message"`
 }
 
 // ReadRequest defines model for ReadRequest.
@@ -21253,6 +21466,7 @@ type ResponsesCreatedEventType string
 // ResponsesCustomTool defines model for ResponsesCustomTool.
 type ResponsesCustomTool struct {
 	AllowedCallers       *[]ResponsesCustomToolAllowedCallers `json:"allowed_callers,omitempty"`
+	Async                *bool                                `json:"async,omitempty"`
 	DeferLoading         *bool                                `json:"defer_loading,omitempty"`
 	Description          *string                              `json:"description,omitempty"`
 	Format               *ResponsesCustomTool_Format          `json:"format,omitempty"`
@@ -21310,11 +21524,18 @@ type ResponsesEasyInputMessageType string
 type ResponsesError struct {
 	Code                 ResponsesErrorCode     `json:"code"`
 	Message              string                 `json:"message"`
+	Misalignment         *ResponsesMisalignment `json:"misalignment,omitempty"`
+	Param                *string                `json:"param,omitempty"`
+	Reason               ResponsesErrorReason   `json:"reason"`
+	Type                 *string                `json:"type,omitempty"`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
 // ResponsesErrorCode defines model for ResponsesError.Code.
 type ResponsesErrorCode string
+
+// ResponsesErrorReason defines model for ResponsesError.Reason.
+type ResponsesErrorReason string
 
 // ResponsesErrorEvent defines model for ResponsesErrorEvent.
 type ResponsesErrorEvent struct {
@@ -21388,7 +21609,6 @@ type ResponsesFunctionCallArgumentsDeltaEventType string
 type ResponsesFunctionCallArgumentsDoneEvent struct {
 	Arguments            string                                      `json:"arguments"`
 	ItemId               string                                      `json:"item_id"`
-	Name                 string                                      `json:"name"`
 	OutputIndex          int                                         `json:"output_index"`
 	SequenceNumber       int                                         `json:"sequence_number"`
 	Type                 ResponsesFunctionCallArgumentsDoneEventType `json:"type"`
@@ -21403,6 +21623,8 @@ type ResponsesFunctionCallOutput struct {
 	CallId               string                              `json:"call_id"`
 	Caller               *ResponsesFunctionCallOutput_Caller `json:"caller,omitempty"`
 	Id                   *string                             `json:"id,omitempty"`
+	Name                 *string                             `json:"name,omitempty"`
+	Namespace            *string                             `json:"namespace,omitempty"`
 	Output               ResponsesFunctionCallOutput_Output  `json:"output"`
 	Status               *ResponsesFunctionCallOutputStatus  `json:"status,omitempty"`
 	Type                 ResponsesFunctionCallOutputType     `json:"type"`
@@ -21458,6 +21680,7 @@ type ResponsesFunctionCallOutputCallerProgramType string
 // ResponsesFunctionTool defines model for ResponsesFunctionTool.
 type ResponsesFunctionTool struct {
 	AllowedCallers       *[]ResponsesFunctionToolAllowedCallers `json:"allowed_callers,omitempty"`
+	Async                *bool                                  `json:"async,omitempty"`
 	DeferLoading         *bool                                  `json:"defer_loading,omitempty"`
 	Description          *string                                `json:"description,omitempty"`
 	Name                 string                                 `json:"name"`
@@ -21477,6 +21700,7 @@ type ResponsesFunctionToolType string
 // ResponsesFunctionToolCall defines model for ResponsesFunctionToolCall.
 type ResponsesFunctionToolCall struct {
 	Arguments            string                            `json:"arguments"`
+	Async                *bool                             `json:"async,omitempty"`
 	CallId               string                            `json:"call_id"`
 	Caller               *ResponsesFunctionToolCall_Caller `json:"caller,omitempty"`
 	Id                   *string                           `json:"id,omitempty"`
@@ -21663,6 +21887,21 @@ type ResponsesMessageStatus string
 // ResponsesMessageType defines model for ResponsesMessage.Type.
 type ResponsesMessageType string
 
+// ResponsesMisalignment defines model for ResponsesMisalignment.
+type ResponsesMisalignment struct {
+	DetailedExplanation  *string                     `json:"detailed_explanation,omitempty"`
+	ErrorType            *string                     `json:"error_type,omitempty"`
+	ReviewTarget         *string                     `json:"review_target,omitempty"`
+	Steer                *ResponsesMisalignmentSteer `json:"steer,omitempty"`
+	AdditionalProperties map[string]interface{}      `json:"-"`
+}
+
+// ResponsesMisalignmentSteer defines model for ResponsesMisalignmentSteer.
+type ResponsesMisalignmentSteer struct {
+	Message              string                 `json:"message"`
+	AdditionalProperties map[string]interface{} `json:"-"`
+}
+
 // ResponsesNamespaceTool defines model for ResponsesNamespaceTool.
 type ResponsesNamespaceTool struct {
 	Description          string                              `json:"description"`
@@ -21805,11 +22044,15 @@ type ResponsesPartReasoningTextType string
 // ResponsesPromptCacheBreakpoint defines model for ResponsesPromptCacheBreakpoint.
 type ResponsesPromptCacheBreakpoint struct {
 	Mode                 ResponsesPromptCacheBreakpointMode `json:"mode"`
+	Ttl                  *ResponsesPromptCacheBreakpointTtl `json:"ttl,omitempty"`
 	AdditionalProperties map[string]interface{}             `json:"-"`
 }
 
 // ResponsesPromptCacheBreakpointMode defines model for ResponsesPromptCacheBreakpoint.Mode.
 type ResponsesPromptCacheBreakpointMode string
+
+// ResponsesPromptCacheBreakpointTtl defines model for ResponsesPromptCacheBreakpoint.Ttl.
+type ResponsesPromptCacheBreakpointTtl string
 
 // ResponsesReasoningItem defines model for ResponsesReasoningItem.
 type ResponsesReasoningItem struct {
@@ -21982,6 +22225,7 @@ type ResponsesToolChoiceFunctionType string
 // ResponsesToolFunction defines model for ResponsesToolFunction.
 type ResponsesToolFunction struct {
 	AllowedCallers       *[]ResponsesToolFunctionAllowedCallers `json:"allowed_callers,omitempty"`
+	Async                *bool                                  `json:"async,omitempty"`
 	DeferLoading         *bool                                  `json:"defer_loading,omitempty"`
 	Description          *string                                `json:"description,omitempty"`
 	Name                 string                                 `json:"name"`
@@ -22087,12 +22331,10 @@ type RootsCapability struct {
 // consumers (e.g. the dashboard rotate button) can show an appropriate message without hardcoding
 // the rules. Consumers should treat unknown values as "rotation unavailable".
 //
-// Reasons fall into three kinds. Scope-based reasons are immutable (a function of the key's scope
-// alone) and are owned by services that hold the key, e.g. Albe. Key-state reasons depend on the
-// key's own state (e.g. expiry) and are likewise determined where the key lives. Permission-based
-// reasons are request-scoped (they depend on who is asking) and can only be determined where the
-// acting user is known, e.g. the dashboard. When several reasons apply, precedence runs immutable
-// scope-based, then key-state, then request-scoped permission.
+// Key-state reasons depend on the key's own state (e.g. expiry) and are determined where the key
+// lives, e.g. Albe. Permission-based reasons are request-scoped (they depend on who is asking) and can
+// only be determined where the acting user is known, e.g. the dashboard. When both apply, the
+// key-state reason wins.
 type RotateUnavailableReason string
 
 // RunEvaluationSummary defines model for RunEvaluationSummary.
@@ -22317,6 +22559,9 @@ type ScheduleDefinitionOutput struct {
 	// TimeZoneName IANA time zone name, for example ``US/Central``.
 	TimeZoneName *string `json:"time_zone_name,omitempty"`
 
+	// UserId ID of the user who created the schedule.
+	UserId *string `json:"user_id,omitempty"`
+
 	// WorkflowName Name of the workflow this schedule triggers.
 	WorkflowName string `json:"workflow_name"`
 }
@@ -22387,14 +22632,19 @@ type ScimSyncGroupActionOut struct {
 
 // ScimSyncGroupRefOut defines model for ScimSyncGroupRefOut.
 type ScimSyncGroupRefOut struct {
+	// GroupName Examples: Platform Team
 	GroupName string `json:"groupName"`
-	Uuid      string `json:"uuid"`
+
+	// Uuid Examples: 33333333-3333-4333-8333-000000000001
+	Uuid string `json:"uuid"`
 }
 
 // ScimSyncGroupUpdateActionOut defines model for ScimSyncGroupUpdateActionOut.
 type ScimSyncGroupUpdateActionOut struct {
-	Group             ScimSyncGroupRefOut `json:"group"`
-	PreviousGroupName string              `json:"previous_groupName"`
+	Group ScimSyncGroupRefOut `json:"group"`
+
+	// PreviousGroupName Examples: Platform Engineering
+	PreviousGroupName string `json:"previous_groupName"`
 }
 
 // ScimSyncGroupsSummaryOut defines model for ScimSyncGroupsSummaryOut.
@@ -22428,8 +22678,11 @@ type ScimSyncUserActionOut struct {
 
 // ScimSyncUserRefOut defines model for ScimSyncUserRefOut.
 type ScimSyncUserRefOut struct {
+	// UserName Examples: ada@example.com
 	UserName *string `json:"userName,omitempty"`
-	Uuid     string  `json:"uuid"`
+
+	// Uuid Examples: 11111111-1111-4111-8111-000000000001
+	Uuid string `json:"uuid"`
 }
 
 // ScimSyncUsersSummaryOut defines model for ScimSyncUsersSummaryOut.
@@ -22476,6 +22729,43 @@ type ScoreSortInput struct {
 
 // ScoreSortInputKind defines model for ScoreSortInput.Kind.
 type ScoreSortInputKind string
+
+// Scorer defines model for Scorer.
+type Scorer struct {
+	CreatedAt     time.Time     `json:"created_at"`
+	Description   *string       `json:"description"`
+	Kind          ScorerKind    `json:"kind"`
+	LatestVersion ScorerVersion `json:"latest_version"`
+	Name          string        `json:"name"`
+	Slug          string        `json:"slug"`
+	UpdatedAt     time.Time     `json:"updated_at"`
+}
+
+// ScorerKind defines model for ScorerKind.
+type ScorerKind string
+
+// ScorerSummary defines model for ScorerSummary.
+type ScorerSummary struct {
+	CreatedAt   time.Time          `json:"created_at"`
+	CreatorId   openapi_types.UUID `json:"creator_id"`
+	CreatorType *PrincipalType     `json:"creator_type,omitempty"`
+	Description *string            `json:"description"`
+	IsOotb      bool               `json:"is_ootb"`
+	Kind        ScorerKind         `json:"kind"`
+	Name        string             `json:"name"`
+	Slug        string             `json:"slug"`
+	UpdatedAt   time.Time          `json:"updated_at"`
+}
+
+// ScorerVersion defines model for ScorerVersion.
+type ScorerVersion struct {
+	Config      LlmJudgeConfig     `json:"config"`
+	CreatedAt   time.Time          `json:"created_at"`
+	CreatorId   openapi_types.UUID `json:"creator_id"`
+	CreatorType *PrincipalType     `json:"creator_type,omitempty"`
+	Variables   []string           `json:"variables"`
+	Version     int                `json:"version"`
+}
 
 // SearchAllEvaluationRunsResponse defines model for SearchAllEvaluationRunsResponse.
 type SearchAllEvaluationRunsResponse struct {
@@ -22573,14 +22863,6 @@ type ServiceAccountRole struct {
 
 // ServiceTier The service tier a request is resolved to and routed on.
 type ServiceTier string
-
-// SetNestedGroupsIn defines model for SetNestedGroupsIn.
-type SetNestedGroupsIn struct {
-	// ChildGroupUuids Full replacement list of UUIDs of groups to nest directly inside this group.
-	//
-	// Examples: ["a1b2c3d4-e5f6-7890-abcd-ef1234567890"]
-	ChildGroupUuids []openapi_types.UUID `json:"child_group_uuids"`
-}
 
 // SetServiceAccountRolesRequest Request body for replacing the workspace roles assigned to a service account.
 type SetServiceAccountRolesRequest struct {
@@ -23786,9 +24068,11 @@ type TranscriptionStreamTextDeltaType string
 
 // TransferCallTool defines model for TransferCallTool.
 type TransferCallTool struct {
-	Destinations []TransferTarget      `json:"destinations"`
-	Filler       *StaticToolFiller     `json:"filler,omitempty"`
-	Type         *TransferCallToolType `json:"type,omitempty"`
+	Destinations []TransferTarget `json:"destinations"`
+	Filler       *struct {
+		union json.RawMessage
+	} `json:"filler,omitempty"`
+	Type *TransferCallToolType `json:"type,omitempty"`
 }
 
 // TransferCallToolType defines model for TransferCallTool.Type.
@@ -24055,21 +24339,6 @@ type UpdateInvocationBodyInput1 map[string]interface{}
 
 // UpdateInvocationBody_Input Input data for the update, matching its schema
 type UpdateInvocationBody_Input struct {
-	union json.RawMessage
-}
-
-// UpdateJudgeRequest defines model for UpdateJudgeRequest.
-type UpdateJudgeRequest struct {
-	Description  string                    `json:"description"`
-	Instructions string                    `json:"instructions"`
-	ModelName    string                    `json:"model_name"`
-	Name         string                    `json:"name"`
-	Output       UpdateJudgeRequest_Output `json:"output"`
-	Tools        []string                  `json:"tools"`
-}
-
-// UpdateJudgeRequest_Output defines model for UpdateJudgeRequest.Output.
-type UpdateJudgeRequest_Output struct {
 	union json.RawMessage
 }
 
@@ -24647,6 +24916,11 @@ type UsageQueryRowOUT struct {
 	// Examples: usage
 	UsageType *string `json:"usage_type,omitempty"`
 
+	// UserAgent Harness identified from the request User-Agent header.
+	//
+	// Examples: claude_code
+	UserAgent *string `json:"user_agent,omitempty"`
+
 	// UserId User ID.
 	//
 	// Examples: user-id
@@ -25153,8 +25427,10 @@ type VoiceAgentCustomConnector struct {
 	Authorization *struct {
 		union json.RawMessage
 	} `json:"authorization,omitempty"`
-	ConnectorId       string                         `json:"connector_id"`
-	Filler            *StaticToolFiller              `json:"filler,omitempty"`
+	ConnectorId string `json:"connector_id"`
+	Filler      *struct {
+		union json.RawMessage
+	} `json:"filler,omitempty"`
 	ToolConfiguration *ToolConfiguration             `json:"tool_configuration,omitempty"`
 	Type              *VoiceAgentCustomConnectorType `json:"type,omitempty"`
 }
@@ -25164,7 +25440,9 @@ type VoiceAgentCustomConnectorType string
 
 // VoiceAgentDocumentLibraryTool defines model for VoiceAgentDocumentLibraryTool.
 type VoiceAgentDocumentLibraryTool struct {
-	Filler *StaticToolFiller `json:"filler,omitempty"`
+	Filler *struct {
+		union json.RawMessage
+	} `json:"filler,omitempty"`
 
 	// LibraryIds Ids of the library in which to search.
 	LibraryIds        []string                           `json:"library_ids"`
@@ -25177,7 +25455,9 @@ type VoiceAgentDocumentLibraryToolType string
 
 // VoiceAgentFunctionTool defines model for VoiceAgentFunctionTool.
 type VoiceAgentFunctionTool struct {
-	Filler    *StaticToolFiller           `json:"filler,omitempty"`
+	Filler *struct {
+		union json.RawMessage
+	} `json:"filler,omitempty"`
 	Function  Function                    `json:"function"`
 	TimeoutMs *int                        `json:"timeout_ms,omitempty"`
 	Type      *VoiceAgentFunctionToolType `json:"type,omitempty"`
@@ -25188,7 +25468,9 @@ type VoiceAgentFunctionToolType string
 
 // VoiceAgentFunctionToolRequest defines model for VoiceAgentFunctionToolRequest.
 type VoiceAgentFunctionToolRequest struct {
-	Filler    *StaticToolFiller                  `json:"filler,omitempty"`
+	Filler *struct {
+		union json.RawMessage
+	} `json:"filler,omitempty"`
 	Function  FunctionRequest                    `json:"function"`
 	TimeoutMs *int                               `json:"timeout_ms,omitempty"`
 	Type      *VoiceAgentFunctionToolRequestType `json:"type,omitempty"`
@@ -25199,7 +25481,9 @@ type VoiceAgentFunctionToolRequestType string
 
 // VoiceAgentWebSearchTool defines model for VoiceAgentWebSearchTool.
 type VoiceAgentWebSearchTool struct {
-	Filler            *StaticToolFiller            `json:"filler,omitempty"`
+	Filler *struct {
+		union json.RawMessage
+	} `json:"filler,omitempty"`
 	ToolConfiguration *ToolConfiguration           `json:"tool_configuration,omitempty"`
 	Type              *VoiceAgentWebSearchToolType `json:"type,omitempty"`
 }
@@ -25303,9 +25587,12 @@ type WebSearchToolType string
 
 // Webhook defines model for Webhook.
 type Webhook struct {
-	CreatedAt               time.Time                      `json:"created_at"`
-	CreatorId               openapi_types.UUID             `json:"creator_id"`
-	EventTypePath           *string                        `json:"event_type_path"`
+	CreatedAt      time.Time          `json:"created_at"`
+	CreatorId      openapi_types.UUID `json:"creator_id"`
+	EventIdPattern *string            `json:"event_id_pattern,omitempty"`
+	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
+	EventTypePath           *string                        `json:"event_type_path,omitempty"`
+	EventTypePattern        *string                        `json:"event_type_pattern,omitempty"`
 	ExpiresAt               *time.Time                     `json:"expires_at"`
 	HttpMethod              string                         `json:"http_method"`
 	Id                      openapi_types.UUID             `json:"id"`
@@ -25322,9 +25609,12 @@ type Webhook struct {
 	TimestampExtractorRegex *string                        `json:"timestamp_extractor_regex"`
 	UpdatedAt               time.Time                      `json:"updated_at"`
 	Url                     string                         `json:"url"`
-	UrlVerified             *bool                          `json:"url_verified"`
-	ValidityPeriodSecond    *int                           `json:"validity_period_second"`
-	WorkspaceId             openapi_types.UUID             `json:"workspace_id"`
+
+	// UrlVerificationToken Token the provider echoes back when verifying the URL (WhatsApp: the Verify token)
+	UrlVerificationToken *string            `json:"url_verification_token,omitempty"`
+	UrlVerified          *bool              `json:"url_verified"`
+	ValidityPeriodSecond *int               `json:"validity_period_second"`
+	WorkspaceId          openapi_types.UUID `json:"workspace_id"`
 }
 
 // WebhookProvider defines model for WebhookProvider.
@@ -25376,6 +25666,11 @@ type WhoamiOrganization struct {
 // “principal“ field is a discriminated union; the remaining fields are the
 // shared session context and apply to either principal kind.
 type WhoamiResponse struct {
+	// CustomerId The billing customer identifier from the authenticated session. Identifies the billing account, not the organization (organization.id); the IDs are not interchangeable. Null when no customer is selected.
+	//
+	// Examples: 3b241101-e2bb-4255-8caf-4136c566a962, null
+	CustomerId *string `json:"customer_id,omitempty"`
+
 	// Organization The organization the caller's session is scoped to, when set.
 	Organization *WhoamiOrganization `json:"organization,omitempty"`
 
@@ -26677,12 +26972,17 @@ type WorkflowWithWorkerStatus struct {
 
 // WorkflowsWorkerSpecUpdate defines model for WorkflowsWorkerSpecUpdate.
 type WorkflowsWorkerSpecUpdate struct {
-	// ArchiveId Rebuild the worker from this archive, dropping 'github_url' and 'revision'. Sending 'github_url' instead moves it back to a repository.
+	// ArchiveId Rebuild the worker from this archive, dropping 'repository_url' and 'revision'. Sending 'repository_url' instead moves it back to a repository.
 	ArchiveId *openapi_types.UUID `json:"archive_id,omitempty"`
 
 	// BackendSpec Backend-specific configuration for the Mistral Cloud backend.
 	BackendSpec *DeploymentMistralCloudBackendSpec `json:"backend_spec,omitempty"`
-	GithubUrl   *string                            `json:"github_url,omitempty"`
+
+	// GithubUrl Deprecated alias of 'repository_url' for a GitHub repository. Set only 'repository_url'.
+	GithubUrl *string `json:"github_url,omitempty"`
+
+	// RepositoryUrl Rebuild the worker from this repository, on GitHub or the git server, dropping 'archive_id'.
+	RepositoryUrl *string `json:"repository_url,omitempty"`
 
 	// RequestedRoles The complete workspace-role set after the update, beyond `workflow_executor`. Replaces the current roles; omit it to leave them unchanged, send an empty list to drop all extras. Granted only if the deploying user holds them.
 	RequestedRoles *[]string `json:"requested_roles,omitempty"`
@@ -26940,7 +27240,16 @@ type UsersApiAdminUserGroupsGetUserGroupsParams struct {
 
 	// Search Search term used to filter user groups by name.
 	Search *string `form:"search,omitempty" json:"search,omitempty"`
+
+	// WorkspaceUuid Filter groups to those assigned to this Workspace. Assignments to archived Workspaces never match.
+	WorkspaceUuid *openapi_types.UUID `form:"workspace_uuid,omitempty" json:"workspace_uuid,omitempty"`
+
+	// Role Filter groups to those holding this role on a Workspace. When combined with workspace_uuid, the role must be held on that Workspace. Assignments to archived Workspaces never match.
+	Role *UsersApiAdminUserGroupsGetUserGroupsParamsRole `form:"role,omitempty" json:"role,omitempty"`
 }
+
+// UsersApiAdminUserGroupsGetUserGroupsParamsRole defines parameters for UsersApiAdminUserGroupsGetUserGroups.
+type UsersApiAdminUserGroupsGetUserGroupsParamsRole string
 
 // UsersApiAdminUserGroupsGetUserGroupMembersParams defines parameters for UsersApiAdminUserGroupsGetUserGroupMembers.
 type UsersApiAdminUserGroupsGetUserGroupMembersParams struct {
@@ -26970,10 +27279,22 @@ type UsersApiAdminUsersGetUsersParams struct {
 
 	// Email Email address to filter users and invitations.
 	Email *string `form:"email,omitempty" json:"email,omitempty"`
+
+	// IncludeInactive Also return deactivated and blocked members.
+	IncludeInactive *bool `form:"include_inactive,omitempty" json:"include_inactive,omitempty"`
 }
 
 // UsersApiAdminUsersCreateUsersJSONBody defines parameters for UsersApiAdminUsersCreateUsers.
 type UsersApiAdminUsersCreateUsersJSONBody = []OrganizationMemberCreate
+
+// UsersApiAdminUsersGetUserWorkspacesParams defines parameters for UsersApiAdminUsersGetUserWorkspaces.
+type UsersApiAdminUsersGetUserWorkspacesParams struct {
+	// Page Page number to return.
+	Page *int `form:"page,omitempty" json:"page,omitempty"`
+
+	// PageSize Maximum number of results per page.
+	PageSize *int `form:"page_size,omitempty" json:"page_size,omitempty"`
+}
 
 // UsersApiAdminWorkspacesGetWorkspacesParams defines parameters for UsersApiAdminWorkspacesGetWorkspaces.
 type UsersApiAdminWorkspacesGetWorkspacesParams struct {
@@ -27521,18 +27842,6 @@ type SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchP
 	Page     *int `form:"page,omitempty" json:"page,omitempty"`
 }
 
-// GetJudgesV1ObservabilityJudgesGetParams defines parameters for GetJudgesV1ObservabilityJudgesGet.
-type GetJudgesV1ObservabilityJudgesGetParams struct {
-	// TypeFilter Filter by judge output types
-	TypeFilter *[]JudgeOutputType `form:"type_filter,omitempty" json:"type_filter,omitempty"`
-
-	// ModelFilter Filter by model names
-	ModelFilter *[]string `form:"model_filter,omitempty" json:"model_filter,omitempty"`
-	PageSize    *int      `form:"page_size,omitempty" json:"page_size,omitempty"`
-	Page        *int      `form:"page,omitempty" json:"page,omitempty"`
-	Q           *string   `form:"q,omitempty" json:"q,omitempty"`
-}
-
 // GetLogFieldOptionsV1ObservabilityLogsFieldsFieldNameOptionsGetParams defines parameters for GetLogFieldOptionsV1ObservabilityLogsFieldsFieldNameOptionsGet.
 type GetLogFieldOptionsV1ObservabilityLogsFieldsFieldNameOptionsGetParams struct {
 	From *time.Time `form:"from,omitempty" json:"from,omitempty"`
@@ -27583,10 +27892,12 @@ type SearchPipelineResultsV1ObservabilityPipelineResultsSearchPostParams struct 
 
 // ListPipelinesV1ObservabilityPipelinesGetParams defines parameters for ListPipelinesV1ObservabilityPipelinesGet.
 type ListPipelinesV1ObservabilityPipelinesGetParams struct {
-	Enabled  *bool   `form:"enabled,omitempty" json:"enabled,omitempty"`
-	PageSize *int    `form:"page_size,omitempty" json:"page_size,omitempty"`
-	Page     *int    `form:"page,omitempty" json:"page,omitempty"`
-	Q        *string `form:"q,omitempty" json:"q,omitempty"`
+	Enabled  *bool      `form:"enabled,omitempty" json:"enabled,omitempty"`
+	From     *time.Time `form:"from,omitempty" json:"from,omitempty"`
+	To       *time.Time `form:"to,omitempty" json:"to,omitempty"`
+	PageSize *int       `form:"page_size,omitempty" json:"page_size,omitempty"`
+	Page     *int       `form:"page,omitempty" json:"page,omitempty"`
+	Q        *string    `form:"q,omitempty" json:"q,omitempty"`
 }
 
 // GetProjectsV1ObservabilityProjectsGetParams defines parameters for GetProjectsV1ObservabilityProjectsGet.
@@ -27601,6 +27912,20 @@ type GetProjectsV1ObservabilityProjectsGetParams struct {
 type GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2GetParams struct {
 	PageSize *int `form:"page_size,omitempty" json:"page_size,omitempty"`
 	Page     *int `form:"page,omitempty" json:"page,omitempty"`
+}
+
+// ListScorersV1ObservabilityScorersGetParams defines parameters for ListScorersV1ObservabilityScorersGet.
+type ListScorersV1ObservabilityScorersGetParams struct {
+	// CreatedByMe Only return scorers created by the current user
+	CreatedByMe *bool `form:"created_by_me,omitempty" json:"created_by_me,omitempty"`
+
+	// Ootb Only return out-of-the-box scorers
+	Ootb *bool `form:"ootb,omitempty" json:"ootb,omitempty"`
+
+	// Q Case-insensitive filter on scorer slug, name, or description
+	Q        *string `form:"q,omitempty" json:"q,omitempty"`
+	PageSize *int    `form:"page_size,omitempty" json:"page_size,omitempty"`
+	Page     *int    `form:"page,omitempty" json:"page,omitempty"`
 }
 
 // AggregateSpansV1ObservabilitySpansAggregatePostParams defines parameters for AggregateSpansV1ObservabilitySpansAggregatePost.
@@ -27768,6 +28093,9 @@ type GetWorkflowsV1WorkflowsGetParams struct {
 
 	// Tags Filter to workflows tagged with all listed tags (AND).
 	Tags *[]string `form:"tags,omitempty" json:"tags,omitempty"`
+
+	// ExcludeTags Exclude workflows tagged with any of the listed tags.
+	ExcludeTags *[]string `form:"exclude_tags,omitempty" json:"exclude_tags,omitempty"`
 
 	// SortBy Field to sort by
 	SortBy *GetWorkflowsV1WorkflowsGetParamsSortBy `form:"sort_by,omitempty" json:"sort_by,omitempty"`
@@ -28058,6 +28386,9 @@ type GetWorkflowRegistrationsV1WorkflowsRegistrationsGetParams struct {
 	// AvailableInChatAssistant Whether to only return workflows available in chat assistant
 	AvailableInChatAssistant *bool `form:"available_in_chat_assistant,omitempty" json:"available_in_chat_assistant,omitempty"`
 
+	// ExcludeTags Exclude registrations of workflows tagged with any of the listed tags.
+	ExcludeTags *[]string `form:"exclude_tags,omitempty" json:"exclude_tags,omitempty"`
+
 	// Limit The maximum number of workflows versions to return
 	Limit *int `form:"limit,omitempty" json:"limit,omitempty"`
 
@@ -28121,6 +28452,9 @@ type ListRunsV1WorkflowsRunsGetParams struct {
 
 	// WorkflowTags Filter to runs of workflows tagged with all listed tags (AND).
 	WorkflowTags *[]string `form:"workflow_tags,omitempty" json:"workflow_tags,omitempty"`
+
+	// ExcludeWorkflowTags Exclude runs of workflows tagged with any of the listed tags.
+	ExcludeWorkflowTags *[]string `form:"exclude_workflow_tags,omitempty" json:"exclude_workflow_tags,omitempty"`
 
 	// IncludeInternal Include runs of internal/technical workflows (e.g. parallel-execution)
 	IncludeInternal *bool `form:"include_internal,omitempty" json:"include_internal,omitempty"`
@@ -28384,9 +28718,6 @@ type UsersApiAdminUserGroupsRemoveUsersFromGroupJSONRequestBody = AdminAssignUse
 // UsersApiAdminUserGroupsAssignUsersToGroupJSONRequestBody defines body for UsersApiAdminUserGroupsAssignUsersToGroup for application/json ContentType.
 type UsersApiAdminUserGroupsAssignUsersToGroupJSONRequestBody = AdminAssignUsersToGroupIn
 
-// UsersApiAdminUserGroupsSetNestedGroupsJSONRequestBody defines body for UsersApiAdminUserGroupsSetNestedGroups for application/json ContentType.
-type UsersApiAdminUserGroupsSetNestedGroupsJSONRequestBody = SetNestedGroupsIn
-
 // UsersAdminUserGroupsUpdateUserGroupOrganizationRoleJSONRequestBody defines body for UsersAdminUserGroupsUpdateUserGroupOrganizationRole for application/json ContentType.
 type UsersAdminUserGroupsUpdateUserGroupOrganizationRoleJSONRequestBody = AdminUpdateUserGroupOrganizationRoleIn
 
@@ -28437,6 +28768,9 @@ type UpdateAgentV1AudioAgentsAgentIdPutJSONRequestBody = AudioAgentUpdateRequest
 
 // CreateSessionV1AudioSessionsPostJSONRequestBody defines body for CreateSessionV1AudioSessionsPost for application/json ContentType.
 type CreateSessionV1AudioSessionsPostJSONRequestBody = AudioSessionCreateRequest
+
+// UpdateSessionV1AudioSessionsSessionIdPatchJSONRequestBody defines body for UpdateSessionV1AudioSessionsSessionIdPatch for application/json ContentType.
+type UpdateSessionV1AudioSessionsSessionIdPatchJSONRequestBody = AudioSessionUpdateRequest
 
 // SpeechV1AudioSpeechPostJSONRequestBody defines body for SpeechV1AudioSpeechPost for application/json ContentType.
 type SpeechV1AudioSpeechPostJSONRequestBody = SpeechRequest
@@ -28579,9 +28913,6 @@ type ModerationsV1ModerationsPostJSONRequestBody = ClassificationRequest
 // DeleteDatasetRecordsV1ObservabilityDatasetRecordsBulkDeletePostJSONRequestBody defines body for DeleteDatasetRecordsV1ObservabilityDatasetRecordsBulkDeletePost for application/json ContentType.
 type DeleteDatasetRecordsV1ObservabilityDatasetRecordsBulkDeletePostJSONRequestBody = DeleteDatasetRecordsRequest
 
-// JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostJSONRequestBody defines body for JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost for application/json ContentType.
-type JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostJSONRequestBody = JudgeDatasetRecordRequest
-
 // UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutJSONRequestBody defines body for UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPut for application/json ContentType.
 type UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutJSONRequestBody = UpdateDatasetRecordPayloadRequest
 
@@ -28621,15 +28952,6 @@ type ComputeFilteredRunStatisticsV2V1ObservabilityEvaluationRunsV2RunIdStatistic
 // SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPostJSONRequestBody defines body for SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPost for application/json ContentType.
 type SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPostJSONRequestBody = SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPostJSONBody
 
-// CreateJudgeV1ObservabilityJudgesPostJSONRequestBody defines body for CreateJudgeV1ObservabilityJudgesPost for application/json ContentType.
-type CreateJudgeV1ObservabilityJudgesPostJSONRequestBody = CreateJudgeRequest
-
-// UpdateJudgeV1ObservabilityJudgesJudgeIdPutJSONRequestBody defines body for UpdateJudgeV1ObservabilityJudgesJudgeIdPut for application/json ContentType.
-type UpdateJudgeV1ObservabilityJudgesJudgeIdPutJSONRequestBody = UpdateJudgeRequest
-
-// JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostJSONRequestBody defines body for JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost for application/json ContentType.
-type JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostJSONRequestBody = JudgeConversationRequest
-
 // SearchLogsV1ObservabilityLogsSearchPostJSONRequestBody defines body for SearchLogsV1ObservabilityLogsSearchPost for application/json ContentType.
 type SearchLogsV1ObservabilityLogsSearchPostJSONRequestBody = LogsRequest
 
@@ -28641,6 +28963,12 @@ type CreatePipelineV1ObservabilityPipelinesPostJSONRequestBody = CreatePipelineR
 
 // UpdatePipelineV1ObservabilityPipelinesPipelineIdPutJSONRequestBody defines body for UpdatePipelineV1ObservabilityPipelinesPipelineIdPut for application/json ContentType.
 type UpdatePipelineV1ObservabilityPipelinesPipelineIdPutJSONRequestBody = UpdatePipelineRequest
+
+// CreateScorerV1ObservabilityScorersPostJSONRequestBody defines body for CreateScorerV1ObservabilityScorersPost for application/json ContentType.
+type CreateScorerV1ObservabilityScorersPostJSONRequestBody = CreateScorerRequest
+
+// EditScorerV1ObservabilityScorersScorerSlugPatchJSONRequestBody defines body for EditScorerV1ObservabilityScorersScorerSlugPatch for application/json ContentType.
+type EditScorerV1ObservabilityScorersScorerSlugPatchJSONRequestBody = EditScorerRequest
 
 // AggregateSpansV1ObservabilitySpansAggregatePostJSONRequestBody defines body for AggregateSpansV1ObservabilitySpansAggregatePost for application/json ContentType.
 type AggregateSpansV1ObservabilitySpansAggregatePostJSONRequestBody = AggregationRequest
@@ -29015,11 +29343,9 @@ func (a ConnectorToolResultMetadata) MarshalJSON() ([]byte, error) {
 		}
 	}
 
-	if a.StructuredContent != nil {
-		object["structuredContent"], err = json.Marshal(a.StructuredContent)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'structuredContent': %w", err)
-		}
+	object["structuredContent"], err = json.Marshal(a.StructuredContent)
+	if err != nil {
+		return nil, fmt.Errorf("error marshaling 'structuredContent': %w", err)
 	}
 
 	for fieldName, field := range a.AdditionalProperties {
@@ -32804,6 +33130,14 @@ func (a *ResponsesCustomTool) UnmarshalJSON(b []byte) error {
 		delete(object, "allowed_callers")
 	}
 
+	if raw, found := object["async"]; found {
+		err = json.Unmarshal(raw, &a.Async)
+		if err != nil {
+			return fmt.Errorf("error reading 'async': %w", err)
+		}
+		delete(object, "async")
+	}
+
 	if raw, found := object["defer_loading"]; found {
 		err = json.Unmarshal(raw, &a.DeferLoading)
 		if err != nil {
@@ -32867,6 +33201,13 @@ func (a ResponsesCustomTool) MarshalJSON() ([]byte, error) {
 		object["allowed_callers"], err = json.Marshal(a.AllowedCallers)
 		if err != nil {
 			return nil, fmt.Errorf("error marshaling 'allowed_callers': %w", err)
+		}
+	}
+
+	if a.Async != nil {
+		object["async"], err = json.Marshal(a.Async)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'async': %w", err)
 		}
 	}
 
@@ -33060,6 +33401,38 @@ func (a *ResponsesError) UnmarshalJSON(b []byte) error {
 		delete(object, "message")
 	}
 
+	if raw, found := object["misalignment"]; found {
+		err = json.Unmarshal(raw, &a.Misalignment)
+		if err != nil {
+			return fmt.Errorf("error reading 'misalignment': %w", err)
+		}
+		delete(object, "misalignment")
+	}
+
+	if raw, found := object["param"]; found {
+		err = json.Unmarshal(raw, &a.Param)
+		if err != nil {
+			return fmt.Errorf("error reading 'param': %w", err)
+		}
+		delete(object, "param")
+	}
+
+	if raw, found := object["reason"]; found {
+		err = json.Unmarshal(raw, &a.Reason)
+		if err != nil {
+			return fmt.Errorf("error reading 'reason': %w", err)
+		}
+		delete(object, "reason")
+	}
+
+	if raw, found := object["type"]; found {
+		err = json.Unmarshal(raw, &a.Type)
+		if err != nil {
+			return fmt.Errorf("error reading 'type': %w", err)
+		}
+		delete(object, "type")
+	}
+
 	if len(object) != 0 {
 		a.AdditionalProperties = make(map[string]interface{})
 		for fieldName, fieldBuf := range object {
@@ -33087,6 +33460,32 @@ func (a ResponsesError) MarshalJSON() ([]byte, error) {
 	object["message"], err = json.Marshal(a.Message)
 	if err != nil {
 		return nil, fmt.Errorf("error marshaling 'message': %w", err)
+	}
+
+	if a.Misalignment != nil {
+		object["misalignment"], err = json.Marshal(a.Misalignment)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'misalignment': %w", err)
+		}
+	}
+
+	if a.Param != nil {
+		object["param"], err = json.Marshal(a.Param)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'param': %w", err)
+		}
+	}
+
+	object["reason"], err = json.Marshal(a.Reason)
+	if err != nil {
+		return nil, fmt.Errorf("error marshaling 'reason': %w", err)
+	}
+
+	if a.Type != nil {
+		object["type"], err = json.Marshal(a.Type)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'type': %w", err)
+		}
 	}
 
 	for fieldName, field := range a.AdditionalProperties {
@@ -33727,14 +34126,6 @@ func (a *ResponsesFunctionCallArgumentsDoneEvent) UnmarshalJSON(b []byte) error 
 		delete(object, "item_id")
 	}
 
-	if raw, found := object["name"]; found {
-		err = json.Unmarshal(raw, &a.Name)
-		if err != nil {
-			return fmt.Errorf("error reading 'name': %w", err)
-		}
-		delete(object, "name")
-	}
-
 	if raw, found := object["output_index"]; found {
 		err = json.Unmarshal(raw, &a.OutputIndex)
 		if err != nil {
@@ -33786,11 +34177,6 @@ func (a ResponsesFunctionCallArgumentsDoneEvent) MarshalJSON() ([]byte, error) {
 	object["item_id"], err = json.Marshal(a.ItemId)
 	if err != nil {
 		return nil, fmt.Errorf("error marshaling 'item_id': %w", err)
-	}
-
-	object["name"], err = json.Marshal(a.Name)
-	if err != nil {
-		return nil, fmt.Errorf("error marshaling 'name': %w", err)
 	}
 
 	object["output_index"], err = json.Marshal(a.OutputIndex)
@@ -33866,6 +34252,22 @@ func (a *ResponsesFunctionCallOutput) UnmarshalJSON(b []byte) error {
 		delete(object, "id")
 	}
 
+	if raw, found := object["name"]; found {
+		err = json.Unmarshal(raw, &a.Name)
+		if err != nil {
+			return fmt.Errorf("error reading 'name': %w", err)
+		}
+		delete(object, "name")
+	}
+
+	if raw, found := object["namespace"]; found {
+		err = json.Unmarshal(raw, &a.Namespace)
+		if err != nil {
+			return fmt.Errorf("error reading 'namespace': %w", err)
+		}
+		delete(object, "namespace")
+	}
+
 	if raw, found := object["output"]; found {
 		err = json.Unmarshal(raw, &a.Output)
 		if err != nil {
@@ -33925,6 +34327,20 @@ func (a ResponsesFunctionCallOutput) MarshalJSON() ([]byte, error) {
 		object["id"], err = json.Marshal(a.Id)
 		if err != nil {
 			return nil, fmt.Errorf("error marshaling 'id': %w", err)
+		}
+	}
+
+	if a.Name != nil {
+		object["name"], err = json.Marshal(a.Name)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'name': %w", err)
+		}
+	}
+
+	if a.Namespace != nil {
+		object["namespace"], err = json.Marshal(a.Namespace)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'namespace': %w", err)
 		}
 	}
 
@@ -34132,6 +34548,14 @@ func (a *ResponsesFunctionTool) UnmarshalJSON(b []byte) error {
 		delete(object, "allowed_callers")
 	}
 
+	if raw, found := object["async"]; found {
+		err = json.Unmarshal(raw, &a.Async)
+		if err != nil {
+			return fmt.Errorf("error reading 'async': %w", err)
+		}
+		delete(object, "async")
+	}
+
 	if raw, found := object["defer_loading"]; found {
 		err = json.Unmarshal(raw, &a.DeferLoading)
 		if err != nil {
@@ -34211,6 +34635,13 @@ func (a ResponsesFunctionTool) MarshalJSON() ([]byte, error) {
 		object["allowed_callers"], err = json.Marshal(a.AllowedCallers)
 		if err != nil {
 			return nil, fmt.Errorf("error marshaling 'allowed_callers': %w", err)
+		}
+	}
+
+	if a.Async != nil {
+		object["async"], err = json.Marshal(a.Async)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'async': %w", err)
 		}
 	}
 
@@ -34301,6 +34732,14 @@ func (a *ResponsesFunctionToolCall) UnmarshalJSON(b []byte) error {
 		delete(object, "arguments")
 	}
 
+	if raw, found := object["async"]; found {
+		err = json.Unmarshal(raw, &a.Async)
+		if err != nil {
+			return fmt.Errorf("error reading 'async': %w", err)
+		}
+		delete(object, "async")
+	}
+
 	if raw, found := object["call_id"]; found {
 		err = json.Unmarshal(raw, &a.CallId)
 		if err != nil {
@@ -34379,6 +34818,13 @@ func (a ResponsesFunctionToolCall) MarshalJSON() ([]byte, error) {
 	object["arguments"], err = json.Marshal(a.Arguments)
 	if err != nil {
 		return nil, fmt.Errorf("error marshaling 'arguments': %w", err)
+	}
+
+	if a.Async != nil {
+		object["async"], err = json.Marshal(a.Async)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'async': %w", err)
+		}
 	}
 
 	object["call_id"], err = json.Marshal(a.CallId)
@@ -35717,6 +36163,185 @@ func (a ResponsesMessage) MarshalJSON() ([]byte, error) {
 	return json.Marshal(object)
 }
 
+// Getter for additional properties for ResponsesMisalignment. Returns the specified
+// element and whether it was found
+func (a ResponsesMisalignment) Get(fieldName string) (value interface{}, found bool) {
+	if a.AdditionalProperties != nil {
+		value, found = a.AdditionalProperties[fieldName]
+	}
+	return
+}
+
+// Setter for additional properties for ResponsesMisalignment
+func (a *ResponsesMisalignment) Set(fieldName string, value interface{}) {
+	if a.AdditionalProperties == nil {
+		a.AdditionalProperties = make(map[string]interface{})
+	}
+	a.AdditionalProperties[fieldName] = value
+}
+
+// Override default JSON handling for ResponsesMisalignment to handle AdditionalProperties
+func (a *ResponsesMisalignment) UnmarshalJSON(b []byte) error {
+	object := make(map[string]json.RawMessage)
+	err := json.Unmarshal(b, &object)
+	if err != nil {
+		return err
+	}
+
+	if raw, found := object["detailed_explanation"]; found {
+		err = json.Unmarshal(raw, &a.DetailedExplanation)
+		if err != nil {
+			return fmt.Errorf("error reading 'detailed_explanation': %w", err)
+		}
+		delete(object, "detailed_explanation")
+	}
+
+	if raw, found := object["error_type"]; found {
+		err = json.Unmarshal(raw, &a.ErrorType)
+		if err != nil {
+			return fmt.Errorf("error reading 'error_type': %w", err)
+		}
+		delete(object, "error_type")
+	}
+
+	if raw, found := object["review_target"]; found {
+		err = json.Unmarshal(raw, &a.ReviewTarget)
+		if err != nil {
+			return fmt.Errorf("error reading 'review_target': %w", err)
+		}
+		delete(object, "review_target")
+	}
+
+	if raw, found := object["steer"]; found {
+		err = json.Unmarshal(raw, &a.Steer)
+		if err != nil {
+			return fmt.Errorf("error reading 'steer': %w", err)
+		}
+		delete(object, "steer")
+	}
+
+	if len(object) != 0 {
+		a.AdditionalProperties = make(map[string]interface{})
+		for fieldName, fieldBuf := range object {
+			var fieldVal interface{}
+			err := json.Unmarshal(fieldBuf, &fieldVal)
+			if err != nil {
+				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
+			}
+			a.AdditionalProperties[fieldName] = fieldVal
+		}
+	}
+	return nil
+}
+
+// Override default JSON handling for ResponsesMisalignment to handle AdditionalProperties
+func (a ResponsesMisalignment) MarshalJSON() ([]byte, error) {
+	var err error
+	object := make(map[string]json.RawMessage)
+
+	if a.DetailedExplanation != nil {
+		object["detailed_explanation"], err = json.Marshal(a.DetailedExplanation)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'detailed_explanation': %w", err)
+		}
+	}
+
+	if a.ErrorType != nil {
+		object["error_type"], err = json.Marshal(a.ErrorType)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'error_type': %w", err)
+		}
+	}
+
+	if a.ReviewTarget != nil {
+		object["review_target"], err = json.Marshal(a.ReviewTarget)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'review_target': %w", err)
+		}
+	}
+
+	if a.Steer != nil {
+		object["steer"], err = json.Marshal(a.Steer)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'steer': %w", err)
+		}
+	}
+
+	for fieldName, field := range a.AdditionalProperties {
+		object[fieldName], err = json.Marshal(field)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling '%s': %w", fieldName, err)
+		}
+	}
+	return json.Marshal(object)
+}
+
+// Getter for additional properties for ResponsesMisalignmentSteer. Returns the specified
+// element and whether it was found
+func (a ResponsesMisalignmentSteer) Get(fieldName string) (value interface{}, found bool) {
+	if a.AdditionalProperties != nil {
+		value, found = a.AdditionalProperties[fieldName]
+	}
+	return
+}
+
+// Setter for additional properties for ResponsesMisalignmentSteer
+func (a *ResponsesMisalignmentSteer) Set(fieldName string, value interface{}) {
+	if a.AdditionalProperties == nil {
+		a.AdditionalProperties = make(map[string]interface{})
+	}
+	a.AdditionalProperties[fieldName] = value
+}
+
+// Override default JSON handling for ResponsesMisalignmentSteer to handle AdditionalProperties
+func (a *ResponsesMisalignmentSteer) UnmarshalJSON(b []byte) error {
+	object := make(map[string]json.RawMessage)
+	err := json.Unmarshal(b, &object)
+	if err != nil {
+		return err
+	}
+
+	if raw, found := object["message"]; found {
+		err = json.Unmarshal(raw, &a.Message)
+		if err != nil {
+			return fmt.Errorf("error reading 'message': %w", err)
+		}
+		delete(object, "message")
+	}
+
+	if len(object) != 0 {
+		a.AdditionalProperties = make(map[string]interface{})
+		for fieldName, fieldBuf := range object {
+			var fieldVal interface{}
+			err := json.Unmarshal(fieldBuf, &fieldVal)
+			if err != nil {
+				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
+			}
+			a.AdditionalProperties[fieldName] = fieldVal
+		}
+	}
+	return nil
+}
+
+// Override default JSON handling for ResponsesMisalignmentSteer to handle AdditionalProperties
+func (a ResponsesMisalignmentSteer) MarshalJSON() ([]byte, error) {
+	var err error
+	object := make(map[string]json.RawMessage)
+
+	object["message"], err = json.Marshal(a.Message)
+	if err != nil {
+		return nil, fmt.Errorf("error marshaling 'message': %w", err)
+	}
+
+	for fieldName, field := range a.AdditionalProperties {
+		object[fieldName], err = json.Marshal(field)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling '%s': %w", fieldName, err)
+		}
+	}
+	return json.Marshal(object)
+}
+
 // Getter for additional properties for ResponsesNamespaceTool. Returns the specified
 // element and whether it was found
 func (a ResponsesNamespaceTool) Get(fieldName string) (value interface{}, found bool) {
@@ -36738,6 +37363,14 @@ func (a *ResponsesPromptCacheBreakpoint) UnmarshalJSON(b []byte) error {
 		delete(object, "mode")
 	}
 
+	if raw, found := object["ttl"]; found {
+		err = json.Unmarshal(raw, &a.Ttl)
+		if err != nil {
+			return fmt.Errorf("error reading 'ttl': %w", err)
+		}
+		delete(object, "ttl")
+	}
+
 	if len(object) != 0 {
 		a.AdditionalProperties = make(map[string]interface{})
 		for fieldName, fieldBuf := range object {
@@ -36760,6 +37393,13 @@ func (a ResponsesPromptCacheBreakpoint) MarshalJSON() ([]byte, error) {
 	object["mode"], err = json.Marshal(a.Mode)
 	if err != nil {
 		return nil, fmt.Errorf("error marshaling 'mode': %w", err)
+	}
+
+	if a.Ttl != nil {
+		object["ttl"], err = json.Marshal(a.Ttl)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'ttl': %w", err)
+		}
 	}
 
 	for fieldName, field := range a.AdditionalProperties {
@@ -38158,6 +38798,14 @@ func (a *ResponsesToolFunction) UnmarshalJSON(b []byte) error {
 		delete(object, "allowed_callers")
 	}
 
+	if raw, found := object["async"]; found {
+		err = json.Unmarshal(raw, &a.Async)
+		if err != nil {
+			return fmt.Errorf("error reading 'async': %w", err)
+		}
+		delete(object, "async")
+	}
+
 	if raw, found := object["defer_loading"]; found {
 		err = json.Unmarshal(raw, &a.DeferLoading)
 		if err != nil {
@@ -38237,6 +38885,13 @@ func (a ResponsesToolFunction) MarshalJSON() ([]byte, error) {
 		object["allowed_callers"], err = json.Marshal(a.AllowedCallers)
 		if err != nil {
 			return nil, fmt.Errorf("error marshaling 'allowed_callers': %w", err)
+		}
+	}
+
+	if a.Async != nil {
+		object["async"], err = json.Marshal(a.Async)
+		if err != nil {
+			return nil, fmt.Errorf("error marshaling 'async': %w", err)
 		}
 	}
 
@@ -38958,130 +39613,6 @@ func (t *AdminAssignGroupToWorkspaceIn_Roles_Item) UnmarshalJSON(b []byte) error
 	return err
 }
 
-// AsUserRole returns the union data inside the AdminOrganizationMemberOUT_RawRole as a UserRole
-func (t AdminOrganizationMemberOUT_RawRole) AsUserRole() (UserRole, error) {
-	var body UserRole
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromUserRole overwrites any union data inside the AdminOrganizationMemberOUT_RawRole as the provided UserRole
-func (t *AdminOrganizationMemberOUT_RawRole) FromUserRole(v UserRole) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeUserRole performs a merge with any union data inside the AdminOrganizationMemberOUT_RawRole, using the provided UserRole
-func (t *AdminOrganizationMemberOUT_RawRole) MergeUserRole(v UserRole) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsStaticOrganizationRoles returns the union data inside the AdminOrganizationMemberOUT_RawRole as a StaticOrganizationRoles
-func (t AdminOrganizationMemberOUT_RawRole) AsStaticOrganizationRoles() (StaticOrganizationRoles, error) {
-	var body StaticOrganizationRoles
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromStaticOrganizationRoles overwrites any union data inside the AdminOrganizationMemberOUT_RawRole as the provided StaticOrganizationRoles
-func (t *AdminOrganizationMemberOUT_RawRole) FromStaticOrganizationRoles(v StaticOrganizationRoles) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeStaticOrganizationRoles performs a merge with any union data inside the AdminOrganizationMemberOUT_RawRole, using the provided StaticOrganizationRoles
-func (t *AdminOrganizationMemberOUT_RawRole) MergeStaticOrganizationRoles(v StaticOrganizationRoles) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t AdminOrganizationMemberOUT_RawRole) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *AdminOrganizationMemberOUT_RawRole) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
-// AsAdminOrganizationMemberOUTRawRoles0 returns the union data inside the AdminOrganizationMemberOUT_RawRoles as a AdminOrganizationMemberOUTRawRoles0
-func (t AdminOrganizationMemberOUT_RawRoles) AsAdminOrganizationMemberOUTRawRoles0() (AdminOrganizationMemberOUTRawRoles0, error) {
-	var body AdminOrganizationMemberOUTRawRoles0
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromAdminOrganizationMemberOUTRawRoles0 overwrites any union data inside the AdminOrganizationMemberOUT_RawRoles as the provided AdminOrganizationMemberOUTRawRoles0
-func (t *AdminOrganizationMemberOUT_RawRoles) FromAdminOrganizationMemberOUTRawRoles0(v AdminOrganizationMemberOUTRawRoles0) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeAdminOrganizationMemberOUTRawRoles0 performs a merge with any union data inside the AdminOrganizationMemberOUT_RawRoles, using the provided AdminOrganizationMemberOUTRawRoles0
-func (t *AdminOrganizationMemberOUT_RawRoles) MergeAdminOrganizationMemberOUTRawRoles0(v AdminOrganizationMemberOUTRawRoles0) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsAdminOrganizationMemberOUTRawRoles1 returns the union data inside the AdminOrganizationMemberOUT_RawRoles as a AdminOrganizationMemberOUTRawRoles1
-func (t AdminOrganizationMemberOUT_RawRoles) AsAdminOrganizationMemberOUTRawRoles1() (AdminOrganizationMemberOUTRawRoles1, error) {
-	var body AdminOrganizationMemberOUTRawRoles1
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromAdminOrganizationMemberOUTRawRoles1 overwrites any union data inside the AdminOrganizationMemberOUT_RawRoles as the provided AdminOrganizationMemberOUTRawRoles1
-func (t *AdminOrganizationMemberOUT_RawRoles) FromAdminOrganizationMemberOUTRawRoles1(v AdminOrganizationMemberOUTRawRoles1) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeAdminOrganizationMemberOUTRawRoles1 performs a merge with any union data inside the AdminOrganizationMemberOUT_RawRoles, using the provided AdminOrganizationMemberOUTRawRoles1
-func (t *AdminOrganizationMemberOUT_RawRoles) MergeAdminOrganizationMemberOUTRawRoles1(v AdminOrganizationMemberOUTRawRoles1) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t AdminOrganizationMemberOUT_RawRoles) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *AdminOrganizationMemberOUT_RawRoles) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
 // AsUserRole returns the union data inside the AdminOrganizationMemberUpdate_Role as a UserRole
 func (t AdminOrganizationMemberUpdate_Role) AsUserRole() (UserRole, error) {
 	var body UserRole
@@ -39476,130 +40007,6 @@ func (t AdminUpdateUserGroupOrganizationRoleIn_OrganizationRole) MarshalJSON() (
 }
 
 func (t *AdminUpdateUserGroupOrganizationRoleIn_OrganizationRole) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
-// AsUserRole returns the union data inside the AdminUserOUT_RawRole as a UserRole
-func (t AdminUserOUT_RawRole) AsUserRole() (UserRole, error) {
-	var body UserRole
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromUserRole overwrites any union data inside the AdminUserOUT_RawRole as the provided UserRole
-func (t *AdminUserOUT_RawRole) FromUserRole(v UserRole) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeUserRole performs a merge with any union data inside the AdminUserOUT_RawRole, using the provided UserRole
-func (t *AdminUserOUT_RawRole) MergeUserRole(v UserRole) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsStaticOrganizationRoles returns the union data inside the AdminUserOUT_RawRole as a StaticOrganizationRoles
-func (t AdminUserOUT_RawRole) AsStaticOrganizationRoles() (StaticOrganizationRoles, error) {
-	var body StaticOrganizationRoles
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromStaticOrganizationRoles overwrites any union data inside the AdminUserOUT_RawRole as the provided StaticOrganizationRoles
-func (t *AdminUserOUT_RawRole) FromStaticOrganizationRoles(v StaticOrganizationRoles) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeStaticOrganizationRoles performs a merge with any union data inside the AdminUserOUT_RawRole, using the provided StaticOrganizationRoles
-func (t *AdminUserOUT_RawRole) MergeStaticOrganizationRoles(v StaticOrganizationRoles) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t AdminUserOUT_RawRole) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *AdminUserOUT_RawRole) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
-// AsAdminUserOUTRawRoles0 returns the union data inside the AdminUserOUT_RawRoles as a AdminUserOUTRawRoles0
-func (t AdminUserOUT_RawRoles) AsAdminUserOUTRawRoles0() (AdminUserOUTRawRoles0, error) {
-	var body AdminUserOUTRawRoles0
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromAdminUserOUTRawRoles0 overwrites any union data inside the AdminUserOUT_RawRoles as the provided AdminUserOUTRawRoles0
-func (t *AdminUserOUT_RawRoles) FromAdminUserOUTRawRoles0(v AdminUserOUTRawRoles0) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeAdminUserOUTRawRoles0 performs a merge with any union data inside the AdminUserOUT_RawRoles, using the provided AdminUserOUTRawRoles0
-func (t *AdminUserOUT_RawRoles) MergeAdminUserOUTRawRoles0(v AdminUserOUTRawRoles0) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsAdminUserOUTRawRoles1 returns the union data inside the AdminUserOUT_RawRoles as a AdminUserOUTRawRoles1
-func (t AdminUserOUT_RawRoles) AsAdminUserOUTRawRoles1() (AdminUserOUTRawRoles1, error) {
-	var body AdminUserOUTRawRoles1
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromAdminUserOUTRawRoles1 overwrites any union data inside the AdminUserOUT_RawRoles as the provided AdminUserOUTRawRoles1
-func (t *AdminUserOUT_RawRoles) FromAdminUserOUTRawRoles1(v AdminUserOUTRawRoles1) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeAdminUserOUTRawRoles1 performs a merge with any union data inside the AdminUserOUT_RawRoles, using the provided AdminUserOUTRawRoles1
-func (t *AdminUserOUT_RawRoles) MergeAdminUserOUTRawRoles1(v AdminUserOUTRawRoles1) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t AdminUserOUT_RawRoles) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *AdminUserOUT_RawRoles) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -40583,6 +40990,32 @@ func (t *AggregationRow_MetricValue) FromAggregationRowMetricValue1(v Aggregatio
 
 // MergeAggregationRowMetricValue1 performs a merge with any union data inside the AggregationRow_MetricValue, using the provided AggregationRowMetricValue1
 func (t *AggregationRow_MetricValue) MergeAggregationRowMetricValue1(v AggregationRowMetricValue1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsAggregationRowMetricValue2 returns the union data inside the AggregationRow_MetricValue as a AggregationRowMetricValue2
+func (t AggregationRow_MetricValue) AsAggregationRowMetricValue2() (AggregationRowMetricValue2, error) {
+	var body AggregationRowMetricValue2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromAggregationRowMetricValue2 overwrites any union data inside the AggregationRow_MetricValue as the provided AggregationRowMetricValue2
+func (t *AggregationRow_MetricValue) FromAggregationRowMetricValue2(v AggregationRowMetricValue2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergeAggregationRowMetricValue2 performs a merge with any union data inside the AggregationRow_MetricValue, using the provided AggregationRowMetricValue2
+func (t *AggregationRow_MetricValue) MergeAggregationRowMetricValue2(v AggregationRowMetricValue2) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -41840,6 +42273,251 @@ func (t AudioSessionResponse_Transcripts_Item) MarshalJSON() ([]byte, error) {
 }
 
 func (t *AudioSessionResponse_Transcripts_Item) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsVoiceAgentWebSearchTool returns the union data inside the AudioSessionUpdateRequest_Tools_Item as a VoiceAgentWebSearchTool
+func (t AudioSessionUpdateRequest_Tools_Item) AsVoiceAgentWebSearchTool() (VoiceAgentWebSearchTool, error) {
+	var body VoiceAgentWebSearchTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentWebSearchTool overwrites any union data inside the AudioSessionUpdateRequest_Tools_Item as the provided VoiceAgentWebSearchTool
+func (t *AudioSessionUpdateRequest_Tools_Item) FromVoiceAgentWebSearchTool(v VoiceAgentWebSearchTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"web_search"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentWebSearchTool performs a merge with any union data inside the AudioSessionUpdateRequest_Tools_Item, using the provided VoiceAgentWebSearchTool
+func (t *AudioSessionUpdateRequest_Tools_Item) MergeVoiceAgentWebSearchTool(v VoiceAgentWebSearchTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"web_search"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentDocumentLibraryTool returns the union data inside the AudioSessionUpdateRequest_Tools_Item as a VoiceAgentDocumentLibraryTool
+func (t AudioSessionUpdateRequest_Tools_Item) AsVoiceAgentDocumentLibraryTool() (VoiceAgentDocumentLibraryTool, error) {
+	var body VoiceAgentDocumentLibraryTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentDocumentLibraryTool overwrites any union data inside the AudioSessionUpdateRequest_Tools_Item as the provided VoiceAgentDocumentLibraryTool
+func (t *AudioSessionUpdateRequest_Tools_Item) FromVoiceAgentDocumentLibraryTool(v VoiceAgentDocumentLibraryTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"document_library"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentDocumentLibraryTool performs a merge with any union data inside the AudioSessionUpdateRequest_Tools_Item, using the provided VoiceAgentDocumentLibraryTool
+func (t *AudioSessionUpdateRequest_Tools_Item) MergeVoiceAgentDocumentLibraryTool(v VoiceAgentDocumentLibraryTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"document_library"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentCustomConnector returns the union data inside the AudioSessionUpdateRequest_Tools_Item as a VoiceAgentCustomConnector
+func (t AudioSessionUpdateRequest_Tools_Item) AsVoiceAgentCustomConnector() (VoiceAgentCustomConnector, error) {
+	var body VoiceAgentCustomConnector
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentCustomConnector overwrites any union data inside the AudioSessionUpdateRequest_Tools_Item as the provided VoiceAgentCustomConnector
+func (t *AudioSessionUpdateRequest_Tools_Item) FromVoiceAgentCustomConnector(v VoiceAgentCustomConnector) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"connector"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentCustomConnector performs a merge with any union data inside the AudioSessionUpdateRequest_Tools_Item, using the provided VoiceAgentCustomConnector
+func (t *AudioSessionUpdateRequest_Tools_Item) MergeVoiceAgentCustomConnector(v VoiceAgentCustomConnector) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"connector"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsVoiceAgentFunctionToolRequest returns the union data inside the AudioSessionUpdateRequest_Tools_Item as a VoiceAgentFunctionToolRequest
+func (t AudioSessionUpdateRequest_Tools_Item) AsVoiceAgentFunctionToolRequest() (VoiceAgentFunctionToolRequest, error) {
+	var body VoiceAgentFunctionToolRequest
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromVoiceAgentFunctionToolRequest overwrites any union data inside the AudioSessionUpdateRequest_Tools_Item as the provided VoiceAgentFunctionToolRequest
+func (t *AudioSessionUpdateRequest_Tools_Item) FromVoiceAgentFunctionToolRequest(v VoiceAgentFunctionToolRequest) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"function"}`))
+	t.union = b
+	return err
+}
+
+// MergeVoiceAgentFunctionToolRequest performs a merge with any union data inside the AudioSessionUpdateRequest_Tools_Item, using the provided VoiceAgentFunctionToolRequest
+func (t *AudioSessionUpdateRequest_Tools_Item) MergeVoiceAgentFunctionToolRequest(v VoiceAgentFunctionToolRequest) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"function"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsTransferCallTool returns the union data inside the AudioSessionUpdateRequest_Tools_Item as a TransferCallTool
+func (t AudioSessionUpdateRequest_Tools_Item) AsTransferCallTool() (TransferCallTool, error) {
+	var body TransferCallTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromTransferCallTool overwrites any union data inside the AudioSessionUpdateRequest_Tools_Item as the provided TransferCallTool
+func (t *AudioSessionUpdateRequest_Tools_Item) FromTransferCallTool(v TransferCallTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"transfer_call"}`))
+	t.union = b
+	return err
+}
+
+// MergeTransferCallTool performs a merge with any union data inside the AudioSessionUpdateRequest_Tools_Item, using the provided TransferCallTool
+func (t *AudioSessionUpdateRequest_Tools_Item) MergeTransferCallTool(v TransferCallTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"transfer_call"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsHangUpTool returns the union data inside the AudioSessionUpdateRequest_Tools_Item as a HangUpTool
+func (t AudioSessionUpdateRequest_Tools_Item) AsHangUpTool() (HangUpTool, error) {
+	var body HangUpTool
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromHangUpTool overwrites any union data inside the AudioSessionUpdateRequest_Tools_Item as the provided HangUpTool
+func (t *AudioSessionUpdateRequest_Tools_Item) FromHangUpTool(v HangUpTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"hang_up"}`))
+	t.union = b
+	return err
+}
+
+// MergeHangUpTool performs a merge with any union data inside the AudioSessionUpdateRequest_Tools_Item, using the provided HangUpTool
+func (t *AudioSessionUpdateRequest_Tools_Item) MergeHangUpTool(v HangUpTool) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+	b, err = runtime.JSONMerge(b, []byte(`{"type":"hang_up"}`))
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t AudioSessionUpdateRequest_Tools_Item) Discriminator() (string, error) {
+	var discriminator struct {
+		Discriminator string `json:"type"`
+	}
+	err := json.Unmarshal(t.union, &discriminator)
+	return discriminator.Discriminator, err
+}
+
+func (t AudioSessionUpdateRequest_Tools_Item) ValueByDiscriminator() (interface{}, error) {
+	discriminator, err := t.Discriminator()
+	if err != nil {
+		return nil, err
+	}
+	switch discriminator {
+	case "connector":
+		return t.AsVoiceAgentCustomConnector()
+	case "document_library":
+		return t.AsVoiceAgentDocumentLibraryTool()
+	case "function":
+		return t.AsVoiceAgentFunctionToolRequest()
+	case "hang_up":
+		return t.AsHangUpTool()
+	case "transfer_call":
+		return t.AsTransferCallTool()
+	case "web_search":
+		return t.AsVoiceAgentWebSearchTool()
+	default:
+		return nil, errors.New("unknown discriminator value: " + discriminator)
+	}
+}
+
+func (t AudioSessionUpdateRequest_Tools_Item) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *AudioSessionUpdateRequest_Tools_Item) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -46561,107 +47239,6 @@ func (t *CreateHTTPConnectorRequest_AuthMethods_Item) UnmarshalJSON(b []byte) er
 	return err
 }
 
-// AsJudgeClassificationOutput returns the union data inside the CreateJudgeRequest_Output as a JudgeClassificationOutput
-func (t CreateJudgeRequest_Output) AsJudgeClassificationOutput() (JudgeClassificationOutput, error) {
-	var body JudgeClassificationOutput
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromJudgeClassificationOutput overwrites any union data inside the CreateJudgeRequest_Output as the provided JudgeClassificationOutput
-func (t *CreateJudgeRequest_Output) FromJudgeClassificationOutput(v JudgeClassificationOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"CLASSIFICATION"}`))
-	t.union = b
-	return err
-}
-
-// MergeJudgeClassificationOutput performs a merge with any union data inside the CreateJudgeRequest_Output, using the provided JudgeClassificationOutput
-func (t *CreateJudgeRequest_Output) MergeJudgeClassificationOutput(v JudgeClassificationOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"CLASSIFICATION"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsJudgeRegressionOutput returns the union data inside the CreateJudgeRequest_Output as a JudgeRegressionOutput
-func (t CreateJudgeRequest_Output) AsJudgeRegressionOutput() (JudgeRegressionOutput, error) {
-	var body JudgeRegressionOutput
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromJudgeRegressionOutput overwrites any union data inside the CreateJudgeRequest_Output as the provided JudgeRegressionOutput
-func (t *CreateJudgeRequest_Output) FromJudgeRegressionOutput(v JudgeRegressionOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"REGRESSION"}`))
-	t.union = b
-	return err
-}
-
-// MergeJudgeRegressionOutput performs a merge with any union data inside the CreateJudgeRequest_Output, using the provided JudgeRegressionOutput
-func (t *CreateJudgeRequest_Output) MergeJudgeRegressionOutput(v JudgeRegressionOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"REGRESSION"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t CreateJudgeRequest_Output) Discriminator() (string, error) {
-	var discriminator struct {
-		Discriminator string `json:"type"`
-	}
-	err := json.Unmarshal(t.union, &discriminator)
-	return discriminator.Discriminator, err
-}
-
-func (t CreateJudgeRequest_Output) ValueByDiscriminator() (interface{}, error) {
-	discriminator, err := t.Discriminator()
-	if err != nil {
-		return nil, err
-	}
-	switch discriminator {
-	case "CLASSIFICATION":
-		return t.AsJudgeClassificationOutput()
-	case "REGRESSION":
-		return t.AsJudgeRegressionOutput()
-	default:
-		return nil, errors.New("unknown discriminator value: " + discriminator)
-	}
-}
-
-func (t CreateJudgeRequest_Output) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *CreateJudgeRequest_Output) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
 // AsResponsesEasyInputMessage returns the union data inside the CreateResponseRequest_Input_1_Item as a ResponsesEasyInputMessage
 func (t CreateResponseRequest_Input_1_Item) AsResponsesEasyInputMessage() (ResponsesEasyInputMessage, error) {
 	var body ResponsesEasyInputMessage
@@ -49393,169 +49970,6 @@ func (t *JSONPatchPayloadValueResponse) UnmarshalJSON(b []byte) error {
 	return err
 }
 
-// AsJudgeClassificationOutput returns the union data inside the Judge_Output as a JudgeClassificationOutput
-func (t Judge_Output) AsJudgeClassificationOutput() (JudgeClassificationOutput, error) {
-	var body JudgeClassificationOutput
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromJudgeClassificationOutput overwrites any union data inside the Judge_Output as the provided JudgeClassificationOutput
-func (t *Judge_Output) FromJudgeClassificationOutput(v JudgeClassificationOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"CLASSIFICATION"}`))
-	t.union = b
-	return err
-}
-
-// MergeJudgeClassificationOutput performs a merge with any union data inside the Judge_Output, using the provided JudgeClassificationOutput
-func (t *Judge_Output) MergeJudgeClassificationOutput(v JudgeClassificationOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"CLASSIFICATION"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsJudgeRegressionOutput returns the union data inside the Judge_Output as a JudgeRegressionOutput
-func (t Judge_Output) AsJudgeRegressionOutput() (JudgeRegressionOutput, error) {
-	var body JudgeRegressionOutput
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromJudgeRegressionOutput overwrites any union data inside the Judge_Output as the provided JudgeRegressionOutput
-func (t *Judge_Output) FromJudgeRegressionOutput(v JudgeRegressionOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"REGRESSION"}`))
-	t.union = b
-	return err
-}
-
-// MergeJudgeRegressionOutput performs a merge with any union data inside the Judge_Output, using the provided JudgeRegressionOutput
-func (t *Judge_Output) MergeJudgeRegressionOutput(v JudgeRegressionOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"REGRESSION"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t Judge_Output) Discriminator() (string, error) {
-	var discriminator struct {
-		Discriminator string `json:"type"`
-	}
-	err := json.Unmarshal(t.union, &discriminator)
-	return discriminator.Discriminator, err
-}
-
-func (t Judge_Output) ValueByDiscriminator() (interface{}, error) {
-	discriminator, err := t.Discriminator()
-	if err != nil {
-		return nil, err
-	}
-	switch discriminator {
-	case "CLASSIFICATION":
-		return t.AsJudgeClassificationOutput()
-	case "REGRESSION":
-		return t.AsJudgeRegressionOutput()
-	default:
-		return nil, errors.New("unknown discriminator value: " + discriminator)
-	}
-}
-
-func (t Judge_Output) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *Judge_Output) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
-// AsJudgeOutputAnswer0 returns the union data inside the JudgeOutput_Answer as a JudgeOutputAnswer0
-func (t JudgeOutput_Answer) AsJudgeOutputAnswer0() (JudgeOutputAnswer0, error) {
-	var body JudgeOutputAnswer0
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromJudgeOutputAnswer0 overwrites any union data inside the JudgeOutput_Answer as the provided JudgeOutputAnswer0
-func (t *JudgeOutput_Answer) FromJudgeOutputAnswer0(v JudgeOutputAnswer0) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeJudgeOutputAnswer0 performs a merge with any union data inside the JudgeOutput_Answer, using the provided JudgeOutputAnswer0
-func (t *JudgeOutput_Answer) MergeJudgeOutputAnswer0(v JudgeOutputAnswer0) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsJudgeOutputAnswer1 returns the union data inside the JudgeOutput_Answer as a JudgeOutputAnswer1
-func (t JudgeOutput_Answer) AsJudgeOutputAnswer1() (JudgeOutputAnswer1, error) {
-	var body JudgeOutputAnswer1
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromJudgeOutputAnswer1 overwrites any union data inside the JudgeOutput_Answer as the provided JudgeOutputAnswer1
-func (t *JudgeOutput_Answer) FromJudgeOutputAnswer1(v JudgeOutputAnswer1) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeJudgeOutputAnswer1 performs a merge with any union data inside the JudgeOutput_Answer, using the provided JudgeOutputAnswer1
-func (t *JudgeOutput_Answer) MergeJudgeOutputAnswer1(v JudgeOutputAnswer1) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t JudgeOutput_Answer) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *JudgeOutput_Answer) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
 // AsWorkflowExecutionStartedResponse returns the union data inside the ListWorkflowEventResponse_Events_Item as a WorkflowExecutionStartedResponse
 func (t ListWorkflowEventResponse_Events_Item) AsWorkflowExecutionStartedResponse() (WorkflowExecutionStartedResponse, error) {
 	var body WorkflowExecutionStartedResponse
@@ -51677,130 +52091,6 @@ func (t MemberSubscriptionOUT_Plan) MarshalJSON() ([]byte, error) {
 }
 
 func (t *MemberSubscriptionOUT_Plan) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
-// AsWorkspaceRole returns the union data inside the MemberWorkspaceInfo_RawRole as a WorkspaceRole
-func (t MemberWorkspaceInfo_RawRole) AsWorkspaceRole() (WorkspaceRole, error) {
-	var body WorkspaceRole
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromWorkspaceRole overwrites any union data inside the MemberWorkspaceInfo_RawRole as the provided WorkspaceRole
-func (t *MemberWorkspaceInfo_RawRole) FromWorkspaceRole(v WorkspaceRole) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeWorkspaceRole performs a merge with any union data inside the MemberWorkspaceInfo_RawRole, using the provided WorkspaceRole
-func (t *MemberWorkspaceInfo_RawRole) MergeWorkspaceRole(v WorkspaceRole) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsStaticWorkspaceRoles returns the union data inside the MemberWorkspaceInfo_RawRole as a StaticWorkspaceRoles
-func (t MemberWorkspaceInfo_RawRole) AsStaticWorkspaceRoles() (StaticWorkspaceRoles, error) {
-	var body StaticWorkspaceRoles
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromStaticWorkspaceRoles overwrites any union data inside the MemberWorkspaceInfo_RawRole as the provided StaticWorkspaceRoles
-func (t *MemberWorkspaceInfo_RawRole) FromStaticWorkspaceRoles(v StaticWorkspaceRoles) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeStaticWorkspaceRoles performs a merge with any union data inside the MemberWorkspaceInfo_RawRole, using the provided StaticWorkspaceRoles
-func (t *MemberWorkspaceInfo_RawRole) MergeStaticWorkspaceRoles(v StaticWorkspaceRoles) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t MemberWorkspaceInfo_RawRole) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *MemberWorkspaceInfo_RawRole) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
-// AsMemberWorkspaceInfoRawRoles0 returns the union data inside the MemberWorkspaceInfo_RawRoles as a MemberWorkspaceInfoRawRoles0
-func (t MemberWorkspaceInfo_RawRoles) AsMemberWorkspaceInfoRawRoles0() (MemberWorkspaceInfoRawRoles0, error) {
-	var body MemberWorkspaceInfoRawRoles0
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromMemberWorkspaceInfoRawRoles0 overwrites any union data inside the MemberWorkspaceInfo_RawRoles as the provided MemberWorkspaceInfoRawRoles0
-func (t *MemberWorkspaceInfo_RawRoles) FromMemberWorkspaceInfoRawRoles0(v MemberWorkspaceInfoRawRoles0) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeMemberWorkspaceInfoRawRoles0 performs a merge with any union data inside the MemberWorkspaceInfo_RawRoles, using the provided MemberWorkspaceInfoRawRoles0
-func (t *MemberWorkspaceInfo_RawRoles) MergeMemberWorkspaceInfoRawRoles0(v MemberWorkspaceInfoRawRoles0) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsMemberWorkspaceInfoRawRoles1 returns the union data inside the MemberWorkspaceInfo_RawRoles as a MemberWorkspaceInfoRawRoles1
-func (t MemberWorkspaceInfo_RawRoles) AsMemberWorkspaceInfoRawRoles1() (MemberWorkspaceInfoRawRoles1, error) {
-	var body MemberWorkspaceInfoRawRoles1
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromMemberWorkspaceInfoRawRoles1 overwrites any union data inside the MemberWorkspaceInfo_RawRoles as the provided MemberWorkspaceInfoRawRoles1
-func (t *MemberWorkspaceInfo_RawRoles) FromMemberWorkspaceInfoRawRoles1(v MemberWorkspaceInfoRawRoles1) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeMemberWorkspaceInfoRawRoles1 performs a merge with any union data inside the MemberWorkspaceInfo_RawRoles, using the provided MemberWorkspaceInfoRawRoles1
-func (t *MemberWorkspaceInfo_RawRoles) MergeMemberWorkspaceInfoRawRoles1(v MemberWorkspaceInfoRawRoles1) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t MemberWorkspaceInfo_RawRoles) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *MemberWorkspaceInfo_RawRoles) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -54292,130 +54582,6 @@ func (t *OrganizationInviteIN_Roles) UnmarshalJSON(b []byte) error {
 	return err
 }
 
-// AsUserRole returns the union data inside the OrganizationInviteOUT_RawRole as a UserRole
-func (t OrganizationInviteOUT_RawRole) AsUserRole() (UserRole, error) {
-	var body UserRole
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromUserRole overwrites any union data inside the OrganizationInviteOUT_RawRole as the provided UserRole
-func (t *OrganizationInviteOUT_RawRole) FromUserRole(v UserRole) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeUserRole performs a merge with any union data inside the OrganizationInviteOUT_RawRole, using the provided UserRole
-func (t *OrganizationInviteOUT_RawRole) MergeUserRole(v UserRole) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsStaticOrganizationRoles returns the union data inside the OrganizationInviteOUT_RawRole as a StaticOrganizationRoles
-func (t OrganizationInviteOUT_RawRole) AsStaticOrganizationRoles() (StaticOrganizationRoles, error) {
-	var body StaticOrganizationRoles
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromStaticOrganizationRoles overwrites any union data inside the OrganizationInviteOUT_RawRole as the provided StaticOrganizationRoles
-func (t *OrganizationInviteOUT_RawRole) FromStaticOrganizationRoles(v StaticOrganizationRoles) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeStaticOrganizationRoles performs a merge with any union data inside the OrganizationInviteOUT_RawRole, using the provided StaticOrganizationRoles
-func (t *OrganizationInviteOUT_RawRole) MergeStaticOrganizationRoles(v StaticOrganizationRoles) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t OrganizationInviteOUT_RawRole) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *OrganizationInviteOUT_RawRole) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
-// AsOrganizationInviteOUTRawRoles0 returns the union data inside the OrganizationInviteOUT_RawRoles as a OrganizationInviteOUTRawRoles0
-func (t OrganizationInviteOUT_RawRoles) AsOrganizationInviteOUTRawRoles0() (OrganizationInviteOUTRawRoles0, error) {
-	var body OrganizationInviteOUTRawRoles0
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromOrganizationInviteOUTRawRoles0 overwrites any union data inside the OrganizationInviteOUT_RawRoles as the provided OrganizationInviteOUTRawRoles0
-func (t *OrganizationInviteOUT_RawRoles) FromOrganizationInviteOUTRawRoles0(v OrganizationInviteOUTRawRoles0) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeOrganizationInviteOUTRawRoles0 performs a merge with any union data inside the OrganizationInviteOUT_RawRoles, using the provided OrganizationInviteOUTRawRoles0
-func (t *OrganizationInviteOUT_RawRoles) MergeOrganizationInviteOUTRawRoles0(v OrganizationInviteOUTRawRoles0) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsOrganizationInviteOUTRawRoles1 returns the union data inside the OrganizationInviteOUT_RawRoles as a OrganizationInviteOUTRawRoles1
-func (t OrganizationInviteOUT_RawRoles) AsOrganizationInviteOUTRawRoles1() (OrganizationInviteOUTRawRoles1, error) {
-	var body OrganizationInviteOUTRawRoles1
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromOrganizationInviteOUTRawRoles1 overwrites any union data inside the OrganizationInviteOUT_RawRoles as the provided OrganizationInviteOUTRawRoles1
-func (t *OrganizationInviteOUT_RawRoles) FromOrganizationInviteOUTRawRoles1(v OrganizationInviteOUTRawRoles1) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeOrganizationInviteOUTRawRoles1 performs a merge with any union data inside the OrganizationInviteOUT_RawRoles, using the provided OrganizationInviteOUTRawRoles1
-func (t *OrganizationInviteOUT_RawRoles) MergeOrganizationInviteOUTRawRoles1(v OrganizationInviteOUTRawRoles1) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t OrganizationInviteOUT_RawRoles) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *OrganizationInviteOUT_RawRoles) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
 // AsUserRole returns the union data inside the OrganizationMemberCreate_Role as a UserRole
 func (t OrganizationMemberCreate_Role) AsUserRole() (UserRole, error) {
 	var body UserRole
@@ -54536,130 +54702,6 @@ func (t OrganizationMemberCreate_Roles) MarshalJSON() ([]byte, error) {
 }
 
 func (t *OrganizationMemberCreate_Roles) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
-// AsUserRole returns the union data inside the OrganizationUserInviteOUT_Role as a UserRole
-func (t OrganizationUserInviteOUT_Role) AsUserRole() (UserRole, error) {
-	var body UserRole
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromUserRole overwrites any union data inside the OrganizationUserInviteOUT_Role as the provided UserRole
-func (t *OrganizationUserInviteOUT_Role) FromUserRole(v UserRole) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeUserRole performs a merge with any union data inside the OrganizationUserInviteOUT_Role, using the provided UserRole
-func (t *OrganizationUserInviteOUT_Role) MergeUserRole(v UserRole) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsStaticOrganizationRoles returns the union data inside the OrganizationUserInviteOUT_Role as a StaticOrganizationRoles
-func (t OrganizationUserInviteOUT_Role) AsStaticOrganizationRoles() (StaticOrganizationRoles, error) {
-	var body StaticOrganizationRoles
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromStaticOrganizationRoles overwrites any union data inside the OrganizationUserInviteOUT_Role as the provided StaticOrganizationRoles
-func (t *OrganizationUserInviteOUT_Role) FromStaticOrganizationRoles(v StaticOrganizationRoles) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeStaticOrganizationRoles performs a merge with any union data inside the OrganizationUserInviteOUT_Role, using the provided StaticOrganizationRoles
-func (t *OrganizationUserInviteOUT_Role) MergeStaticOrganizationRoles(v StaticOrganizationRoles) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t OrganizationUserInviteOUT_Role) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *OrganizationUserInviteOUT_Role) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
-// AsOrganizationUserInviteOUTRoles0 returns the union data inside the OrganizationUserInviteOUT_Roles as a OrganizationUserInviteOUTRoles0
-func (t OrganizationUserInviteOUT_Roles) AsOrganizationUserInviteOUTRoles0() (OrganizationUserInviteOUTRoles0, error) {
-	var body OrganizationUserInviteOUTRoles0
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromOrganizationUserInviteOUTRoles0 overwrites any union data inside the OrganizationUserInviteOUT_Roles as the provided OrganizationUserInviteOUTRoles0
-func (t *OrganizationUserInviteOUT_Roles) FromOrganizationUserInviteOUTRoles0(v OrganizationUserInviteOUTRoles0) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeOrganizationUserInviteOUTRoles0 performs a merge with any union data inside the OrganizationUserInviteOUT_Roles, using the provided OrganizationUserInviteOUTRoles0
-func (t *OrganizationUserInviteOUT_Roles) MergeOrganizationUserInviteOUTRoles0(v OrganizationUserInviteOUTRoles0) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsOrganizationUserInviteOUTRoles1 returns the union data inside the OrganizationUserInviteOUT_Roles as a OrganizationUserInviteOUTRoles1
-func (t OrganizationUserInviteOUT_Roles) AsOrganizationUserInviteOUTRoles1() (OrganizationUserInviteOUTRoles1, error) {
-	var body OrganizationUserInviteOUTRoles1
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromOrganizationUserInviteOUTRoles1 overwrites any union data inside the OrganizationUserInviteOUT_Roles as the provided OrganizationUserInviteOUTRoles1
-func (t *OrganizationUserInviteOUT_Roles) FromOrganizationUserInviteOUTRoles1(v OrganizationUserInviteOUTRoles1) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeOrganizationUserInviteOUTRoles1 performs a merge with any union data inside the OrganizationUserInviteOUT_Roles, using the provided OrganizationUserInviteOUTRoles1
-func (t *OrganizationUserInviteOUT_Roles) MergeOrganizationUserInviteOUTRoles1(v OrganizationUserInviteOUTRoles1) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t OrganizationUserInviteOUT_Roles) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *OrganizationUserInviteOUT_Roles) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -61483,107 +61525,6 @@ func (t *UpdateInvocationBody_Input) UnmarshalJSON(b []byte) error {
 	return err
 }
 
-// AsJudgeClassificationOutput returns the union data inside the UpdateJudgeRequest_Output as a JudgeClassificationOutput
-func (t UpdateJudgeRequest_Output) AsJudgeClassificationOutput() (JudgeClassificationOutput, error) {
-	var body JudgeClassificationOutput
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromJudgeClassificationOutput overwrites any union data inside the UpdateJudgeRequest_Output as the provided JudgeClassificationOutput
-func (t *UpdateJudgeRequest_Output) FromJudgeClassificationOutput(v JudgeClassificationOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"CLASSIFICATION"}`))
-	t.union = b
-	return err
-}
-
-// MergeJudgeClassificationOutput performs a merge with any union data inside the UpdateJudgeRequest_Output, using the provided JudgeClassificationOutput
-func (t *UpdateJudgeRequest_Output) MergeJudgeClassificationOutput(v JudgeClassificationOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"CLASSIFICATION"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsJudgeRegressionOutput returns the union data inside the UpdateJudgeRequest_Output as a JudgeRegressionOutput
-func (t UpdateJudgeRequest_Output) AsJudgeRegressionOutput() (JudgeRegressionOutput, error) {
-	var body JudgeRegressionOutput
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromJudgeRegressionOutput overwrites any union data inside the UpdateJudgeRequest_Output as the provided JudgeRegressionOutput
-func (t *UpdateJudgeRequest_Output) FromJudgeRegressionOutput(v JudgeRegressionOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"REGRESSION"}`))
-	t.union = b
-	return err
-}
-
-// MergeJudgeRegressionOutput performs a merge with any union data inside the UpdateJudgeRequest_Output, using the provided JudgeRegressionOutput
-func (t *UpdateJudgeRequest_Output) MergeJudgeRegressionOutput(v JudgeRegressionOutput) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-	b, err = runtime.JSONMerge(b, []byte(`{"type":"REGRESSION"}`))
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t UpdateJudgeRequest_Output) Discriminator() (string, error) {
-	var discriminator struct {
-		Discriminator string `json:"type"`
-	}
-	err := json.Unmarshal(t.union, &discriminator)
-	return discriminator.Discriminator, err
-}
-
-func (t UpdateJudgeRequest_Output) ValueByDiscriminator() (interface{}, error) {
-	discriminator, err := t.Discriminator()
-	if err != nil {
-		return nil, err
-	}
-	switch discriminator {
-	case "CLASSIFICATION":
-		return t.AsJudgeClassificationOutput()
-	case "REGRESSION":
-		return t.AsJudgeRegressionOutput()
-	default:
-		return nil, errors.New("unknown discriminator value: " + discriminator)
-	}
-}
-
-func (t UpdateJudgeRequest_Output) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *UpdateJudgeRequest_Output) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
 // AsUserMessageContent0 returns the union data inside the UserMessage_Content as a UserMessageContent0
 func (t UserMessage_Content) AsUserMessageContent0() (UserMessageContent0, error) {
 	var body UserMessageContent0
@@ -62063,32 +62004,6 @@ func (t *WorkflowExecutionTraceSummaryAttributesValues) UnmarshalJSON(b []byte) 
 	return err
 }
 
-// AsWorkspaceRole returns the union data inside the WorkspaceEnrichedOUT_RawRole as a WorkspaceRole
-func (t WorkspaceEnrichedOUT_RawRole) AsWorkspaceRole() (WorkspaceRole, error) {
-	var body WorkspaceRole
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromWorkspaceRole overwrites any union data inside the WorkspaceEnrichedOUT_RawRole as the provided WorkspaceRole
-func (t *WorkspaceEnrichedOUT_RawRole) FromWorkspaceRole(v WorkspaceRole) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeWorkspaceRole performs a merge with any union data inside the WorkspaceEnrichedOUT_RawRole, using the provided WorkspaceRole
-func (t *WorkspaceEnrichedOUT_RawRole) MergeWorkspaceRole(v WorkspaceRole) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
 // AsStaticWorkspaceRoles returns the union data inside the WorkspaceEnrichedOUT_RawRole as a StaticWorkspaceRoles
 func (t WorkspaceEnrichedOUT_RawRole) AsStaticWorkspaceRoles() (StaticWorkspaceRoles, error) {
 	var body StaticWorkspaceRoles
@@ -62148,32 +62063,6 @@ func (t WorkspaceEnrichedOUT_RawRole) MarshalJSON() ([]byte, error) {
 
 func (t *WorkspaceEnrichedOUT_RawRole) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
-// AsWorkspaceRole returns the union data inside the WorkspaceEnrichedOUT_RawRoles_Item as a WorkspaceRole
-func (t WorkspaceEnrichedOUT_RawRoles_Item) AsWorkspaceRole() (WorkspaceRole, error) {
-	var body WorkspaceRole
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromWorkspaceRole overwrites any union data inside the WorkspaceEnrichedOUT_RawRoles_Item as the provided WorkspaceRole
-func (t *WorkspaceEnrichedOUT_RawRoles_Item) FromWorkspaceRole(v WorkspaceRole) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergeWorkspaceRole performs a merge with any union data inside the WorkspaceEnrichedOUT_RawRoles_Item, using the provided WorkspaceRole
-func (t *WorkspaceEnrichedOUT_RawRoles_Item) MergeWorkspaceRole(v WorkspaceRole) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
 	return err
 }
 
@@ -63808,31 +63697,6 @@ type ClientInterface interface {
 	// Corresponds with POST /v1/admin/user-groups/{group_uuid}/members (the `UsersApiAdminUserGroupsAssignUsersToGroup` operationId).
 	UsersApiAdminUserGroupsAssignUsersToGroup(ctx context.Context, groupUuid openapi_types.UUID, body UsersApiAdminUserGroupsAssignUsersToGroupJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
-	// UsersApiAdminUserGroupsGetNestedGroups Get Nested Groups Admin
-	//
-	// List the groups directly nested inside this group.
-	//
-	// Corresponds with GET /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsGetNestedGroups` operationId).
-	UsersApiAdminUserGroupsGetNestedGroups(ctx context.Context, groupUuid openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// UsersApiAdminUserGroupsSetNestedGroupsWithBody Set Nested Groups Admin
-	//
-	// Replace the set of groups directly nested inside this group.
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with PATCH /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsSetNestedGroups` operationId).
-	UsersApiAdminUserGroupsSetNestedGroupsWithBody(ctx context.Context, groupUuid openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// UsersApiAdminUserGroupsSetNestedGroups Set Nested Groups Admin
-	//
-	// Replace the set of groups directly nested inside this group.
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with PATCH /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsSetNestedGroups` operationId).
-	UsersApiAdminUserGroupsSetNestedGroups(ctx context.Context, groupUuid openapi_types.UUID, body UsersApiAdminUserGroupsSetNestedGroupsJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
 	// UsersAdminUserGroupsUpdateUserGroupOrganizationRoleWithBody Update User Group Organization Role
 	//
 	// Update the organization role for a user group.
@@ -63958,14 +63822,16 @@ type ClientInterface interface {
 
 	// UsersApiAdminUsersDeleteUser Delete User
 	//
-	// Remove a member from the Organization.
+	// Remove a member from the Organization, whatever their account status.
+	//
+	// Members whose email is on one of the Organization's verified domains cannot be removed: deactivate them instead.
 	//
 	// Corresponds with DELETE /v1/admin/users/{user_id} (the `UsersApiAdminUsersDeleteUser` operationId).
 	UsersApiAdminUsersDeleteUser(ctx context.Context, userId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// UsersApiAdminUsersGetUser Get User
 	//
-	// Get details for an Organization member.
+	// Get details for an Organization member, including deactivated and blocked members.
 	//
 	// Corresponds with GET /v1/admin/users/{user_id} (the `UsersApiAdminUsersGetUser` operationId).
 	UsersApiAdminUsersGetUser(ctx context.Context, userId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
@@ -63990,11 +63856,27 @@ type ClientInterface interface {
 
 	// UsersApiAdminUsersDeactivateUser Deactivate User
 	//
-	// Deactivate a user whose email address is on one of the Organization's verified domains: remove them from
-	// every organization they belong to, which revokes their API keys, and end their sessions.
+	// Deactivate a user whose email address is on one of the Organization's verified domains: end their sessions,
+	// delete their API keys and release their seats. Their memberships, groups and roles are kept, so that
+	// `POST /users/{user_id}/reactivate` can give their access back.
 	//
 	// Corresponds with POST /v1/admin/users/{user_id}/deactivate (the `UsersApiAdminUsersDeactivateUser` operationId).
 	UsersApiAdminUsersDeactivateUser(ctx context.Context, userId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// UsersApiAdminUsersReactivateUser Reactivate User
+	//
+	// Reactivate a deactivated user whose email address is on one of the Organization's verified domains: give
+	// them their access back, with their seats when free ones remain.
+	//
+	// Corresponds with POST /v1/admin/users/{user_id}/reactivate (the `UsersApiAdminUsersReactivateUser` operationId).
+	UsersApiAdminUsersReactivateUser(ctx context.Context, userId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// UsersApiAdminUsersGetUserWorkspaces Get User Workspaces
+	//
+	// List the Workspaces an Organization member belongs to, with their roles.
+	//
+	// Corresponds with GET /v1/admin/users/{user_id}/workspaces (the `UsersApiAdminUsersGetUserWorkspaces` operationId).
+	UsersApiAdminUsersGetUserWorkspaces(ctx context.Context, userId openapi_types.UUID, params *UsersApiAdminUsersGetUserWorkspacesParams, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// UsersApiAdminWorkspacesGetWorkspaces Get Workspaces
 	//
@@ -64304,6 +64186,34 @@ type ClientInterface interface {
 	//
 	// Corresponds with GET /v1/audio/sessions/{session_id} (the `GetSessionV1AudioSessionsSessionIdGet` operationId).
 	GetSessionV1AudioSessionsSessionIdGet(ctx context.Context, sessionId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// UpdateSessionV1AudioSessionsSessionIdPatchWithBody Update a live agent session
+	//
+	// Update the instructions, tools or turn handling of a live session.
+	//
+	// The agent applies the update at its next turn boundary, so it is not yet
+	// applied when this returns.
+	// The agent's `session_updated` and `session_update_failed` webhooks report
+	// the outcome to your server.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with PATCH /v1/audio/sessions/{session_id} (the `UpdateSessionV1AudioSessionsSessionIdPatch` operationId).
+	UpdateSessionV1AudioSessionsSessionIdPatchWithBody(ctx context.Context, sessionId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// UpdateSessionV1AudioSessionsSessionIdPatch Update a live agent session
+	//
+	// Update the instructions, tools or turn handling of a live session.
+	//
+	// The agent applies the update at its next turn boundary, so it is not yet
+	// applied when this returns.
+	// The agent's `session_updated` and `session_update_failed` webhooks report
+	// the outcome to your server.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with PATCH /v1/audio/sessions/{session_id} (the `UpdateSessionV1AudioSessionsSessionIdPatch` operationId).
+	UpdateSessionV1AudioSessionsSessionIdPatch(ctx context.Context, sessionId openapi_types.UUID, body UpdateSessionV1AudioSessionsSessionIdPatchJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// SpeechV1AudioSpeechPostWithBody Speech
 	//
@@ -64683,7 +64593,7 @@ type ClientInterface interface {
 
 	// ConnectorCreateCredentialsV1WithBody Create consumer credentials for a connector.
 	//
-	// Create consumer credentials for a given connector and consumer scope (organization, workspace, user)
+	// Create consumer credentials for a given connector and consumer scope (workspace, user)
 	//
 	// Takes any type of body and a specified content type.
 	//
@@ -64694,7 +64604,7 @@ type ClientInterface interface {
 
 	// ConnectorCreateCredentialsV1 Create consumer credentials for a connector.
 	//
-	// Create consumer credentials for a given connector and consumer scope (organization, workspace, user)
+	// Create consumer credentials for a given connector and consumer scope (workspace, user)
 	//
 	// Takes a body of the `application/json` content type.
 	//
@@ -65157,7 +65067,7 @@ type ClientInterface interface {
 	//
 	// Upload a file that can be used across various endpoints.
 	//
-	// The size of individual files can be a maximum of 512 MB. The Fine-tuning API only supports .jsonl files.
+	// The size of individual files can be a maximum of 512 MB.
 	//
 	// Please contact us if you need to increase these storage limits.
 	//
@@ -65528,20 +65438,6 @@ type ClientInterface interface {
 	// Corresponds with GET /v1/observability/dataset-records/{dataset_record_id} (the `GetDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdGet` operationId).
 	GetDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdGet(ctx context.Context, datasetRecordId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
 
-	// JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithBody Run Judge on a dataset record based on the given options
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with POST /v1/observability/dataset-records/{dataset_record_id}/live-judging (the `JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost` operationId).
-	JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithBody(ctx context.Context, datasetRecordId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost Run Judge on a dataset record based on the given options
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with POST /v1/observability/dataset-records/{dataset_record_id}/live-judging (the `JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost` operationId).
-	JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost(ctx context.Context, datasetRecordId openapi_types.UUID, body JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
 	// UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutWithBody Update a dataset record payload
 	//
 	// Takes any type of body and a specified content type.
@@ -65783,63 +65679,6 @@ type ClientInterface interface {
 	// Corresponds with POST /v1/observability/evaluations_v2/{evaluation_slug}/runs/search (the `SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPost` operationId).
 	SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPost(ctx context.Context, evaluationSlug string, params *SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPostParams, body SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
-	// GetJudgesV1ObservabilityJudgesGet Get judges with optional filtering and search
-	//
-	// Corresponds with GET /v1/observability/judges (the `GetJudgesV1ObservabilityJudgesGet` operationId).
-	GetJudgesV1ObservabilityJudgesGet(ctx context.Context, params *GetJudgesV1ObservabilityJudgesGetParams, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// CreateJudgeV1ObservabilityJudgesPostWithBody Create a new judge
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with POST /v1/observability/judges (the `CreateJudgeV1ObservabilityJudgesPost` operationId).
-	CreateJudgeV1ObservabilityJudgesPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// CreateJudgeV1ObservabilityJudgesPost Create a new judge
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with POST /v1/observability/judges (the `CreateJudgeV1ObservabilityJudgesPost` operationId).
-	CreateJudgeV1ObservabilityJudgesPost(ctx context.Context, body CreateJudgeV1ObservabilityJudgesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// DeleteJudgeV1ObservabilityJudgesJudgeIdDelete Delete a judge
-	//
-	// Corresponds with DELETE /v1/observability/judges/{judge_id} (the `DeleteJudgeV1ObservabilityJudgesJudgeIdDelete` operationId).
-	DeleteJudgeV1ObservabilityJudgesJudgeIdDelete(ctx context.Context, judgeId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// GetJudgeByIdV1ObservabilityJudgesJudgeIdGet Get judge by id
-	//
-	// Corresponds with GET /v1/observability/judges/{judge_id} (the `GetJudgeByIdV1ObservabilityJudgesJudgeIdGet` operationId).
-	GetJudgeByIdV1ObservabilityJudgesJudgeIdGet(ctx context.Context, judgeId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithBody Update a judge
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with PUT /v1/observability/judges/{judge_id} (the `UpdateJudgeV1ObservabilityJudgesJudgeIdPut` operationId).
-	UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithBody(ctx context.Context, judgeId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// UpdateJudgeV1ObservabilityJudgesJudgeIdPut Update a judge
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with PUT /v1/observability/judges/{judge_id} (the `UpdateJudgeV1ObservabilityJudgesJudgeIdPut` operationId).
-	UpdateJudgeV1ObservabilityJudgesJudgeIdPut(ctx context.Context, judgeId openapi_types.UUID, body UpdateJudgeV1ObservabilityJudgesJudgeIdPutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithBody Run a saved judge on a conversation
-	//
-	// Takes any type of body and a specified content type.
-	//
-	// Corresponds with POST /v1/observability/judges/{judge_id}/live-judging (the `JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost` operationId).
-	JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithBody(ctx context.Context, judgeId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
-
-	// JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost Run a saved judge on a conversation
-	//
-	// Takes a body of the `application/json` content type.
-	//
-	// Corresponds with POST /v1/observability/judges/{judge_id}/live-judging (the `JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost` operationId).
-	JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost(ctx context.Context, judgeId openapi_types.UUID, body JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
-
 	// GetLogFieldsV1ObservabilityLogsFieldsGet Get log field definitions
 	//
 	// Corresponds with GET /v1/observability/logs/fields (the `GetLogFieldsV1ObservabilityLogsFieldsGet` operationId).
@@ -65955,6 +65794,44 @@ type ClientInterface interface {
 	//
 	// Corresponds with GET /v1/observability/projects/{project_slug}/evaluations_v2 (the `GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2Get` operationId).
 	GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2Get(ctx context.Context, projectSlug string, params *GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2GetParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// ListScorersV1ObservabilityScorersGet List scorers
+	//
+	// Corresponds with GET /v1/observability/scorers (the `ListScorersV1ObservabilityScorersGet` operationId).
+	ListScorersV1ObservabilityScorersGet(ctx context.Context, params *ListScorersV1ObservabilityScorersGetParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateScorerV1ObservabilityScorersPostWithBody Create a scorer
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/observability/scorers (the `CreateScorerV1ObservabilityScorersPost` operationId).
+	CreateScorerV1ObservabilityScorersPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// CreateScorerV1ObservabilityScorersPost Create a scorer
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/observability/scorers (the `CreateScorerV1ObservabilityScorersPost` operationId).
+	CreateScorerV1ObservabilityScorersPost(ctx context.Context, body CreateScorerV1ObservabilityScorersPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// GetScorerV1ObservabilityScorersScorerSlugGet Get a scorer by slug
+	//
+	// Corresponds with GET /v1/observability/scorers/{scorer_slug} (the `GetScorerV1ObservabilityScorersScorerSlugGet` operationId).
+	GetScorerV1ObservabilityScorersScorerSlugGet(ctx context.Context, scorerSlug string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// EditScorerV1ObservabilityScorersScorerSlugPatchWithBody Edit a scorer
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with PATCH /v1/observability/scorers/{scorer_slug} (the `EditScorerV1ObservabilityScorersScorerSlugPatch` operationId).
+	EditScorerV1ObservabilityScorersScorerSlugPatchWithBody(ctx context.Context, scorerSlug string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// EditScorerV1ObservabilityScorersScorerSlugPatch Edit a scorer
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with PATCH /v1/observability/scorers/{scorer_slug} (the `EditScorerV1ObservabilityScorersScorerSlugPatch` operationId).
+	EditScorerV1ObservabilityScorersScorerSlugPatch(ctx context.Context, scorerSlug string, body EditScorerV1ObservabilityScorersScorerSlugPatchJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// AggregateSpansV1ObservabilitySpansAggregatePostWithBody Aggregate spans
 	//
@@ -66202,7 +66079,7 @@ type ClientInterface interface {
 	//
 	// Create a response.
 	//
-	// Generate a model response from text or image inputs. The response can
+	// Generate a model response from text, image, or file inputs. The response can
 	// include text, reasoning, and function calls. Set stream to true to
 	// receive Server-Sent Events.
 	//
@@ -66219,7 +66096,7 @@ type ClientInterface interface {
 	//
 	// Create a response.
 	//
-	// Generate a model response from text or image inputs. The response can
+	// Generate a model response from text, image, or file inputs. The response can
 	// include text, reasoning, and function calls. Set stream to true to
 	// receive Server-Sent Events.
 	//
@@ -66320,7 +66197,7 @@ type ClientInterface interface {
 	//
 	// Retrieve a service account.
 	//
-	// Requires the Workspace admin (`workspace_admin`) role.
+	// Requires the `see_all_workspace_service_accounts` or `read_workspace_service_account` permission.
 	//
 	// Corresponds with GET /v1/service-accounts/{service_account_id} (the `GetServiceAccountV1ServiceAccountsServiceAccountIdGet` operationId).
 	GetServiceAccountV1ServiceAccountsServiceAccountIdGet(ctx context.Context, serviceAccountId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
@@ -67811,61 +67688,6 @@ func (c *Client) UsersApiAdminUserGroupsAssignUsersToGroup(ctx context.Context, 
 	return c.Client.Do(req)
 }
 
-// UsersApiAdminUserGroupsGetNestedGroups Get Nested Groups Admin
-//
-// List the groups directly nested inside this group.
-//
-// Corresponds with GET /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsGetNestedGroups` operationId).
-func (c *Client) UsersApiAdminUserGroupsGetNestedGroups(ctx context.Context, groupUuid openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewUsersApiAdminUserGroupsGetNestedGroupsRequest(c.Server, groupUuid)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// UsersApiAdminUserGroupsSetNestedGroupsWithBody Set Nested Groups Admin
-//
-// Replace the set of groups directly nested inside this group.
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with PATCH /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsSetNestedGroups` operationId).
-func (c *Client) UsersApiAdminUserGroupsSetNestedGroupsWithBody(ctx context.Context, groupUuid openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewUsersApiAdminUserGroupsSetNestedGroupsRequestWithBody(c.Server, groupUuid, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// UsersApiAdminUserGroupsSetNestedGroups Set Nested Groups Admin
-//
-// Replace the set of groups directly nested inside this group.
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with PATCH /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsSetNestedGroups` operationId).
-func (c *Client) UsersApiAdminUserGroupsSetNestedGroups(ctx context.Context, groupUuid openapi_types.UUID, body UsersApiAdminUserGroupsSetNestedGroupsJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewUsersApiAdminUserGroupsSetNestedGroupsRequest(c.Server, groupUuid, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
 // UsersAdminUserGroupsUpdateUserGroupOrganizationRoleWithBody Update User Group Organization Role
 //
 // Update the organization role for a user group.
@@ -68141,7 +67963,9 @@ func (c *Client) UsersApiAdminUsersDeleteInvite(ctx context.Context, inviteUuid 
 
 // UsersApiAdminUsersDeleteUser Delete User
 //
-// Remove a member from the Organization.
+// Remove a member from the Organization, whatever their account status.
+//
+// Members whose email is on one of the Organization's verified domains cannot be removed: deactivate them instead.
 //
 // Corresponds with DELETE /v1/admin/users/{user_id} (the `UsersApiAdminUsersDeleteUser` operationId).
 func (c *Client) UsersApiAdminUsersDeleteUser(ctx context.Context, userId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
@@ -68158,7 +67982,7 @@ func (c *Client) UsersApiAdminUsersDeleteUser(ctx context.Context, userId openap
 
 // UsersApiAdminUsersGetUser Get User
 //
-// Get details for an Organization member.
+// Get details for an Organization member, including deactivated and blocked members.
 //
 // Corresponds with GET /v1/admin/users/{user_id} (the `UsersApiAdminUsersGetUser` operationId).
 func (c *Client) UsersApiAdminUsersGetUser(ctx context.Context, userId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
@@ -68213,12 +68037,48 @@ func (c *Client) UsersApiAdminUsersUpdateUser(ctx context.Context, userId openap
 
 // UsersApiAdminUsersDeactivateUser Deactivate User
 //
-// Deactivate a user whose email address is on one of the Organization's verified domains: remove them from
-// every organization they belong to, which revokes their API keys, and end their sessions.
+// Deactivate a user whose email address is on one of the Organization's verified domains: end their sessions,
+// delete their API keys and release their seats. Their memberships, groups and roles are kept, so that
+// `POST /users/{user_id}/reactivate` can give their access back.
 //
 // Corresponds with POST /v1/admin/users/{user_id}/deactivate (the `UsersApiAdminUsersDeactivateUser` operationId).
 func (c *Client) UsersApiAdminUsersDeactivateUser(ctx context.Context, userId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewUsersApiAdminUsersDeactivateUserRequest(c.Server, userId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// UsersApiAdminUsersReactivateUser Reactivate User
+//
+// Reactivate a deactivated user whose email address is on one of the Organization's verified domains: give
+// them their access back, with their seats when free ones remain.
+//
+// Corresponds with POST /v1/admin/users/{user_id}/reactivate (the `UsersApiAdminUsersReactivateUser` operationId).
+func (c *Client) UsersApiAdminUsersReactivateUser(ctx context.Context, userId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewUsersApiAdminUsersReactivateUserRequest(c.Server, userId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// UsersApiAdminUsersGetUserWorkspaces Get User Workspaces
+//
+// List the Workspaces an Organization member belongs to, with their roles.
+//
+// Corresponds with GET /v1/admin/users/{user_id}/workspaces (the `UsersApiAdminUsersGetUserWorkspaces` operationId).
+func (c *Client) UsersApiAdminUsersGetUserWorkspaces(ctx context.Context, userId openapi_types.UUID, params *UsersApiAdminUsersGetUserWorkspacesParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewUsersApiAdminUsersGetUserWorkspacesRequest(c.Server, userId, params)
 	if err != nil {
 		return nil, err
 	}
@@ -68937,6 +68797,54 @@ func (c *Client) DeleteSessionV1AudioSessionsSessionIdDelete(ctx context.Context
 // Corresponds with GET /v1/audio/sessions/{session_id} (the `GetSessionV1AudioSessionsSessionIdGet` operationId).
 func (c *Client) GetSessionV1AudioSessionsSessionIdGet(ctx context.Context, sessionId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewGetSessionV1AudioSessionsSessionIdGetRequest(c.Server, sessionId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// UpdateSessionV1AudioSessionsSessionIdPatchWithBody Update a live agent session
+//
+// Update the instructions, tools or turn handling of a live session.
+//
+// The agent applies the update at its next turn boundary, so it is not yet
+// applied when this returns.
+// The agent's `session_updated` and `session_update_failed` webhooks report
+// the outcome to your server.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with PATCH /v1/audio/sessions/{session_id} (the `UpdateSessionV1AudioSessionsSessionIdPatch` operationId).
+func (c *Client) UpdateSessionV1AudioSessionsSessionIdPatchWithBody(ctx context.Context, sessionId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewUpdateSessionV1AudioSessionsSessionIdPatchRequestWithBody(c.Server, sessionId, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// UpdateSessionV1AudioSessionsSessionIdPatch Update a live agent session
+//
+// Update the instructions, tools or turn handling of a live session.
+//
+// The agent applies the update at its next turn boundary, so it is not yet
+// applied when this returns.
+// The agent's `session_updated` and `session_update_failed` webhooks report
+// the outcome to your server.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with PATCH /v1/audio/sessions/{session_id} (the `UpdateSessionV1AudioSessionsSessionIdPatch` operationId).
+func (c *Client) UpdateSessionV1AudioSessionsSessionIdPatch(ctx context.Context, sessionId openapi_types.UUID, body UpdateSessionV1AudioSessionsSessionIdPatchJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewUpdateSessionV1AudioSessionsSessionIdPatchRequest(c.Server, sessionId, body)
 	if err != nil {
 		return nil, err
 	}
@@ -69773,7 +69681,7 @@ func (c *Client) ConnectorUpdateCredentials(ctx context.Context, connectorIdOrNa
 
 // ConnectorCreateCredentialsV1WithBody Create consumer credentials for a connector.
 //
-// Create consumer credentials for a given connector and consumer scope (organization, workspace, user)
+// Create consumer credentials for a given connector and consumer scope (workspace, user)
 //
 // Takes any type of body and a specified content type.
 //
@@ -69794,7 +69702,7 @@ func (c *Client) ConnectorCreateCredentialsV1WithBody(ctx context.Context, conne
 
 // ConnectorCreateCredentialsV1 Create consumer credentials for a connector.
 //
-// Create consumer credentials for a given connector and consumer scope (organization, workspace, user)
+// Create consumer credentials for a given connector and consumer scope (workspace, user)
 //
 // Takes a body of the `application/json` content type.
 //
@@ -70807,7 +70715,7 @@ func (c *Client) FilesApiRoutesListFiles(ctx context.Context, params *FilesApiRo
 //
 // Upload a file that can be used across various endpoints.
 //
-// The size of individual files can be a maximum of 512 MB. The Fine-tuning API only supports .jsonl files.
+// The size of individual files can be a maximum of 512 MB.
 //
 // Please contact us if you need to increase these storage limits.
 //
@@ -71644,40 +71552,6 @@ func (c *Client) GetDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdGet
 	return c.Client.Do(req)
 }
 
-// JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithBody Run Judge on a dataset record based on the given options
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with POST /v1/observability/dataset-records/{dataset_record_id}/live-judging (the `JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost` operationId).
-func (c *Client) JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithBody(ctx context.Context, datasetRecordId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewJudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostRequestWithBody(c.Server, datasetRecordId, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost Run Judge on a dataset record based on the given options
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with POST /v1/observability/dataset-records/{dataset_record_id}/live-judging (the `JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost` operationId).
-func (c *Client) JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost(ctx context.Context, datasetRecordId openapi_types.UUID, body JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewJudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostRequest(c.Server, datasetRecordId, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
 // UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutWithBody Update a dataset record payload
 //
 // Takes any type of body and a specified content type.
@@ -72289,153 +72163,6 @@ func (c *Client) SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlu
 	return c.Client.Do(req)
 }
 
-// GetJudgesV1ObservabilityJudgesGet Get judges with optional filtering and search
-//
-// Corresponds with GET /v1/observability/judges (the `GetJudgesV1ObservabilityJudgesGet` operationId).
-func (c *Client) GetJudgesV1ObservabilityJudgesGet(ctx context.Context, params *GetJudgesV1ObservabilityJudgesGetParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGetJudgesV1ObservabilityJudgesGetRequest(c.Server, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// CreateJudgeV1ObservabilityJudgesPostWithBody Create a new judge
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with POST /v1/observability/judges (the `CreateJudgeV1ObservabilityJudgesPost` operationId).
-func (c *Client) CreateJudgeV1ObservabilityJudgesPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewCreateJudgeV1ObservabilityJudgesPostRequestWithBody(c.Server, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// CreateJudgeV1ObservabilityJudgesPost Create a new judge
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with POST /v1/observability/judges (the `CreateJudgeV1ObservabilityJudgesPost` operationId).
-func (c *Client) CreateJudgeV1ObservabilityJudgesPost(ctx context.Context, body CreateJudgeV1ObservabilityJudgesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewCreateJudgeV1ObservabilityJudgesPostRequest(c.Server, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// DeleteJudgeV1ObservabilityJudgesJudgeIdDelete Delete a judge
-//
-// Corresponds with DELETE /v1/observability/judges/{judge_id} (the `DeleteJudgeV1ObservabilityJudgesJudgeIdDelete` operationId).
-func (c *Client) DeleteJudgeV1ObservabilityJudgesJudgeIdDelete(ctx context.Context, judgeId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewDeleteJudgeV1ObservabilityJudgesJudgeIdDeleteRequest(c.Server, judgeId)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// GetJudgeByIdV1ObservabilityJudgesJudgeIdGet Get judge by id
-//
-// Corresponds with GET /v1/observability/judges/{judge_id} (the `GetJudgeByIdV1ObservabilityJudgesJudgeIdGet` operationId).
-func (c *Client) GetJudgeByIdV1ObservabilityJudgesJudgeIdGet(ctx context.Context, judgeId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGetJudgeByIdV1ObservabilityJudgesJudgeIdGetRequest(c.Server, judgeId)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithBody Update a judge
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with PUT /v1/observability/judges/{judge_id} (the `UpdateJudgeV1ObservabilityJudgesJudgeIdPut` operationId).
-func (c *Client) UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithBody(ctx context.Context, judgeId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewUpdateJudgeV1ObservabilityJudgesJudgeIdPutRequestWithBody(c.Server, judgeId, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// UpdateJudgeV1ObservabilityJudgesJudgeIdPut Update a judge
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with PUT /v1/observability/judges/{judge_id} (the `UpdateJudgeV1ObservabilityJudgesJudgeIdPut` operationId).
-func (c *Client) UpdateJudgeV1ObservabilityJudgesJudgeIdPut(ctx context.Context, judgeId openapi_types.UUID, body UpdateJudgeV1ObservabilityJudgesJudgeIdPutJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewUpdateJudgeV1ObservabilityJudgesJudgeIdPutRequest(c.Server, judgeId, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithBody Run a saved judge on a conversation
-//
-// Takes any type of body and a specified content type.
-//
-// Corresponds with POST /v1/observability/judges/{judge_id}/live-judging (the `JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost` operationId).
-func (c *Client) JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithBody(ctx context.Context, judgeId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewJudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostRequestWithBody(c.Server, judgeId, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
-// JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost Run a saved judge on a conversation
-//
-// Takes a body of the `application/json` content type.
-//
-// Corresponds with POST /v1/observability/judges/{judge_id}/live-judging (the `JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost` operationId).
-func (c *Client) JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost(ctx context.Context, judgeId openapi_types.UUID, body JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewJudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostRequest(c.Server, judgeId, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
-}
-
 // GetLogFieldsV1ObservabilityLogsFieldsGet Get log field definitions
 //
 // Corresponds with GET /v1/observability/logs/fields (the `GetLogFieldsV1ObservabilityLogsFieldsGet` operationId).
@@ -72742,6 +72469,104 @@ func (c *Client) GetProjectV1ObservabilityProjectsProjectSlugGet(ctx context.Con
 // Corresponds with GET /v1/observability/projects/{project_slug}/evaluations_v2 (the `GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2Get` operationId).
 func (c *Client) GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2Get(ctx context.Context, projectSlug string, params *GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2GetParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewGetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2GetRequest(c.Server, projectSlug, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// ListScorersV1ObservabilityScorersGet List scorers
+//
+// Corresponds with GET /v1/observability/scorers (the `ListScorersV1ObservabilityScorersGet` operationId).
+func (c *Client) ListScorersV1ObservabilityScorersGet(ctx context.Context, params *ListScorersV1ObservabilityScorersGetParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewListScorersV1ObservabilityScorersGetRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateScorerV1ObservabilityScorersPostWithBody Create a scorer
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/observability/scorers (the `CreateScorerV1ObservabilityScorersPost` operationId).
+func (c *Client) CreateScorerV1ObservabilityScorersPostWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateScorerV1ObservabilityScorersPostRequestWithBody(c.Server, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateScorerV1ObservabilityScorersPost Create a scorer
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/observability/scorers (the `CreateScorerV1ObservabilityScorersPost` operationId).
+func (c *Client) CreateScorerV1ObservabilityScorersPost(ctx context.Context, body CreateScorerV1ObservabilityScorersPostJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateScorerV1ObservabilityScorersPostRequest(c.Server, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// GetScorerV1ObservabilityScorersScorerSlugGet Get a scorer by slug
+//
+// Corresponds with GET /v1/observability/scorers/{scorer_slug} (the `GetScorerV1ObservabilityScorersScorerSlugGet` operationId).
+func (c *Client) GetScorerV1ObservabilityScorersScorerSlugGet(ctx context.Context, scorerSlug string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetScorerV1ObservabilityScorersScorerSlugGetRequest(c.Server, scorerSlug)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// EditScorerV1ObservabilityScorersScorerSlugPatchWithBody Edit a scorer
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with PATCH /v1/observability/scorers/{scorer_slug} (the `EditScorerV1ObservabilityScorersScorerSlugPatch` operationId).
+func (c *Client) EditScorerV1ObservabilityScorersScorerSlugPatchWithBody(ctx context.Context, scorerSlug string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewEditScorerV1ObservabilityScorersScorerSlugPatchRequestWithBody(c.Server, scorerSlug, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// EditScorerV1ObservabilityScorersScorerSlugPatch Edit a scorer
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with PATCH /v1/observability/scorers/{scorer_slug} (the `EditScorerV1ObservabilityScorersScorerSlugPatch` operationId).
+func (c *Client) EditScorerV1ObservabilityScorersScorerSlugPatch(ctx context.Context, scorerSlug string, body EditScorerV1ObservabilityScorersScorerSlugPatchJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewEditScorerV1ObservabilityScorersScorerSlugPatchRequest(c.Server, scorerSlug, body)
 	if err != nil {
 		return nil, err
 	}
@@ -73358,7 +73183,7 @@ func (c *Client) UpdateRunInfoV1RagIngestionPipelineConfigurationsIdRunInfoPut(c
 //
 // Create a response.
 //
-// Generate a model response from text or image inputs. The response can
+// Generate a model response from text, image, or file inputs. The response can
 // include text, reasoning, and function calls. Set stream to true to
 // receive Server-Sent Events.
 //
@@ -73385,7 +73210,7 @@ func (c *Client) CreateResponseV1ResponsesPostWithBody(ctx context.Context, cont
 //
 // Create a response.
 //
-// Generate a model response from text or image inputs. The response can
+// Generate a model response from text, image, or file inputs. The response can
 // include text, reasoning, and function calls. Set stream to true to
 // receive Server-Sent Events.
 //
@@ -73566,7 +73391,7 @@ func (c *Client) DeleteServiceAccountV1ServiceAccountsServiceAccountIdDelete(ctx
 //
 // Retrieve a service account.
 //
-// Requires the Workspace admin (`workspace_admin`) role.
+// Requires the `see_all_workspace_service_accounts` or `read_workspace_service_account` permission.
 //
 // Corresponds with GET /v1/service-accounts/{service_account_id} (the `GetServiceAccountV1ServiceAccountsServiceAccountIdGet` operationId).
 func (c *Client) GetServiceAccountV1ServiceAccountsServiceAccountIdGet(ctx context.Context, serviceAccountId openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
@@ -76633,6 +76458,30 @@ func NewUsersApiAdminUserGroupsGetUserGroupsRequest(server string, params *Users
 
 		}
 
+		if params.WorkspaceUuid != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "workspace_uuid", *params.WorkspaceUuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.Role != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "role", *params.Role, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
 		if encoded := queryValues.Encode(); encoded != "" {
 			rawQueryFragments = append(rawQueryFragments, encoded)
 		}
@@ -77009,87 +76858,6 @@ func NewUsersApiAdminUserGroupsAssignUsersToGroupRequestWithBody(server string, 
 	return req, nil
 }
 
-// NewUsersApiAdminUserGroupsGetNestedGroupsRequest constructs an http.Request for the UsersApiAdminUserGroupsGetNestedGroups method
-func NewUsersApiAdminUserGroupsGetNestedGroupsRequest(server string, groupUuid openapi_types.UUID) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "group_uuid", groupUuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/admin/user-groups/%s/nested", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
-}
-
-// NewUsersApiAdminUserGroupsSetNestedGroupsRequest calls the generic UsersApiAdminUserGroupsSetNestedGroups builder with application/json body
-func NewUsersApiAdminUserGroupsSetNestedGroupsRequest(server string, groupUuid openapi_types.UUID, body UsersApiAdminUserGroupsSetNestedGroupsJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewUsersApiAdminUserGroupsSetNestedGroupsRequestWithBody(server, groupUuid, "application/json", bodyReader)
-}
-
-// NewUsersApiAdminUserGroupsSetNestedGroupsRequestWithBody constructs an http.Request for the UsersApiAdminUserGroupsSetNestedGroups method, with any body, and a specified content type
-func NewUsersApiAdminUserGroupsSetNestedGroupsRequestWithBody(server string, groupUuid openapi_types.UUID, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "group_uuid", groupUuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/admin/user-groups/%s/nested", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPatch, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
 // NewUsersAdminUserGroupsUpdateUserGroupOrganizationRoleRequest calls the generic UsersAdminUserGroupsUpdateUserGroupOrganizationRole builder with application/json body
 func NewUsersAdminUserGroupsUpdateUserGroupOrganizationRoleRequest(server string, groupUuid openapi_types.UUID, body UsersAdminUserGroupsUpdateUserGroupOrganizationRoleJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
@@ -77416,6 +77184,18 @@ func NewUsersApiAdminUsersGetUsersRequest(server string, params *UsersApiAdminUs
 
 		}
 
+		if params.IncludeInactive != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "include_inactive", *params.IncludeInactive, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
 		if encoded := queryValues.Encode(); encoded != "" {
 			rawQueryFragments = append(rawQueryFragments, encoded)
 		}
@@ -77713,6 +77493,113 @@ func NewUsersApiAdminUsersDeactivateUserRequest(server string, userId openapi_ty
 	}
 
 	req, err := http.NewRequest(http.MethodPost, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewUsersApiAdminUsersReactivateUserRequest constructs an http.Request for the UsersApiAdminUsersReactivateUser method
+func NewUsersApiAdminUsersReactivateUserRequest(server string, userId openapi_types.UUID) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "user_id", userId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/admin/users/%s/reactivate", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewUsersApiAdminUsersGetUserWorkspacesRequest constructs an http.Request for the UsersApiAdminUsersGetUserWorkspaces method
+func NewUsersApiAdminUsersGetUserWorkspacesRequest(server string, userId openapi_types.UUID, params *UsersApiAdminUsersGetUserWorkspacesParams) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "user_id", userId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/admin/users/%s/workspaces", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		// queryValues collects non-styled parameters (passthrough, JSON)
+		// that are safe to round-trip through url.Values.Encode().
+		queryValues := queryURL.Query()
+		// rawQueryFragments collects pre-encoded query fragments from
+		// styled parameters, preserving literal commas as delimiters
+		// per the OpenAPI spec (e.g. "color=blue,black,brown").
+		var rawQueryFragments []string
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page", *params.Page, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.PageSize != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_size", *params.PageSize, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if encoded := queryValues.Encode(); encoded != "" {
+			rawQueryFragments = append(rawQueryFragments, encoded)
+		}
+		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
 	if err != nil {
 		return nil, err
 	}
@@ -79403,6 +79290,53 @@ func NewGetSessionV1AudioSessionsSessionIdGetRequest(server string, sessionId op
 	if err != nil {
 		return nil, err
 	}
+
+	return req, nil
+}
+
+// NewUpdateSessionV1AudioSessionsSessionIdPatchRequest calls the generic UpdateSessionV1AudioSessionsSessionIdPatch builder with application/json body
+func NewUpdateSessionV1AudioSessionsSessionIdPatchRequest(server string, sessionId openapi_types.UUID, body UpdateSessionV1AudioSessionsSessionIdPatchJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewUpdateSessionV1AudioSessionsSessionIdPatchRequestWithBody(server, sessionId, "application/json", bodyReader)
+}
+
+// NewUpdateSessionV1AudioSessionsSessionIdPatchRequestWithBody constructs an http.Request for the UpdateSessionV1AudioSessionsSessionIdPatch method, with any body, and a specified content type
+func NewUpdateSessionV1AudioSessionsSessionIdPatchRequestWithBody(server string, sessionId openapi_types.UUID, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "session_id", sessionId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/audio/sessions/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPatch, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
 
 	return req, nil
 }
@@ -84636,53 +84570,6 @@ func NewGetDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdGetRequest(s
 	return req, nil
 }
 
-// NewJudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostRequest calls the generic JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost builder with application/json body
-func NewJudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostRequest(server string, datasetRecordId openapi_types.UUID, body JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewJudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostRequestWithBody(server, datasetRecordId, "application/json", bodyReader)
-}
-
-// NewJudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostRequestWithBody constructs an http.Request for the JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost method, with any body, and a specified content type
-func NewJudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostRequestWithBody(server string, datasetRecordId openapi_types.UUID, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "dataset_record_id", datasetRecordId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/observability/dataset-records/%s/live-judging", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
 // NewUpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutRequest calls the generic UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPut builder with application/json body
 func NewUpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutRequest(server string, datasetRecordId openapi_types.UUID, body UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
@@ -85907,310 +85794,6 @@ func NewSearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSear
 	return req, nil
 }
 
-// NewGetJudgesV1ObservabilityJudgesGetRequest constructs an http.Request for the GetJudgesV1ObservabilityJudgesGet method
-func NewGetJudgesV1ObservabilityJudgesGetRequest(server string, params *GetJudgesV1ObservabilityJudgesGetParams) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/observability/judges")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		// queryValues collects non-styled parameters (passthrough, JSON)
-		// that are safe to round-trip through url.Values.Encode().
-		queryValues := queryURL.Query()
-		// rawQueryFragments collects pre-encoded query fragments from
-		// styled parameters, preserving literal commas as delimiters
-		// per the OpenAPI spec (e.g. "color=blue,black,brown").
-		var rawQueryFragments []string
-
-		if params.TypeFilter != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "type_filter", *params.TypeFilter, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
-				return nil, err
-			} else {
-				for _, qp := range strings.Split(queryFrag, "&") {
-					rawQueryFragments = append(rawQueryFragments, qp)
-				}
-			}
-
-		}
-
-		if params.ModelFilter != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "model_filter", *params.ModelFilter, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
-				return nil, err
-			} else {
-				for _, qp := range strings.Split(queryFrag, "&") {
-					rawQueryFragments = append(rawQueryFragments, qp)
-				}
-			}
-
-		}
-
-		if params.PageSize != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_size", *params.PageSize, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
-				return nil, err
-			} else {
-				for _, qp := range strings.Split(queryFrag, "&") {
-					rawQueryFragments = append(rawQueryFragments, qp)
-				}
-			}
-
-		}
-
-		if params.Page != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page", *params.Page, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
-				return nil, err
-			} else {
-				for _, qp := range strings.Split(queryFrag, "&") {
-					rawQueryFragments = append(rawQueryFragments, qp)
-				}
-			}
-
-		}
-
-		if params.Q != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "q", *params.Q, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
-				return nil, err
-			} else {
-				for _, qp := range strings.Split(queryFrag, "&") {
-					rawQueryFragments = append(rawQueryFragments, qp)
-				}
-			}
-
-		}
-
-		if encoded := queryValues.Encode(); encoded != "" {
-			rawQueryFragments = append(rawQueryFragments, encoded)
-		}
-		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
-	}
-
-	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
-}
-
-// NewCreateJudgeV1ObservabilityJudgesPostRequest calls the generic CreateJudgeV1ObservabilityJudgesPost builder with application/json body
-func NewCreateJudgeV1ObservabilityJudgesPostRequest(server string, body CreateJudgeV1ObservabilityJudgesPostJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewCreateJudgeV1ObservabilityJudgesPostRequestWithBody(server, "application/json", bodyReader)
-}
-
-// NewCreateJudgeV1ObservabilityJudgesPostRequestWithBody constructs an http.Request for the CreateJudgeV1ObservabilityJudgesPost method, with any body, and a specified content type
-func NewCreateJudgeV1ObservabilityJudgesPostRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/observability/judges")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
-// NewDeleteJudgeV1ObservabilityJudgesJudgeIdDeleteRequest constructs an http.Request for the DeleteJudgeV1ObservabilityJudgesJudgeIdDelete method
-func NewDeleteJudgeV1ObservabilityJudgesJudgeIdDeleteRequest(server string, judgeId openapi_types.UUID) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "judge_id", judgeId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/observability/judges/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodDelete, queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
-}
-
-// NewGetJudgeByIdV1ObservabilityJudgesJudgeIdGetRequest constructs an http.Request for the GetJudgeByIdV1ObservabilityJudgesJudgeIdGet method
-func NewGetJudgeByIdV1ObservabilityJudgesJudgeIdGetRequest(server string, judgeId openapi_types.UUID) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "judge_id", judgeId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/observability/judges/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
-}
-
-// NewUpdateJudgeV1ObservabilityJudgesJudgeIdPutRequest calls the generic UpdateJudgeV1ObservabilityJudgesJudgeIdPut builder with application/json body
-func NewUpdateJudgeV1ObservabilityJudgesJudgeIdPutRequest(server string, judgeId openapi_types.UUID, body UpdateJudgeV1ObservabilityJudgesJudgeIdPutJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewUpdateJudgeV1ObservabilityJudgesJudgeIdPutRequestWithBody(server, judgeId, "application/json", bodyReader)
-}
-
-// NewUpdateJudgeV1ObservabilityJudgesJudgeIdPutRequestWithBody constructs an http.Request for the UpdateJudgeV1ObservabilityJudgesJudgeIdPut method, with any body, and a specified content type
-func NewUpdateJudgeV1ObservabilityJudgesJudgeIdPutRequestWithBody(server string, judgeId openapi_types.UUID, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "judge_id", judgeId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/observability/judges/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPut, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
-// NewJudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostRequest calls the generic JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost builder with application/json body
-func NewJudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostRequest(server string, judgeId openapi_types.UUID, body JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewJudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostRequestWithBody(server, judgeId, "application/json", bodyReader)
-}
-
-// NewJudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostRequestWithBody constructs an http.Request for the JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost method, with any body, and a specified content type
-func NewJudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostRequestWithBody(server string, judgeId openapi_types.UUID, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "judge_id", judgeId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uuid"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/observability/judges/%s/live-judging", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
-}
-
 // NewGetLogFieldsV1ObservabilityLogsFieldsGetRequest constructs an http.Request for the GetLogFieldsV1ObservabilityLogsFieldsGet method
 func NewGetLogFieldsV1ObservabilityLogsFieldsGetRequest(server string) (*http.Request, error) {
 	var err error
@@ -86790,6 +86373,30 @@ func NewListPipelinesV1ObservabilityPipelinesGetRequest(server string, params *L
 
 		}
 
+		if params.From != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "from", *params.From, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.To != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "to", *params.To, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
 		if params.PageSize != nil {
 
 			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_size", *params.PageSize, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
@@ -87210,6 +86817,229 @@ func NewGetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2Ge
 	if err != nil {
 		return nil, err
 	}
+
+	return req, nil
+}
+
+// NewListScorersV1ObservabilityScorersGetRequest constructs an http.Request for the ListScorersV1ObservabilityScorersGet method
+func NewListScorersV1ObservabilityScorersGetRequest(server string, params *ListScorersV1ObservabilityScorersGetParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/observability/scorers")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		// queryValues collects non-styled parameters (passthrough, JSON)
+		// that are safe to round-trip through url.Values.Encode().
+		queryValues := queryURL.Query()
+		// rawQueryFragments collects pre-encoded query fragments from
+		// styled parameters, preserving literal commas as delimiters
+		// per the OpenAPI spec (e.g. "color=blue,black,brown").
+		var rawQueryFragments []string
+
+		if params.CreatedByMe != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "created_by_me", *params.CreatedByMe, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.Ootb != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "ootb", *params.Ootb, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.Q != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "q", *params.Q, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.PageSize != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page_size", *params.PageSize, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "page", *params.Page, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if encoded := queryValues.Encode(); encoded != "" {
+			rawQueryFragments = append(rawQueryFragments, encoded)
+		}
+		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewCreateScorerV1ObservabilityScorersPostRequest calls the generic CreateScorerV1ObservabilityScorersPost builder with application/json body
+func NewCreateScorerV1ObservabilityScorersPostRequest(server string, body CreateScorerV1ObservabilityScorersPostJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewCreateScorerV1ObservabilityScorersPostRequestWithBody(server, "application/json", bodyReader)
+}
+
+// NewCreateScorerV1ObservabilityScorersPostRequestWithBody constructs an http.Request for the CreateScorerV1ObservabilityScorersPost method, with any body, and a specified content type
+func NewCreateScorerV1ObservabilityScorersPostRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/observability/scorers")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
+// NewGetScorerV1ObservabilityScorersScorerSlugGetRequest constructs an http.Request for the GetScorerV1ObservabilityScorersScorerSlugGet method
+func NewGetScorerV1ObservabilityScorersScorerSlugGetRequest(server string, scorerSlug string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "scorer_slug", scorerSlug, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/observability/scorers/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewEditScorerV1ObservabilityScorersScorerSlugPatchRequest calls the generic EditScorerV1ObservabilityScorersScorerSlugPatch builder with application/json body
+func NewEditScorerV1ObservabilityScorersScorerSlugPatchRequest(server string, scorerSlug string, body EditScorerV1ObservabilityScorersScorerSlugPatchJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewEditScorerV1ObservabilityScorersScorerSlugPatchRequestWithBody(server, scorerSlug, "application/json", bodyReader)
+}
+
+// NewEditScorerV1ObservabilityScorersScorerSlugPatchRequestWithBody constructs an http.Request for the EditScorerV1ObservabilityScorersScorerSlugPatch method, with any body, and a specified content type
+func NewEditScorerV1ObservabilityScorersScorerSlugPatchRequestWithBody(server string, scorerSlug string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "scorer_slug", scorerSlug, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/observability/scorers/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPatch, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
 
 	return req, nil
 }
@@ -89874,6 +89704,18 @@ func NewGetWorkflowsV1WorkflowsGetRequest(server string, params *GetWorkflowsV1W
 
 		}
 
+		if params.ExcludeTags != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "exclude_tags", *params.ExcludeTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
 		if params.SortBy != nil {
 
 			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sort_by", *params.SortBy, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
@@ -90138,7 +89980,7 @@ func NewListDeploymentsV1WorkflowsDeploymentsGetRequest(server string, params *L
 
 		if params.Limit != nil {
 
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
 				return nil, err
 			} else {
 				for _, qp := range strings.Split(queryFrag, "&") {
@@ -92309,6 +92151,18 @@ func NewGetWorkflowRegistrationsV1WorkflowsRegistrationsGetRequest(server string
 
 		}
 
+		if params.ExcludeTags != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "exclude_tags", *params.ExcludeTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
 		if params.Limit != nil {
 
 			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
@@ -92642,6 +92496,18 @@ func NewListRunsV1WorkflowsRunsGetRequest(server string, params *ListRunsV1Workf
 		if params.WorkflowTags != nil {
 
 			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "workflow_tags", *params.WorkflowTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.ExcludeWorkflowTags != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "exclude_workflow_tags", *params.ExcludeWorkflowTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
 				return nil, err
 			} else {
 				for _, qp := range strings.Split(queryFrag, "&") {
@@ -95181,33 +95047,6 @@ type ClientWithResponsesInterface interface {
 	// Corresponds with POST /v1/admin/user-groups/{group_uuid}/members (the `UsersApiAdminUserGroupsAssignUsersToGroup` operationId).
 	UsersApiAdminUserGroupsAssignUsersToGroupWithResponse(ctx context.Context, groupUuid openapi_types.UUID, body UsersApiAdminUserGroupsAssignUsersToGroupJSONRequestBody, reqEditors ...RequestEditorFn) (*UsersApiAdminUserGroupsAssignUsersToGroupResponse, error)
 
-	// UsersApiAdminUserGroupsGetNestedGroupsWithResponse Get Nested Groups Admin
-	//
-	// List the groups directly nested inside this group.
-	//
-	// Returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with GET /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsGetNestedGroups` operationId).
-	UsersApiAdminUserGroupsGetNestedGroupsWithResponse(ctx context.Context, groupUuid openapi_types.UUID, reqEditors ...RequestEditorFn) (*UsersApiAdminUserGroupsGetNestedGroupsResponse, error)
-
-	// UsersApiAdminUserGroupsSetNestedGroupsWithBodyWithResponse Set Nested Groups Admin
-	//
-	// Replace the set of groups directly nested inside this group.
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with PATCH /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsSetNestedGroups` operationId).
-	UsersApiAdminUserGroupsSetNestedGroupsWithBodyWithResponse(ctx context.Context, groupUuid openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UsersApiAdminUserGroupsSetNestedGroupsResponse, error)
-
-	// UsersApiAdminUserGroupsSetNestedGroupsWithResponse Set Nested Groups Admin
-	//
-	// Replace the set of groups directly nested inside this group.
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with PATCH /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsSetNestedGroups` operationId).
-	UsersApiAdminUserGroupsSetNestedGroupsWithResponse(ctx context.Context, groupUuid openapi_types.UUID, body UsersApiAdminUserGroupsSetNestedGroupsJSONRequestBody, reqEditors ...RequestEditorFn) (*UsersApiAdminUserGroupsSetNestedGroupsResponse, error)
-
 	// UsersAdminUserGroupsUpdateUserGroupOrganizationRoleWithBodyWithResponse Update User Group Organization Role
 	//
 	// Update the organization role for a user group.
@@ -95343,7 +95182,9 @@ type ClientWithResponsesInterface interface {
 
 	// UsersApiAdminUsersDeleteUserWithResponse Delete User
 	//
-	// Remove a member from the Organization.
+	// Remove a member from the Organization, whatever their account status.
+	//
+	// Members whose email is on one of the Organization's verified domains cannot be removed: deactivate them instead.
 	//
 	// Returns a wrapper object for the known response body format(s).
 	//
@@ -95352,7 +95193,7 @@ type ClientWithResponsesInterface interface {
 
 	// UsersApiAdminUsersGetUserWithResponse Get User
 	//
-	// Get details for an Organization member.
+	// Get details for an Organization member, including deactivated and blocked members.
 	//
 	// Returns a wrapper object for the known response body format(s).
 	//
@@ -95379,13 +95220,33 @@ type ClientWithResponsesInterface interface {
 
 	// UsersApiAdminUsersDeactivateUserWithResponse Deactivate User
 	//
-	// Deactivate a user whose email address is on one of the Organization's verified domains: remove them from
-	// every organization they belong to, which revokes their API keys, and end their sessions.
+	// Deactivate a user whose email address is on one of the Organization's verified domains: end their sessions,
+	// delete their API keys and release their seats. Their memberships, groups and roles are kept, so that
+	// `POST /users/{user_id}/reactivate` can give their access back.
 	//
 	// Returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/admin/users/{user_id}/deactivate (the `UsersApiAdminUsersDeactivateUser` operationId).
 	UsersApiAdminUsersDeactivateUserWithResponse(ctx context.Context, userId openapi_types.UUID, reqEditors ...RequestEditorFn) (*UsersApiAdminUsersDeactivateUserResponse, error)
+
+	// UsersApiAdminUsersReactivateUserWithResponse Reactivate User
+	//
+	// Reactivate a deactivated user whose email address is on one of the Organization's verified domains: give
+	// them their access back, with their seats when free ones remain.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/admin/users/{user_id}/reactivate (the `UsersApiAdminUsersReactivateUser` operationId).
+	UsersApiAdminUsersReactivateUserWithResponse(ctx context.Context, userId openapi_types.UUID, reqEditors ...RequestEditorFn) (*UsersApiAdminUsersReactivateUserResponse, error)
+
+	// UsersApiAdminUsersGetUserWorkspacesWithResponse Get User Workspaces
+	//
+	// List the Workspaces an Organization member belongs to, with their roles.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/admin/users/{user_id}/workspaces (the `UsersApiAdminUsersGetUserWorkspaces` operationId).
+	UsersApiAdminUsersGetUserWorkspacesWithResponse(ctx context.Context, userId openapi_types.UUID, params *UsersApiAdminUsersGetUserWorkspacesParams, reqEditors ...RequestEditorFn) (*UsersApiAdminUsersGetUserWorkspacesResponse, error)
 
 	// UsersApiAdminWorkspacesGetWorkspacesWithResponse Get Workspaces
 	//
@@ -95733,6 +95594,34 @@ type ClientWithResponsesInterface interface {
 	//
 	// Corresponds with GET /v1/audio/sessions/{session_id} (the `GetSessionV1AudioSessionsSessionIdGet` operationId).
 	GetSessionV1AudioSessionsSessionIdGetWithResponse(ctx context.Context, sessionId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetSessionV1AudioSessionsSessionIdGetResponse, error)
+
+	// UpdateSessionV1AudioSessionsSessionIdPatchWithBodyWithResponse Update a live agent session
+	//
+	// Update the instructions, tools or turn handling of a live session.
+	//
+	// The agent applies the update at its next turn boundary, so it is not yet
+	// applied when this returns.
+	// The agent's `session_updated` and `session_update_failed` webhooks report
+	// the outcome to your server.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with PATCH /v1/audio/sessions/{session_id} (the `UpdateSessionV1AudioSessionsSessionIdPatch` operationId).
+	UpdateSessionV1AudioSessionsSessionIdPatchWithBodyWithResponse(ctx context.Context, sessionId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UpdateSessionV1AudioSessionsSessionIdPatchResponse, error)
+
+	// UpdateSessionV1AudioSessionsSessionIdPatchWithResponse Update a live agent session
+	//
+	// Update the instructions, tools or turn handling of a live session.
+	//
+	// The agent applies the update at its next turn boundary, so it is not yet
+	// applied when this returns.
+	// The agent's `session_updated` and `session_update_failed` webhooks report
+	// the outcome to your server.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with PATCH /v1/audio/sessions/{session_id} (the `UpdateSessionV1AudioSessionsSessionIdPatch` operationId).
+	UpdateSessionV1AudioSessionsSessionIdPatchWithResponse(ctx context.Context, sessionId openapi_types.UUID, body UpdateSessionV1AudioSessionsSessionIdPatchJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateSessionV1AudioSessionsSessionIdPatchResponse, error)
 
 	// SpeechV1AudioSpeechPostWithBodyWithResponse Speech
 	//
@@ -96150,7 +96039,7 @@ type ClientWithResponsesInterface interface {
 
 	// ConnectorCreateCredentialsV1WithBodyWithResponse Create consumer credentials for a connector.
 	//
-	// Create consumer credentials for a given connector and consumer scope (organization, workspace, user)
+	// Create consumer credentials for a given connector and consumer scope (workspace, user)
 	//
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
@@ -96161,7 +96050,7 @@ type ClientWithResponsesInterface interface {
 
 	// ConnectorCreateCredentialsV1WithResponse Create consumer credentials for a connector.
 	//
-	// Create consumer credentials for a given connector and consumer scope (organization, workspace, user)
+	// Create consumer credentials for a given connector and consumer scope (workspace, user)
 	//
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
@@ -96664,7 +96553,7 @@ type ClientWithResponsesInterface interface {
 	//
 	// Upload a file that can be used across various endpoints.
 	//
-	// The size of individual files can be a maximum of 512 MB. The Fine-tuning API only supports .jsonl files.
+	// The size of individual files can be a maximum of 512 MB.
 	//
 	// Please contact us if you need to increase these storage limits.
 	//
@@ -97081,20 +96970,6 @@ type ClientWithResponsesInterface interface {
 	// Corresponds with GET /v1/observability/dataset-records/{dataset_record_id} (the `GetDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdGet` operationId).
 	GetDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdGetWithResponse(ctx context.Context, datasetRecordId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdGetResponse, error)
 
-	// JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithBodyWithResponse Run Judge on a dataset record based on the given options
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/observability/dataset-records/{dataset_record_id}/live-judging (the `JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost` operationId).
-	JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithBodyWithResponse(ctx context.Context, datasetRecordId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse, error)
-
-	// JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithResponse Run Judge on a dataset record based on the given options
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/observability/dataset-records/{dataset_record_id}/live-judging (the `JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost` operationId).
-	JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithResponse(ctx context.Context, datasetRecordId openapi_types.UUID, body JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostJSONRequestBody, reqEditors ...RequestEditorFn) (*JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse, error)
-
 	// UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutWithBodyWithResponse Update a dataset record payload
 	//
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
@@ -97358,69 +97233,6 @@ type ClientWithResponsesInterface interface {
 	// Corresponds with POST /v1/observability/evaluations_v2/{evaluation_slug}/runs/search (the `SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPost` operationId).
 	SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPostWithResponse(ctx context.Context, evaluationSlug string, params *SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPostParams, body SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPostJSONRequestBody, reqEditors ...RequestEditorFn) (*SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPostResponse, error)
 
-	// GetJudgesV1ObservabilityJudgesGetWithResponse Get judges with optional filtering and search
-	//
-	// Returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with GET /v1/observability/judges (the `GetJudgesV1ObservabilityJudgesGet` operationId).
-	GetJudgesV1ObservabilityJudgesGetWithResponse(ctx context.Context, params *GetJudgesV1ObservabilityJudgesGetParams, reqEditors ...RequestEditorFn) (*GetJudgesV1ObservabilityJudgesGetResponse, error)
-
-	// CreateJudgeV1ObservabilityJudgesPostWithBodyWithResponse Create a new judge
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/observability/judges (the `CreateJudgeV1ObservabilityJudgesPost` operationId).
-	CreateJudgeV1ObservabilityJudgesPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateJudgeV1ObservabilityJudgesPostResponse, error)
-
-	// CreateJudgeV1ObservabilityJudgesPostWithResponse Create a new judge
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/observability/judges (the `CreateJudgeV1ObservabilityJudgesPost` operationId).
-	CreateJudgeV1ObservabilityJudgesPostWithResponse(ctx context.Context, body CreateJudgeV1ObservabilityJudgesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateJudgeV1ObservabilityJudgesPostResponse, error)
-
-	// DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteWithResponse Delete a judge
-	//
-	// Returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with DELETE /v1/observability/judges/{judge_id} (the `DeleteJudgeV1ObservabilityJudgesJudgeIdDelete` operationId).
-	DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteWithResponse(ctx context.Context, judgeId openapi_types.UUID, reqEditors ...RequestEditorFn) (*DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse, error)
-
-	// GetJudgeByIdV1ObservabilityJudgesJudgeIdGetWithResponse Get judge by id
-	//
-	// Returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with GET /v1/observability/judges/{judge_id} (the `GetJudgeByIdV1ObservabilityJudgesJudgeIdGet` operationId).
-	GetJudgeByIdV1ObservabilityJudgesJudgeIdGetWithResponse(ctx context.Context, judgeId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse, error)
-
-	// UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithBodyWithResponse Update a judge
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with PUT /v1/observability/judges/{judge_id} (the `UpdateJudgeV1ObservabilityJudgesJudgeIdPut` operationId).
-	UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithBodyWithResponse(ctx context.Context, judgeId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse, error)
-
-	// UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithResponse Update a judge
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with PUT /v1/observability/judges/{judge_id} (the `UpdateJudgeV1ObservabilityJudgesJudgeIdPut` operationId).
-	UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithResponse(ctx context.Context, judgeId openapi_types.UUID, body UpdateJudgeV1ObservabilityJudgesJudgeIdPutJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse, error)
-
-	// JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithBodyWithResponse Run a saved judge on a conversation
-	//
-	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/observability/judges/{judge_id}/live-judging (the `JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost` operationId).
-	JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithBodyWithResponse(ctx context.Context, judgeId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse, error)
-
-	// JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithResponse Run a saved judge on a conversation
-	//
-	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-	//
-	// Corresponds with POST /v1/observability/judges/{judge_id}/live-judging (the `JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost` operationId).
-	JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithResponse(ctx context.Context, judgeId openapi_types.UUID, body JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostJSONRequestBody, reqEditors ...RequestEditorFn) (*JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse, error)
-
 	// GetLogFieldsV1ObservabilityLogsFieldsGetWithResponse Get log field definitions
 	//
 	// Returns a wrapper object for the known response body format(s).
@@ -97560,6 +97372,48 @@ type ClientWithResponsesInterface interface {
 	//
 	// Corresponds with GET /v1/observability/projects/{project_slug}/evaluations_v2 (the `GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2Get` operationId).
 	GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2GetWithResponse(ctx context.Context, projectSlug string, params *GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2GetParams, reqEditors ...RequestEditorFn) (*GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2GetResponse, error)
+
+	// ListScorersV1ObservabilityScorersGetWithResponse List scorers
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/observability/scorers (the `ListScorersV1ObservabilityScorersGet` operationId).
+	ListScorersV1ObservabilityScorersGetWithResponse(ctx context.Context, params *ListScorersV1ObservabilityScorersGetParams, reqEditors ...RequestEditorFn) (*ListScorersV1ObservabilityScorersGetResponse, error)
+
+	// CreateScorerV1ObservabilityScorersPostWithBodyWithResponse Create a scorer
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/observability/scorers (the `CreateScorerV1ObservabilityScorersPost` operationId).
+	CreateScorerV1ObservabilityScorersPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateScorerV1ObservabilityScorersPostResponse, error)
+
+	// CreateScorerV1ObservabilityScorersPostWithResponse Create a scorer
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/observability/scorers (the `CreateScorerV1ObservabilityScorersPost` operationId).
+	CreateScorerV1ObservabilityScorersPostWithResponse(ctx context.Context, body CreateScorerV1ObservabilityScorersPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateScorerV1ObservabilityScorersPostResponse, error)
+
+	// GetScorerV1ObservabilityScorersScorerSlugGetWithResponse Get a scorer by slug
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/observability/scorers/{scorer_slug} (the `GetScorerV1ObservabilityScorersScorerSlugGet` operationId).
+	GetScorerV1ObservabilityScorersScorerSlugGetWithResponse(ctx context.Context, scorerSlug string, reqEditors ...RequestEditorFn) (*GetScorerV1ObservabilityScorersScorerSlugGetResponse, error)
+
+	// EditScorerV1ObservabilityScorersScorerSlugPatchWithBodyWithResponse Edit a scorer
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with PATCH /v1/observability/scorers/{scorer_slug} (the `EditScorerV1ObservabilityScorersScorerSlugPatch` operationId).
+	EditScorerV1ObservabilityScorersScorerSlugPatchWithBodyWithResponse(ctx context.Context, scorerSlug string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*EditScorerV1ObservabilityScorersScorerSlugPatchResponse, error)
+
+	// EditScorerV1ObservabilityScorersScorerSlugPatchWithResponse Edit a scorer
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with PATCH /v1/observability/scorers/{scorer_slug} (the `EditScorerV1ObservabilityScorersScorerSlugPatch` operationId).
+	EditScorerV1ObservabilityScorersScorerSlugPatchWithResponse(ctx context.Context, scorerSlug string, body EditScorerV1ObservabilityScorersScorerSlugPatchJSONRequestBody, reqEditors ...RequestEditorFn) (*EditScorerV1ObservabilityScorersScorerSlugPatchResponse, error)
 
 	// AggregateSpansV1ObservabilitySpansAggregatePostWithBodyWithResponse Aggregate spans
 	//
@@ -97831,7 +97685,7 @@ type ClientWithResponsesInterface interface {
 	//
 	// Create a response.
 	//
-	// Generate a model response from text or image inputs. The response can
+	// Generate a model response from text, image, or file inputs. The response can
 	// include text, reasoning, and function calls. Set stream to true to
 	// receive Server-Sent Events.
 	//
@@ -97848,7 +97702,7 @@ type ClientWithResponsesInterface interface {
 	//
 	// Create a response.
 	//
-	// Generate a model response from text or image inputs. The response can
+	// Generate a model response from text, image, or file inputs. The response can
 	// include text, reasoning, and function calls. Set stream to true to
 	// receive Server-Sent Events.
 	//
@@ -97955,7 +97809,7 @@ type ClientWithResponsesInterface interface {
 	//
 	// Retrieve a service account.
 	//
-	// Requires the Workspace admin (`workspace_admin`) role.
+	// Requires the `see_all_workspace_service_accounts` or `read_workspace_service_account` permission.
 	//
 	// Returns a wrapper object for the known response body format(s).
 	//
@@ -100000,81 +99854,6 @@ func (r UsersApiAdminUserGroupsAssignUsersToGroupResponse) ContentType() string 
 	return ""
 }
 
-type UsersApiAdminUserGroupsGetNestedGroupsResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *NestedGroupsOut
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r UsersApiAdminUserGroupsGetNestedGroupsResponse) GetJSON200() *NestedGroupsOut {
-	return r.JSON200
-}
-
-// GetBody returns the raw response body bytes
-func (r UsersApiAdminUserGroupsGetNestedGroupsResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r UsersApiAdminUserGroupsGetNestedGroupsResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r UsersApiAdminUserGroupsGetNestedGroupsResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r UsersApiAdminUserGroupsGetNestedGroupsResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type UsersApiAdminUserGroupsSetNestedGroupsResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-}
-
-// GetBody returns the raw response body bytes
-func (r UsersApiAdminUserGroupsSetNestedGroupsResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r UsersApiAdminUserGroupsSetNestedGroupsResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r UsersApiAdminUserGroupsSetNestedGroupsResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r UsersApiAdminUserGroupsSetNestedGroupsResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
 type UsersAdminUserGroupsUpdateUserGroupOrganizationRoleResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -100615,6 +100394,88 @@ func (r UsersApiAdminUsersDeactivateUserResponse) StatusCode() int {
 
 // ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
 func (r UsersApiAdminUsersDeactivateUserResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type UsersApiAdminUsersReactivateUserResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *ReactivateUserOUT
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r UsersApiAdminUsersReactivateUserResponse) GetJSON200() *ReactivateUserOUT {
+	return r.JSON200
+}
+
+// GetBody returns the raw response body bytes
+func (r UsersApiAdminUsersReactivateUserResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r UsersApiAdminUsersReactivateUserResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r UsersApiAdminUsersReactivateUserResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r UsersApiAdminUsersReactivateUserResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type UsersApiAdminUsersGetUserWorkspacesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *AdminUserWorkspacesOUT
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r UsersApiAdminUsersGetUserWorkspacesResponse) GetJSON200() *AdminUserWorkspacesOUT {
+	return r.JSON200
+}
+
+// GetBody returns the raw response body bytes
+func (r UsersApiAdminUsersGetUserWorkspacesResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r UsersApiAdminUsersGetUserWorkspacesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r UsersApiAdminUsersGetUserWorkspacesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r UsersApiAdminUsersGetUserWorkspacesResponse) ContentType() string {
 	if r.HTTPResponse != nil {
 		return r.HTTPResponse.Header.Get("Content-Type")
 	}
@@ -101977,6 +101838,54 @@ func (r GetSessionV1AudioSessionsSessionIdGetResponse) ContentType() string {
 	return ""
 }
 
+type UpdateSessionV1AudioSessionsSessionIdPatchResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *AudioSessionUpdateResponse
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *HTTPValidationError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r UpdateSessionV1AudioSessionsSessionIdPatchResponse) GetJSON200() *AudioSessionUpdateResponse {
+	return r.JSON200
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r UpdateSessionV1AudioSessionsSessionIdPatchResponse) GetJSON422() *HTTPValidationError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r UpdateSessionV1AudioSessionsSessionIdPatchResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r UpdateSessionV1AudioSessionsSessionIdPatchResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r UpdateSessionV1AudioSessionsSessionIdPatchResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r UpdateSessionV1AudioSessionsSessionIdPatchResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
 type SpeechV1AudioSpeechPostResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -102967,6 +102876,8 @@ type ConnectorCreateV1Response struct {
 	HTTPResponse *http.Response
 	// JSON201 the response for an HTTP 201 `application/json` response
 	JSON201 *Connector
+	// JSON400 the response for an HTTP 400 `application/json` response
+	JSON400 *ConnectorErrorResponse
 	// JSON422 the response for an HTTP 422 `application/json` response
 	JSON422 *HTTPValidationError
 }
@@ -102974,6 +102885,11 @@ type ConnectorCreateV1Response struct {
 // GetJSON201 returns the response for an HTTP 201 `application/json` response
 func (r ConnectorCreateV1Response) GetJSON201() *Connector {
 	return r.JSON201
+}
+
+// GetJSON400 returns the response for an HTTP 400 `application/json` response
+func (r ConnectorCreateV1Response) GetJSON400() *ConnectorErrorResponse {
+	return r.JSON400
 }
 
 // GetJSON422 returns the response for an HTTP 422 `application/json` response
@@ -103447,6 +103363,8 @@ type ConnectorUpdateCredentialsResponse struct {
 	HTTPResponse *http.Response
 	// JSON200 the response for an HTTP 200 `application/json` response
 	JSON200 *MessageResponse
+	// JSON401 the response for an HTTP 401 `application/json` response
+	JSON401 *ConnectorErrorResponse
 	// JSON422 the response for an HTTP 422 `application/json` response
 	JSON422 *HTTPValidationError
 }
@@ -103454,6 +103372,11 @@ type ConnectorUpdateCredentialsResponse struct {
 // GetJSON200 returns the response for an HTTP 200 `application/json` response
 func (r ConnectorUpdateCredentialsResponse) GetJSON200() *MessageResponse {
 	return r.JSON200
+}
+
+// GetJSON401 returns the response for an HTTP 401 `application/json` response
+func (r ConnectorUpdateCredentialsResponse) GetJSON401() *ConnectorErrorResponse {
+	return r.JSON401
 }
 
 // GetJSON422 returns the response for an HTTP 422 `application/json` response
@@ -103495,6 +103418,8 @@ type ConnectorCreateCredentialsV1Response struct {
 	HTTPResponse *http.Response
 	// JSON200 the response for an HTTP 200 `application/json` response
 	JSON200 *MessageResponse
+	// JSON401 the response for an HTTP 401 `application/json` response
+	JSON401 *ConnectorErrorResponse
 	// JSON422 the response for an HTTP 422 `application/json` response
 	JSON422 *HTTPValidationError
 }
@@ -103502,6 +103427,11 @@ type ConnectorCreateCredentialsV1Response struct {
 // GetJSON200 returns the response for an HTTP 200 `application/json` response
 func (r ConnectorCreateCredentialsV1Response) GetJSON200() *MessageResponse {
 	return r.JSON200
+}
+
+// GetJSON401 returns the response for an HTTP 401 `application/json` response
+func (r ConnectorCreateCredentialsV1Response) GetJSON401() *ConnectorErrorResponse {
+	return r.JSON401
 }
 
 // GetJSON422 returns the response for an HTTP 422 `application/json` response
@@ -103639,6 +103569,8 @@ type ConnectorUpdateV1Response struct {
 	HTTPResponse *http.Response
 	// JSON200 the response for an HTTP 200 `application/json` response
 	JSON200 *Connector
+	// JSON400 the response for an HTTP 400 `application/json` response
+	JSON400 *ConnectorErrorResponse
 	// JSON422 the response for an HTTP 422 `application/json` response
 	JSON422 *HTTPValidationError
 }
@@ -103646,6 +103578,11 @@ type ConnectorUpdateV1Response struct {
 // GetJSON200 returns the response for an HTTP 200 `application/json` response
 func (r ConnectorUpdateV1Response) GetJSON200() *Connector {
 	return r.JSON200
+}
+
+// GetJSON400 returns the response for an HTTP 400 `application/json` response
+func (r ConnectorUpdateV1Response) GetJSON400() *ConnectorErrorResponse {
+	return r.JSON400
 }
 
 // GetJSON422 returns the response for an HTTP 422 `application/json` response
@@ -107007,82 +106944,6 @@ func (r GetDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdGetResponse)
 	return ""
 }
 
-type JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *JudgeOutput
-	// JSON400 the response for an HTTP 400 `application/json` response
-	JSON400 *ObservabilityError
-	// JSON404 the response for an HTTP 404 `application/json` response
-	JSON404 *ObservabilityError
-	// JSON408 the response for an HTTP 408 `application/json` response
-	JSON408 *ObservabilityError
-	// JSON409 the response for an HTTP 409 `application/json` response
-	JSON409 *ObservabilityError
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *ObservabilityError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse) GetJSON200() *JudgeOutput {
-	return r.JSON200
-}
-
-// GetJSON400 returns the response for an HTTP 400 `application/json` response
-func (r JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse) GetJSON400() *ObservabilityError {
-	return r.JSON400
-}
-
-// GetJSON404 returns the response for an HTTP 404 `application/json` response
-func (r JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse) GetJSON404() *ObservabilityError {
-	return r.JSON404
-}
-
-// GetJSON408 returns the response for an HTTP 408 `application/json` response
-func (r JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse) GetJSON408() *ObservabilityError {
-	return r.JSON408
-}
-
-// GetJSON409 returns the response for an HTTP 409 `application/json` response
-func (r JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse) GetJSON409() *ObservabilityError {
-	return r.JSON409
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse) GetJSON422() *ObservabilityError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
 type UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -108886,448 +108747,6 @@ func (r SearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSear
 	return ""
 }
 
-type GetJudgesV1ObservabilityJudgesGetResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *ListJudgesResponse
-	// JSON400 the response for an HTTP 400 `application/json` response
-	JSON400 *ObservabilityError
-	// JSON404 the response for an HTTP 404 `application/json` response
-	JSON404 *ObservabilityError
-	// JSON408 the response for an HTTP 408 `application/json` response
-	JSON408 *ObservabilityError
-	// JSON409 the response for an HTTP 409 `application/json` response
-	JSON409 *ObservabilityError
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *ObservabilityError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r GetJudgesV1ObservabilityJudgesGetResponse) GetJSON200() *ListJudgesResponse {
-	return r.JSON200
-}
-
-// GetJSON400 returns the response for an HTTP 400 `application/json` response
-func (r GetJudgesV1ObservabilityJudgesGetResponse) GetJSON400() *ObservabilityError {
-	return r.JSON400
-}
-
-// GetJSON404 returns the response for an HTTP 404 `application/json` response
-func (r GetJudgesV1ObservabilityJudgesGetResponse) GetJSON404() *ObservabilityError {
-	return r.JSON404
-}
-
-// GetJSON408 returns the response for an HTTP 408 `application/json` response
-func (r GetJudgesV1ObservabilityJudgesGetResponse) GetJSON408() *ObservabilityError {
-	return r.JSON408
-}
-
-// GetJSON409 returns the response for an HTTP 409 `application/json` response
-func (r GetJudgesV1ObservabilityJudgesGetResponse) GetJSON409() *ObservabilityError {
-	return r.JSON409
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r GetJudgesV1ObservabilityJudgesGetResponse) GetJSON422() *ObservabilityError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r GetJudgesV1ObservabilityJudgesGetResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r GetJudgesV1ObservabilityJudgesGetResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r GetJudgesV1ObservabilityJudgesGetResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r GetJudgesV1ObservabilityJudgesGetResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type CreateJudgeV1ObservabilityJudgesPostResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON201 the response for an HTTP 201 `application/json` response
-	JSON201 *Judge
-	// JSON400 the response for an HTTP 400 `application/json` response
-	JSON400 *ObservabilityError
-	// JSON404 the response for an HTTP 404 `application/json` response
-	JSON404 *ObservabilityError
-	// JSON408 the response for an HTTP 408 `application/json` response
-	JSON408 *ObservabilityError
-	// JSON409 the response for an HTTP 409 `application/json` response
-	JSON409 *ObservabilityError
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *ObservabilityError
-}
-
-// GetJSON201 returns the response for an HTTP 201 `application/json` response
-func (r CreateJudgeV1ObservabilityJudgesPostResponse) GetJSON201() *Judge {
-	return r.JSON201
-}
-
-// GetJSON400 returns the response for an HTTP 400 `application/json` response
-func (r CreateJudgeV1ObservabilityJudgesPostResponse) GetJSON400() *ObservabilityError {
-	return r.JSON400
-}
-
-// GetJSON404 returns the response for an HTTP 404 `application/json` response
-func (r CreateJudgeV1ObservabilityJudgesPostResponse) GetJSON404() *ObservabilityError {
-	return r.JSON404
-}
-
-// GetJSON408 returns the response for an HTTP 408 `application/json` response
-func (r CreateJudgeV1ObservabilityJudgesPostResponse) GetJSON408() *ObservabilityError {
-	return r.JSON408
-}
-
-// GetJSON409 returns the response for an HTTP 409 `application/json` response
-func (r CreateJudgeV1ObservabilityJudgesPostResponse) GetJSON409() *ObservabilityError {
-	return r.JSON409
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r CreateJudgeV1ObservabilityJudgesPostResponse) GetJSON422() *ObservabilityError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r CreateJudgeV1ObservabilityJudgesPostResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r CreateJudgeV1ObservabilityJudgesPostResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r CreateJudgeV1ObservabilityJudgesPostResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r CreateJudgeV1ObservabilityJudgesPostResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON400 the response for an HTTP 400 `application/json` response
-	JSON400 *ObservabilityError
-	// JSON404 the response for an HTTP 404 `application/json` response
-	JSON404 *ObservabilityError
-	// JSON408 the response for an HTTP 408 `application/json` response
-	JSON408 *ObservabilityError
-	// JSON409 the response for an HTTP 409 `application/json` response
-	JSON409 *ObservabilityError
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *ObservabilityError
-}
-
-// GetJSON400 returns the response for an HTTP 400 `application/json` response
-func (r DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse) GetJSON400() *ObservabilityError {
-	return r.JSON400
-}
-
-// GetJSON404 returns the response for an HTTP 404 `application/json` response
-func (r DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse) GetJSON404() *ObservabilityError {
-	return r.JSON404
-}
-
-// GetJSON408 returns the response for an HTTP 408 `application/json` response
-func (r DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse) GetJSON408() *ObservabilityError {
-	return r.JSON408
-}
-
-// GetJSON409 returns the response for an HTTP 409 `application/json` response
-func (r DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse) GetJSON409() *ObservabilityError {
-	return r.JSON409
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse) GetJSON422() *ObservabilityError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *Judge
-	// JSON400 the response for an HTTP 400 `application/json` response
-	JSON400 *ObservabilityError
-	// JSON404 the response for an HTTP 404 `application/json` response
-	JSON404 *ObservabilityError
-	// JSON408 the response for an HTTP 408 `application/json` response
-	JSON408 *ObservabilityError
-	// JSON409 the response for an HTTP 409 `application/json` response
-	JSON409 *ObservabilityError
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *ObservabilityError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse) GetJSON200() *Judge {
-	return r.JSON200
-}
-
-// GetJSON400 returns the response for an HTTP 400 `application/json` response
-func (r GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse) GetJSON400() *ObservabilityError {
-	return r.JSON400
-}
-
-// GetJSON404 returns the response for an HTTP 404 `application/json` response
-func (r GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse) GetJSON404() *ObservabilityError {
-	return r.JSON404
-}
-
-// GetJSON408 returns the response for an HTTP 408 `application/json` response
-func (r GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse) GetJSON408() *ObservabilityError {
-	return r.JSON408
-}
-
-// GetJSON409 returns the response for an HTTP 409 `application/json` response
-func (r GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse) GetJSON409() *ObservabilityError {
-	return r.JSON409
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse) GetJSON422() *ObservabilityError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON400 the response for an HTTP 400 `application/json` response
-	JSON400 *ObservabilityError
-	// JSON404 the response for an HTTP 404 `application/json` response
-	JSON404 *ObservabilityError
-	// JSON408 the response for an HTTP 408 `application/json` response
-	JSON408 *ObservabilityError
-	// JSON409 the response for an HTTP 409 `application/json` response
-	JSON409 *ObservabilityError
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *ObservabilityError
-}
-
-// GetJSON400 returns the response for an HTTP 400 `application/json` response
-func (r UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse) GetJSON400() *ObservabilityError {
-	return r.JSON400
-}
-
-// GetJSON404 returns the response for an HTTP 404 `application/json` response
-func (r UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse) GetJSON404() *ObservabilityError {
-	return r.JSON404
-}
-
-// GetJSON408 returns the response for an HTTP 408 `application/json` response
-func (r UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse) GetJSON408() *ObservabilityError {
-	return r.JSON408
-}
-
-// GetJSON409 returns the response for an HTTP 409 `application/json` response
-func (r UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse) GetJSON409() *ObservabilityError {
-	return r.JSON409
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse) GetJSON422() *ObservabilityError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
-type JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse struct {
-	Body         []byte
-	HTTPResponse *http.Response
-	// JSON200 the response for an HTTP 200 `application/json` response
-	JSON200 *JudgeOutput
-	// JSON400 the response for an HTTP 400 `application/json` response
-	JSON400 *ObservabilityError
-	// JSON404 the response for an HTTP 404 `application/json` response
-	JSON404 *ObservabilityError
-	// JSON408 the response for an HTTP 408 `application/json` response
-	JSON408 *ObservabilityError
-	// JSON409 the response for an HTTP 409 `application/json` response
-	JSON409 *ObservabilityError
-	// JSON422 the response for an HTTP 422 `application/json` response
-	JSON422 *ObservabilityError
-}
-
-// GetJSON200 returns the response for an HTTP 200 `application/json` response
-func (r JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse) GetJSON200() *JudgeOutput {
-	return r.JSON200
-}
-
-// GetJSON400 returns the response for an HTTP 400 `application/json` response
-func (r JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse) GetJSON400() *ObservabilityError {
-	return r.JSON400
-}
-
-// GetJSON404 returns the response for an HTTP 404 `application/json` response
-func (r JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse) GetJSON404() *ObservabilityError {
-	return r.JSON404
-}
-
-// GetJSON408 returns the response for an HTTP 408 `application/json` response
-func (r JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse) GetJSON408() *ObservabilityError {
-	return r.JSON408
-}
-
-// GetJSON409 returns the response for an HTTP 409 `application/json` response
-func (r JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse) GetJSON409() *ObservabilityError {
-	return r.JSON409
-}
-
-// GetJSON422 returns the response for an HTTP 422 `application/json` response
-func (r JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse) GetJSON422() *ObservabilityError {
-	return r.JSON422
-}
-
-// GetBody returns the raw response body bytes
-func (r JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse) GetBody() []byte {
-	return r.Body
-}
-
-// Status returns HTTPResponse.Status
-func (r JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
-
-// StatusCode returns HTTPResponse.StatusCode
-func (r JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
-
-// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
-func (r JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse) ContentType() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Header.Get("Content-Type")
-	}
-	return ""
-}
-
 type GetLogFieldsV1ObservabilityLogsFieldsGetResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -110531,6 +109950,310 @@ func (r GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2Ge
 
 // ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
 func (r GetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2GetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type ListScorersV1ObservabilityScorersGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *ListScorersResponse
+	// JSON400 the response for an HTTP 400 `application/json` response
+	JSON400 *ObservabilityError
+	// JSON404 the response for an HTTP 404 `application/json` response
+	JSON404 *ObservabilityError
+	// JSON408 the response for an HTTP 408 `application/json` response
+	JSON408 *ObservabilityError
+	// JSON409 the response for an HTTP 409 `application/json` response
+	JSON409 *ObservabilityError
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *ObservabilityError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r ListScorersV1ObservabilityScorersGetResponse) GetJSON200() *ListScorersResponse {
+	return r.JSON200
+}
+
+// GetJSON400 returns the response for an HTTP 400 `application/json` response
+func (r ListScorersV1ObservabilityScorersGetResponse) GetJSON400() *ObservabilityError {
+	return r.JSON400
+}
+
+// GetJSON404 returns the response for an HTTP 404 `application/json` response
+func (r ListScorersV1ObservabilityScorersGetResponse) GetJSON404() *ObservabilityError {
+	return r.JSON404
+}
+
+// GetJSON408 returns the response for an HTTP 408 `application/json` response
+func (r ListScorersV1ObservabilityScorersGetResponse) GetJSON408() *ObservabilityError {
+	return r.JSON408
+}
+
+// GetJSON409 returns the response for an HTTP 409 `application/json` response
+func (r ListScorersV1ObservabilityScorersGetResponse) GetJSON409() *ObservabilityError {
+	return r.JSON409
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r ListScorersV1ObservabilityScorersGetResponse) GetJSON422() *ObservabilityError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r ListScorersV1ObservabilityScorersGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r ListScorersV1ObservabilityScorersGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r ListScorersV1ObservabilityScorersGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r ListScorersV1ObservabilityScorersGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type CreateScorerV1ObservabilityScorersPostResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON201 the response for an HTTP 201 `application/json` response
+	JSON201 *Scorer
+	// JSON400 the response for an HTTP 400 `application/json` response
+	JSON400 *ObservabilityError
+	// JSON404 the response for an HTTP 404 `application/json` response
+	JSON404 *ObservabilityError
+	// JSON408 the response for an HTTP 408 `application/json` response
+	JSON408 *ObservabilityError
+	// JSON409 the response for an HTTP 409 `application/json` response
+	JSON409 *ObservabilityError
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *ObservabilityError
+}
+
+// GetJSON201 returns the response for an HTTP 201 `application/json` response
+func (r CreateScorerV1ObservabilityScorersPostResponse) GetJSON201() *Scorer {
+	return r.JSON201
+}
+
+// GetJSON400 returns the response for an HTTP 400 `application/json` response
+func (r CreateScorerV1ObservabilityScorersPostResponse) GetJSON400() *ObservabilityError {
+	return r.JSON400
+}
+
+// GetJSON404 returns the response for an HTTP 404 `application/json` response
+func (r CreateScorerV1ObservabilityScorersPostResponse) GetJSON404() *ObservabilityError {
+	return r.JSON404
+}
+
+// GetJSON408 returns the response for an HTTP 408 `application/json` response
+func (r CreateScorerV1ObservabilityScorersPostResponse) GetJSON408() *ObservabilityError {
+	return r.JSON408
+}
+
+// GetJSON409 returns the response for an HTTP 409 `application/json` response
+func (r CreateScorerV1ObservabilityScorersPostResponse) GetJSON409() *ObservabilityError {
+	return r.JSON409
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r CreateScorerV1ObservabilityScorersPostResponse) GetJSON422() *ObservabilityError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r CreateScorerV1ObservabilityScorersPostResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r CreateScorerV1ObservabilityScorersPostResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r CreateScorerV1ObservabilityScorersPostResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r CreateScorerV1ObservabilityScorersPostResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type GetScorerV1ObservabilityScorersScorerSlugGetResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *Scorer
+	// JSON400 the response for an HTTP 400 `application/json` response
+	JSON400 *ObservabilityError
+	// JSON404 the response for an HTTP 404 `application/json` response
+	JSON404 *ObservabilityError
+	// JSON408 the response for an HTTP 408 `application/json` response
+	JSON408 *ObservabilityError
+	// JSON409 the response for an HTTP 409 `application/json` response
+	JSON409 *ObservabilityError
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *ObservabilityError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetScorerV1ObservabilityScorersScorerSlugGetResponse) GetJSON200() *Scorer {
+	return r.JSON200
+}
+
+// GetJSON400 returns the response for an HTTP 400 `application/json` response
+func (r GetScorerV1ObservabilityScorersScorerSlugGetResponse) GetJSON400() *ObservabilityError {
+	return r.JSON400
+}
+
+// GetJSON404 returns the response for an HTTP 404 `application/json` response
+func (r GetScorerV1ObservabilityScorersScorerSlugGetResponse) GetJSON404() *ObservabilityError {
+	return r.JSON404
+}
+
+// GetJSON408 returns the response for an HTTP 408 `application/json` response
+func (r GetScorerV1ObservabilityScorersScorerSlugGetResponse) GetJSON408() *ObservabilityError {
+	return r.JSON408
+}
+
+// GetJSON409 returns the response for an HTTP 409 `application/json` response
+func (r GetScorerV1ObservabilityScorersScorerSlugGetResponse) GetJSON409() *ObservabilityError {
+	return r.JSON409
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r GetScorerV1ObservabilityScorersScorerSlugGetResponse) GetJSON422() *ObservabilityError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r GetScorerV1ObservabilityScorersScorerSlugGetResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetScorerV1ObservabilityScorersScorerSlugGetResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetScorerV1ObservabilityScorersScorerSlugGetResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetScorerV1ObservabilityScorersScorerSlugGetResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type EditScorerV1ObservabilityScorersScorerSlugPatchResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *Scorer
+	// JSON400 the response for an HTTP 400 `application/json` response
+	JSON400 *ObservabilityError
+	// JSON404 the response for an HTTP 404 `application/json` response
+	JSON404 *ObservabilityError
+	// JSON408 the response for an HTTP 408 `application/json` response
+	JSON408 *ObservabilityError
+	// JSON409 the response for an HTTP 409 `application/json` response
+	JSON409 *ObservabilityError
+	// JSON422 the response for an HTTP 422 `application/json` response
+	JSON422 *ObservabilityError
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r EditScorerV1ObservabilityScorersScorerSlugPatchResponse) GetJSON200() *Scorer {
+	return r.JSON200
+}
+
+// GetJSON400 returns the response for an HTTP 400 `application/json` response
+func (r EditScorerV1ObservabilityScorersScorerSlugPatchResponse) GetJSON400() *ObservabilityError {
+	return r.JSON400
+}
+
+// GetJSON404 returns the response for an HTTP 404 `application/json` response
+func (r EditScorerV1ObservabilityScorersScorerSlugPatchResponse) GetJSON404() *ObservabilityError {
+	return r.JSON404
+}
+
+// GetJSON408 returns the response for an HTTP 408 `application/json` response
+func (r EditScorerV1ObservabilityScorersScorerSlugPatchResponse) GetJSON408() *ObservabilityError {
+	return r.JSON408
+}
+
+// GetJSON409 returns the response for an HTTP 409 `application/json` response
+func (r EditScorerV1ObservabilityScorersScorerSlugPatchResponse) GetJSON409() *ObservabilityError {
+	return r.JSON409
+}
+
+// GetJSON422 returns the response for an HTTP 422 `application/json` response
+func (r EditScorerV1ObservabilityScorersScorerSlugPatchResponse) GetJSON422() *ObservabilityError {
+	return r.JSON422
+}
+
+// GetBody returns the raw response body bytes
+func (r EditScorerV1ObservabilityScorersScorerSlugPatchResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r EditScorerV1ObservabilityScorersScorerSlugPatchResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r EditScorerV1ObservabilityScorersScorerSlugPatchResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r EditScorerV1ObservabilityScorersScorerSlugPatchResponse) ContentType() string {
 	if r.HTTPResponse != nil {
 		return r.HTTPResponse.Header.Get("Content-Type")
 	}
@@ -117126,51 +116849,6 @@ func (c *ClientWithResponses) UsersApiAdminUserGroupsAssignUsersToGroupWithRespo
 	return ParseUsersApiAdminUserGroupsAssignUsersToGroupResponse(rsp)
 }
 
-// UsersApiAdminUserGroupsGetNestedGroupsWithResponse Get Nested Groups Admin
-//
-// List the groups directly nested inside this group.
-//
-// Returns a wrapper object for the known response body format(s).
-//
-// Corresponds with GET /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsGetNestedGroups` operationId).
-func (c *ClientWithResponses) UsersApiAdminUserGroupsGetNestedGroupsWithResponse(ctx context.Context, groupUuid openapi_types.UUID, reqEditors ...RequestEditorFn) (*UsersApiAdminUserGroupsGetNestedGroupsResponse, error) {
-	rsp, err := c.UsersApiAdminUserGroupsGetNestedGroups(ctx, groupUuid, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseUsersApiAdminUserGroupsGetNestedGroupsResponse(rsp)
-}
-
-// UsersApiAdminUserGroupsSetNestedGroupsWithBodyWithResponse Set Nested Groups Admin
-//
-// Replace the set of groups directly nested inside this group.
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with PATCH /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsSetNestedGroups` operationId).
-func (c *ClientWithResponses) UsersApiAdminUserGroupsSetNestedGroupsWithBodyWithResponse(ctx context.Context, groupUuid openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UsersApiAdminUserGroupsSetNestedGroupsResponse, error) {
-	rsp, err := c.UsersApiAdminUserGroupsSetNestedGroupsWithBody(ctx, groupUuid, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseUsersApiAdminUserGroupsSetNestedGroupsResponse(rsp)
-}
-
-// UsersApiAdminUserGroupsSetNestedGroupsWithResponse Set Nested Groups Admin
-//
-// Replace the set of groups directly nested inside this group.
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with PATCH /v1/admin/user-groups/{group_uuid}/nested (the `UsersApiAdminUserGroupsSetNestedGroups` operationId).
-func (c *ClientWithResponses) UsersApiAdminUserGroupsSetNestedGroupsWithResponse(ctx context.Context, groupUuid openapi_types.UUID, body UsersApiAdminUserGroupsSetNestedGroupsJSONRequestBody, reqEditors ...RequestEditorFn) (*UsersApiAdminUserGroupsSetNestedGroupsResponse, error) {
-	rsp, err := c.UsersApiAdminUserGroupsSetNestedGroups(ctx, groupUuid, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseUsersApiAdminUserGroupsSetNestedGroupsResponse(rsp)
-}
-
 // UsersAdminUserGroupsUpdateUserGroupOrganizationRoleWithBodyWithResponse Update User Group Organization Role
 //
 // Update the organization role for a user group.
@@ -117396,7 +117074,9 @@ func (c *ClientWithResponses) UsersApiAdminUsersDeleteInviteWithResponse(ctx con
 
 // UsersApiAdminUsersDeleteUserWithResponse Delete User
 //
-// Remove a member from the Organization.
+// Remove a member from the Organization, whatever their account status.
+//
+// Members whose email is on one of the Organization's verified domains cannot be removed: deactivate them instead.
 //
 // Returns a wrapper object for the known response body format(s).
 //
@@ -117411,7 +117091,7 @@ func (c *ClientWithResponses) UsersApiAdminUsersDeleteUserWithResponse(ctx conte
 
 // UsersApiAdminUsersGetUserWithResponse Get User
 //
-// Get details for an Organization member.
+// Get details for an Organization member, including deactivated and blocked members.
 //
 // Returns a wrapper object for the known response body format(s).
 //
@@ -117456,8 +117136,9 @@ func (c *ClientWithResponses) UsersApiAdminUsersUpdateUserWithResponse(ctx conte
 
 // UsersApiAdminUsersDeactivateUserWithResponse Deactivate User
 //
-// Deactivate a user whose email address is on one of the Organization's verified domains: remove them from
-// every organization they belong to, which revokes their API keys, and end their sessions.
+// Deactivate a user whose email address is on one of the Organization's verified domains: end their sessions,
+// delete their API keys and release their seats. Their memberships, groups and roles are kept, so that
+// `POST /users/{user_id}/reactivate` can give their access back.
 //
 // Returns a wrapper object for the known response body format(s).
 //
@@ -117468,6 +117149,37 @@ func (c *ClientWithResponses) UsersApiAdminUsersDeactivateUserWithResponse(ctx c
 		return nil, err
 	}
 	return ParseUsersApiAdminUsersDeactivateUserResponse(rsp)
+}
+
+// UsersApiAdminUsersReactivateUserWithResponse Reactivate User
+//
+// Reactivate a deactivated user whose email address is on one of the Organization's verified domains: give
+// them their access back, with their seats when free ones remain.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/admin/users/{user_id}/reactivate (the `UsersApiAdminUsersReactivateUser` operationId).
+func (c *ClientWithResponses) UsersApiAdminUsersReactivateUserWithResponse(ctx context.Context, userId openapi_types.UUID, reqEditors ...RequestEditorFn) (*UsersApiAdminUsersReactivateUserResponse, error) {
+	rsp, err := c.UsersApiAdminUsersReactivateUser(ctx, userId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseUsersApiAdminUsersReactivateUserResponse(rsp)
+}
+
+// UsersApiAdminUsersGetUserWorkspacesWithResponse Get User Workspaces
+//
+// List the Workspaces an Organization member belongs to, with their roles.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/admin/users/{user_id}/workspaces (the `UsersApiAdminUsersGetUserWorkspaces` operationId).
+func (c *ClientWithResponses) UsersApiAdminUsersGetUserWorkspacesWithResponse(ctx context.Context, userId openapi_types.UUID, params *UsersApiAdminUsersGetUserWorkspacesParams, reqEditors ...RequestEditorFn) (*UsersApiAdminUsersGetUserWorkspacesResponse, error) {
+	rsp, err := c.UsersApiAdminUsersGetUserWorkspaces(ctx, userId, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseUsersApiAdminUsersGetUserWorkspacesResponse(rsp)
 }
 
 // UsersApiAdminWorkspacesGetWorkspacesWithResponse Get Workspaces
@@ -118061,6 +117773,46 @@ func (c *ClientWithResponses) GetSessionV1AudioSessionsSessionIdGetWithResponse(
 		return nil, err
 	}
 	return ParseGetSessionV1AudioSessionsSessionIdGetResponse(rsp)
+}
+
+// UpdateSessionV1AudioSessionsSessionIdPatchWithBodyWithResponse Update a live agent session
+//
+// Update the instructions, tools or turn handling of a live session.
+//
+// The agent applies the update at its next turn boundary, so it is not yet
+// applied when this returns.
+// The agent's `session_updated` and `session_update_failed` webhooks report
+// the outcome to your server.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with PATCH /v1/audio/sessions/{session_id} (the `UpdateSessionV1AudioSessionsSessionIdPatch` operationId).
+func (c *ClientWithResponses) UpdateSessionV1AudioSessionsSessionIdPatchWithBodyWithResponse(ctx context.Context, sessionId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UpdateSessionV1AudioSessionsSessionIdPatchResponse, error) {
+	rsp, err := c.UpdateSessionV1AudioSessionsSessionIdPatchWithBody(ctx, sessionId, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseUpdateSessionV1AudioSessionsSessionIdPatchResponse(rsp)
+}
+
+// UpdateSessionV1AudioSessionsSessionIdPatchWithResponse Update a live agent session
+//
+// Update the instructions, tools or turn handling of a live session.
+//
+// The agent applies the update at its next turn boundary, so it is not yet
+// applied when this returns.
+// The agent's `session_updated` and `session_update_failed` webhooks report
+// the outcome to your server.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with PATCH /v1/audio/sessions/{session_id} (the `UpdateSessionV1AudioSessionsSessionIdPatch` operationId).
+func (c *ClientWithResponses) UpdateSessionV1AudioSessionsSessionIdPatchWithResponse(ctx context.Context, sessionId openapi_types.UUID, body UpdateSessionV1AudioSessionsSessionIdPatchJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateSessionV1AudioSessionsSessionIdPatchResponse, error) {
+	rsp, err := c.UpdateSessionV1AudioSessionsSessionIdPatch(ctx, sessionId, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseUpdateSessionV1AudioSessionsSessionIdPatchResponse(rsp)
 }
 
 // SpeechV1AudioSpeechPostWithBodyWithResponse Speech
@@ -118749,7 +118501,7 @@ func (c *ClientWithResponses) ConnectorUpdateCredentialsWithResponse(ctx context
 
 // ConnectorCreateCredentialsV1WithBodyWithResponse Create consumer credentials for a connector.
 //
-// Create consumer credentials for a given connector and consumer scope (organization, workspace, user)
+// Create consumer credentials for a given connector and consumer scope (workspace, user)
 //
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
@@ -118766,7 +118518,7 @@ func (c *ClientWithResponses) ConnectorCreateCredentialsV1WithBodyWithResponse(c
 
 // ConnectorCreateCredentialsV1WithResponse Create consumer credentials for a connector.
 //
-// Create consumer credentials for a given connector and consumer scope (organization, workspace, user)
+// Create consumer credentials for a given connector and consumer scope (workspace, user)
 //
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
@@ -119599,7 +119351,7 @@ func (c *ClientWithResponses) FilesApiRoutesListFilesWithResponse(ctx context.Co
 //
 // Upload a file that can be used across various endpoints.
 //
-// The size of individual files can be a maximum of 512 MB. The Fine-tuning API only supports .jsonl files.
+// The size of individual files can be a maximum of 512 MB.
 //
 // Please contact us if you need to increase these storage limits.
 //
@@ -120296,32 +120048,6 @@ func (c *ClientWithResponses) GetDatasetRecordV1ObservabilityDatasetRecordsDatas
 	return ParseGetDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdGetResponse(rsp)
 }
 
-// JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithBodyWithResponse Run Judge on a dataset record based on the given options
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/observability/dataset-records/{dataset_record_id}/live-judging (the `JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost` operationId).
-func (c *ClientWithResponses) JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithBodyWithResponse(ctx context.Context, datasetRecordId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse, error) {
-	rsp, err := c.JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithBody(ctx, datasetRecordId, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseJudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse(rsp)
-}
-
-// JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithResponse Run Judge on a dataset record based on the given options
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/observability/dataset-records/{dataset_record_id}/live-judging (the `JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost` operationId).
-func (c *ClientWithResponses) JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithResponse(ctx context.Context, datasetRecordId openapi_types.UUID, body JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostJSONRequestBody, reqEditors ...RequestEditorFn) (*JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse, error) {
-	rsp, err := c.JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPost(ctx, datasetRecordId, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseJudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse(rsp)
-}
-
 // UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutWithBodyWithResponse Update a dataset record payload
 //
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
@@ -120807,123 +120533,6 @@ func (c *ClientWithResponses) SearchEvaluationRunsV2V1ObservabilityEvaluationsV2
 	return ParseSearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSearchPostResponse(rsp)
 }
 
-// GetJudgesV1ObservabilityJudgesGetWithResponse Get judges with optional filtering and search
-//
-// Returns a wrapper object for the known response body format(s).
-//
-// Corresponds with GET /v1/observability/judges (the `GetJudgesV1ObservabilityJudgesGet` operationId).
-func (c *ClientWithResponses) GetJudgesV1ObservabilityJudgesGetWithResponse(ctx context.Context, params *GetJudgesV1ObservabilityJudgesGetParams, reqEditors ...RequestEditorFn) (*GetJudgesV1ObservabilityJudgesGetResponse, error) {
-	rsp, err := c.GetJudgesV1ObservabilityJudgesGet(ctx, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGetJudgesV1ObservabilityJudgesGetResponse(rsp)
-}
-
-// CreateJudgeV1ObservabilityJudgesPostWithBodyWithResponse Create a new judge
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/observability/judges (the `CreateJudgeV1ObservabilityJudgesPost` operationId).
-func (c *ClientWithResponses) CreateJudgeV1ObservabilityJudgesPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateJudgeV1ObservabilityJudgesPostResponse, error) {
-	rsp, err := c.CreateJudgeV1ObservabilityJudgesPostWithBody(ctx, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseCreateJudgeV1ObservabilityJudgesPostResponse(rsp)
-}
-
-// CreateJudgeV1ObservabilityJudgesPostWithResponse Create a new judge
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/observability/judges (the `CreateJudgeV1ObservabilityJudgesPost` operationId).
-func (c *ClientWithResponses) CreateJudgeV1ObservabilityJudgesPostWithResponse(ctx context.Context, body CreateJudgeV1ObservabilityJudgesPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateJudgeV1ObservabilityJudgesPostResponse, error) {
-	rsp, err := c.CreateJudgeV1ObservabilityJudgesPost(ctx, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseCreateJudgeV1ObservabilityJudgesPostResponse(rsp)
-}
-
-// DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteWithResponse Delete a judge
-//
-// Returns a wrapper object for the known response body format(s).
-//
-// Corresponds with DELETE /v1/observability/judges/{judge_id} (the `DeleteJudgeV1ObservabilityJudgesJudgeIdDelete` operationId).
-func (c *ClientWithResponses) DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteWithResponse(ctx context.Context, judgeId openapi_types.UUID, reqEditors ...RequestEditorFn) (*DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse, error) {
-	rsp, err := c.DeleteJudgeV1ObservabilityJudgesJudgeIdDelete(ctx, judgeId, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseDeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse(rsp)
-}
-
-// GetJudgeByIdV1ObservabilityJudgesJudgeIdGetWithResponse Get judge by id
-//
-// Returns a wrapper object for the known response body format(s).
-//
-// Corresponds with GET /v1/observability/judges/{judge_id} (the `GetJudgeByIdV1ObservabilityJudgesJudgeIdGet` operationId).
-func (c *ClientWithResponses) GetJudgeByIdV1ObservabilityJudgesJudgeIdGetWithResponse(ctx context.Context, judgeId openapi_types.UUID, reqEditors ...RequestEditorFn) (*GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse, error) {
-	rsp, err := c.GetJudgeByIdV1ObservabilityJudgesJudgeIdGet(ctx, judgeId, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse(rsp)
-}
-
-// UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithBodyWithResponse Update a judge
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with PUT /v1/observability/judges/{judge_id} (the `UpdateJudgeV1ObservabilityJudgesJudgeIdPut` operationId).
-func (c *ClientWithResponses) UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithBodyWithResponse(ctx context.Context, judgeId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse, error) {
-	rsp, err := c.UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithBody(ctx, judgeId, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseUpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse(rsp)
-}
-
-// UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithResponse Update a judge
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with PUT /v1/observability/judges/{judge_id} (the `UpdateJudgeV1ObservabilityJudgesJudgeIdPut` operationId).
-func (c *ClientWithResponses) UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithResponse(ctx context.Context, judgeId openapi_types.UUID, body UpdateJudgeV1ObservabilityJudgesJudgeIdPutJSONRequestBody, reqEditors ...RequestEditorFn) (*UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse, error) {
-	rsp, err := c.UpdateJudgeV1ObservabilityJudgesJudgeIdPut(ctx, judgeId, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseUpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse(rsp)
-}
-
-// JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithBodyWithResponse Run a saved judge on a conversation
-//
-// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/observability/judges/{judge_id}/live-judging (the `JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost` operationId).
-func (c *ClientWithResponses) JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithBodyWithResponse(ctx context.Context, judgeId openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse, error) {
-	rsp, err := c.JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithBody(ctx, judgeId, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseJudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse(rsp)
-}
-
-// JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithResponse Run a saved judge on a conversation
-//
-// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
-//
-// Corresponds with POST /v1/observability/judges/{judge_id}/live-judging (the `JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost` operationId).
-func (c *ClientWithResponses) JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithResponse(ctx context.Context, judgeId openapi_types.UUID, body JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostJSONRequestBody, reqEditors ...RequestEditorFn) (*JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse, error) {
-	rsp, err := c.JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPost(ctx, judgeId, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseJudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse(rsp)
-}
-
 // GetLogFieldsV1ObservabilityLogsFieldsGetWithResponse Get log field definitions
 //
 // Returns a wrapper object for the known response body format(s).
@@ -121182,6 +120791,84 @@ func (c *ClientWithResponses) GetProjectEvaluationsV2V1ObservabilityProjectsProj
 		return nil, err
 	}
 	return ParseGetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2GetResponse(rsp)
+}
+
+// ListScorersV1ObservabilityScorersGetWithResponse List scorers
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/observability/scorers (the `ListScorersV1ObservabilityScorersGet` operationId).
+func (c *ClientWithResponses) ListScorersV1ObservabilityScorersGetWithResponse(ctx context.Context, params *ListScorersV1ObservabilityScorersGetParams, reqEditors ...RequestEditorFn) (*ListScorersV1ObservabilityScorersGetResponse, error) {
+	rsp, err := c.ListScorersV1ObservabilityScorersGet(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseListScorersV1ObservabilityScorersGetResponse(rsp)
+}
+
+// CreateScorerV1ObservabilityScorersPostWithBodyWithResponse Create a scorer
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/observability/scorers (the `CreateScorerV1ObservabilityScorersPost` operationId).
+func (c *ClientWithResponses) CreateScorerV1ObservabilityScorersPostWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*CreateScorerV1ObservabilityScorersPostResponse, error) {
+	rsp, err := c.CreateScorerV1ObservabilityScorersPostWithBody(ctx, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateScorerV1ObservabilityScorersPostResponse(rsp)
+}
+
+// CreateScorerV1ObservabilityScorersPostWithResponse Create a scorer
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/observability/scorers (the `CreateScorerV1ObservabilityScorersPost` operationId).
+func (c *ClientWithResponses) CreateScorerV1ObservabilityScorersPostWithResponse(ctx context.Context, body CreateScorerV1ObservabilityScorersPostJSONRequestBody, reqEditors ...RequestEditorFn) (*CreateScorerV1ObservabilityScorersPostResponse, error) {
+	rsp, err := c.CreateScorerV1ObservabilityScorersPost(ctx, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateScorerV1ObservabilityScorersPostResponse(rsp)
+}
+
+// GetScorerV1ObservabilityScorersScorerSlugGetWithResponse Get a scorer by slug
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/observability/scorers/{scorer_slug} (the `GetScorerV1ObservabilityScorersScorerSlugGet` operationId).
+func (c *ClientWithResponses) GetScorerV1ObservabilityScorersScorerSlugGetWithResponse(ctx context.Context, scorerSlug string, reqEditors ...RequestEditorFn) (*GetScorerV1ObservabilityScorersScorerSlugGetResponse, error) {
+	rsp, err := c.GetScorerV1ObservabilityScorersScorerSlugGet(ctx, scorerSlug, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetScorerV1ObservabilityScorersScorerSlugGetResponse(rsp)
+}
+
+// EditScorerV1ObservabilityScorersScorerSlugPatchWithBodyWithResponse Edit a scorer
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with PATCH /v1/observability/scorers/{scorer_slug} (the `EditScorerV1ObservabilityScorersScorerSlugPatch` operationId).
+func (c *ClientWithResponses) EditScorerV1ObservabilityScorersScorerSlugPatchWithBodyWithResponse(ctx context.Context, scorerSlug string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*EditScorerV1ObservabilityScorersScorerSlugPatchResponse, error) {
+	rsp, err := c.EditScorerV1ObservabilityScorersScorerSlugPatchWithBody(ctx, scorerSlug, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseEditScorerV1ObservabilityScorersScorerSlugPatchResponse(rsp)
+}
+
+// EditScorerV1ObservabilityScorersScorerSlugPatchWithResponse Edit a scorer
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with PATCH /v1/observability/scorers/{scorer_slug} (the `EditScorerV1ObservabilityScorersScorerSlugPatch` operationId).
+func (c *ClientWithResponses) EditScorerV1ObservabilityScorersScorerSlugPatchWithResponse(ctx context.Context, scorerSlug string, body EditScorerV1ObservabilityScorersScorerSlugPatchJSONRequestBody, reqEditors ...RequestEditorFn) (*EditScorerV1ObservabilityScorersScorerSlugPatchResponse, error) {
+	rsp, err := c.EditScorerV1ObservabilityScorersScorerSlugPatch(ctx, scorerSlug, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseEditScorerV1ObservabilityScorersScorerSlugPatchResponse(rsp)
 }
 
 // AggregateSpansV1ObservabilitySpansAggregatePostWithBodyWithResponse Aggregate spans
@@ -121670,7 +121357,7 @@ func (c *ClientWithResponses) UpdateRunInfoV1RagIngestionPipelineConfigurationsI
 //
 // Create a response.
 //
-// Generate a model response from text or image inputs. The response can
+// Generate a model response from text, image, or file inputs. The response can
 // include text, reasoning, and function calls. Set stream to true to
 // receive Server-Sent Events.
 //
@@ -121693,7 +121380,7 @@ func (c *ClientWithResponses) CreateResponseV1ResponsesPostWithBodyWithResponse(
 //
 // Create a response.
 //
-// Generate a model response from text or image inputs. The response can
+// Generate a model response from text, image, or file inputs. The response can
 // include text, reasoning, and function calls. Set stream to true to
 // receive Server-Sent Events.
 //
@@ -121848,7 +121535,7 @@ func (c *ClientWithResponses) DeleteServiceAccountV1ServiceAccountsServiceAccoun
 //
 // Retrieve a service account.
 //
-// Requires the Workspace admin (`workspace_admin`) role.
+// Requires the `see_all_workspace_service_accounts` or `read_workspace_service_account` permission.
 //
 // Returns a wrapper object for the known response body format(s).
 //
@@ -124236,48 +123923,6 @@ func ParseUsersApiAdminUserGroupsAssignUsersToGroupResponse(rsp *http.Response) 
 	return response, nil
 }
 
-// ParseUsersApiAdminUserGroupsGetNestedGroupsResponse parses an HTTP response from a UsersApiAdminUserGroupsGetNestedGroupsWithResponse call
-func ParseUsersApiAdminUserGroupsGetNestedGroupsResponse(rsp *http.Response) (*UsersApiAdminUserGroupsGetNestedGroupsResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &UsersApiAdminUserGroupsGetNestedGroupsResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest NestedGroupsOut
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	}
-
-	return response, nil
-}
-
-// ParseUsersApiAdminUserGroupsSetNestedGroupsResponse parses an HTTP response from a UsersApiAdminUserGroupsSetNestedGroupsWithResponse call
-func ParseUsersApiAdminUserGroupsSetNestedGroupsResponse(rsp *http.Response) (*UsersApiAdminUserGroupsSetNestedGroupsResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &UsersApiAdminUserGroupsSetNestedGroupsResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	return response, nil
-}
-
 // ParseUsersAdminUserGroupsUpdateUserGroupOrganizationRoleResponse parses an HTTP response from a UsersAdminUserGroupsUpdateUserGroupOrganizationRoleWithResponse call
 func ParseUsersAdminUserGroupsUpdateUserGroupOrganizationRoleResponse(rsp *http.Response) (*UsersAdminUserGroupsUpdateUserGroupOrganizationRoleResponse, error) {
 	bodyBytes, err := io.ReadAll(rsp.Body)
@@ -124592,6 +124237,58 @@ func ParseUsersApiAdminUsersDeactivateUserResponse(rsp *http.Response) (*UsersAp
 	switch {
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest DeactivateUserOUT
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseUsersApiAdminUsersReactivateUserResponse parses an HTTP response from a UsersApiAdminUsersReactivateUserWithResponse call
+func ParseUsersApiAdminUsersReactivateUserResponse(rsp *http.Response) (*UsersApiAdminUsersReactivateUserResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &UsersApiAdminUsersReactivateUserResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest ReactivateUserOUT
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseUsersApiAdminUsersGetUserWorkspacesResponse parses an HTTP response from a UsersApiAdminUsersGetUserWorkspacesWithResponse call
+func ParseUsersApiAdminUsersGetUserWorkspacesResponse(rsp *http.Response) (*UsersApiAdminUsersGetUserWorkspacesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &UsersApiAdminUsersGetUserWorkspacesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AdminUserWorkspacesOUT
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
 		}
@@ -125517,6 +125214,39 @@ func ParseGetSessionV1AudioSessionsSessionIdGetResponse(rsp *http.Response) (*Ge
 	return response, nil
 }
 
+// ParseUpdateSessionV1AudioSessionsSessionIdPatchResponse parses an HTTP response from a UpdateSessionV1AudioSessionsSessionIdPatchWithResponse call
+func ParseUpdateSessionV1AudioSessionsSessionIdPatchResponse(rsp *http.Response) (*UpdateSessionV1AudioSessionsSessionIdPatchResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &UpdateSessionV1AudioSessionsSessionIdPatchResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AudioSessionUpdateResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest HTTPValidationError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
 // ParseSpeechV1AudioSpeechPostResponse parses an HTTP response from a SpeechV1AudioSpeechPostWithResponse call
 func ParseSpeechV1AudioSpeechPostResponse(rsp *http.Response) (*SpeechV1AudioSpeechPostResponse, error) {
 	bodyBytes, err := io.ReadAll(rsp.Body)
@@ -126193,6 +125923,13 @@ func ParseConnectorCreateV1Response(rsp *http.Response) (*ConnectorCreateV1Respo
 		}
 		response.JSON201 = &dest
 
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest ConnectorErrorResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON400 = &dest
+
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
 		var dest HTTPValidationError
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -126523,6 +126260,13 @@ func ParseConnectorUpdateCredentialsResponse(rsp *http.Response) (*ConnectorUpda
 		}
 		response.JSON200 = &dest
 
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 401:
+		var dest ConnectorErrorResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON401 = &dest
+
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
 		var dest HTTPValidationError
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -126555,6 +126299,13 @@ func ParseConnectorCreateCredentialsV1Response(rsp *http.Response) (*ConnectorCr
 			return nil, err
 		}
 		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 401:
+		var dest ConnectorErrorResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON401 = &dest
 
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
 		var dest HTTPValidationError
@@ -126654,6 +126405,13 @@ func ParseConnectorUpdateV1Response(rsp *http.Response) (*ConnectorUpdateV1Respo
 			return nil, err
 		}
 		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest ConnectorErrorResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON400 = &dest
 
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
 		var dest HTTPValidationError
@@ -127349,6 +127107,9 @@ func ParseSearchIndexV1ContextSearchIndexesIndexNameSearchPostResponse(rsp *http
 			return nil, err
 		}
 		response.JSON422 = &dest
+
+	case rsp.StatusCode == 429:
+		break // No content-type
 
 	case rsp.StatusCode == 500:
 		break // No content-type
@@ -129089,67 +128850,6 @@ func ParseGetDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdGetRespons
 	return response, nil
 }
 
-// ParseJudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse parses an HTTP response from a JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostWithResponse call
-func ParseJudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse(rsp *http.Response) (*JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &JudgeDatasetRecordV1ObservabilityDatasetRecordsDatasetRecordIdLiveJudgingPostResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest JudgeOutput
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON400 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON404 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON408 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON409 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
 // ParseUpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutResponse parses an HTTP response from a UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutWithResponse call
 func ParseUpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutResponse(rsp *http.Response) (*UpdateDatasetRecordPayloadV1ObservabilityDatasetRecordsDatasetRecordIdPayloadPutResponse, error) {
 	bodyBytes, err := io.ReadAll(rsp.Body)
@@ -130602,364 +130302,6 @@ func ParseSearchEvaluationRunsV2V1ObservabilityEvaluationsV2EvaluationSlugRunsSe
 	return response, nil
 }
 
-// ParseGetJudgesV1ObservabilityJudgesGetResponse parses an HTTP response from a GetJudgesV1ObservabilityJudgesGetWithResponse call
-func ParseGetJudgesV1ObservabilityJudgesGetResponse(rsp *http.Response) (*GetJudgesV1ObservabilityJudgesGetResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GetJudgesV1ObservabilityJudgesGetResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest ListJudgesResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON400 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON404 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON408 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON409 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
-// ParseCreateJudgeV1ObservabilityJudgesPostResponse parses an HTTP response from a CreateJudgeV1ObservabilityJudgesPostWithResponse call
-func ParseCreateJudgeV1ObservabilityJudgesPostResponse(rsp *http.Response) (*CreateJudgeV1ObservabilityJudgesPostResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &CreateJudgeV1ObservabilityJudgesPostResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 201:
-		var dest Judge
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON201 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON400 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON404 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON408 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON409 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
-// ParseDeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse parses an HTTP response from a DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteWithResponse call
-func ParseDeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse(rsp *http.Response) (*DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &DeleteJudgeV1ObservabilityJudgesJudgeIdDeleteResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case rsp.StatusCode == 204:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON400 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON404 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON408 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON409 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
-// ParseGetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse parses an HTTP response from a GetJudgeByIdV1ObservabilityJudgesJudgeIdGetWithResponse call
-func ParseGetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse(rsp *http.Response) (*GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GetJudgeByIdV1ObservabilityJudgesJudgeIdGetResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest Judge
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON400 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON404 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON408 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON409 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
-// ParseUpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse parses an HTTP response from a UpdateJudgeV1ObservabilityJudgesJudgeIdPutWithResponse call
-func ParseUpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse(rsp *http.Response) (*UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &UpdateJudgeV1ObservabilityJudgesJudgeIdPutResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case rsp.StatusCode == 204:
-		break // No content-type
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON400 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON404 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON408 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON409 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
-// ParseJudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse parses an HTTP response from a JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostWithResponse call
-func ParseJudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse(rsp *http.Response) (*JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &JudgeConversationV1ObservabilityJudgesJudgeIdLiveJudgingPostResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest JudgeOutput
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON400 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON404 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON408 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON409 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
-		var dest ObservabilityError
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON422 = &dest
-
-	}
-
-	return response, nil
-}
-
 // ParseGetLogFieldsV1ObservabilityLogsFieldsGetResponse parses an HTTP response from a GetLogFieldsV1ObservabilityLogsFieldsGetWithResponse call
 func ParseGetLogFieldsV1ObservabilityLogsFieldsGetResponse(rsp *http.Response) (*GetLogFieldsV1ObservabilityLogsFieldsGetResponse, error) {
 	bodyBytes, err := io.ReadAll(rsp.Body)
@@ -131887,6 +131229,250 @@ func ParseGetProjectEvaluationsV2V1ObservabilityProjectsProjectSlugEvaluationsV2
 	switch {
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest EvaluationsV2
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON400 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON404 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON408 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON409 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseListScorersV1ObservabilityScorersGetResponse parses an HTTP response from a ListScorersV1ObservabilityScorersGetWithResponse call
+func ParseListScorersV1ObservabilityScorersGetResponse(rsp *http.Response) (*ListScorersV1ObservabilityScorersGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &ListScorersV1ObservabilityScorersGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest ListScorersResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON400 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON404 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON408 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON409 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseCreateScorerV1ObservabilityScorersPostResponse parses an HTTP response from a CreateScorerV1ObservabilityScorersPostWithResponse call
+func ParseCreateScorerV1ObservabilityScorersPostResponse(rsp *http.Response) (*CreateScorerV1ObservabilityScorersPostResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &CreateScorerV1ObservabilityScorersPostResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 201:
+		var dest Scorer
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON201 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON400 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON404 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON408 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON409 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGetScorerV1ObservabilityScorersScorerSlugGetResponse parses an HTTP response from a GetScorerV1ObservabilityScorersScorerSlugGetWithResponse call
+func ParseGetScorerV1ObservabilityScorersScorerSlugGetResponse(rsp *http.Response) (*GetScorerV1ObservabilityScorersScorerSlugGetResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetScorerV1ObservabilityScorersScorerSlugGetResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest Scorer
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON400 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 404:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON404 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 408:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON408 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 409:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON409 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 422:
+		var dest ObservabilityError
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON422 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseEditScorerV1ObservabilityScorersScorerSlugPatchResponse parses an HTTP response from a EditScorerV1ObservabilityScorersScorerSlugPatchWithResponse call
+func ParseEditScorerV1ObservabilityScorersScorerSlugPatchResponse(rsp *http.Response) (*EditScorerV1ObservabilityScorersScorerSlugPatchResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &EditScorerV1ObservabilityScorersScorerSlugPatchResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest Scorer
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
 		}
