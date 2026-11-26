@@ -2,6 +2,18 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.5.0, 2026-11-26
+
+- Breaking: the RAG deployment operations are no longer generated. `GetDeploymentSummariesV1RagDeploymentsGet`, `RegisterDeploymentV1RagDeploymentsPut`, `UnregisterDeploymentV1RagDeploymentsDeploymentIdDelete` and `UpdateIndexMetricsV1RagDeploymentsDeploymentIdMetricsPut` are removed from `Client` and `ClientWithResponses`, with their request, response and `RegisterDeploymentRequest*`, `GetDeploymentSummariesResponse*` and `UpdateMetricsRequest*` types.
+- Breaking: `PostDatasetRecordsFromPlaygroundV1ObservabilityDatasetsDatasetIdImportsFromPlaygroundPost` and `ImportDatasetFromPlaygroundRequest` are removed. `CreateIngestionPipelineConfigurationRequest.TargetIndexes`, `IngestionPipelineTargetIndexRef` and the `SchemaField*` types are removed.
+- Breaking: `ModerationsV1ModerationsPostJSONRequestBody` changed from `ClassificationRequest` to `ModerationRequest`. `UsersApiAdminWorkspacesAddOrUpdateUsersWorkspacesJSONRequestBody` changed from `AdminWorkspaceMemberIN` to `AdminWorkspaceMemberUpsertIN`.
+- Breaking: `FromToolChoice`, `MergeToolChoice` and `AsToolChoice` on `ChatCompletionRequest_ToolChoice` and `AgentsCompletionRequest_ToolChoice` are replaced by `FromNamedToolChoice` and `MergeNamedToolChoice`. The `ToolChoice` type is removed.
+- Breaking: `EmbeddingRequestInput1` and `EmbeddingRequest_Input.FromEmbeddingRequestInput1` are removed. `FromAudioChunk`, `FromImageURLChunk`, `FromEmbeddingRequestInput3` and `FromEmbeddingRequestInput4` are added, with matching `Merge` methods.
+- Breaking: several role enum constants are removed, such as `AdminWorkspaceMemberSingleINRoleNameBilling` and `AdminAssignGroupToWorkspaceInRoleNamesMember`, along with the `StaticWorkspaceRoles*` hash-named types. `SummaryMetadata.Status` changed to `SummaryStatus1`, and `EvaluationRunV2Response.RunScores` and `EvaluationRunV2WithRefsResponse.RunScores` now use `EvaluationRunRunScoreV2`.
+- Breaking: `SpeechStreamEvents`, `SpeechStreamEvents_Data` and `SummaryStreamTypes` are removed.
+- Added `CreateDatasetRecordsV1ObservabilityDatasetsDatasetIdRecordsBulkPost`, `CreateDeploymentArchiveV1WorkflowsDeploymentsArchivesPost` and `UsersApiAdminWorkspacesListWorkspaceUsers`, each with `WithBody` and `WithResponse` variants where applicable.
+- Added `AddRoleNames`, `AddRoles`, `RemoveRoleNames` and `RemoveRoles` on `AdminUpdateGroupWorkspaceAssignmentIn`, and turn detection event unions on `TranscriptionStreamEvents_Data` such as `FromTurnDetectionStartEvent` and `FromTurnDetectionEndEvent`.
+
 ## v0.4.0, 2026-11-18
 
 - Breaking: the Judges API is no longer generated. `CreateJudgeV1ObservabilityJudgesPost`, `GetJudgesV1ObservabilityJudgesGet`, `GetJudgeByIdV1ObservabilityJudgesJudgeIdGet`, `UpdateJudgeV1ObservabilityJudgesJudgeIdPut`, `DeleteJudgeV1ObservabilityJudgesJudgeIdDelete` and the two live judging operations are removed from `Client` and `ClientWithResponses`, with the `Judge`, `JudgeOutput`, `CreateJudgeRequest`, `JudgeConversationRequest`, `JudgeDatasetRecordRequest` and `ListJudgesResponse` types.
